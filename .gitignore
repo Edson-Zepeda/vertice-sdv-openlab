@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+tmp/
+private/
+*.pyc
+media/render/
+.playwright-cli/

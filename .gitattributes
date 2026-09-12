@@ -1,0 +1,16 @@
+* text=auto
+vertice/** -text
+web/python/** -text
+tests/** -text
+evidence/** -text
+web/data/** -text
+vendor/** -text
+web/vendor/** -text
+*.wasm binary
+*.zip binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.mp3 binary
+*.wav binary
