@@ -1,1 +1,5 @@
-{"published":false}
+{
+  "published": true,
+  "repository": "https://github.com/Edson-Zepeda/vertice-sdv-openlab",
+  "package": "https://github.com/Edson-Zepeda/vertice-sdv-openlab/releases/download/v1.0.0/VerticeSDV_Proyecto.zip"
+}

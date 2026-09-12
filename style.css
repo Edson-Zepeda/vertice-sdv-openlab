@@ -472,7 +472,8 @@ input {
   inset: 0;
   user-select: none;
   touch-action: none;
-  overflow: visible;
+  /* Keep zoomed nodes inside the graph viewport and clear of its controls. */
+  overflow: hidden;
 }
 #graph[data-tool="add"],
 #graph[data-tool="connect"] {
