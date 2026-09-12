@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/google/fonts",
+  "revision": "809e4d8b8d7e9364a914909bb777679606c178b8",
+  "retrieved_at": "2026-09-12T01:08:13.461163+00:00",
+  "files": [
+    {
+      "path": "web/fonts/Manrope.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/manrope/Manrope%5Bwght%5D.ttf",
+      "bytes": 165420,
+      "sha256": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40"
+    },
+    {
+      "path": "web/fonts/Manrope-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/manrope/OFL.txt",
+      "bytes": 4384,
+      "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c"
+    },
+    {
+      "path": "web/fonts/DMSans.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+      "bytes": 240164,
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d"
+    },
+    {
+      "path": "web/fonts/DMSans-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/dmsans/OFL.txt",
+      "bytes": 4482,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    }
+  ]
+}

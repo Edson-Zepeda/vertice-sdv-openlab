@@ -1,0 +1,110 @@
+{
+  "started_at": "2026-09-12T01:57:46.036Z",
+  "cases": [
+    {
+      "engine": "local",
+      "name": "empty",
+      "expected_label_code_points": 0,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "local",
+      "name": "spaces",
+      "expected_label_code_points": 10,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "local",
+      "name": "emoji80",
+      "expected_label_code_points": 80,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "local",
+      "name": "literal_html",
+      "expected_label_code_points": 25,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "browser",
+      "name": "empty",
+      "expected_label_code_points": 0,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "browser",
+      "name": "spaces",
+      "expected_label_code_points": 10,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "browser",
+      "name": "emoji80",
+      "expected_label_code_points": 80,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    },
+    {
+      "engine": "browser",
+      "name": "literal_html",
+      "expected_label_code_points": 25,
+      "imported": true,
+      "preserved": true,
+      "notice": "Grafo importado. Puedes deshacer.",
+      "svg_has_unpaired_surrogate": false,
+      "export_preserves_label": true,
+      "cost": "0.3",
+      "passed": true
+    }
+  ],
+  "scope": "Real local API and real Pyodide; raw import, exported JSON and displayed SVG label.",
+  "finished_at": "2026-09-12T01:57:59.135Z",
+  "passed": 8,
+  "failed": 0,
+  "hashes": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b"
+  }
+}

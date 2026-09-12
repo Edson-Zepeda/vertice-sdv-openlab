@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00:00.649 --> 00:00:05.451
+Una conexión puede cambiar todo el recorrido. Vértice convierte un grafo en
+
+00:00:05.452 --> 00:00:10.353
+una decisión que puedes explicar: crear nodos, asignar costos y encontrar la
+
+00:00:10.354 --> 00:00:14.961
+ruta mínima. Cada línea resaltada proviene de una ejecución real del
+
+00:00:14.962 --> 00:00:15.663
+algoritmo.
+
+00:00:17.716 --> 00:00:21.526
+El reto de software pide Dijkstra desde cero y programación orientada a
+
+00:00:21.527 --> 00:00:26.721
+objetos. Nodo conserva identidad y posición. Conexión guarda
+
+00:00:26.722 --> 00:00:31.831
+extremos y peso. Grafo mantiene las relaciones válidas. El
+
+00:00:31.832 --> 00:00:36.697
+solucionador consulta esa estructura y calcula la ruta. La interfaz y la
+
+00:00:36.698 --> 00:00:39.102
+terminal usan el mismo núcleo Python.
+
+00:00:41.149 --> 00:00:46.121
+El inicio entra con costo cero. La cola elige el menor costo conocido.
+
+00:00:46.847 --> 00:00:51.931
+Al asentar un nodo, su distancia se vuelve definitiva. Después, el
+
+00:00:51.932 --> 00:00:56.870
+algoritmo compara sus conexiones y conserva únicamente las mejoras. El
+
+00:00:56.871 --> 00:01:00.988
+verde claro muestra la frontera: distancias tentativas que todavía pueden
+
+00:01:00.989 --> 00:01:04.950
+cambiar. La búsqueda termina cuando se asienta el destino.
+
+00:01:08.149 --> 00:01:12.951
+Llegar directamente del nodo ese al nodo a cuesta cuatro. Pero pasar por el
+
+00:01:12.952 --> 00:01:17.743
+nodo be cuesta dos más uno: tres. Esa mejora reemplaza el costo
+
+00:01:17.744 --> 00:01:22.571
+conocido de a. La entrada antigua permanece en la cola y se descarta al
+
+00:01:22.572 --> 00:01:27.459
+extraerse. Los predecesores guardan cómo reconstruir la ruta encontrada,
+
+00:01:27.621 --> 00:01:30.001
+sin confundir una visita con una mejora.
+
+00:01:32.082 --> 00:01:37.227
+Un décimo más dos décimos debe producir tres décimos. El motor conserva el
+
+00:01:37.228 --> 00:01:41.466
+texto numérico, valida sus límites y suma con aritmética decimal.
+
+00:01:42.192 --> 00:01:47.240
+También rechaza pesos negativos y valores demasiado precisos. Importar un
+
+00:01:47.241 --> 00:01:51.149
+archivo no debe redondear silenciosamente el problema que la persona quiere
+
+00:01:51.150 --> 00:01:51.913
+resolver.
+
+00:01:53.982 --> 00:01:58.846
+Un ciclo de costo cero no debe atrapar la búsqueda. Dos rutas empatadas
+
+00:01:58.847 --> 00:02:03.551
+pueden ser óptimas; se muestra una de forma reproducible. En un grafo
+
+00:02:03.552 --> 00:02:08.404
+dirigido, invertir el recorrido puede impedir llegar. Y cuando el destino
+
+00:02:08.405 --> 00:02:13.564
+está desconectado, la respuesta correcta es sin ruta. Estos casos forman
+
+00:02:13.565 --> 00:02:14.854
+parte de las pruebas.
+
+00:02:16.982 --> 00:02:21.246
+Para revisar Dijkstra usamos Bellman Ford, un algoritmo independiente, con
+
+00:02:21.247 --> 00:02:26.086
+costos enteros en micro unidades. Contrastamos el costo mínimo con ese
+
+00:02:26.087 --> 00:02:30.436
+oráculo. Revisamos las conexiones de la ruta y las trazas mediante
+
+00:02:30.437 --> 00:02:35.251
+invariantes. Conservamos las pruebas que fallaron antes de corregirlas.
+
+00:02:35.976 --> 00:02:39.995
+Esa evidencia muestra lo que se comprobó, sin convertir las pruebas en una
+
+00:02:39.996 --> 00:02:41.286
+garantía absoluta.
+
+00:02:43.349 --> 00:02:47.182
+Medimos por separado el solucionador y el proceso completo de validación,
+
+00:02:47.283 --> 00:02:52.085
+construcción y salida JSON. Cada barra resume nueve ejecuciones del mismo
+
+00:02:52.086 --> 00:02:57.353
+caso, después del calentamiento. El tamaño y la densidad del grafo importan.
+
+00:02:58.078 --> 00:03:02.354
+Estas mediciones corresponden a Python en esta computadora; no representan
+
+00:03:02.355 --> 00:03:05.545
+el tiempo de un vehículo ni el de todos los navegadores.
+
+00:03:07.616 --> 00:03:11.475
+En el estudio puedes cambiar el grafo, deshacer una edición e importar o
+
+00:03:11.476 --> 00:03:16.742
+exportar tus ejemplos. La reproducción permite detenerse en cada decisión.
+
+00:03:17.468 --> 00:03:22.405
+El informe conecta requisitos, clases, pruebas y límites. El
+
+00:03:22.406 --> 00:03:26.204
+resultado es un proyecto de software que puedes explorar, reproducir y
+
+00:03:26.205 --> 00:03:28.524
+defender con el código abierto a la vista.

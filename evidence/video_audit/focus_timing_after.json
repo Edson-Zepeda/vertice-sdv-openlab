@@ -1,0 +1,41 @@
+{
+  "builder_sha256": "bbaf0320898ddba73a0f86af57f8d906b459feb83d5e701c758b90a85ca59041",
+  "plan_sha256": "2c7203bfe547c5534cbf3ebd6a906f4c3128c8a76e8af8f9cf607a9e60f20954",
+  "classes": {
+    "classes": [
+      5.9299159999999995,
+      8.809791,
+      11.505875000000001,
+      14.581875
+    ]
+  },
+  "decimal": {
+    "values": [
+      0.649,
+      1.506875,
+      2.9652079999999996
+    ]
+  },
+  "frames": [
+    {
+      "path": "evidence\\video_audit\\focus_node_after_plan.png",
+      "local_seconds": 6.3,
+      "sha256": "46a4a7a8fd4ccd2b5cf7784d53df93ead9779885311c37648a8d4a43716414c2"
+    },
+    {
+      "path": "evidence\\video_audit\\focus_solver_after_plan.png",
+      "local_seconds": 15.5,
+      "sha256": "b904bd78c17de56e265b66d75251a35d00dde1fe4bacfc10fe977b7f9011b110"
+    },
+    {
+      "path": "evidence\\video_audit\\focus_decimal_second_after_plan.png",
+      "local_seconds": 1.65,
+      "sha256": "a83386024c8f066051b0ed4a43bb2d1c8a48d09a8501f785407c1cf4e59f5278"
+    },
+    {
+      "path": "evidence\\video_audit\\focus_decimal_total_after_plan.png",
+      "local_seconds": 3.15,
+      "sha256": "be206eae37fd6d4b19b67d1e8bb90300d193b9c096f077f06af02039b27c3c12"
+    }
+  ]
+}

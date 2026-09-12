@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-12T01:46:24.314382+00:00",
+  "status": "failed",
+  "verifier_sha256": "573215b44229b0c822fa99b59b70cccf3a47d124f303ff79de346586fb186e3d",
+  "video": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\Entrega Vértice con espacios-v7g4fssl\\proyecto\\web\\media\\VerticeSDV_Demo.mp4",
+  "checks": [
+    {
+      "name": "verification_completed_without_error",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Codex\\\\2026-09-04\\\\real\\\\outputs\\\\VerticeSDV\\\\tmp\\\\Entrega Vértice con espacios-v7g4fssl\\\\proyecto\\\\media\\\\render\\\\film-plan.json'"
+    }
+  ],
+  "scope": "Technical inspection and actual MP4 decoding; not a claim of listening comprehension, general correctness, or universal playback support.",
+  "passed_checks": 0,
+  "failed_checks": 1
+}

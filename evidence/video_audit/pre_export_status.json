@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-09-12T01:27:14.412406+00:00",
+  "status": "pending",
+  "verifier_sha256": "910ec16a640b018c32333c0f4952ecdad3395b9069307f09ba141ed4cd3e41ee",
+  "video": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\web\\media\\VerticeSDV_Demo.mp4",
+  "checks": [],
+  "scope": "Technical inspection and actual MP4 decoding; not a claim of listening comprehension, general correctness, or universal playback support.",
+  "pending_reason": "The final MP4 does not exist. No encoded-media check was performed.",
+  "passed_checks": 0,
+  "failed_checks": 0
+}

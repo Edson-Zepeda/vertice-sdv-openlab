@@ -1,0 +1,403 @@
+{
+  "proposal_only": true,
+  "created_utc": "2026-09-12T01:39:13.986417+00:00",
+  "seed": 260912,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "groups": {
+    "graph_equivalence": 1431,
+    "scanner_equivalence": 3883,
+    "http_equivalence": 6,
+    "freeze": 1
+  },
+  "checks_passed": 5321,
+  "all_checks_passed": true,
+  "source_sha256": "7bf1f28e08e40c97f113410b91499272a268e41789fd6e9df3449f3acbceffbe",
+  "reviewed_proposal_sha256": "5ae31971611d4e9e18c1b60167d4767255c99d180f9731e45c22e995ed68b59e",
+  "production_sha256": {
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "server.py": "c4e59f691d42b787b74783852b96a44fa766f246d6118240f97c0226f0acb915",
+    "web/app.js": "f9ab184bcc92fa3f437eeb71caff4334db7b8d8922a78d221e24730f0a19f249",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/index.html": "fe815b693c1ea5ff75776c5e7eb309c5d2f7a3013ba502fa957e32476349bc02",
+    "web/style.css": "5d101cfecf44467f77ae6872cff92543ed7d4087a480b86cf6d0a38abedd32b2"
+  },
+  "maximum_variants": [
+    {
+      "label_prefix": "'[[[[[[[['",
+      "ascii": false,
+      "bytes": 308048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 44504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          28.7851,
+          28.958,
+          28.8355,
+          28.7585,
+          29.9823
+        ],
+        "median_ms": 28.8355
+      }
+    },
+    {
+      "label_prefix": "'[[[[[[[['",
+      "ascii": true,
+      "bytes": 308048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 44504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          27.9456,
+          28.9773,
+          29.2918,
+          29.2032,
+          28.87
+        ],
+        "median_ms": 28.9773
+      }
+    },
+    {
+      "label_prefix": "',,,,,,,,'",
+      "ascii": false,
+      "bytes": 308048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 76012,
+      "preflight": {
+        "samples_ms": [
+          28.4295,
+          28.562,
+          28.5311,
+          29.5279,
+          28.7834
+        ],
+        "median_ms": 28.562
+      }
+    },
+    {
+      "label_prefix": "',,,,,,,,'",
+      "ascii": true,
+      "bytes": 308048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 76012,
+      "preflight": {
+        "samples_ms": [
+          29.1953,
+          29.4675,
+          29.2991,
+          29.2194,
+          29.3257
+        ],
+        "median_ms": 29.2991
+      }
+    },
+    {
+      "label_prefix": "'\\\\\"\\\\\"\\\\\"\\\\\"'",
+      "ascii": false,
+      "bytes": 348048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          1.0683,
+          1.2681,
+          0.9688,
+          0.9497,
+          0.9633
+        ],
+        "median_ms": 0.9688
+      }
+    },
+    {
+      "label_prefix": "'\\\\\"\\\\\"\\\\\"\\\\\"'",
+      "ascii": true,
+      "bytes": 348048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          0.9569,
+          0.9401,
+          0.9416,
+          0.9634,
+          0.9486
+        ],
+        "median_ms": 0.9486
+      }
+    },
+    {
+      "label_prefix": "'🧭🧭🧭🧭🧭🧭🧭🧭'",
+      "ascii": false,
+      "bytes": 428048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          0.8828,
+          0.965,
+          1.0076,
+          0.9333,
+          0.8676
+        ],
+        "median_ms": 0.9333
+      }
+    },
+    {
+      "label_prefix": "'🧭🧭🧭🧭🧭🧭🧭🧭'",
+      "ascii": true,
+      "bytes": 748048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          1.9272,
+          1.7777,
+          1.771,
+          1.7972,
+          1.7658
+        ],
+        "median_ms": 1.7777
+      }
+    },
+    {
+      "label_prefix": "'漢字Ω [{,:'",
+      "ascii": false,
+      "bytes": 315548,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 9504,
+      "raw_punctuation": 41012,
+      "preflight": {
+        "samples_ms": [
+          30.4383,
+          32.31,
+          30.7629,
+          34.0469,
+          33.4993
+        ],
+        "median_ms": 32.31
+      }
+    },
+    {
+      "label_prefix": "'漢字Ω [{,:'",
+      "ascii": true,
+      "bytes": 340548,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 9504,
+      "raw_punctuation": 41012,
+      "preflight": {
+        "samples_ms": [
+          29.8748,
+          29.6498,
+          30.0492,
+          29.993,
+          30.1523
+        ],
+        "median_ms": 29.993
+      }
+    },
+    {
+      "label_prefix": "''",
+      "ascii": false,
+      "bytes": 268048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          0.7832,
+          0.9098,
+          0.8399,
+          1.1922,
+          0.7689
+        ],
+        "median_ms": 0.8399
+      }
+    },
+    {
+      "label_prefix": "''",
+      "ascii": true,
+      "bytes": 268048,
+      "counts": [
+        4504,
+        36012,
+        4
+      ],
+      "raw_brackets": 4504,
+      "raw_punctuation": 36012,
+      "preflight": {
+        "samples_ms": [
+          0.7931,
+          0.7665,
+          0.7721,
+          0.775,
+          0.762
+        ],
+        "median_ms": 0.7721
+      }
+    }
+  ],
+  "hostile": {
+    "699050_empty_objects": {
+      "input_utf8_bytes": 2097151,
+      "peak_python_bytes": 2097244,
+      "instrumented_ms": 100.3023,
+      "rejection": "El JSON excede la estructura admitida para un grafo.",
+      "structural_counts": [
+        699051,
+        699049,
+        2
+      ]
+    },
+    "500000_integers": {
+      "input_utf8_bytes": 1000001,
+      "peak_python_bytes": 1000094,
+      "instrumented_ms": 622.2618,
+      "rejection": "El JSON contiene demasiados campos para un grafo.",
+      "structural_counts": [
+        1,
+        499999,
+        1
+      ]
+    },
+    "allowed_50000_decimals": {
+      "input_utf8_bytes": 550001,
+      "peak_python_bytes": 5647578,
+      "instrumented_ms": 1644.5392,
+      "rejection": "Búsqueda debe ser un objeto JSON.",
+      "structural_counts": [
+        1,
+        49999,
+        1
+      ]
+    },
+    "allowed_24999_field_object": {
+      "input_utf8_bytes": 438873,
+      "peak_python_bytes": 7371613,
+      "instrumented_ms": 111.6467,
+      "rejection": "Búsqueda: faltan graph, source, target.",
+      "structural_counts": [
+        1,
+        49997,
+        1
+      ]
+    },
+    "depth_900": {
+      "input_utf8_bytes": 1800,
+      "peak_python_bytes": 81907,
+      "instrumented_ms": 2.0815,
+      "rejection": "Búsqueda debe ser un objeto JSON.",
+      "structural_counts": [
+        900,
+        0,
+        900
+      ]
+    },
+    "depth_1500": {
+      "input_utf8_bytes": 3000,
+      "peak_python_bytes": 57072,
+      "instrumented_ms": 1.0808,
+      "rejection": "El JSON contiene números o estructuras fuera de los límites admitidos.",
+      "structural_counts": [
+        1500,
+        0,
+        1500
+      ]
+    },
+    "unterminated_large_string": {
+      "input_utf8_bytes": 1000001,
+      "peak_python_bytes": 1000198,
+      "instrumented_ms": 5.8253,
+      "rejection": "JSON inválido en línea 1, columna 1.",
+      "structural_counts": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "http_byte_equivalence": [
+    {
+      "name": "aislado.json",
+      "bytes": 1328,
+      "sha256": "3075034b5a68605393e276359421e8867b354153f1b5422074355b3cfb10f4b0"
+    },
+    {
+      "name": "cero.json",
+      "bytes": 2265,
+      "sha256": "8e3e42194eae52434dfb3af0fc7b559170bc2958fe57a3b0ab07b027b48d585b"
+    },
+    {
+      "name": "desvio.json",
+      "bytes": 4044,
+      "sha256": "dbf1b3e65e111ad1090b523345947ba819e48d40af5afc70881a11804e1185d6"
+    },
+    {
+      "name": "direccion.json",
+      "bytes": 1531,
+      "sha256": "0ca1ae899d13f7e7eb3c32b4bc7d9fbf24e84ab97c5bb7a9f405e88ce645616c"
+    },
+    {
+      "name": "empate.json",
+      "bytes": 1477,
+      "sha256": "f45fc87107159be09224fa0d437ac7310b61acbb17f30555cef46054dc64f04d"
+    },
+    {
+      "name": "malla.json",
+      "bytes": 15456,
+      "sha256": "1ef3544ac005c911067731e876d3aed49be12e37da6f1319ea25df7318a3b4a1"
+    }
+  ],
+  "limits": "Isolated CPython allocations and seeded cases, not exhaustive Unicode proof, process RSS or real browser measurement. Production and the active endurance server remain unchanged. No universal RAM ceiling follows from punctuation limits. Concurrent browser endurance test can affect timings."
+}

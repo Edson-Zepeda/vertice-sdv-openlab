@@ -1,0 +1,135 @@
+{
+  "started_at": "2026-09-12T01:25:48.598Z",
+  "requested_minutes": 75,
+  "scope": "Paced UI endurance, real local Python and browser Pyodide; no idle-duration claim and no simulated successful solver results.",
+  "metric_scope": "CDP Performance metrics describe the main UI renderer. Worker/Wasm heap size is not directly measured; results do not assert a global process-memory leak proof.",
+  "code_hashes": {
+    "web/app.js": "f9ab184bcc92fa3f437eeb71caff4334db7b8d8922a78d221e24730f0a19f249",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "fe815b693c1ea5ff75776c5e7eb309c5d2f7a3013ba502fa957e32476349bc02",
+    "web/style.css": "5d101cfecf44467f77ae6872cff92543ed7d4087a480b86cf6d0a38abedd32b2"
+  },
+  "phases": [
+    {
+      "name": "local-editor-history",
+      "began_at": "2026-09-12T01:25:50.725Z",
+      "engine": "actual local Python"
+    },
+    {
+      "name": "browser-real-traces",
+      "began_at": "2026-09-12T01:40:52.705Z",
+      "engine": "actual browser Pyodide"
+    }
+  ],
+  "checkpoints": [
+    {
+      "at": "2026-09-12T01:26:05.610Z",
+      "elapsed_minutes": 0.28353333333333336,
+      "phase": "local-editor-history",
+      "actions": 9,
+      "cycles": 1,
+      "solves": 1,
+      "javascript_heap_bytes_after_gc": 2042080,
+      "dom_nodes": 1235,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 132,
+      "solve_last_50_max_ms": 132
+    },
+    {
+      "at": "2026-09-12T01:31:11.628Z",
+      "elapsed_minutes": 5.3838333333333335,
+      "phase": "local-editor-history",
+      "actions": 198,
+      "cycles": 22,
+      "solves": 22,
+      "javascript_heap_bytes_after_gc": 2316072,
+      "dom_nodes": 1298,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 62,
+      "solve_last_50_max_ms": 132
+    },
+    {
+      "at": "2026-09-12T01:36:17.121Z",
+      "elapsed_minutes": 10.475383333333333,
+      "phase": "local-editor-history",
+      "actions": 387,
+      "cycles": 43,
+      "solves": 43,
+      "javascript_heap_bytes_after_gc": 2450764,
+      "dom_nodes": 1361,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 58,
+      "solve_last_50_max_ms": 133
+    },
+    {
+      "at": "2026-09-12T01:41:22.370Z",
+      "elapsed_minutes": 15.562866666666666,
+      "phase": "browser-real-traces",
+      "actions": 572,
+      "cycles": 64,
+      "solves": 64,
+      "javascript_heap_bytes_after_gc": 2080136,
+      "dom_nodes": 1062,
+      "documents": 1,
+      "event_listeners": 95,
+      "solve_last_50_median_ms": 52,
+      "solve_last_50_max_ms": 3946
+    },
+    {
+      "at": "2026-09-12T01:46:25.857Z",
+      "elapsed_minutes": 20.620983333333335,
+      "phase": "browser-real-traces",
+      "actions": 733,
+      "cycles": 87,
+      "solves": 87,
+      "javascript_heap_bytes_after_gc": 2336508,
+      "dom_nodes": 1009,
+      "documents": 1,
+      "event_listeners": 89,
+      "solve_last_50_median_ms": 46,
+      "solve_last_50_max_ms": 3946
+    },
+    {
+      "at": "2026-09-12T01:51:30.811Z",
+      "elapsed_minutes": 25.70355,
+      "phase": "browser-real-traces",
+      "actions": 894,
+      "cycles": 110,
+      "solves": 110,
+      "javascript_heap_bytes_after_gc": 2493596,
+      "dom_nodes": 2269,
+      "documents": 1,
+      "event_listeners": 231,
+      "solve_last_50_median_ms": 50,
+      "solve_last_50_max_ms": 3946
+    }
+  ],
+  "failures": [
+    {
+      "at": "2026-09-12T01:51:38.630Z",
+      "kind": "test-failure",
+      "message": "locator.count: Target page, context or browser has been closed\n    at C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\soak_ui.cjs:85:109\n    at action (C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\soak_ui.cjs:23:38)\n    at C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\soak_ui.cjs:85:15"
+    }
+  ],
+  "actions": 898,
+  "cycles": 111,
+  "solves": 111,
+  "engine_modes": [
+    "local",
+    "browser"
+  ],
+  "completed": false,
+  "finished_at": "2026-09-12T01:51:38.630Z",
+  "elapsed_minutes": 25.833866666666665,
+  "code_hashes_after": {
+    "web/app.js": "f9ab184bcc92fa3f437eeb71caff4334db7b8d8922a78d221e24730f0a19f249",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "fe815b693c1ea5ff75776c5e7eb309c5d2f7a3013ba502fa957e32476349bc02",
+    "web/style.css": "5d101cfecf44467f77ae6872cff92543ed7d4087a480b86cf6d0a38abedd32b2"
+  }
+}

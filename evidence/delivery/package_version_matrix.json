@@ -1,0 +1,21 @@
+{
+  "source_hashes": {
+    "scripts/package_release.py": "af86af6cff82caa9aff63ce5e9f6252abd71ae1cc0389d230b6b1814e2b7b3ed",
+    "tests/test_package_release.py": "38a145deec6c16c30842c6475d2a9b56eb54c8d24a1301c8d4a0ae51e841d4ba"
+  },
+  "scope": "Focused package tests on existing portable CPython runtimes; no complete core/HTTP suites repeated",
+  "results": [
+    {
+      "python": "3.10.11",
+      "tests": 9,
+      "exit_code": 0,
+      "output": "test_clean_working_bytes_must_match_commit (test_package_release.ReleaseTests) ... ok\r\ntest_dependency_hash_and_web_mirror_are_checked (test_package_release.ReleaseTests) ... ok\r\ntest_dirty_requires_explicit_flag_and_never_claims_ready (test_package_release.ReleaseTests) ... ok\r\ntest_extracted_snapshot_without_git_gets_actionable_error (test_package_release.ReleaseTests) ... ok\r\ntest_failed_verification_preserves_existing_release (test_package_release.ReleaseTests) ... ok\r\ntest_output_cannot_overwrite_source_or_write_inside_source (test_package_release.ReleaseTests) ... ok\r\ntest_private_traversal_and_windows_ambiguous_paths_are_rejected (test_package_release.ReleaseTests) ... ok\r\ntest_repeatable_zip_and_unicode_filename (test_package_release.ReleaseTests) ... ok\r\ntest_required_license_and_case_collision_are_rejected (test_package_release.ReleaseTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 9 tests in 1.202s\r\n\r\nOK\r\n"
+    },
+    {
+      "python": "3.14.7",
+      "tests": 9,
+      "exit_code": 0,
+      "output": "test_clean_working_bytes_must_match_commit (test_package_release.ReleaseTests.test_clean_working_bytes_must_match_commit) ... ok\r\ntest_dependency_hash_and_web_mirror_are_checked (test_package_release.ReleaseTests.test_dependency_hash_and_web_mirror_are_checked) ... ok\r\ntest_dirty_requires_explicit_flag_and_never_claims_ready (test_package_release.ReleaseTests.test_dirty_requires_explicit_flag_and_never_claims_ready) ... ok\r\ntest_extracted_snapshot_without_git_gets_actionable_error (test_package_release.ReleaseTests.test_extracted_snapshot_without_git_gets_actionable_error) ... ok\r\ntest_failed_verification_preserves_existing_release (test_package_release.ReleaseTests.test_failed_verification_preserves_existing_release) ... ok\r\ntest_output_cannot_overwrite_source_or_write_inside_source (test_package_release.ReleaseTests.test_output_cannot_overwrite_source_or_write_inside_source) ... ok\r\ntest_private_traversal_and_windows_ambiguous_paths_are_rejected (test_package_release.ReleaseTests.test_private_traversal_and_windows_ambiguous_paths_are_rejected) ... ok\r\ntest_repeatable_zip_and_unicode_filename (test_package_release.ReleaseTests.test_repeatable_zip_and_unicode_filename) ... ok\r\ntest_required_license_and_case_collision_are_rejected (test_package_release.ReleaseTests.test_required_license_and_case_collision_are_rejected) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 9 tests in 1.114s\r\n\r\nOK\r\n"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-* text=auto
+* -text
 vertice/** -text
 web/python/** -text
 tests/** -text

@@ -1,0 +1,950 @@
+{
+  "schema_version": 1,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "repetitions": 3,
+  "trace": true,
+  "method": "Fresh stage timings; one warm-up; profiling and tracemalloc separate from timing.",
+  "scope": "CPython allocations, not process RSS or browser/Wasm memory.",
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b"
+  },
+  "workloads": [
+    {
+      "id": "scaled_50_400",
+      "nodes": 50,
+      "edges": 400,
+      "input_bytes": 26778,
+      "output_bytes": 37661,
+      "trace_events": 351,
+      "stats": {
+        "settled": 31,
+        "relaxations": 85,
+        "heap_pushes": 86,
+        "heap_pops": 33,
+        "stale_pops": 2
+      },
+      "samples_ms": {
+        "parse": [
+          0.864,
+          0.7063,
+          0.7578
+        ],
+        "graph": [
+          7.814,
+          7.8574,
+          8.0675
+        ],
+        "solve": [
+          1.5313,
+          1.5445,
+          1.6095
+        ],
+        "serialize": [
+          1.0336,
+          0.9626,
+          1.0398
+        ],
+        "whole": [
+          12.8244,
+          11.8581,
+          12.3255
+        ]
+      },
+      "median_ms": {
+        "parse": 0.7578,
+        "graph": 7.8574,
+        "solve": 1.5445,
+        "serialize": 1.0336,
+        "whole": 12.3255
+      },
+      "whole_allocations": {
+        "current_bytes": 65640,
+        "peak_bytes": 572372
+      },
+      "solver_allocations": {
+        "current_bytes": 138427,
+        "peak_bytes": 154374
+      }
+    },
+    {
+      "id": "scaled_200_1600",
+      "nodes": 200,
+      "edges": 1600,
+      "input_bytes": 108109,
+      "output_bytes": 181227,
+      "trace_events": 1671,
+      "stats": {
+        "settled": 140,
+        "relaxations": 400,
+        "heap_pushes": 401,
+        "heap_pops": 160,
+        "stale_pops": 20
+      },
+      "samples_ms": {
+        "parse": [
+          2.9638,
+          3.1607,
+          2.9931
+        ],
+        "graph": [
+          32.9588,
+          32.6756,
+          33.9753
+        ],
+        "solve": [
+          8.3357,
+          8.3861,
+          8.5234
+        ],
+        "serialize": [
+          5.4235,
+          5.8414,
+          7.4136
+        ],
+        "whole": [
+          48.5358,
+          51.2704,
+          54.9208
+        ]
+      },
+      "median_ms": {
+        "parse": 2.9931,
+        "graph": 32.9588,
+        "solve": 8.3861,
+        "serialize": 5.8414,
+        "whole": 51.2704
+      },
+      "whole_allocations": {
+        "current_bytes": 239470,
+        "peak_bytes": 2724580
+      },
+      "solver_allocations": {
+        "current_bytes": 688517,
+        "peak_bytes": 754552
+      }
+    },
+    {
+      "id": "same_500_500",
+      "nodes": 500,
+      "edges": 500,
+      "input_bytes": 51824,
+      "output_bytes": 104585,
+      "trace_events": 1034,
+      "stats": {
+        "settled": 344,
+        "relaxations": 344,
+        "heap_pushes": 345,
+        "heap_pops": 344,
+        "stale_pops": 0
+      },
+      "samples_ms": {
+        "parse": [
+          2.1177,
+          1.8574,
+          1.8527
+        ],
+        "graph": [
+          14.1381,
+          13.741,
+          16.3743
+        ],
+        "solve": [
+          4.915,
+          5.505,
+          5.3062
+        ],
+        "serialize": [
+          4.4966,
+          4.2099,
+          3.9547
+        ],
+        "whole": [
+          26.1596,
+          26.9062,
+          24.7652
+        ]
+      },
+      "median_ms": {
+        "parse": 1.8574,
+        "graph": 14.1381,
+        "solve": 5.3062,
+        "serialize": 4.2099,
+        "whole": 26.1596
+      },
+      "whole_allocations": {
+        "current_bytes": 168420,
+        "peak_bytes": 1585241
+      },
+      "solver_allocations": {
+        "current_bytes": 406852,
+        "peak_bytes": 502561
+      }
+    },
+    {
+      "id": "same_500_2000",
+      "nodes": 500,
+      "edges": 2000,
+      "input_bytes": 145078,
+      "output_bytes": 90741,
+      "trace_events": 807,
+      "stats": {
+        "settled": 90,
+        "relaxations": 329,
+        "heap_pushes": 330,
+        "heap_pops": 91,
+        "stale_pops": 1
+      },
+      "samples_ms": {
+        "parse": [
+          3.9375,
+          4.0581,
+          4.6548
+        ],
+        "graph": [
+          42.5489,
+          47.0593,
+          46.7233
+        ],
+        "solve": [
+          3.925,
+          4.712,
+          3.7296
+        ],
+        "serialize": [
+          3.3212,
+          2.7238,
+          2.8553
+        ],
+        "whole": [
+          55.3166,
+          57.2676,
+          56.2315
+        ]
+      },
+      "median_ms": {
+        "parse": 4.0581,
+        "graph": 46.7233,
+        "solve": 3.925,
+        "serialize": 2.8553,
+        "whole": 56.2315
+      },
+      "whole_allocations": {
+        "current_bytes": 144856,
+        "peak_bytes": 1933291
+      },
+      "solver_allocations": {
+        "current_bytes": 344627,
+        "peak_bytes": 412204
+      }
+    },
+    {
+      "id": "same_500_4000",
+      "nodes": 500,
+      "edges": 4000,
+      "input_bytes": 270048,
+      "output_bytes": 348811,
+      "trace_events": 3177,
+      "stats": {
+        "settled": 254,
+        "relaxations": 883,
+        "heap_pushes": 884,
+        "heap_pops": 270,
+        "stale_pops": 16
+      },
+      "samples_ms": {
+        "parse": [
+          10.818,
+          10.9352,
+          11.9594
+        ],
+        "graph": [
+          135.5472,
+          134.3854,
+          144.8549
+        ],
+        "solve": [
+          25.6678,
+          28.6911,
+          31.9202
+        ],
+        "serialize": [
+          17.005,
+          20.951,
+          19.3243
+        ],
+        "whole": [
+          188.8653,
+          200.3649,
+          213.7635
+        ]
+      },
+      "median_ms": {
+        "parse": 10.9352,
+        "graph": 135.5472,
+        "solve": 28.6911,
+        "serialize": 19.3243,
+        "whole": 200.3649
+      },
+      "whole_allocations": {
+        "current_bytes": 453806,
+        "peak_bytes": 5153991
+      },
+      "solver_allocations": {
+        "current_bytes": 1332822,
+        "peak_bytes": 1463746
+      }
+    }
+  ],
+  "profile": {
+    "total_calls": 332752,
+    "total_ms": 491.85049999999995,
+    "functions": [
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py",
+        "line": 73,
+        "function": "solve_json",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 1.7664000000000002,
+        "cumulative_ms": 493.13880000000006
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py",
+        "line": 67,
+        "function": "solve_payload",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0442,
+        "cumulative_ms": 449.35220000000004
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 285,
+        "function": "from_dict",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 20.9745,
+        "cumulative_ms": 375.0128
+      },
+      {
+        "file": "<string>",
+        "line": 2,
+        "function": "__init__",
+        "calls": 4000,
+        "primitive_calls": 4000,
+        "total_ms": 11.1753,
+        "cumulative_ms": 208.4473
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 151,
+        "function": "__post_init__",
+        "calls": 4000,
+        "primitive_calls": 4000,
+        "total_ms": 16.9159,
+        "cumulative_ms": 197.272
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 51,
+        "function": "parse_weight",
+        "calls": 4000,
+        "primitive_calls": 4000,
+        "total_ms": 63.25840000000001,
+        "cumulative_ms": 146.9039
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 247,
+        "function": "add_edge",
+        "calls": 4000,
+        "primitive_calls": 4000,
+        "total_ms": 7.4085,
+        "cumulative_ms": 80.0821
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 19,
+        "function": "solve",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.2943,
+        "cumulative_ms": 74.26350000000001
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 30,
+        "function": "_solve",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 18.498300000000004,
+        "cumulative_ms": 73.9485
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 228,
+        "function": "_check_edge",
+        "calls": 4000,
+        "primitive_calls": 4000,
+        "total_ms": 21.7904,
+        "cumulative_ms": 65.8605
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 35,
+        "function": "validate_id",
+        "calls": 20755,
+        "primitive_calls": 20755,
+        "total_ms": 28.7361,
+        "cumulative_ms": 60.93200000000001
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 41,
+        "function": "canonical_decimal",
+        "calls": 9605,
+        "primitive_calls": 9605,
+        "total_ms": 31.751800000000003,
+        "cumulative_ms": 52.615100000000005
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 102,
+        "function": "_check_object",
+        "calls": 4502,
+        "primitive_calls": 4502,
+        "total_ms": 18.313100000000002,
+        "cumulative_ms": 46.8557
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 185,
+        "function": "get_node",
+        "calls": 8255,
+        "primitive_calls": 8255,
+        "total_ms": 15.661600000000002,
+        "cumulative_ms": 41.401900000000005
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'fullmatch' of 're.Pattern' objects>",
+        "calls": 24755,
+        "primitive_calls": 24755,
+        "total_ms": 33.8941,
+        "cumulative_ms": 33.8941
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.all>",
+        "calls": 4502,
+        "primitive_calls": 4502,
+        "total_ms": 9.5589,
+        "cumulative_ms": 27.534100000000002
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py",
+        "line": 46,
+        "function": "load_json",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.5125000000000001,
+        "cumulative_ms": 24.4566
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py",
+        "line": 299,
+        "function": "loads",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0293,
+        "cumulative_ms": 23.910300000000003
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py",
+        "line": 332,
+        "function": "decode",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.024300000000000002,
+        "cumulative_ms": 23.864700000000003
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py",
+        "line": 343,
+        "function": "raw_decode",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 11.4383,
+        "cumulative_ms": 23.8276
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'as_tuple' of 'decimal.Decimal' objects>",
+        "calls": 8000,
+        "primitive_calls": 8000,
+        "total_ms": 11.004900000000001,
+        "cumulative_ms": 22.365600000000004
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 106,
+        "function": "<genexpr>",
+        "calls": 22510,
+        "primitive_calls": 22510,
+        "total_ms": 14.5532,
+        "cumulative_ms": 17.9752
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py",
+        "line": 183,
+        "function": "dumps",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0228,
+        "cumulative_ms": 17.5636
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py",
+        "line": 183,
+        "function": "encode",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0438,
+        "cumulative_ms": 17.5364
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py",
+        "line": 205,
+        "function": "iterencode",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 17.4871,
+        "cumulative_ms": 17.4871
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.isinstance>",
+        "calls": 76877,
+        "primitive_calls": 76877,
+        "total_ms": 17.4635,
+        "cumulative_ms": 17.4635
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 27,
+        "function": "_decimal_context",
+        "calls": 4001,
+        "primitive_calls": 4001,
+        "total_ms": 16.968600000000002,
+        "cumulative_ms": 16.968600000000002
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 39,
+        "function": "decimal_or_none",
+        "calls": 3422,
+        "primitive_calls": 3422,
+        "total_ms": 2.5935,
+        "cumulative_ms": 15.496200000000002
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 128,
+        "function": "__post_init__",
+        "calls": 500,
+        "primitive_calls": 500,
+        "total_ms": 3.1678,
+        "cumulative_ms": 15.1864
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.format>",
+        "calls": 9586,
+        "primitive_calls": 9586,
+        "total_ms": 11.692900000000002,
+        "cumulative_ms": 11.692900000000002
+      },
+      {
+        "file": "<string>",
+        "line": 1,
+        "function": "<lambda>",
+        "calls": 8000,
+        "primitive_calls": 8000,
+        "total_ms": 6.8967,
+        "cumulative_ms": 11.360700000000001
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py",
+        "line": 16,
+        "function": "_object_pairs",
+        "calls": 4502,
+        "primitive_calls": 4502,
+        "total_ms": 11.0776,
+        "cumulative_ms": 11.0776
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 274,
+        "function": "neighbors",
+        "calls": 253,
+        "primitive_calls": 253,
+        "total_ms": 3.7569,
+        "cumulative_ms": 10.0523
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 42,
+        "function": "emit",
+        "calls": 3177,
+        "primitive_calls": 3177,
+        "total_ms": 7.733700000000001,
+        "cumulative_ms": 9.6669
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 241,
+        "function": "_insert_edge",
+        "calls": 4000,
+        "primitive_calls": 4000,
+        "total_ms": 6.8131,
+        "cumulative_ms": 6.8131
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.len>",
+        "calls": 21182,
+        "primitive_calls": 21182,
+        "total_ms": 5.854900000000001,
+        "cumulative_ms": 5.854900000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.any>",
+        "calls": 500,
+        "primitive_calls": 500,
+        "total_ms": 1.0462000000000002,
+        "cumulative_ms": 5.505000000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'rstrip' of 'str' objects>",
+        "calls": 18092,
+        "primitive_calls": 18092,
+        "total_ms": 5.0402,
+        "cumulative_ms": 5.0402
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 86,
+        "function": "_coordinate",
+        "calls": 1000,
+        "primitive_calls": 1000,
+        "total_ms": 3.2025,
+        "cumulative_ms": 4.519
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method __new__ of type object at 0x00007FFA26800FD0>",
+        "calls": 8000,
+        "primitive_calls": 8000,
+        "total_ms": 4.464,
+        "cumulative_ms": 4.464
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 132,
+        "function": "<genexpr>",
+        "calls": 2500,
+        "primitive_calls": 2500,
+        "total_ms": 3.3993,
+        "cumulative_ms": 4.458800000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method decimal.localcontext>",
+        "calls": 4001,
+        "primitive_calls": 4001,
+        "total_ms": 4.1823,
+        "cumulative_ms": 4.1823
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 277,
+        "function": "<genexpr>",
+        "calls": 2275,
+        "primitive_calls": 2275,
+        "total_ms": 3.0372000000000003,
+        "cumulative_ms": 3.0372000000000003
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method '__exit__' of 'decimal.ContextManager' objects>",
+        "calls": 4001,
+        "primitive_calls": 4001,
+        "total_ms": 2.9499,
+        "cumulative_ms": 2.9499
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'get' of 'dict' objects>",
+        "calls": 5501,
+        "primitive_calls": 5501,
+        "total_ms": 2.9453,
+        "cumulative_ms": 2.9453
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'is_finite' of 'decimal.Decimal' objects>",
+        "calls": 13605,
+        "primitive_calls": 13605,
+        "total_ms": 2.8169000000000004,
+        "cumulative_ms": 2.8169000000000004
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 95,
+        "function": "<dictcomp>",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.5581,
+        "cumulative_ms": 2.8076000000000003
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 197,
+        "function": "add_node",
+        "calls": 500,
+        "primitive_calls": 500,
+        "total_ms": 1.4527,
+        "cumulative_ms": 1.6998
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py",
+        "line": 40,
+        "function": "_integer",
+        "calls": 1001,
+        "primitive_calls": 1001,
+        "total_ms": 1.1022,
+        "cumulative_ms": 1.3117
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.sorted>",
+        "calls": 254,
+        "primitive_calls": 254,
+        "total_ms": 1.2176,
+        "cumulative_ms": 1.2176
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method _heapq.heappop>",
+        "calls": 270,
+        "primitive_calls": 270,
+        "total_ms": 1.1198,
+        "cumulative_ms": 1.1198
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'append' of 'list' objects>",
+        "calls": 3448,
+        "primitive_calls": 3448,
+        "total_ms": 1.0947,
+        "cumulative_ms": 1.0947
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.ord>",
+        "calls": 6000,
+        "primitive_calls": 6000,
+        "total_ms": 1.0595,
+        "cumulative_ms": 1.0595
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method _heapq.heappush>",
+        "calls": 883,
+        "primitive_calls": 883,
+        "total_ms": 0.992,
+        "cumulative_ms": 0.992
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.abs>",
+        "calls": 1000,
+        "primitive_calls": 1000,
+        "total_ms": 0.2837,
+        "cumulative_ms": 0.2837
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method math.isfinite>",
+        "calls": 1000,
+        "primitive_calls": 1000,
+        "total_ms": 0.2541,
+        "cumulative_ms": 0.2541
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 31,
+        "function": "<dictcomp>",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.17490000000000003,
+        "cumulative_ms": 0.17490000000000003
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'add' of 'set' objects>",
+        "calls": 254,
+        "primitive_calls": 254,
+        "total_ms": 0.1129,
+        "cumulative_ms": 0.1129
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'items' of 'dict' objects>",
+        "calls": 254,
+        "primitive_calls": 254,
+        "total_ms": 0.09190000000000001,
+        "cumulative_ms": 0.09190000000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'encode' of 'str' objects>",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.031100000000000003,
+        "cumulative_ms": 0.031100000000000003
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py",
+        "line": 284,
+        "function": "__init__",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0142,
+        "cumulative_ms": 0.0142
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'match' of 're.Pattern' objects>",
+        "calls": 2,
+        "primitive_calls": 2,
+        "total_ms": 0.011000000000000001,
+        "cumulative_ms": 0.011000000000000001
+      },
+      {
+        "file": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py",
+        "line": 105,
+        "function": "__init__",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0044,
+        "cumulative_ms": 0.0044
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 165,
+        "function": "__init__",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.004000000000000001,
+        "cumulative_ms": 0.004000000000000001
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\dijkstra.py",
+        "line": 14,
+        "function": "__init__",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0022,
+        "cumulative_ms": 0.0024000000000000002
+      },
+      {
+        "file": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py",
+        "line": 177,
+        "function": "nodes",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0020000000000000005,
+        "cumulative_ms": 0.0020000000000000005
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'startswith' of 'str' objects>",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0017000000000000001,
+        "cumulative_ms": 0.0017000000000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0017000000000000001,
+        "cumulative_ms": 0.0017000000000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'join' of 'str' objects>",
+        "calls": 1,
+        "primitive_calls": 1,
+        "total_ms": 0.0014000000000000002,
+        "cumulative_ms": 0.0014000000000000002
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'reverse' of 'list' objects>",
+        "calls": 2,
+        "primitive_calls": 2,
+        "total_ms": 0.0009000000000000001,
+        "cumulative_ms": 0.0009000000000000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'end' of 're.Match' objects>",
+        "calls": 2,
+        "primitive_calls": 2,
+        "total_ms": 0.0008,
+        "cumulative_ms": 0.0008
+      }
+    ]
+  },
+  "concurrent_workload": "Parent video render and browser endurance test; do not compare absolute latency with final benchmark."
+}

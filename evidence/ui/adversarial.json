@@ -1,0 +1,115 @@
+{
+  "started_at": "2026-09-12T01:58:32.971Z",
+  "url": "http://127.0.0.1:8770/",
+  "methodology": "Real local Python. Explicit network delays, HTTP error, and storage-quota fixtures test recovery; no simulated successful algorithm result.",
+  "environment": {
+    "platform": "win32",
+    "architecture": "x64",
+    "node": "v22.18.0",
+    "cpu": "AMD Ryzen 7 5800H with Radeon Graphics         "
+  },
+  "checks": [
+    {
+      "name": "Late successful response cannot replace an edited graph",
+      "passed": true
+    },
+    {
+      "name": "Editing cancels the busy state without trapping the main action",
+      "passed": true
+    },
+    {
+      "name": "A fresh computation succeeds after cancellation",
+      "passed": true
+    },
+    {
+      "name": "A failed engine request displays its error and no old route",
+      "passed": true
+    },
+    {
+      "name": "Retry recovers after a transport error",
+      "passed": true
+    },
+    {
+      "name": "Malformed successful response shows a recoverable error",
+      "passed": true
+    },
+    {
+      "name": "Late import does not overwrite edits made while validation runs",
+      "passed": true
+    },
+    {
+      "name": "Invalid UTF-8 never silently mutates imported labels",
+      "passed": true
+    },
+    {
+      "name": "Oversized node count is rejected without changing the graph",
+      "passed": true,
+      "message": "El límite es 500 nodos y 4000 conexiones."
+    },
+    {
+      "name": "Zoom changes the view without changing graph data",
+      "passed": true
+    },
+    {
+      "name": "Focused canvas pans through keyboard",
+      "passed": true
+    },
+    {
+      "name": "Center view restores the fitted camera",
+      "passed": true
+    },
+    {
+      "name": "Tabs support arrow-key navigation",
+      "passed": true
+    },
+    {
+      "name": "Tabs support End navigation",
+      "passed": true
+    },
+    {
+      "name": "Closing the file disclosure returns focus to its trigger",
+      "passed": true
+    },
+    {
+      "name": "200 percent equivalent viewport reflows without horizontal overflow",
+      "passed": true,
+      "CSS_viewport": "720 x 500",
+      "physical_capture": "1440 x 1000",
+      "scope": "Browser device emulation of the 200 percent layout; not an operating-system zoom claim."
+    },
+    {
+      "name": "Maximum supported graph imports and renders every element",
+      "passed": true,
+      "nodes": 500,
+      "edges": 4000,
+      "elapsed_ms": 762
+    },
+    {
+      "name": "Maximum graph yields the same cost as the direct Python call",
+      "passed": true,
+      "cost": "499",
+      "elapsed_ms": 1544,
+      "settled": 500
+    },
+    {
+      "name": "Large-graph view remains interactive after solving",
+      "passed": true
+    },
+    {
+      "name": "Storage failure keeps edits available in memory",
+      "passed": true
+    },
+    {
+      "name": "Storage failure explicitly offers export recovery",
+      "passed": true
+    },
+    {
+      "name": "Export preserves unsaved edits after a storage failure",
+      "passed": true
+    }
+  ],
+  "observations": {},
+  "finished_at": "2026-09-12T01:58:48.892Z",
+  "passed": 22,
+  "failed": 0
+}

@@ -1,0 +1,31 @@
+test_content_type_and_invalid_utf8_rejected (test_server.LocalHttpTests.test_content_type_and_invalid_utf8_rejected) ... ok
+test_cross_origin_is_rejected_and_same_origin_allowed (test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed) ... ok
+test_directory_listing_is_not_exposed (test_server.LocalHttpTests.test_directory_listing_is_not_exposed) ... ok
+test_duplicate_content_type_is_not_ambiguous (test_server.LocalHttpTests.test_duplicate_content_type_is_not_ambiguous) ... ok
+test_duplicate_origin_is_not_silently_accepted (test_server.LocalHttpTests.test_duplicate_origin_is_not_silently_accepted) ... ok
+test_empty_file_and_empty_range (test_server.LocalHttpTests.test_empty_file_and_empty_range) ... ok
+test_expected_mime_and_security_headers (test_server.LocalHttpTests.test_expected_mime_and_security_headers) ... ok
+test_head_has_get_length_but_no_body (test_server.LocalHttpTests.test_head_has_get_length_but_no_body) ... ok
+test_head_ignores_range_per_http_semantics (test_server.LocalHttpTests.test_head_ignores_range_per_http_semantics) ... ok
+test_health_reports_actual_core_hashes_and_no_cors (test_server.LocalHttpTests.test_health_reports_actual_core_hashes_and_no_cors) ... ok
+test_http_matches_python_for_shared_cases_and_both_trace_modes (test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes) ... ok
+test_if_range_mismatch_sends_complete_representation (test_server.LocalHttpTests.test_if_range_mismatch_sends_complete_representation) ... ok
+test_invalid_or_unsatisfiable_ranges_have_no_body (test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body) ... ok
+test_json_hostile_payloads_return_json_errors (test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors) ... ok
+test_outside_paths_never_serve_private_file (test_server.LocalHttpTests.test_outside_paths_never_serve_private_file) ... ok
+test_post_body_framing_rejects_missing_duplicate_and_invalid_length (test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length) ... ok
+test_second_server_cannot_bind_the_same_listening_port (test_server.LocalHttpTests.test_second_server_cannot_bind_the_same_listening_port) ... ok
+test_stalled_post_times_out_while_health_remains_available (test_server.LocalHttpTests.test_stalled_post_times_out_while_health_remains_available) ... ok
+test_truncated_post_is_a_controlled_client_error (test_server.LocalHttpTests.test_truncated_post_is_a_controlled_client_error) ... ok
+test_trusted_hostnames_with_correct_port (test_server.LocalHttpTests.test_trusted_hostnames_with_correct_port) ... ok
+test_unknown_endpoints_and_options_do_not_enable_remote_api (test_server.LocalHttpTests.test_unknown_endpoints_and_options_do_not_enable_remote_api) ... ok
+test_unknown_range_units_are_ignored (test_server.LocalHttpTests.test_unknown_range_units_are_ignored) ... ok
+test_validate_endpoint_preserves_raw_numeric_precision (test_server.LocalHttpTests.test_validate_endpoint_preserves_raw_numeric_precision) ... ok
+test_validate_endpoint_rejects_ambiguous_json_and_remote_origin (test_server.LocalHttpTests.test_validate_endpoint_rejects_ambiguous_json_and_remote_origin) ... ok
+test_video_range_forward_suffix_open_and_clamped (test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped) ... ok
+test_wrong_missing_or_duplicate_host_rejected (test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 6.030s
+
+OK

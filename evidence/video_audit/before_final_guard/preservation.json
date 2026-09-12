@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-09-12T02:22:24.666935+00:00",
+  "files": [
+    {
+      "path": "evidence/video_audit/before_final_guard/verification.json",
+      "sha256": "6883e27e2e3ff34281f028bb267bc32a0d93d97328c6e573e4fb828267f14c5c"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/visual_review.json",
+      "sha256": "9822f9dce30eafd1098379b68664b84c9c4b5fb9437ac44440d5d833e2913401"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/contact-sheet.jpg",
+      "sha256": "fb2d6331ae7da36b9b730d69d5020c70c08caa9c588241fc3c61b890160ec47c"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/directed_reverse.png",
+      "sha256": "587512529f99f47f9ef37b89b39884f0c05d1d0ef652281bba5a9b32d79e9160"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/focus_decimal_second.png",
+      "sha256": "77c8cad46409f06b37b1ead617733f539fd9e75c9dfd950ff60a84364925f234"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/focus_decimal_total.png",
+      "sha256": "bc0d888263877f73347d7f1717caeeff082c1e70f6e76b350bc0ab5dc83293f6"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/focus_node.png",
+      "sha256": "e7c31c5d9e46d986aa011d5bcd0b72d8903812875d858eac681ae35e9182113f"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/focus_solver.png",
+      "sha256": "53aa2f7feb12426b5921d198065bdb26788f3543520b4a0a8d32906d77ec0712"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/last_frame.png",
+      "sha256": "673b0b4ac1e6744edd4500bda819d98ffc9bca41aeb962014fb4daca0b9c7b55"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/oracle_no_path.png",
+      "sha256": "1c5a69c76156f626ddac7b46d32990dd5ece0bd5d9193f33b4a5538f619b03e4"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_01.png",
+      "sha256": "544e980c3c22d3aac195b39d0c5a331e3e62d3454c63fd16db53317b592f6d21"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_02.png",
+      "sha256": "8ebe76b59129ca00c8757624cd155bd8b4cf43217d6357f33e8a78c314c72865"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_03.png",
+      "sha256": "637b57b02a4234be03fbfdead063f2ad0522bea3a42980f2e67f7581184f1e66"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_04.png",
+      "sha256": "c6002cf2bd16e57351e61aad31ffe215ee6229f60973d85568eb345a2a03e86f"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_05.png",
+      "sha256": "4c1f81b31cd9f94101bfc6054dce8a89740f81da33fdd2f5439573253cacc4fe"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_06.png",
+      "sha256": "d383e70241268c9a6d2bbaeeec8cb94a33833b8e3ee912b972ebf1498b468bd5"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_07.png",
+      "sha256": "09737989ee2508ecb45c3eb46dc817ba54919993c11cc31089c6de5d01279252"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_08.png",
+      "sha256": "bc9ea369787d6fd6efb91dd23d35f518707cb5cdacc572e3807668da76d208ce"
+    },
+    {
+      "path": "evidence/video_audit/before_final_guard/decoded_frames/scene_09.png",
+      "sha256": "9db7cb59c75c30a646e7886bcec880f9ad08c5b855543e225aa4380fc833eea5"
+    }
+  ]
+}

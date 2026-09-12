@@ -1,0 +1,288 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "7a2192c68dbb3e849534dc3dc8852a947309a69ac125c18fcf7b516e0a51fd33",
+  "text": "Llegar directamente del nodo ese al nodo a cuesta cuatro. Pero pasar por el nodo be cuesta dos más uno: tres. Esa mejora reemplaza el costo conocido de a. La entrada antigua permanece en la cola y se descarta al extraerse. Los predecesores guardan cómo reconstruir la ruta encontrada, sin confundir una visita con una mejora.",
+  "words": [
+    {
+      "text": "Llegar",
+      "start": 0.099,
+      "end": 0.454375
+    },
+    {
+      "text": "directamente",
+      "start": 0.466666,
+      "end": 1.140666
+    },
+    {
+      "text": "del",
+      "start": 1.152958,
+      "end": 1.349041
+    },
+    {
+      "text": "nodo",
+      "start": 1.361291,
+      "end": 1.679916
+    },
+    {
+      "text": "ese",
+      "start": 1.692166,
+      "end": 1.924999
+    },
+    {
+      "text": "al",
+      "start": 1.93725,
+      "end": 2.059791
+    },
+    {
+      "text": "nodo",
+      "start": 2.072041,
+      "end": 2.329374
+    },
+    {
+      "text": "a",
+      "start": 2.341666,
+      "end": 2.378416
+    },
+    {
+      "text": "cuesta",
+      "start": 2.390666,
+      "end": 2.733791
+    },
+    {
+      "text": "cuatro",
+      "start": 2.746083,
+      "end": 3.187249
+    },
+    {
+      "text": "Pero",
+      "start": 4.031875,
+      "end": 4.240208
+    },
+    {
+      "text": "pasar",
+      "start": 4.252458,
+      "end": 4.607833
+    },
+    {
+      "text": "por",
+      "start": 4.620083,
+      "end": 4.779416
+    },
+    {
+      "text": "el",
+      "start": 4.791666,
+      "end": 4.889707
+    },
+    {
+      "text": "nodo",
+      "start": 4.901958,
+      "end": 5.159291
+    },
+    {
+      "text": "be",
+      "start": 5.171583,
+      "end": 5.306374
+    },
+    {
+      "text": "cuesta",
+      "start": 5.318625,
+      "end": 5.66175
+    },
+    {
+      "text": "dos",
+      "start": 5.674,
+      "end": 5.919083
+    },
+    {
+      "text": "más",
+      "start": 5.931375,
+      "end": 6.151958
+    },
+    {
+      "text": "uno",
+      "start": 6.164208,
+      "end": 6.458333
+    },
+    {
+      "text": "tres",
+      "start": 6.752458,
+      "end": 7.181374
+    },
+    {
+      "text": "Esa",
+      "start": 8.039208,
+      "end": 8.296541
+    },
+    {
+      "text": "mejora",
+      "start": 8.308833,
+      "end": 8.676499
+    },
+    {
+      "text": "reemplaza",
+      "start": 8.688708,
+      "end": 9.215666
+    },
+    {
+      "text": "el",
+      "start": 9.227958,
+      "end": 9.325999
+    },
+    {
+      "text": "costo",
+      "start": 9.33825,
+      "end": 9.681375
+    },
+    {
+      "text": "conocido",
+      "start": 9.693625,
+      "end": 10.196083
+    },
+    {
+      "text": "de",
+      "start": 10.208333,
+      "end": 10.355374
+    },
+    {
+      "text": "a",
+      "start": 10.367666,
+      "end": 10.637291
+    },
+    {
+      "text": "La",
+      "start": 11.482833,
+      "end": 11.642166
+    },
+    {
+      "text": "entrada",
+      "start": 11.654416,
+      "end": 12.046582
+    },
+    {
+      "text": "antigua",
+      "start": 12.058833,
+      "end": 12.487749
+    },
+    {
+      "text": "permanece",
+      "start": 12.5,
+      "end": 13.063708
+    },
+    {
+      "text": "en",
+      "start": 13.076,
+      "end": 13.149541
+    },
+    {
+      "text": "la",
+      "start": 13.16175,
+      "end": 13.247541
+    },
+    {
+      "text": "cola",
+      "start": 13.259791,
+      "end": 13.602916
+    },
+    {
+      "text": "y",
+      "start": 13.615208,
+      "end": 13.676499
+    },
+    {
+      "text": "se",
+      "start": 13.688708,
+      "end": 13.835749
+    },
+    {
+      "text": "descarta",
+      "start": 13.848041,
+      "end": 14.411749
+    },
+    {
+      "text": "al",
+      "start": 14.424,
+      "end": 14.509791
+    },
+    {
+      "text": "extraerse",
+      "start": 14.522041,
+      "end": 15.245082
+    },
+    {
+      "text": "Los",
+      "start": 16.090666,
+      "end": 16.311249
+    },
+    {
+      "text": "predecesores",
+      "start": 16.323541,
+      "end": 17.009832
+    },
+    {
+      "text": "guardan",
+      "start": 17.022041,
+      "end": 17.389707
+    },
+    {
+      "text": "cómo",
+      "start": 17.401958,
+      "end": 17.647041
+    },
+    {
+      "text": "reconstruir",
+      "start": 17.659333,
+      "end": 18.296583
+    },
+    {
+      "text": "la",
+      "start": 18.308833,
+      "end": 18.406874
+    },
+    {
+      "text": "ruta",
+      "start": 18.419125,
+      "end": 18.676458
+    },
+    {
+      "text": "encontrada",
+      "start": 18.688708,
+      "end": 19.289208
+    },
+    {
+      "text": "sin",
+      "start": 19.571083,
+      "end": 19.742666
+    },
+    {
+      "text": "confundir",
+      "start": 19.754916,
+      "end": 20.294124
+    },
+    {
+      "text": "una",
+      "start": 20.306375,
+      "end": 20.441166
+    },
+    {
+      "text": "visita",
+      "start": 20.453416,
+      "end": 20.894582
+    },
+    {
+      "text": "con",
+      "start": 20.906875,
+      "end": 21.115208
+    },
+    {
+      "text": "una",
+      "start": 21.127458,
+      "end": 21.311291
+    },
+    {
+      "text": "mejora",
+      "start": 21.323541,
+      "end": 21.801499
+    }
+  ]
+}

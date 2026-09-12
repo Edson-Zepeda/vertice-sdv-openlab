@@ -1,0 +1,189 @@
+{
+  "started_at": "2026-09-12T01:16:00.210633+00:00",
+  "finished_at": "2026-09-12T01:16:03.882036+00:00",
+  "status": "pass",
+  "environment": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "test_methods": 38,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 3.6703781,
+  "scenarios": {
+    "named_queries": 18,
+    "seeded_graphs": 160,
+    "seeded_queries": 631,
+    "exhaustive_graphs": 729,
+    "exhaustive_queries": 6561,
+    "trace_events": 59070
+  },
+  "scope": "Algorithm, object invariants and strict JSON boundary. Does not prove UI, HTTP or Pyodide parity.",
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "tests/test_independent.py": "98224cd8bf2a566e6c070f7c3ad2488e281f9b2df945947893a9e730a2ebd16c",
+    "tests/independent_oracle.py": "2eecf935d38e6dff7d25b43aca628167273130c230f18ca64cc876678ab46e98",
+    "scripts/verify_independent.py": "9a84fdbf490f2f090a039af02520cfe907b94abb2987425a244ec7af0ef246c8"
+  },
+  "results": [
+    {
+      "test": "test_independent.GraphMutationTests.test_directed_remove_and_rewire_do_not_leave_reverse_arcs",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_edge_rewire_updates_both_undirected_adjacencies",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_edge_weight_update_changes_solution",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_external_views_and_value_objects_cannot_corrupt_graph",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_failed_mutations_are_atomic",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_node_update_does_not_change_routes",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_remove_and_readd_uses_new_weight",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_removing_node_removes_all_incident_edges",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_bijective_renaming_preserves_optimal_cost",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_change_route_or_cost",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_erase_micro_difference",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_disconnected_extension_cannot_change_existing_solution",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_exhaustive_three_node_directed_graphs",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_json_round_trip_preserves_exact_decimal_result",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_named_contract_scenarios",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_oracle_cross_check_with_floyd_warshall",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_positive_scaling_preserves_unique_route",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_seeded_graphs_against_independent_oracle",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_solve_does_not_mutate_input_and_results_are_isolated",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_tentative_distance_is_not_replaced_by_final_oracle_value",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_trace_disabled_keeps_same_solution_without_events",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_coordinate_bounds_and_types",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_duplicate_nodes_edges_and_parallel_connections",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_error_messages_for_unexpected_keys_are_utf8_safe",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_decimal_exponents_are_controlled",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_json_has_controlled_validation_error",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_json_parser_rejects_duplicates_and_nonstandard_numbers",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_maximum_edges_and_one_beyond",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_maximum_nodes_and_one_beyond",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_node_and_edge_identifier_contract",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_nonexistent_endpoints",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_oversized_numeric_representation_is_rejected_before_normalization",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_precisely_representable_weight_variants",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_top_level_and_required_field_types",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_unicode_labels_remain_data_and_enforce_length",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_unpaired_surrogate_cannot_break_utf8_responses",
+      "status": "pass"
+    }
+  ]
+}

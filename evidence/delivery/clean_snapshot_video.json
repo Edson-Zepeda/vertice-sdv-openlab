@@ -1,0 +1,792 @@
+{
+  "generated_at": "2026-09-12T01:46:24.774969+00:00",
+  "status": "passed",
+  "verifier_sha256": "606551e9b203b25fdfac775706d32b4f3e9e58fce197c5ef5a21a57b126b22af",
+  "video": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\Entrega Vértice con espacios-v7g4fssl\\proyecto\\web\\media\\VerticeSDV_Demo.mp4",
+  "checks": [
+    {
+      "name": "nine_continuous_frame_aligned_scenes",
+      "passed": true,
+      "detail": {
+        "count": 9,
+        "seconds": 209.9666666666667
+      }
+    },
+    {
+      "name": "export_proof_matches_current_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export_proof_identifies_actual_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_source_and_asset_hashes_current",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_decoder_errors_reported",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one_video_one_audio_stream",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h264_1920x1080_yuv420p_30fps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_expected_video_frames_decode",
+      "passed": true,
+      "detail": {
+        "decoded_frames": "6299",
+        "expected": 6299
+      }
+    },
+    {
+      "name": "duration_matches_plan",
+      "passed": true,
+      "detail": {
+        "plan": 209.9666666666667,
+        "video": "209.966667",
+        "audio": "210.000000",
+        "container": "210.000000"
+      }
+    },
+    {
+      "name": "aac_audio_has_samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nine_embedded_chapters_match_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "faststart_moov_precedes_mdat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vtt_matches_burned_caption_plan",
+      "passed": true,
+      "detail": {
+        "cues": 45
+      }
+    },
+    {
+      "name": "captions_do_not_overlap_or_exceed_film",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "website_chapters_match_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "narration_metadata_and_caption_text_consistent",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "class_and_decimal_focus_matches_spoken_words",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "audible_nonclipping_audio",
+      "passed": true,
+      "detail": {
+        "integrated_lufs": -16.4,
+        "true_peak_dbtp": -1.37,
+        "acceptance_lufs": [
+          -24,
+          -10
+        ]
+      }
+    },
+    {
+      "name": "sixteen_seeks_decode_current_render",
+      "passed": true,
+      "detail": {
+        "samples": 16,
+        "maximum_mean_rgb_error": 1.5828637795781892,
+        "global_threshold": 6,
+        "title_and_caption_threshold": 3,
+        "explanation_threshold": 6,
+        "scope": "16 specified frames; not every frame, OCR, or a semantic evaluation"
+      }
+    },
+    {
+      "name": "source_hashes_stable_through_verification",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Technical inspection and actual MP4 decoding; not a claim of listening comprehension, general correctness, or universal playback support.",
+  "plan_source": "included_export_proof",
+  "plan_sha256": "76f613b8cf30638f97f26f190b361d3b222a64ac2ff7bab50ec4a909659fbcef",
+  "proof_sha256": "76f613b8cf30638f97f26f190b361d3b222a64ac2ff7bab50ec4a909659fbcef",
+  "video_sha256": "530f352a435eda2e056ff72b982da5534d046c457d4157942b3dad20537a3eaf",
+  "video_bytes": 11549436,
+  "tools": {
+    "ffmpeg": "ffmpeg version 8.0.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.0.1-full_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers"
+  },
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1088,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 3225088,
+        "duration": "209.966667",
+        "bit_rate": "268205",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "6299",
+        "nb_read_frames": "6299",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc62.11.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "96000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/96000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 20160000,
+        "duration": "210.000000",
+        "bit_rate": "163195",
+        "nb_frames": "19686",
+        "nb_read_frames": "19685",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      {
+        "index": 2,
+        "codec_name": "bin_data",
+        "codec_long_name": "binary data",
+        "codec_type": "data",
+        "codec_tag_string": "text",
+        "codec_tag": "0x74786574",
+        "id": "0x3",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 209967,
+        "duration": "209.967000",
+        "bit_rate": "16",
+        "nb_frames": "9",
+        "extradata_size": 63,
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "SubtitleHandler"
+        }
+      }
+    ],
+    "chapters": [
+      {
+        "id": 0,
+        "time_base": "1/1000",
+        "start": 0,
+        "start_time": "0.000000",
+        "end": 17067,
+        "end_time": "17.067000",
+        "tags": {
+          "title": "El costo decide la ruta."
+        }
+      },
+      {
+        "id": 1,
+        "time_base": "1/1000",
+        "start": 17067,
+        "start_time": "17.067000",
+        "end": 40500,
+        "end_time": "40.500000",
+        "tags": {
+          "title": "Cuatro clases. Una responsabilidad clara."
+        }
+      },
+      {
+        "id": 2,
+        "time_base": "1/1000",
+        "start": 40500,
+        "start_time": "40.500000",
+        "end": 67500,
+        "end_time": "67.500000",
+        "tags": {
+          "title": "La frontera avanza."
+        }
+      },
+      {
+        "id": 3,
+        "time_base": "1/1000",
+        "start": 67500,
+        "start_time": "67.500000",
+        "end": 91433,
+        "end_time": "91.433000",
+        "tags": {
+          "title": "Mejorar una distancia cambia la decisión."
+        }
+      },
+      {
+        "id": 4,
+        "time_base": "1/1000",
+        "start": 91433,
+        "start_time": "91.433000",
+        "end": 113333,
+        "end_time": "113.333000",
+        "tags": {
+          "title": "Los decimales conservan su valor."
+        }
+      },
+      {
+        "id": 5,
+        "time_base": "1/1000",
+        "start": 113333,
+        "start_time": "113.333000",
+        "end": 136333,
+        "end_time": "136.333000",
+        "tags": {
+          "title": "Los casos difíciles también tienen respuesta."
+        }
+      },
+      {
+        "id": 6,
+        "time_base": "1/1000",
+        "start": 136333,
+        "start_time": "136.333000",
+        "end": 162700,
+        "end_time": "162.700000",
+        "tags": {
+          "title": "Comprobar desde otro algoritmo."
+        }
+      },
+      {
+        "id": 7,
+        "time_base": "1/1000",
+        "start": 162700,
+        "start_time": "162.700000",
+        "end": 186967,
+        "end_time": "186.967000",
+        "tags": {
+          "title": "Medir también exige separar los costos."
+        }
+      },
+      {
+        "id": 8,
+        "time_base": "1/1000",
+        "start": 186967,
+        "start_time": "186.967000",
+        "end": 209967,
+        "end_time": "209.967000",
+        "tags": {
+          "title": "Edita. Calcula. Comprueba."
+        }
+      }
+    ],
+    "format": {
+      "filename": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\Entrega Vértice con espacios-v7g4fssl\\proyecto\\web\\media\\VerticeSDV_Demo.mp4",
+      "nb_streams": 3,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "210.000000",
+      "size": "11549436",
+      "bit_rate": "439978",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "VÉRTICE / SDV - Cada decisión a la vista",
+        "artist": "VÉRTICE",
+        "encoder": "Lavf62.3.100"
+      }
+    }
+  },
+  "mp4_top_level_boxes": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "bytes": 225566
+    },
+    {
+      "type": "free",
+      "offset": 225598,
+      "bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 225606,
+      "bytes": 11323830
+    }
+  ],
+  "audio_loudness_analysis": {
+    "input_i": "-16.40",
+    "input_tp": "-1.37",
+    "input_lra": "3.30",
+    "input_thresh": "-26.69",
+    "output_i": "-16.09",
+    "output_tp": "-1.50",
+    "output_lra": "3.00",
+    "output_thresh": "-26.38",
+    "normalization_type": "dynamic",
+    "target_offset": "0.09"
+  },
+  "decoded_samples": [
+    {
+      "id": "scene_01",
+      "requested_seconds": 9.898666666666665,
+      "frame_seconds": 9.9,
+      "seek_seconds": 9.89999,
+      "frame_number": 297,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_01.png",
+      "sha256": "544e980c3c22d3aac195b39d0c5a331e3e62d3454c63fd16db53317b592f6d21",
+      "mean_rgb_absolute_error": 1.2453288966049383,
+      "region_mean_rgb_errors": {
+        "title": 1.2340328984685196,
+        "captions": 1.805644746320881,
+        "explanation": 1.2520737866469573
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "El costo decide la ruta."
+    },
+    {
+      "id": "scene_02",
+      "requested_seconds": 30.658,
+      "frame_seconds": 30.666666666666668,
+      "seek_seconds": 30.66665666666667,
+      "frame_number": 920,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_02.png",
+      "sha256": "8ebe76b59129ca00c8757624cd155bd8b4cf43217d6357f33e8a78c314c72865",
+      "mean_rgb_absolute_error": 1.5444947595164609,
+      "region_mean_rgb_errors": {
+        "title": 1.4590298905103216,
+        "captions": 1.7890218174333643,
+        "explanation": 1.7667418083271744
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Cuatro clases. Una responsabilidad clara."
+    },
+    {
+      "id": "scene_03",
+      "requested_seconds": 56.16,
+      "frame_seconds": 56.166666666666664,
+      "seek_seconds": 56.16665666666666,
+      "frame_number": 1685,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_03.png",
+      "sha256": "637b57b02a4234be03fbfdead063f2ad0522bea3a42980f2e67f7581184f1e66",
+      "mean_rgb_absolute_error": 1.2953332368827162,
+      "region_mean_rgb_errors": {
+        "title": 1.1995307585211157,
+        "captions": 1.8748173304517854,
+        "explanation": 1.3308755235279623
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "La frontera avanza."
+    },
+    {
+      "id": "scene_04",
+      "requested_seconds": 81.38133333333333,
+      "frame_seconds": 81.4,
+      "seek_seconds": 81.39999,
+      "frame_number": 2442,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_04.png",
+      "sha256": "c6002cf2bd16e57351e61aad31ffe215ee6229f60973d85568eb345a2a03e86f",
+      "mean_rgb_absolute_error": 1.5179084683641975,
+      "region_mean_rgb_errors": {
+        "title": 1.4437425875315837,
+        "captions": 1.8503061644540495,
+        "explanation": 1.6968458980044343
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Mejorar una distancia cambia la decisión."
+    },
+    {
+      "id": "scene_05",
+      "requested_seconds": 104.13533333333334,
+      "frame_seconds": 104.16666666666667,
+      "seek_seconds": 104.16665666666667,
+      "frame_number": 3125,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_05.png",
+      "sha256": "4c1f81b31cd9f94101bfc6054dce8a89740f81da33fdd2f5439573253cacc4fe",
+      "mean_rgb_absolute_error": 1.506348861882716,
+      "region_mean_rgb_errors": {
+        "title": 1.3551642345176094,
+        "captions": 1.8706159308428527,
+        "explanation": 1.7064797363882729
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Los decimales conservan su valor."
+    },
+    {
+      "id": "scene_06",
+      "requested_seconds": 126.67333333333335,
+      "frame_seconds": 126.7,
+      "seek_seconds": 126.69999,
+      "frame_number": 3801,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_06.png",
+      "sha256": "d383e70241268c9a6d2bbaeeec8cb94a33833b8e3ee912b972ebf1498b468bd5",
+      "mean_rgb_absolute_error": 1.5828637795781892,
+      "region_mean_rgb_errors": {
+        "title": 1.4499578885852282,
+        "captions": 1.7745909231244212,
+        "explanation": 1.8300378787878788
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Los casos difíciles también tienen respuesta."
+    },
+    {
+      "id": "scene_07",
+      "requested_seconds": 151.626,
+      "frame_seconds": 151.63333333333333,
+      "seek_seconds": 151.63332333333332,
+      "frame_number": 4549,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_07.png",
+      "sha256": "09737989ee2508ecb45c3eb46dc817ba54919993c11cc31089c6de5d01279252",
+      "mean_rgb_absolute_error": 1.512612043467078,
+      "region_mean_rgb_errors": {
+        "title": 1.3692380412176215,
+        "captions": 1.843009673767624,
+        "explanation": 1.7058567381128356
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Comprobar desde otro algoritmo."
+    },
+    {
+      "id": "scene_08",
+      "requested_seconds": 176.7746666666667,
+      "frame_seconds": 176.8,
+      "seek_seconds": 176.79999,
+      "frame_number": 5304,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_08.png",
+      "sha256": "bc9ea369787d6fd6efb91dd23d35f518707cb5cdacc572e3807668da76d208ce",
+      "mean_rgb_absolute_error": 1.4265356545781893,
+      "region_mean_rgb_errors": {
+        "title": 1.4382852919438285,
+        "captions": 1.8321266851909026,
+        "explanation": 1.5321677137225918
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Medir también exige separar los costos."
+    },
+    {
+      "id": "scene_09",
+      "requested_seconds": 200.3066666666667,
+      "frame_seconds": 200.33333333333334,
+      "seek_seconds": 200.33332333333334,
+      "frame_number": 6010,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_09.png",
+      "sha256": "9db7cb59c75c30a646e7886bcec880f9ad08c5b855543e225aa4380fc833eea5",
+      "mean_rgb_absolute_error": 1.4125876093106997,
+      "region_mean_rgb_errors": {
+        "title": 1.2832173120885544,
+        "captions": 1.7281336832355665,
+        "explanation": 1.5654468465139197
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Edita. Calcula. Comprueba."
+    },
+    {
+      "id": "directed_reverse",
+      "requested_seconds": 125.23137483333335,
+      "frame_seconds": 125.23333333333333,
+      "seek_seconds": 125.23332333333333,
+      "frame_number": 3757,
+      "path": "evidence\\video_audit\\decoded_frames\\directed_reverse.png",
+      "sha256": "587512529f99f47f9ef37b89b39884f0c05d1d0ef652281bba5a9b32d79e9160",
+      "mean_rgb_absolute_error": 1.5801541602366254,
+      "region_mean_rgb_errors": {
+        "title": 1.4500644562470992,
+        "captions": 1.7748584954203972,
+        "explanation": 1.826639258438039
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Los casos difíciles también tienen respuesta."
+    },
+    {
+      "id": "oracle_no_path",
+      "requested_seconds": 154.79000000000002,
+      "frame_seconds": 154.8,
+      "seek_seconds": 154.79999,
+      "frame_number": 4644,
+      "path": "evidence\\video_audit\\decoded_frames\\oracle_no_path.png",
+      "sha256": "1c5a69c76156f626ddac7b46d32990dd5ece0bd5d9193f33b4a5538f619b03e4",
+      "mean_rgb_absolute_error": 1.539952739197531,
+      "region_mean_rgb_errors": {
+        "title": 1.3692380412176215,
+        "captions": 1.8410697746217968,
+        "explanation": 1.7552990268539048
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Comprobar desde otro algoritmo."
+    },
+    {
+      "id": "last_frame",
+      "requested_seconds": 209.93333333333337,
+      "frame_seconds": 209.93333333333334,
+      "seek_seconds": 209.93332333333333,
+      "frame_number": 6298,
+      "path": "evidence\\video_audit\\decoded_frames\\last_frame.png",
+      "sha256": "673b0b4ac1e6744edd4500bda819d98ffc9bca41aeb962014fb4daca0b9c7b55",
+      "mean_rgb_absolute_error": 1.4458450681584363,
+      "region_mean_rgb_errors": {
+        "title": 1.283592017738359,
+        "captions": 1.008130081300813,
+        "explanation": 1.704617516629712
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Edita. Calcula. Comprueba."
+    },
+    {
+      "id": "focus_node",
+      "requested_seconds": 23.366666666666667,
+      "frame_seconds": 23.366666666666667,
+      "seek_seconds": 23.366656666666668,
+      "frame_number": 701,
+      "path": "evidence\\video_audit\\decoded_frames\\focus_node.png",
+      "sha256": "e7c31c5d9e46d986aa011d5bcd0b72d8903812875d858eac681ae35e9182113f",
+      "mean_rgb_absolute_error": 1.581893325617284,
+      "region_mean_rgb_errors": {
+        "title": 1.658603619862837,
+        "captions": 1.8328676546259135,
+        "explanation": 1.7847139073663465
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Cuatro clases. Una responsabilidad clara."
+    },
+    {
+      "id": "focus_solver",
+      "requested_seconds": 32.56666666666666,
+      "frame_seconds": 32.56666666666667,
+      "seek_seconds": 32.56665666666667,
+      "frame_number": 977,
+      "path": "evidence\\video_audit\\decoded_frames\\focus_solver.png",
+      "sha256": "53aa2f7feb12426b5921d198065bdb26788f3543520b4a0a8d32906d77ec0712",
+      "mean_rgb_absolute_error": 1.541678883744856,
+      "region_mean_rgb_errors": {
+        "title": 1.4590298905103216,
+        "captions": 1.8417824431408871,
+        "explanation": 1.7526650652870164
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Cuatro clases. Una responsabilidad clara."
+    },
+    {
+      "id": "focus_decimal_second",
+      "requested_seconds": 93.08333333333334,
+      "frame_seconds": 93.1,
+      "seek_seconds": 93.09998999999999,
+      "frame_number": 2793,
+      "path": "evidence\\video_audit\\decoded_frames\\focus_decimal_second.png",
+      "sha256": "77c8cad46409f06b37b1ead617733f539fd9e75c9dfd950ff60a84364925f234",
+      "mean_rgb_absolute_error": 1.5314154128086421,
+      "region_mean_rgb_errors": {
+        "title": 1.5152065178157068,
+        "captions": 1.8917335597406606,
+        "explanation": 1.7227984109386547
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Los decimales conservan su valor."
+    },
+    {
+      "id": "focus_decimal_total",
+      "requested_seconds": 94.58333333333334,
+      "frame_seconds": 94.6,
+      "seek_seconds": 94.59998999999999,
+      "frame_number": 2838,
+      "path": "evidence\\video_audit\\decoded_frames\\focus_decimal_total.png",
+      "sha256": "bc0d888263877f73347d7f1717caeeff082c1e70f6e76b350bc0ab5dc83293f6",
+      "mean_rgb_absolute_error": 1.5298035622427983,
+      "region_mean_rgb_errors": {
+        "title": 1.5152305814812905,
+        "captions": 1.8909462797159617,
+        "explanation": 1.7185067134762255
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Los decimales conservan su valor."
+    }
+  ],
+  "contact_sheet": {
+    "path": "evidence\\video_audit\\contact-sheet.jpg",
+    "sha256": "fb2d6331ae7da36b9b730d69d5020c70c08caa9c588241fc3c61b890160ec47c",
+    "source": "Frames decoded from the final MP4; not renderer previews"
+  },
+  "passed_checks": 20,
+  "failed_checks": 0
+}

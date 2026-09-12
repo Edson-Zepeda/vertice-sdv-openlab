@@ -1,0 +1,1261 @@
+{
+  "generated_at": "2026-09-12T01:54:54.963691+00:00",
+  "status": "pass",
+  "environment": {
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "scope": "Real HTTP loopback requests to isolated synthetic web fixtures; no external services",
+  "test_methods": 26,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "test_server.LocalHttpTests.test_content_type_and_invalid_utf8_rejected",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_directory_listing_is_not_exposed",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_duplicate_content_type_is_not_ambiguous",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_duplicate_origin_is_not_silently_accepted",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_empty_file_and_empty_range",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_expected_mime_and_security_headers",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_ignores_range_per_http_semantics",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_health_reports_actual_core_hashes_and_no_cors",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_if_range_mismatch_sends_complete_representation",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_second_server_cannot_bind_the_same_listening_port",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_stalled_post_times_out_while_health_remains_available",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_truncated_post_is_a_controlled_client_error",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_trusted_hostnames_with_correct_port",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_unknown_endpoints_and_options_do_not_enable_remote_api",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_unknown_range_units_are_ignored",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_preserves_raw_numeric_precision",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_rejects_ambiguous_json_and_remote_origin",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "status": "pass"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "status": "pass"
+    }
+  ],
+  "source_hashes": {
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "tests/test_server.py": "857aaa262ecae2f4a9ddf7531a9cdec87987bf31485994f93eb69616cd7b2746",
+    "scripts/verify_http.py": "bedfe619267243301030a604d0d18c7f61bc0e036310eaf52a9aa6af02c89cf0",
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b"
+  },
+  "http_requests": [
+    {
+      "test": "test_server.LocalHttpTests.test_content_type_and_invalid_utf8_rejected",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 415,
+      "response_bytes": 41,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_content_type_and_invalid_utf8_rejected",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 39,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_content_type_and_invalid_utf8_rejected",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 402,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 33,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 33,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 33,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 33,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_cross_origin_is_rejected_and_same_origin_allowed",
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "response_bytes": 60,
+      "content_type": "text/html",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_directory_listing_is_not_exposed",
+      "method": "GET",
+      "path": "/directory/",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_duplicate_content_type_is_not_ambiguous",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 415,
+      "response_bytes": 41,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_duplicate_origin_is_not_silently_accepted",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 27,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_empty_file_and_empty_range",
+      "method": "GET",
+      "path": "/empty.bin",
+      "status": 200,
+      "response_bytes": 0,
+      "content_type": "application/octet-stream",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_empty_file_and_empty_range",
+      "method": "GET",
+      "path": "/empty.bin",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */0"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_expected_mime_and_security_headers",
+      "method": "GET",
+      "path": "/runtime.wasm",
+      "status": 200,
+      "response_bytes": 8,
+      "content_type": "application/wasm",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_expected_mime_and_security_headers",
+      "method": "GET",
+      "path": "/engine.mjs",
+      "status": 200,
+      "response_bytes": 24,
+      "content_type": "text/javascript",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_expected_mime_and_security_headers",
+      "method": "GET",
+      "path": "/captions.vtt",
+      "status": 200,
+      "response_bytes": 8,
+      "content_type": "text/vtt; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_expected_mime_and_security_headers",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 65536,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "response_bytes": 60,
+      "content_type": "text/html",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "HEAD",
+      "path": "/",
+      "status": 200,
+      "response_bytes": 0,
+      "content_type": "text/html",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 65536,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "HEAD",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 0,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "response_bytes": 388,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "HEAD",
+      "path": "/api/health",
+      "status": 200,
+      "response_bytes": 0,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "GET",
+      "path": "/does-not-exist",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_has_get_length_but_no_body",
+      "method": "HEAD",
+      "path": "/does-not-exist",
+      "status": 404,
+      "response_bytes": 0,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_head_ignores_range_per_http_semantics",
+      "method": "HEAD",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 0,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_health_reports_actual_core_hashes_and_no_cors",
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "response_bytes": 388,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 212,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 402,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 259,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1044,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 274,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1581,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 274,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1290,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 259,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1167,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 274,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1322,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 303,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1089,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 233,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 429,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 245,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 780,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 233,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 429,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 236,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 771,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 232,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 761,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 221,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 411,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 265,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1477,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 265,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1281,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 248,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1184,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 249,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 1069,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 233,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_http_matches_python_for_shared_cases_and_both_trace_modes",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 200,
+      "response_bytes": 429,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_if_range_mismatch_sends_complete_representation",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 65536,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_if_range_mismatch_sends_complete_representation",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 65536,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_invalid_or_unsatisfiable_ranges_have_no_body",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 416,
+      "response_bytes": 0,
+      "content_type": null,
+      "content_range": "bytes */65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 52,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 46,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 46,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 50,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 52,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 68,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 80,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 54,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 54,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 84,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_json_hostile_payloads_return_json_errors",
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "response_bytes": 388,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/../private.txt",
+      "status": 403,
+      "response_bytes": 30,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/%2e%2e/private.txt",
+      "status": 403,
+      "response_bytes": 30,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/%2E%2E%2Fprivate.txt",
+      "status": 403,
+      "response_bytes": 30,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/..%5cprivate.txt",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/%00",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/%ff",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/C:/private.txt",
+      "status": 403,
+      "response_bytes": 30,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "http://evil.example/private.txt",
+      "status": 403,
+      "response_bytes": 31,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_outside_paths_never_serve_private_file",
+      "method": "GET",
+      "path": "/api/../private.txt",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 411,
+      "response_bytes": 39,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 411,
+      "response_bytes": 39,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 411,
+      "response_bytes": 39,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 411,
+      "response_bytes": 39,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 55,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_post_body_framing_rejects_missing_duplicate_and_invalid_length",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 413,
+      "response_bytes": 33,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_second_server_cannot_bind_the_same_listening_port",
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "response_bytes": 388,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_stalled_post_times_out_while_health_remains_available",
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "response_bytes": 388,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_stalled_post_times_out_while_health_remains_available",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 408,
+      "stalled_body": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_truncated_post_is_a_controlled_client_error",
+      "method": "POST",
+      "path": "/api/solve",
+      "status": 400,
+      "response_bytes": 37,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_trusted_hostnames_with_correct_port",
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "response_bytes": 60,
+      "content_type": "text/html",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_trusted_hostnames_with_correct_port",
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "response_bytes": 60,
+      "content_type": "text/html",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_trusted_hostnames_with_correct_port",
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "response_bytes": 60,
+      "content_type": "text/html",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_unknown_endpoints_and_options_do_not_enable_remote_api",
+      "method": "GET",
+      "path": "/api/solve",
+      "status": 404,
+      "response_bytes": 34,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_unknown_endpoints_and_options_do_not_enable_remote_api",
+      "method": "POST",
+      "path": "/wrong",
+      "status": 404,
+      "response_bytes": 37,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_unknown_endpoints_and_options_do_not_enable_remote_api",
+      "method": "OPTIONS",
+      "path": "/api/solve",
+      "status": 405,
+      "response_bytes": 35,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_unknown_range_units_are_ignored",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 200,
+      "response_bytes": 65536,
+      "content_type": "video/mp4",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_preserves_raw_numeric_precision",
+      "method": "POST",
+      "path": "/api/validate",
+      "status": 200,
+      "response_bytes": 282,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_preserves_raw_numeric_precision",
+      "method": "POST",
+      "path": "/api/validate",
+      "status": 400,
+      "response_bytes": 68,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_preserves_raw_numeric_precision",
+      "method": "POST",
+      "path": "/api/validate",
+      "status": 400,
+      "response_bytes": 81,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_rejects_ambiguous_json_and_remote_origin",
+      "method": "POST",
+      "path": "/api/validate",
+      "status": 400,
+      "response_bytes": 71,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_validate_endpoint_rejects_ambiguous_json_and_remote_origin",
+      "method": "POST",
+      "path": "/api/validate",
+      "status": 403,
+      "response_bytes": 33,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 206,
+      "response_bytes": 1,
+      "content_type": "video/mp4",
+      "content_range": "bytes 0-0/65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 206,
+      "response_bytes": 256,
+      "content_type": "video/mp4",
+      "content_range": "bytes 256-511/65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 206,
+      "response_bytes": 6,
+      "content_type": "video/mp4",
+      "content_range": "bytes 65530-65535/65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 206,
+      "response_bytes": 7,
+      "content_type": "video/mp4",
+      "content_range": "bytes 65529-65535/65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 206,
+      "response_bytes": 6,
+      "content_type": "video/mp4",
+      "content_range": "bytes 65530-65535/65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_video_range_forward_suffix_open_and_clamped",
+      "method": "GET",
+      "path": "/movie.mp4",
+      "status": 206,
+      "response_bytes": 65536,
+      "content_type": "video/mp4",
+      "content_range": "bytes 0-65535/65536"
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 31,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 31,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 31,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 31,
+      "content_type": "application/json; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 31,
+      "raw_request": true
+    },
+    {
+      "test": "test_server.LocalHttpTests.test_wrong_missing_or_duplicate_host_rejected",
+      "method": "GET",
+      "path": "/",
+      "status": 403,
+      "response_bytes": 31,
+      "raw_request": true
+    }
+  ]
+}

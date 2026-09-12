@@ -1,0 +1,920 @@
+[
+  {
+    "id": "desvio",
+    "name": "Un mejor desvío",
+    "description": "Una conexión indirecta mejora el costo conocido.",
+    "source": "S",
+    "target": "T",
+    "graph": {
+      "schema_version": 1,
+      "directed": false,
+      "nodes": [
+        {
+          "id": "S",
+          "label": "S",
+          "x": 90,
+          "y": 250
+        },
+        {
+          "id": "A",
+          "label": "A",
+          "x": 270,
+          "y": 100
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "x": 260,
+          "y": 390
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "x": 470,
+          "y": 110
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "x": 480,
+          "y": 290
+        },
+        {
+          "id": "E",
+          "label": "E",
+          "x": 710,
+          "y": 130
+        },
+        {
+          "id": "F",
+          "label": "F",
+          "x": 700,
+          "y": 420
+        },
+        {
+          "id": "T",
+          "label": "T",
+          "x": 920,
+          "y": 260
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "S",
+          "target": "A",
+          "weight": "4"
+        },
+        {
+          "id": "e2",
+          "source": "S",
+          "target": "B",
+          "weight": "2"
+        },
+        {
+          "id": "e3",
+          "source": "A",
+          "target": "B",
+          "weight": "1"
+        },
+        {
+          "id": "e4",
+          "source": "A",
+          "target": "C",
+          "weight": "3"
+        },
+        {
+          "id": "e5",
+          "source": "A",
+          "target": "D",
+          "weight": "6"
+        },
+        {
+          "id": "e6",
+          "source": "B",
+          "target": "D",
+          "weight": "4"
+        },
+        {
+          "id": "e7",
+          "source": "C",
+          "target": "D",
+          "weight": "1"
+        },
+        {
+          "id": "e8",
+          "source": "C",
+          "target": "E",
+          "weight": "4"
+        },
+        {
+          "id": "e9",
+          "source": "D",
+          "target": "E",
+          "weight": "2"
+        },
+        {
+          "id": "e10",
+          "source": "D",
+          "target": "F",
+          "weight": "3"
+        },
+        {
+          "id": "e11",
+          "source": "E",
+          "target": "T",
+          "weight": "3"
+        },
+        {
+          "id": "e12",
+          "source": "F",
+          "target": "T",
+          "weight": "3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "empate",
+    "name": "Dos rutas, un costo",
+    "description": "Empate reproducible por ID de nodo.",
+    "source": "A",
+    "target": "D",
+    "graph": {
+      "schema_version": 1,
+      "directed": false,
+      "nodes": [
+        {
+          "id": "A",
+          "label": "A",
+          "x": 170,
+          "y": 260
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "x": 480,
+          "y": 110
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "x": 480,
+          "y": 410
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "x": 790,
+          "y": 260
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "A",
+          "target": "B",
+          "weight": "1"
+        },
+        {
+          "id": "e2",
+          "source": "A",
+          "target": "C",
+          "weight": "1"
+        },
+        {
+          "id": "e3",
+          "source": "B",
+          "target": "D",
+          "weight": "1"
+        },
+        {
+          "id": "e4",
+          "source": "C",
+          "target": "D",
+          "weight": "1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cero",
+    "name": "Cero también cuenta",
+    "description": "Costos cero, ciclo y decimales exactos.",
+    "source": "A",
+    "target": "D",
+    "graph": {
+      "schema_version": 1,
+      "directed": false,
+      "nodes": [
+        {
+          "id": "A",
+          "label": "A",
+          "x": 150,
+          "y": 240
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "x": 360,
+          "y": 100
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "x": 380,
+          "y": 370
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "x": 650,
+          "y": 250
+        },
+        {
+          "id": "E",
+          "label": "E",
+          "x": 840,
+          "y": 130
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "A",
+          "target": "B",
+          "weight": "0"
+        },
+        {
+          "id": "e2",
+          "source": "B",
+          "target": "C",
+          "weight": "0"
+        },
+        {
+          "id": "e3",
+          "source": "C",
+          "target": "A",
+          "weight": "0"
+        },
+        {
+          "id": "e4",
+          "source": "C",
+          "target": "D",
+          "weight": "0.25"
+        },
+        {
+          "id": "e5",
+          "source": "A",
+          "target": "D",
+          "weight": "1"
+        },
+        {
+          "id": "e6",
+          "source": "D",
+          "target": "E",
+          "weight": "0.1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "aislado",
+    "name": "Sin conexión",
+    "description": "El destino está en otro componente.",
+    "source": "A",
+    "target": "Z",
+    "graph": {
+      "schema_version": 1,
+      "directed": false,
+      "nodes": [
+        {
+          "id": "A",
+          "label": "A",
+          "x": 130,
+          "y": 240
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "x": 360,
+          "y": 130
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "x": 360,
+          "y": 390
+        },
+        {
+          "id": "Y",
+          "label": "Y",
+          "x": 730,
+          "y": 160
+        },
+        {
+          "id": "Z",
+          "label": "Z",
+          "x": 850,
+          "y": 350
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "A",
+          "target": "B",
+          "weight": "2"
+        },
+        {
+          "id": "e2",
+          "source": "A",
+          "target": "C",
+          "weight": "3"
+        },
+        {
+          "id": "e3",
+          "source": "B",
+          "target": "C",
+          "weight": "1"
+        },
+        {
+          "id": "e4",
+          "source": "Y",
+          "target": "Z",
+          "weight": "2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "direccion",
+    "name": "Sentido único",
+    "description": "Invertir inicio y destino cambia lo alcanzable.",
+    "source": "A",
+    "target": "D",
+    "graph": {
+      "schema_version": 1,
+      "directed": true,
+      "nodes": [
+        {
+          "id": "A",
+          "label": "A",
+          "x": 120,
+          "y": 230
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "x": 350,
+          "y": 100
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "x": 600,
+          "y": 100
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "x": 820,
+          "y": 280
+        },
+        {
+          "id": "E",
+          "label": "E",
+          "x": 410,
+          "y": 410
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "A",
+          "target": "B",
+          "weight": "1"
+        },
+        {
+          "id": "e2",
+          "source": "B",
+          "target": "C",
+          "weight": "1"
+        },
+        {
+          "id": "e3",
+          "source": "C",
+          "target": "D",
+          "weight": "1"
+        },
+        {
+          "id": "e4",
+          "source": "D",
+          "target": "B",
+          "weight": "0.5"
+        },
+        {
+          "id": "e5",
+          "source": "A",
+          "target": "E",
+          "weight": "8"
+        },
+        {
+          "id": "e6",
+          "source": "E",
+          "target": "D",
+          "weight": "1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "malla",
+    "name": "Red de 30 nodos",
+    "description": "Observa cómo crece la frontera.",
+    "source": "N00",
+    "target": "N45",
+    "graph": {
+      "schema_version": 1,
+      "directed": false,
+      "nodes": [
+        {
+          "id": "N00",
+          "label": "N00",
+          "x": 120,
+          "y": 70
+        },
+        {
+          "id": "N01",
+          "label": "N01",
+          "x": 265,
+          "y": 70
+        },
+        {
+          "id": "N02",
+          "label": "N02",
+          "x": 410,
+          "y": 70
+        },
+        {
+          "id": "N03",
+          "label": "N03",
+          "x": 555,
+          "y": 70
+        },
+        {
+          "id": "N04",
+          "label": "N04",
+          "x": 700,
+          "y": 70
+        },
+        {
+          "id": "N05",
+          "label": "N05",
+          "x": 845,
+          "y": 70
+        },
+        {
+          "id": "N10",
+          "label": "N10",
+          "x": 120,
+          "y": 165
+        },
+        {
+          "id": "N11",
+          "label": "N11",
+          "x": 265,
+          "y": 165
+        },
+        {
+          "id": "N12",
+          "label": "N12",
+          "x": 410,
+          "y": 165
+        },
+        {
+          "id": "N13",
+          "label": "N13",
+          "x": 555,
+          "y": 165
+        },
+        {
+          "id": "N14",
+          "label": "N14",
+          "x": 700,
+          "y": 165
+        },
+        {
+          "id": "N15",
+          "label": "N15",
+          "x": 845,
+          "y": 165
+        },
+        {
+          "id": "N20",
+          "label": "N20",
+          "x": 120,
+          "y": 260
+        },
+        {
+          "id": "N21",
+          "label": "N21",
+          "x": 265,
+          "y": 260
+        },
+        {
+          "id": "N22",
+          "label": "N22",
+          "x": 410,
+          "y": 260
+        },
+        {
+          "id": "N23",
+          "label": "N23",
+          "x": 555,
+          "y": 260
+        },
+        {
+          "id": "N24",
+          "label": "N24",
+          "x": 700,
+          "y": 260
+        },
+        {
+          "id": "N25",
+          "label": "N25",
+          "x": 845,
+          "y": 260
+        },
+        {
+          "id": "N30",
+          "label": "N30",
+          "x": 120,
+          "y": 355
+        },
+        {
+          "id": "N31",
+          "label": "N31",
+          "x": 265,
+          "y": 355
+        },
+        {
+          "id": "N32",
+          "label": "N32",
+          "x": 410,
+          "y": 355
+        },
+        {
+          "id": "N33",
+          "label": "N33",
+          "x": 555,
+          "y": 355
+        },
+        {
+          "id": "N34",
+          "label": "N34",
+          "x": 700,
+          "y": 355
+        },
+        {
+          "id": "N35",
+          "label": "N35",
+          "x": 845,
+          "y": 355
+        },
+        {
+          "id": "N40",
+          "label": "N40",
+          "x": 120,
+          "y": 450
+        },
+        {
+          "id": "N41",
+          "label": "N41",
+          "x": 265,
+          "y": 450
+        },
+        {
+          "id": "N42",
+          "label": "N42",
+          "x": 410,
+          "y": 450
+        },
+        {
+          "id": "N43",
+          "label": "N43",
+          "x": 555,
+          "y": 450
+        },
+        {
+          "id": "N44",
+          "label": "N44",
+          "x": 700,
+          "y": 450
+        },
+        {
+          "id": "N45",
+          "label": "N45",
+          "x": 845,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "N00",
+          "target": "N01",
+          "weight": "1"
+        },
+        {
+          "id": "e2",
+          "source": "N00",
+          "target": "N10",
+          "weight": "1"
+        },
+        {
+          "id": "e3",
+          "source": "N01",
+          "target": "N02",
+          "weight": "2"
+        },
+        {
+          "id": "e4",
+          "source": "N01",
+          "target": "N11",
+          "weight": "2"
+        },
+        {
+          "id": "e5",
+          "source": "N02",
+          "target": "N03",
+          "weight": "3"
+        },
+        {
+          "id": "e6",
+          "source": "N02",
+          "target": "N12",
+          "weight": "3"
+        },
+        {
+          "id": "e7",
+          "source": "N03",
+          "target": "N04",
+          "weight": "1"
+        },
+        {
+          "id": "e8",
+          "source": "N03",
+          "target": "N13",
+          "weight": "1"
+        },
+        {
+          "id": "e9",
+          "source": "N04",
+          "target": "N05",
+          "weight": "2"
+        },
+        {
+          "id": "e10",
+          "source": "N04",
+          "target": "N14",
+          "weight": "2"
+        },
+        {
+          "id": "e11",
+          "source": "N05",
+          "target": "N15",
+          "weight": "3"
+        },
+        {
+          "id": "e12",
+          "source": "N10",
+          "target": "N11",
+          "weight": "2"
+        },
+        {
+          "id": "e13",
+          "source": "N10",
+          "target": "N20",
+          "weight": "3"
+        },
+        {
+          "id": "e14",
+          "source": "N11",
+          "target": "N12",
+          "weight": "3"
+        },
+        {
+          "id": "e15",
+          "source": "N11",
+          "target": "N21",
+          "weight": "1"
+        },
+        {
+          "id": "e16",
+          "source": "N12",
+          "target": "N13",
+          "weight": "1"
+        },
+        {
+          "id": "e17",
+          "source": "N12",
+          "target": "N22",
+          "weight": "2"
+        },
+        {
+          "id": "e18",
+          "source": "N13",
+          "target": "N14",
+          "weight": "2"
+        },
+        {
+          "id": "e19",
+          "source": "N13",
+          "target": "N23",
+          "weight": "3"
+        },
+        {
+          "id": "e20",
+          "source": "N14",
+          "target": "N15",
+          "weight": "3"
+        },
+        {
+          "id": "e21",
+          "source": "N14",
+          "target": "N24",
+          "weight": "1"
+        },
+        {
+          "id": "e22",
+          "source": "N15",
+          "target": "N25",
+          "weight": "2"
+        },
+        {
+          "id": "e23",
+          "source": "N20",
+          "target": "N21",
+          "weight": "3"
+        },
+        {
+          "id": "e24",
+          "source": "N20",
+          "target": "N30",
+          "weight": "2"
+        },
+        {
+          "id": "e25",
+          "source": "N21",
+          "target": "N22",
+          "weight": "1"
+        },
+        {
+          "id": "e26",
+          "source": "N21",
+          "target": "N31",
+          "weight": "3"
+        },
+        {
+          "id": "e27",
+          "source": "N22",
+          "target": "N23",
+          "weight": "2"
+        },
+        {
+          "id": "e28",
+          "source": "N22",
+          "target": "N32",
+          "weight": "1"
+        },
+        {
+          "id": "e29",
+          "source": "N23",
+          "target": "N24",
+          "weight": "3"
+        },
+        {
+          "id": "e30",
+          "source": "N23",
+          "target": "N33",
+          "weight": "2"
+        },
+        {
+          "id": "e31",
+          "source": "N24",
+          "target": "N25",
+          "weight": "1"
+        },
+        {
+          "id": "e32",
+          "source": "N24",
+          "target": "N34",
+          "weight": "3"
+        },
+        {
+          "id": "e33",
+          "source": "N25",
+          "target": "N35",
+          "weight": "1"
+        },
+        {
+          "id": "e34",
+          "source": "N30",
+          "target": "N31",
+          "weight": "1"
+        },
+        {
+          "id": "e35",
+          "source": "N30",
+          "target": "N40",
+          "weight": "1"
+        },
+        {
+          "id": "e36",
+          "source": "N31",
+          "target": "N32",
+          "weight": "2"
+        },
+        {
+          "id": "e37",
+          "source": "N31",
+          "target": "N41",
+          "weight": "2"
+        },
+        {
+          "id": "e38",
+          "source": "N32",
+          "target": "N33",
+          "weight": "3"
+        },
+        {
+          "id": "e39",
+          "source": "N32",
+          "target": "N42",
+          "weight": "3"
+        },
+        {
+          "id": "e40",
+          "source": "N33",
+          "target": "N34",
+          "weight": "1"
+        },
+        {
+          "id": "e41",
+          "source": "N33",
+          "target": "N43",
+          "weight": "1"
+        },
+        {
+          "id": "e42",
+          "source": "N34",
+          "target": "N35",
+          "weight": "2"
+        },
+        {
+          "id": "e43",
+          "source": "N34",
+          "target": "N44",
+          "weight": "2"
+        },
+        {
+          "id": "e44",
+          "source": "N35",
+          "target": "N45",
+          "weight": "3"
+        },
+        {
+          "id": "e45",
+          "source": "N40",
+          "target": "N41",
+          "weight": "2"
+        },
+        {
+          "id": "e46",
+          "source": "N41",
+          "target": "N42",
+          "weight": "3"
+        },
+        {
+          "id": "e47",
+          "source": "N42",
+          "target": "N43",
+          "weight": "1"
+        },
+        {
+          "id": "e48",
+          "source": "N43",
+          "target": "N44",
+          "weight": "2"
+        },
+        {
+          "id": "e49",
+          "source": "N44",
+          "target": "N45",
+          "weight": "3"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,20 @@
+--- a/server.py
++++ b/server.py
+@@ -18,7 +18,7 @@
+ import webbrowser
+ 
+ from vertice import __version__, Graph, ValidationError
+-from vertice.codec import MAX_JSON_BYTES, solve_json, load_json
++from vertice.codec import MAX_JSON_BYTES, solve_payload, load_json
+ 
+ ROOT = Path(__file__).resolve().parent
+ WEB = ROOT / "web"
+@@ -232,7 +232,7 @@
+                 return
+             text = data.decode("utf-8")
+             if path == "/api/solve":
+-                result = json.loads(solve_json(text))
++                result = solve_payload(load_json(text))
+             else:
+                 result = Graph.from_dict(load_json(text)).to_dict()
+             self._json(200, result)

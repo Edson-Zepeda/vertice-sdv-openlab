@@ -1,0 +1,2613 @@
+{
+  "regions": [
+    {
+      "page": 1,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 1,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 1,
+      "text": "INFORME DE IMPLEMENTACIÓN",
+      "x": 305,
+      "y": 29,
+      "width": 130.85100000000003,
+      "height": 11.25
+    },
+    {
+      "page": 1,
+      "text": "Una ruta. Cada decisión.",
+      "x": 42,
+      "y": 80,
+      "width": 342.49,
+      "height": 36.25
+    },
+    {
+      "page": 1,
+      "text": "Dijkstra orientado a objetos, con costos exactos y evidencia reproducible.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 1,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 1,
+      "text": "01 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 26.388,
+      "height": 11.25
+    },
+    {
+      "page": 1,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 180,
+      "width": 245.76,
+      "height": 75.0
+    },
+    {
+      "page": 1,
+      "text": "Laboratorio de rutas mínimas",
+      "x": 45,
+      "y": 254,
+      "width": 240.77100000000002,
+      "height": 21.25
+    },
+    {
+      "page": 1,
+      "text": "4",
+      "x": 110.66843855421686,
+      "y": 373.046875,
+      "width": 6.140000000000001,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "2",
+      "x": 107.85352530120483,
+      "y": 465.9375,
+      "width": 5.82,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "1",
+      "x": 158.5219638554217,
+      "y": 417.890625,
+      "width": 3.29,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "3",
+      "x": 217.6351421686747,
+      "y": 328.203125,
+      "width": 5.95,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "6",
+      "x": 220.45005542168676,
+      "y": 385.859375,
+      "width": 6.2700000000000005,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "4",
+      "x": 217.63514216867472,
+      "y": 478.75,
+      "width": 6.140000000000001,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "1",
+      "x": 276.74832048192775,
+      "y": 389.0625,
+      "width": 3.29,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "4",
+      "x": 341.4913253012048,
+      "y": 337.8125,
+      "width": 6.140000000000001,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "2",
+      "x": 344.30623855421686,
+      "y": 395.46875,
+      "width": 5.82,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "3",
+      "x": 341.4913253012048,
+      "y": 488.359375,
+      "width": 5.95,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "3",
+      "x": 468.16242168674694,
+      "y": 385.859375,
+      "width": 5.95,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "3",
+      "x": 465.3475084337349,
+      "y": 478.75,
+      "width": 5.95,
+      "height": 12.5
+    },
+    {
+      "page": 1,
+      "text": "S",
+      "x": 60.7825,
+      "y": 421.09375,
+      "width": 6.435,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "A",
+      "x": 161.65737710843374,
+      "y": 325.0,
+      "width": 7.359,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "B",
+      "x": 156.36305060240966,
+      "y": 510.78125,
+      "width": 6.688,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "C",
+      "x": 273.99540722891567,
+      "y": 331.40625,
+      "width": 7.8759999999999994,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "D",
+      "x": 279.8232337349398,
+      "y": 446.71875,
+      "width": 7.4799999999999995,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "E",
+      "x": 409.91974337349393,
+      "y": 344.21875,
+      "width": 6.2589999999999995,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "F",
+      "x": 404.45491686746993,
+      "y": 530.0,
+      "width": 5.928999999999999,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "T",
+      "x": 528.1625999999999,
+      "y": 427.5,
+      "width": 6.226,
+      "height": 13.75
+    },
+    {
+      "page": 1,
+      "text": "RUTA CALCULADA",
+      "x": 60,
+      "y": 597,
+      "width": 77.355,
+      "height": 11.25
+    },
+    {
+      "page": 1,
+      "text": "S > B > D > E > T",
+      "x": 60,
+      "y": 620,
+      "width": 146.61,
+      "height": 25.0
+    },
+    {
+      "page": 1,
+      "text": "COSTO 11",
+      "x": 418,
+      "y": 623,
+      "width": 73.24,
+      "height": 20.0
+    },
+    {
+      "page": 1,
+      "text": "Grafo didáctico incluido en <b>examples/desvio.json</b>. El resultado se genera con el mismo núcleo Python de la entrega; los costos no representan distancias medidas de una calle.",
+      "x": 42,
+      "y": 688,
+      "width": 511.2756,
+      "height": 30.029999999999998
+    },
+    {
+      "page": 1,
+      "text": "VANTTEC / OPENLAB 2026",
+      "x": 42,
+      "y": 750,
+      "width": 112.77900000000001,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 2,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "01 / ALCANCE",
+      "x": 305,
+      "y": 29,
+      "width": 58.446000000000005,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "Del lineamiento a la evidencia",
+      "x": 42,
+      "y": 80,
+      "width": 416.15000000000003,
+      "height": 36.25
+    },
+    {
+      "page": 2,
+      "text": "Referencia: Bootcamp SDV.pdf, página 3. Perfil Software: Dijkstra y POO.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 2,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 2,
+      "text": "02 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 28.665000000000003,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "REQUISITO",
+      "x": 52,
+      "y": 192,
+      "width": 44.84700000000001,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "IMPLEMENTACIÓN",
+      "x": 183,
+      "y": 192,
+      "width": 76.653,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "DÓNDE COMPROBAR",
+      "x": 421,
+      "y": 192,
+      "width": 88.16400000000002,
+      "height": 11.25
+    },
+    {
+      "page": 2,
+      "text": "Dijkstra desde cero",
+      "x": 52,
+      "y": 223,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "DijkstraSolver: relajaciones, cola, predecesores y ruta propios.",
+      "x": 183,
+      "y": 223,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "vertice/dijkstra.py",
+      "x": 421,
+      "y": 223,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Objetos del sistema",
+      "x": 52,
+      "y": 285,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Node, Edge y Graph; edición validada y adyacencia consistente.",
+      "x": 183,
+      "y": 285,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "graph.py; API.md",
+      "x": 421,
+      "y": 285,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Crear y modificar",
+      "x": 52,
+      "y": 347,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Terminal editable y editor web; inicio y destino explícitos.",
+      "x": 183,
+      "y": 347,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "cli.py; interfaz",
+      "x": 421,
+      "y": 347,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Clases documentadas",
+      "x": 52,
+      "y": 409,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Atributos, métodos, responsabilidades y representación visual.",
+      "x": 183,
+      "y": 409,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "API.md; p. 3",
+      "x": 421,
+      "y": 409,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Pruebas distintas",
+      "x": 52,
+      "y": 471,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Casos nombrados, grafos con semilla y oráculo independiente.",
+      "x": 183,
+      "y": 471,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "p. 6; evidencia JSON",
+      "x": 421,
+      "y": 471,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Ausencia de ruta",
+      "x": 52,
+      "y": 533,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "no_path, rutas vacías y costo null; sin inventar un costo cero.",
+      "x": 183,
+      "y": 533,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "tests; ejemplos",
+      "x": 421,
+      "y": 533,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Decisiones y operación",
+      "x": 52,
+      "y": 595,
+      "width": 111,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "Trazas reales, argumento de corrección y complejidad explícita.",
+      "x": 183,
+      "y": 595,
+      "width": 218,
+      "height": 26.400000000000002
+    },
+    {
+      "page": 2,
+      "text": "pp. 4-5; ALGORITMO.md",
+      "x": 421,
+      "y": 595,
+      "width": 122,
+      "height": 13.200000000000001
+    },
+    {
+      "page": 2,
+      "text": "VALOR ADICIONAL DENTRO DEL ALCANCE",
+      "x": 42,
+      "y": 674,
+      "width": 191.2355,
+      "height": 12.125
+    },
+    {
+      "page": 2,
+      "text": "La edición reversible, la visualización de eventos y la auditoría ayudan a explicar y verificar el reto. La GUI es opcional en el documento; aquí complementa la implementación Python. No se presenta como ejecución en un vehículo.",
+      "x": 42,
+      "y": 710,
+      "width": 511.2756,
+      "height": 46.332
+    },
+    {
+      "page": 3,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 3,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 3,
+      "text": "02 / ARQUITECTURA",
+      "x": 305,
+      "y": 29,
+      "width": 85.07700000000001,
+      "height": 11.25
+    },
+    {
+      "page": 3,
+      "text": "Objetos y responsabilidades",
+      "x": 42,
+      "y": 80,
+      "width": 398.41650000000004,
+      "height": 36.25
+    },
+    {
+      "page": 3,
+      "text": "El grafo conserva las reglas; el solucionador calcula; la interfaz representa el resultado.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 3,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 3,
+      "text": "03 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 28.782000000000004,
+      "height": 11.25
+    },
+    {
+      "page": 3,
+      "text": "Node",
+      "x": 56,
+      "y": 191,
+      "width": 45.99,
+      "height": 22.5
+    },
+    {
+      "page": 3,
+      "text": "id · label · x · y",
+      "x": 56,
+      "y": 237,
+      "width": 60.277499999999996,
+      "height": 11.875
+    },
+    {
+      "page": 3,
+      "text": "Identidad y posición visual.<br/>Objeto inmutable.",
+      "x": 56,
+      "y": 261,
+      "width": 214,
+      "height": 28
+    },
+    {
+      "page": 3,
+      "text": "Edge",
+      "x": 326,
+      "y": 191,
+      "width": 43.56,
+      "height": 22.5
+    },
+    {
+      "page": 3,
+      "text": "id · source · target · weight",
+      "x": 326,
+      "y": 237,
+      "width": 116.926,
+      "height": 11.875
+    },
+    {
+      "page": 3,
+      "text": "Extremos y costo Decimal.<br/>Objeto inmutable.",
+      "x": 326,
+      "y": 261,
+      "width": 214,
+      "height": 28
+    },
+    {
+      "page": 3,
+      "text": "Graph",
+      "x": 56,
+      "y": 356,
+      "width": 53.07300000000001,
+      "height": 22.5
+    },
+    {
+      "page": 3,
+      "text": "nodes · edges · adjacency",
+      "x": 56,
+      "y": 402,
+      "width": 114.38,
+      "height": 11.875
+    },
+    {
+      "page": 3,
+      "text": "Crear, editar, borrar y consultar.<br/>Valida antes de modificar.",
+      "x": 56,
+      "y": 426,
+      "width": 214,
+      "height": 28
+    },
+    {
+      "page": 3,
+      "text": "DijkstraSolver",
+      "x": 326,
+      "y": 356,
+      "width": 123.60600000000001,
+      "height": 22.5
+    },
+    {
+      "page": 3,
+      "text": "graph · solve(inicio, destino)",
+      "x": 326,
+      "y": 402,
+      "width": 124.4785,
+      "height": 11.875
+    },
+    {
+      "page": 3,
+      "text": "Relajar, asentar y reconstruir.<br/>Estado propio en cada búsqueda.",
+      "x": 326,
+      "y": 426,
+      "width": 214,
+      "height": 28
+    },
+    {
+      "page": 3,
+      "text": "administra",
+      "x": 61,
+      "y": 317,
+      "width": 44.793000000000006,
+      "height": 11.25
+    },
+    {
+      "page": 3,
+      "text": "ADYACENCIA DEL EJEMPLO",
+      "x": 42,
+      "y": 517,
+      "width": 124.936,
+      "height": 12.125
+    },
+    {
+      "page": 3,
+      "text": "S",
+      "x": 55,
+      "y": 559,
+      "width": 6.435,
+      "height": 13.75
+    },
+    {
+      "page": 3,
+      "text": "A : e1   |   B : e2",
+      "x": 95,
+      "y": 560,
+      "width": 117.42000000000002,
+      "height": 12.875
+    },
+    {
+      "page": 3,
+      "text": "B",
+      "x": 55,
+      "y": 593,
+      "width": 6.688,
+      "height": 13.75
+    },
+    {
+      "page": 3,
+      "text": "A : e3   |   D : e6   |   S : e2",
+      "x": 95,
+      "y": 594,
+      "width": 197.76000000000002,
+      "height": 12.875
+    },
+    {
+      "page": 3,
+      "text": "T",
+      "x": 55,
+      "y": 627,
+      "width": 6.226,
+      "height": 13.75
+    },
+    {
+      "page": 3,
+      "text": "E : e11  |   F : e12",
+      "x": 95,
+      "y": 628,
+      "width": 123.60000000000001,
+      "height": 12.875
+    },
+    {
+      "page": 3,
+      "text": "Estructura: <b>nodo → vecino → ID de conexión</b>. En no dirigido se conservan ambas orientaciones; un bucle propio aparece una vez. Borrar un nodo retira sus conexiones. Una edición inválida conserva el grafo anterior.",
+      "x": 42,
+      "y": 680,
+      "width": 511.2756,
+      "height": 45.90299999999999
+    },
+    {
+      "page": 4,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 4,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "03 / EJECUCIÓN",
+      "x": 305,
+      "y": 29,
+      "width": 68.652,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "La traza explica el resultado",
+      "x": 42,
+      "y": 80,
+      "width": 391.1085,
+      "height": 36.25
+    },
+    {
+      "page": 4,
+      "text": "Ejemplo “Un mejor desvío”: la conexión directa no siempre produce el menor costo.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 4,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 4,
+      "text": "04 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 28.953000000000003,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "8",
+      "x": 58,
+      "y": 187,
+      "width": 17.150000000000002,
+      "height": 35.0
+    },
+    {
+      "page": 4,
+      "text": "nodos asentados",
+      "x": 58,
+      "y": 228,
+      "width": 129,
+      "height": 14.585999999999999
+    },
+    {
+      "page": 4,
+      "text": "9",
+      "x": 235,
+      "y": 187,
+      "width": 17.402,
+      "height": 35.0
+    },
+    {
+      "page": 4,
+      "text": "mejoras aplicadas",
+      "x": 235,
+      "y": 228,
+      "width": 129,
+      "height": 14.585999999999999
+    },
+    {
+      "page": 4,
+      "text": "2",
+      "x": 412,
+      "y": 187,
+      "width": 16.674,
+      "height": 35.0
+    },
+    {
+      "page": 4,
+      "text": "entradas antiguas descartadas",
+      "x": 412,
+      "y": 228,
+      "width": 129,
+      "height": 29.171999999999997
+    },
+    {
+      "page": 4,
+      "text": "PASO",
+      "x": 52,
+      "y": 302,
+      "width": 23.427000000000003,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "OPERACIÓN",
+      "x": 105,
+      "y": 302,
+      "width": 50.409000000000006,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "NODO / CONEXIÓN",
+      "x": 210,
+      "y": 302,
+      "width": 79.938,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "COSTO",
+      "x": 373,
+      "y": 302,
+      "width": 30.555000000000003,
+      "height": 11.25
+    },
+    {
+      "page": 4,
+      "text": "0",
+      "x": 52,
+      "y": 333,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Iniciar",
+      "x": 105,
+      "y": 333,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "S",
+      "x": 210,
+      "y": 333,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "0",
+      "x": 373,
+      "y": 333,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "1",
+      "x": 52,
+      "y": 368,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Asentar",
+      "x": 105,
+      "y": 368,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "S",
+      "x": 210,
+      "y": 368,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "0",
+      "x": 373,
+      "y": 368,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "3",
+      "x": 52,
+      "y": 403,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Mejorar",
+      "x": 105,
+      "y": 403,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "S > A",
+      "x": 210,
+      "y": 403,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "sin dato > 4",
+      "x": 373,
+      "y": 403,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "5",
+      "x": 52,
+      "y": 438,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Mejorar",
+      "x": 105,
+      "y": 438,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "S > B",
+      "x": 210,
+      "y": 438,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "sin dato > 2",
+      "x": 373,
+      "y": 438,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "6",
+      "x": 52,
+      "y": 473,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Asentar",
+      "x": 105,
+      "y": 473,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "B",
+      "x": 210,
+      "y": 473,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "2",
+      "x": 373,
+      "y": 473,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "8",
+      "x": 52,
+      "y": 508,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Mejorar",
+      "x": 105,
+      "y": 508,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "B > A",
+      "x": 210,
+      "y": 508,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "4 > 3",
+      "x": 373,
+      "y": 508,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "18",
+      "x": 52,
+      "y": 543,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Descartar",
+      "x": 105,
+      "y": 543,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "A",
+      "x": 210,
+      "y": 543,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "4 ya reemplazado por 3",
+      "x": 373,
+      "y": 543,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "29",
+      "x": 52,
+      "y": 578,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Mejorar",
+      "x": 105,
+      "y": 578,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "D > E",
+      "x": 210,
+      "y": 578,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "10 > 8",
+      "x": 373,
+      "y": 578,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "42",
+      "x": 52,
+      "y": 613,
+      "width": 33,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Terminar",
+      "x": 105,
+      "y": 613,
+      "width": 85,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "T",
+      "x": 210,
+      "y": 613,
+      "width": 143,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "11",
+      "x": 373,
+      "y": 613,
+      "width": 170,
+      "height": 13.860000000000001
+    },
+    {
+      "page": 4,
+      "text": "Selección de 9 eventos de una traza real de <b>43</b>. Los números de paso conservan su posición original. “Sin dato” significa que el nodo todavía no tenía una ruta descubierta.",
+      "x": 42,
+      "y": 660,
+      "width": 511.2756,
+      "height": 30.029999999999998
+    },
+    {
+      "page": 4,
+      "text": "<b>La mejora clave:</b> S descubre A con costo 4; al procesar B aparece una ruta a A de costo 3. La entrada antigua de costo 4 se descarta después, sin volver a expandir A.",
+      "x": 42,
+      "y": 715,
+      "width": 511.2756,
+      "height": 30.029999999999998
+    },
+    {
+      "page": 5,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 5,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 5,
+      "text": "04 / CORRECCIÓN",
+      "x": 305,
+      "y": 29,
+      "width": 77.319,
+      "height": 11.25
+    },
+    {
+      "page": 5,
+      "text": "Por qué el mínimo es correcto",
+      "x": 42,
+      "y": 80,
+      "width": 416.10650000000004,
+      "height": 36.25
+    },
+    {
+      "page": 5,
+      "text": "Premisas: conexiones válidas, pesos no negativos y grafo estable durante cada búsqueda.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 5,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 5,
+      "text": "05 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 28.917000000000005,
+      "height": 11.25
+    },
+    {
+      "page": 5,
+      "text": "01",
+      "x": 51,
+      "y": 189,
+      "width": 11.043999999999999,
+      "height": 13.75
+    },
+    {
+      "page": 5,
+      "text": "Cada costo representa una ruta",
+      "x": 89,
+      "y": 179,
+      "width": 230.25,
+      "height": 18.75
+    },
+    {
+      "page": 5,
+      "text": "El origen empieza en cero. Relajar añade una conexión real a una ruta conocida; nunca inventa una distancia menor que el óptimo.",
+      "x": 89,
+      "y": 205,
+      "width": 464.2756,
+      "height": 30.601999999999997
+    },
+    {
+      "page": 5,
+      "text": "02",
+      "x": 51,
+      "y": 273.602,
+      "width": 13.827,
+      "height": 13.75
+    },
+    {
+      "page": 5,
+      "text": "El menor vigente queda resuelto",
+      "x": 89,
+      "y": 263.602,
+      "width": 234.89999999999998,
+      "height": 18.75
+    },
+    {
+      "page": 5,
+      "text": "Una ruta más barata cruzaría antes por un nodo pendiente de costo menor. Ese nodo habría salido primero de la cola. La no negatividad hace válida esta contradicción.",
+      "x": 89,
+      "y": 289.602,
+      "width": 464.2756,
+      "height": 30.601999999999997
+    },
+    {
+      "page": 5,
+      "text": "03",
+      "x": 51,
+      "y": 358.20399999999995,
+      "width": 13.969999999999999,
+      "height": 13.75
+    },
+    {
+      "page": 5,
+      "text": "Los predecesores reconstruyen",
+      "x": 89,
+      "y": 348.20399999999995,
+      "width": 231.2175,
+      "height": 18.75
+    },
+    {
+      "page": 5,
+      "text": "Un predecesor está asentado antes que su sucesor. La cadena retrocede en ese orden, no forma ciclos y termina en el inicio.",
+      "x": 89,
+      "y": 374.20399999999995,
+      "width": 464.2756,
+      "height": 30.601999999999997
+    },
+    {
+      "page": 5,
+      "text": "21 cifras necesarias · 40 cifras disponibles",
+      "x": 59,
+      "y": 491,
+      "width": 363.708,
+      "height": 22.5
+    },
+    {
+      "page": 5,
+      "text": "Con 500 nodos, peso máximo 10<super>12</super> y seis decimales, una suma candidata usa como máximo 15 cifras enteras + 6 fraccionarias. El contexto Decimal explícito representa esas sumas sin redondear.",
+      "x": 59,
+      "y": 524,
+      "width": 477.2756,
+      "height": 45.474
+    },
+    {
+      "page": 5,
+      "text": "PARAR TEMPRANO EXIGE UNA DISTINCIÓN",
+      "x": 42,
+      "y": 613,
+      "width": 190.66320000000002,
+      "height": 12.125
+    },
+    {
+      "page": 5,
+      "text": "Se termina al <b>asentar</b> el destino. Solo los nodos de <b>settled</b> tienen distancia definitiva. Si A→B=1, A→C=9 y B→C=1, buscar A→B deja a C con costo tentativo 9; su óptimo global sería 2.",
+      "x": 42,
+      "y": 649,
+      "width": 511.2756,
+      "height": 31.459999999999997
+    },
+    {
+      "page": 5,
+      "text": "Si se agota la cola sin asentar el destino, no hay ruta. Inicio igual a destino devuelve costo cero. El argumento completo, las cotas y los casos límite están en ALGORITMO.md.",
+      "x": 42,
+      "y": 722,
+      "width": 511.2756,
+      "height": 29.458000000000002
+    },
+    {
+      "page": 6,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 6,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 6,
+      "text": "05 / VERIFICACIÓN",
+      "x": 305,
+      "y": 29,
+      "width": 79.80300000000001,
+      "height": 11.25
+    },
+    {
+      "page": 6,
+      "text": "Contraste independiente",
+      "x": 42,
+      "y": 80,
+      "width": 356.555,
+      "height": 36.25
+    },
+    {
+      "page": 6,
+      "text": "Bellman-Ford con enteros en micro-unidades comprueba los costos de Dijkstra.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 6,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 6,
+      "text": "06 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 29.070000000000004,
+      "height": 11.25
+    },
+    {
+      "page": 6,
+      "text": "38",
+      "x": 58,
+      "y": 187,
+      "width": 33.432,
+      "height": 35.0
+    },
+    {
+      "page": 6,
+      "text": "métodos independientes",
+      "x": 58,
+      "y": 228,
+      "width": 129,
+      "height": 14.585999999999999
+    },
+    {
+      "page": 6,
+      "text": "160",
+      "x": 235,
+      "y": 187,
+      "width": 48.09,
+      "height": 35.0
+    },
+    {
+      "page": 6,
+      "text": "grafos con semilla",
+      "x": 235,
+      "y": 228,
+      "width": 129,
+      "height": 14.585999999999999
+    },
+    {
+      "page": 6,
+      "text": "631",
+      "x": 412,
+      "y": 187,
+      "width": 45.948,
+      "height": 35.0
+    },
+    {
+      "page": 6,
+      "text": "consultas con semilla",
+      "x": 412,
+      "y": 228,
+      "width": 129,
+      "height": 14.585999999999999
+    },
+    {
+      "page": 6,
+      "text": "CATEGORÍA",
+      "x": 52,
+      "y": 302,
+      "width": 49.977000000000004,
+      "height": 11.25
+    },
+    {
+      "page": 6,
+      "text": "MÉTODOS",
+      "x": 338,
+      "y": 302,
+      "width": 42.903000000000006,
+      "height": 11.25
+    },
+    {
+      "page": 6,
+      "text": "ESTADO",
+      "x": 423,
+      "y": 302,
+      "width": 34.49700000000001,
+      "height": 11.25
+    },
+    {
+      "page": 6,
+      "text": "Edición e invariantes",
+      "x": 52,
+      "y": 333,
+      "width": 266,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "8",
+      "x": 338,
+      "y": 333,
+      "width": 65,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "Aprobados",
+      "x": 423,
+      "y": 333,
+      "width": 120,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "Algoritmo y oráculo",
+      "x": 52,
+      "y": 376,
+      "width": 266,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "14",
+      "x": 338,
+      "y": 376,
+      "width": 65,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "Aprobados",
+      "x": 423,
+      "y": 376,
+      "width": 120,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "Entradas y números",
+      "x": 52,
+      "y": 419,
+      "width": 266,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "16",
+      "x": 338,
+      "y": 419,
+      "width": 65,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "Aprobados",
+      "x": 423,
+      "y": 419,
+      "width": 120,
+      "height": 13.596000000000002
+    },
+    {
+      "page": 6,
+      "text": "Además: <b>18 casos nombrados</b>. Las consultas son ejecuciones dentro de los métodos; no se suman como si fueran nuevas pruebas unitarias. El oráculo usa otra estrategia y no reutiliza la relajación de Dijkstra.",
+      "x": 42,
+      "y": 485,
+      "width": 511.2756,
+      "height": 45.90299999999999
+    },
+    {
+      "page": 6,
+      "text": "<b>Dominio exhaustivo acotado:</b> 729 grafos dirigidos de tres nodos y 6561 consultas. Cada una de las seis conexiones posibles toma ausencia, costo 0 o costo 1. No se extrapola exhaustividad a grafos mayores.",
+      "x": 42,
+      "y": 557,
+      "width": 511.2756,
+      "height": 45.90299999999999
+    },
+    {
+      "page": 6,
+      "text": "Se revisaron <b>59070 eventos</b> por invariantes. Floyd-Warshall contrastó el propio oráculo. Las pruebas detectaron <b>9 defectos</b> introducidos en copias aisladas; no es una garantía universal.",
+      "x": 42,
+      "y": 635,
+      "width": 511.2756,
+      "height": 30.601999999999997
+    },
+    {
+      "page": 6,
+      "text": "Evidencia: independent.json, cases.json y seeded_graphs.json. Fecha, entorno, semillas y huellas SHA-256 acompañan los resultados. El estado mostrado requiere que coincidan las huellas del código actual.",
+      "x": 42,
+      "y": 720,
+      "width": 511.2756,
+      "height": 27.741999999999997
+    },
+    {
+      "page": 7,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 7,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 7,
+      "text": "06 / RENDIMIENTO",
+      "x": 305,
+      "y": 29,
+      "width": 78.138,
+      "height": 11.25
+    },
+    {
+      "page": 7,
+      "text": "Algoritmo y recorrido completo",
+      "x": 42,
+      "y": 80,
+      "width": 438.596,
+      "height": 36.25
+    },
+    {
+      "page": 7,
+      "text": "Medianas en milisegundos. La validación y la serialización también cuestan tiempo.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 7,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 7,
+      "text": "07 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 28.251000000000005,
+      "height": 11.25
+    },
+    {
+      "page": 7,
+      "text": "Caso: nodos / conexiones",
+      "x": 42,
+      "y": 182,
+      "width": 113.9905,
+      "height": 11.875
+    },
+    {
+      "page": 7,
+      "text": "Algoritmo",
+      "x": 284,
+      "y": 179,
+      "width": 43.452999999999996,
+      "height": 11.875
+    },
+    {
+      "page": 7,
+      "text": "JSON a JSON",
+      "x": 404,
+      "y": 179,
+      "width": 58.7385,
+      "height": 11.875
+    },
+    {
+      "page": 7,
+      "text": "0",
+      "x": 260.0,
+      "y": 616,
+      "width": 5.737500000000001,
+      "height": 10.625
+    },
+    {
+      "page": 7,
+      "text": "42",
+      "x": 335.3333333333333,
+      "y": 616,
+      "width": 10.166,
+      "height": 10.625
+    },
+    {
+      "page": 7,
+      "text": "83",
+      "x": 410.66666666666663,
+      "y": 616,
+      "width": 10.234,
+      "height": 10.625
+    },
+    {
+      "page": 7,
+      "text": "125",
+      "x": 486.0,
+      "y": 616,
+      "width": 12.928500000000001,
+      "height": 10.625
+    },
+    {
+      "page": 7,
+      "text": "Cadena 50 / 49",
+      "x": 42,
+      "y": 229,
+      "width": 74.562,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "0.53 / 2.22 ms",
+      "x": 42,
+      "y": 248,
+      "width": 66.29,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "Cadena 200 / 199",
+      "x": 42,
+      "y": 282,
+      "width": 84.64979999999998,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "2.04 / 9.03 ms",
+      "x": 42,
+      "y": 301,
+      "width": 67.71000000000001,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "Cadena 500 / 499",
+      "x": 42,
+      "y": 335,
+      "width": 87.8424,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "5.48 / 23.34 ms",
+      "x": 42,
+      "y": 354,
+      "width": 72.22,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "Dirigido 500 / 4000",
+      "x": 42,
+      "y": 388,
+      "width": 95.56379999999999,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "11.51 / 103.48 ms",
+      "x": 42,
+      "y": 407,
+      "width": 74.22,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "Malla 400 / 760",
+      "x": 42,
+      "y": 441,
+      "width": 75.3474,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "7.53 / 31.42 ms",
+      "x": 42,
+      "y": 460,
+      "width": 68.64,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "Sin ruta 500 / 498",
+      "x": 42,
+      "y": 494,
+      "width": 87.5466,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "3.84 / 21.30 ms",
+      "x": 42,
+      "y": 513,
+      "width": 70.02,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "Inicio = destino 500 / 4000",
+      "x": 42,
+      "y": 547,
+      "width": 131.2944,
+      "height": 12.75
+    },
+    {
+      "page": 7,
+      "text": "0.15 / 98.60 ms",
+      "x": 42,
+      "y": 566,
+      "width": 71.55,
+      "height": 12.5
+    },
+    {
+      "page": 7,
+      "text": "ms",
+      "x": 500,
+      "y": 613,
+      "width": 12.591000000000001,
+      "height": 11.25
+    },
+    {
+      "page": 7,
+      "text": "<b>Método:</b> 2 calentamientos y 9 repeticiones por variante. Siete cargas, con y sin traza; aquí se muestra sin traza. “Algoritmo” excluye construir el grafo; “JSON a JSON” incluye validar, construir, resolver y serializar.",
+      "x": 42,
+      "y": 651,
+      "width": 511.2756,
+      "height": 29.744
+    },
+    {
+      "page": 7,
+      "text": "CPython 3.11.9 · Windows · AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD. Semilla 20260912 · reloj perf_counter_ns. Una computadora; sin garantía de tiempo real. Con nueve muestras, el percentil95 por rango más cercano coincide con el máximo. Huellas de cálculo comprobadas.",
+      "x": 42,
+      "y": 719,
+      "width": 511.2756,
+      "height": 41.184
+    },
+    {
+      "page": 8,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 8,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 8,
+      "text": "07 / AUDITORÍA",
+      "x": 305,
+      "y": 29,
+      "width": 64.962,
+      "height": 11.25
+    },
+    {
+      "page": 8,
+      "text": "La primera versión no bastaba",
+      "x": 42,
+      "y": 80,
+      "width": 419.8765,
+      "height": 36.25
+    },
+    {
+      "page": 8,
+      "text": "Se conservaron fallos anteriores y se añadieron regresiones para comprobar las correcciones.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 8,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 8,
+      "text": "08 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 28.908000000000005,
+      "height": 11.25
+    },
+    {
+      "page": 8,
+      "text": "HALLAZGO",
+      "x": 52,
+      "y": 190,
+      "width": 46.467000000000006,
+      "height": 11.25
+    },
+    {
+      "page": 8,
+      "text": "CONSECUENCIA",
+      "x": 216,
+      "y": 190,
+      "width": 68.337,
+      "height": 11.25
+    },
+    {
+      "page": 8,
+      "text": "CAMBIO",
+      "x": 391,
+      "y": 190,
+      "width": 34.515,
+      "height": 11.25
+    },
+    {
+      "page": 8,
+      "text": "Números JSON extremos",
+      "x": 52,
+      "y": 221,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Excepción o trabajo cuadrático.",
+      "x": 216,
+      "y": 221,
+      "width": 155,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Límite temprano y recorrido lineal.",
+      "x": 391,
+      "y": 221,
+      "width": 152,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Contexto decimal externo",
+      "x": 52,
+      "y": 270,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Podía cambiar la aritmética.",
+      "x": 216,
+      "y": 270,
+      "width": 155,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Todos los atributos explícitos.",
+      "x": 391,
+      "y": 270,
+      "width": 152,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "JSON convertido antes de validar",
+      "x": 52,
+      "y": 319,
+      "width": 144,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Pérdida silenciosa de cifras o claves.",
+      "x": 216,
+      "y": 319,
+      "width": 155,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Validar el texto original en Python.",
+      "x": 391,
+      "y": 319,
+      "width": 152,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "JSON amplio inválido",
+      "x": 52,
+      "y": 368,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Memoria elevada antes del rechazo.",
+      "x": 216,
+      "y": 368,
+      "width": 155,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Límites de estructura previos.",
+      "x": 391,
+      "y": 368,
+      "width": 152,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Cancelación compartida",
+      "x": 52,
+      "y": 417,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Interrumpía solicitudes ajenas.",
+      "x": 216,
+      "y": 417,
+      "width": 155,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "FIFO y cancelación independiente.",
+      "x": 391,
+      "y": 417,
+      "width": 152,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Etiquetas y límite del archivo",
+      "x": 52,
+      "y": 466,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Espacios perdidos y emoji cortados.",
+      "x": 216,
+      "y": 466,
+      "width": 155,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Datos intactos y límite de 2 MiB.",
+      "x": 391,
+      "y": 466,
+      "width": 152,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Salida del empaquetador",
+      "x": 52,
+      "y": 515,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Podía sobrescribir un archivo fuente.",
+      "x": 216,
+      "y": 515,
+      "width": 155,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Salida externa y escritura temporal.",
+      "x": 391,
+      "y": 515,
+      "width": 152,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Cabeceras y rangos HTTP",
+      "x": 52,
+      "y": 564,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Ambigüedad y semántica incorrecta.",
+      "x": 216,
+      "y": 564,
+      "width": 155,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Validación estricta y regresiones.",
+      "x": 391,
+      "y": 564,
+      "width": 152,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "LA REVISIÓN DEJA LÍMITES VISIBLES",
+      "x": 42,
+      "y": 634,
+      "width": 161.4274,
+      "height": 12.125
+    },
+    {
+      "page": 8,
+      "text": "Aprobar pruebas no demuestra ausencia de todos los defectos. Los costos son abstractos, la legibilidad de grafos densos tiene límites y una medición local no representa otros equipos. La defensa debe poder explicar y modificar el código.",
+      "x": 42,
+      "y": 671,
+      "width": 511.2756,
+      "height": 46.760999999999996
+    },
+    {
+      "page": 8,
+      "text": "AUDITORIA.md enlaza los registros anteriores y posteriores, incluidas revisiones de interfaz, video y entrega. No se asigna una calificación oficial ni una aprobación de un evaluador externo.",
+      "x": 42,
+      "y": 735,
+      "width": 511.2756,
+      "height": 27.456
+    },
+    {
+      "page": 9,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 9,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 9,
+      "text": "08 / INTEGRACIÓN",
+      "x": 305,
+      "y": 29,
+      "width": 78.507,
+      "height": 11.25
+    },
+    {
+      "page": 9,
+      "text": "Comprobar cada superficie",
+      "x": 42,
+      "y": 80,
+      "width": 380.6105,
+      "height": 36.25
+    },
+    {
+      "page": 9,
+      "text": "Un núcleo correcto no demuestra por sí solo que el navegador o la publicación funcionen.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 9,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 9,
+      "text": "09 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 29.070000000000004,
+      "height": 11.25
+    },
+    {
+      "page": 9,
+      "text": "COMPONENTE",
+      "x": 52,
+      "y": 192,
+      "width": 60.876000000000005,
+      "height": 11.25
+    },
+    {
+      "page": 9,
+      "text": "ESTADO",
+      "x": 191,
+      "y": 192,
+      "width": 34.49700000000001,
+      "height": 11.25
+    },
+    {
+      "page": 9,
+      "text": "EVIDENCIA",
+      "x": 282,
+      "y": 192,
+      "width": 45.45,
+      "height": 11.25
+    },
+    {
+      "page": 9,
+      "text": "API local HTTP",
+      "x": 52,
+      "y": 223,
+      "width": 119,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "Verificado",
+      "x": 191,
+      "y": 223,
+      "width": 71,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "26 métodos. Solicitudes reales a localhost con fixtures aislados.",
+      "x": 282,
+      "y": 223,
+      "width": 261,
+      "height": 26.664
+    },
+    {
+      "page": 9,
+      "text": "Terminal y arranque",
+      "x": 52,
+      "y": 295,
+      "width": 119,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "Verificado",
+      "x": 191,
+      "y": 295,
+      "width": 71,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "12 métodos. CPython 3.10.11, 3.11.9, 3.12.14, 3.14.7. Misma suite; no son casos adicionales.",
+      "x": 282,
+      "y": 295,
+      "width": 261,
+      "height": 26.664
+    },
+    {
+      "page": 9,
+      "text": "Python en navegador",
+      "x": 52,
+      "y": 367,
+      "width": 119,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "Verificado",
+      "x": 191,
+      "y": 367,
+      "width": 71,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "x": 282,
+      "y": 367,
+      "width": 261,
+      "height": 39.996
+    },
+    {
+      "page": 9,
+      "text": "Editor y accesibilidad",
+      "x": 52,
+      "y": 439,
+      "width": 119,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "Pendiente",
+      "x": 191,
+      "y": 439,
+      "width": 71,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
+      "x": 282,
+      "y": 439,
+      "width": 261,
+      "height": 26.664
+    },
+    {
+      "page": 9,
+      "text": "Publicación y entrega",
+      "x": 52,
+      "y": 511,
+      "width": 119,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "Pendiente",
+      "x": 191,
+      "y": 511,
+      "width": 71,
+      "height": 13.332
+    },
+    {
+      "page": 9,
+      "text": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
+      "x": 282,
+      "y": 511,
+      "width": 261,
+      "height": 26.664
+    },
+    {
+      "page": 9,
+      "text": "USO PREVISTO",
+      "x": 42,
+      "y": 594,
+      "width": 66.4547,
+      "height": 12.125
+    },
+    {
+      "page": 9,
+      "text": "Abrir el proyecto, elegir un ejemplo, seleccionar inicio y destino y calcular. Después, editar un costo y observar cómo cambia la ruta. La reproducción recorre eventos; no modifica el resultado del algoritmo.",
+      "x": 42,
+      "y": 630,
+      "width": 511.2756,
+      "height": 46.332
+    },
+    {
+      "page": 9,
+      "text": "Una respuesta calculada para un grafo anterior debe descartarse tras editar. El modo web ejecuta el paquete Python en un worker; la cancelación y la identidad del worker tienen pruebas separadas de la paridad matemática.",
+      "x": 42,
+      "y": 697,
+      "width": 511.2756,
+      "height": 44.616
+    },
+    {
+      "page": 10,
+      "text": "VÉRTICE",
+      "x": 42,
+      "y": 25,
+      "width": 49.152,
+      "height": 15.0
+    },
+    {
+      "page": 10,
+      "text": "/ SDV",
+      "x": 110,
+      "y": 28,
+      "width": 23.382,
+      "height": 11.25
+    },
+    {
+      "page": 10,
+      "text": "09 / REPRODUCCIÓN",
+      "x": 305,
+      "y": 29,
+      "width": 88.299,
+      "height": 11.25
+    },
+    {
+      "page": 10,
+      "text": "Código, evidencia y límites a la vista",
+      "x": 42,
+      "y": 80,
+      "width": 504.49850000000004,
+      "height": 36.25
+    },
+    {
+      "page": 10,
+      "text": "Núcleo y terminal: Python 3.10 o posterior, solo biblioteca estándar.",
+      "x": 42,
+      "y": 124,
+      "width": 511.2756,
+      "height": 16.016
+    },
+    {
+      "page": 10,
+      "text": "OPENLAB 2026  /  PERFIL SOFTWARE",
+      "x": 42,
+      "y": 807.8898,
+      "width": 137.552,
+      "height": 10.0
+    },
+    {
+      "page": 10,
+      "text": "10 / 10",
+      "x": 516.2756,
+      "y": 806.8898,
+      "width": 26.388,
+      "height": 11.25
+    },
+    {
+      "page": 10,
+      "text": "DESDE LA CARPETA DEL PROYECTO",
+      "x": 58,
+      "y": 191,
+      "width": 149.76000000000002,
+      "height": 11.25
+    },
+    {
+      "page": 10,
+      "text": "python -m vertice.cli validate examples/desvio.json",
+      "x": 58,
+      "y": 219,
+      "width": 290.7,
+      "height": 11.875
+    },
+    {
+      "page": 10,
+      "text": "python -m vertice.cli solve examples/desvio.json -s S -t T --json",
+      "x": 58,
+      "y": 237,
+      "width": 370.5,
+      "height": 11.875
+    },
+    {
+      "page": 10,
+      "text": "python -m unittest discover -s tests -p test_core.py",
+      "x": 58,
+      "y": 255,
+      "width": 296.4,
+      "height": 11.875
+    },
+    {
+      "page": 10,
+      "text": "python scripts/verify_independent.py",
+      "x": 58,
+      "y": 273,
+      "width": 205.20000000000002,
+      "height": 11.875
+    },
+    {
+      "page": 10,
+      "text": "python scripts/benchmark.py",
+      "x": 58,
+      "y": 291,
+      "width": 153.9,
+      "height": 11.875
+    },
+    {
+      "page": 10,
+      "text": "node --test tests/engine_queue.mjs",
+      "x": 58,
+      "y": 309,
+      "width": 193.8,
+      "height": 11.875
+    },
+    {
+      "page": 10,
+      "text": "Añade --trace a solve para exportar cada evento. En Windows, Iniciar.cmd abre la aplicación local. Las herramientas de PDF, video y verificación del navegador son dependencias de producción de la entrega, no del algoritmo.",
+      "x": 42,
+      "y": 382,
+      "width": 511.2756,
+      "height": 44.187000000000005
+    },
+    {
+      "page": 10,
+      "text": "COMPLEJIDAD DECLARADA",
+      "x": 42,
+      "y": 454,
+      "width": 124.4025,
+      "height": 12.125
+    },
+    {
+      "page": 10,
+      "text": "Tiempo O((V + E) log(V + E + 1))",
+      "x": 42,
+      "y": 492,
+      "width": 251.72750000000002,
+      "height": 21.25
+    },
+    {
+      "page": 10,
+      "text": "Memoria O(V + E)",
+      "x": 42,
+      "y": 521,
+      "width": 140.794,
+      "height": 21.25
+    },
+    {
+      "page": 10,
+      "text": "La cota incluye vecinos ordenados, cola con entradas antiguas y trazas. La precisión numérica está acotada. El detalle por operación está en ALGORITMO.md.",
+      "x": 42,
+      "y": 557,
+      "width": 511.2756,
+      "height": 29.744
+    },
+    {
+      "page": 10,
+      "text": "FUENTES PRIMARIAS Y ARCHIVOS DE EVIDENCIA",
+      "x": 42,
+      "y": 616,
+      "width": 216.698,
+      "height": 12.125
+    },
+    {
+      "page": 10,
+      "text": "Bootcamp SDV.pdf, p. 3",
+      "x": 42,
+      "y": 650,
+      "width": 101.3196,
+      "height": 11.5
+    },
+    {
+      "page": 10,
+      "text": "Documento suministrado; perfil Software.",
+      "x": 214,
+      "y": 650,
+      "width": 169.06709999999998,
+      "height": 10.875
+    },
+    {
+      "page": 10,
+      "text": "Dijkstra (1959), problema 2",
+      "x": 42,
+      "y": 676,
+      "width": 115.0736,
+      "height": 11.5
+    },
+    {
+      "page": 10,
+      "text": "https://ir.cwi.nl/pub/9256/9256D.pdf",
+      "x": 214,
+      "y": 676,
+      "width": 151.1538,
+      "height": 10.875
+    },
+    {
+      "page": 10,
+      "text": "Python: Decimal",
+      "x": 42,
+      "y": 702,
+      "width": 69.184,
+      "height": 11.5
+    },
+    {
+      "page": 10,
+      "text": "https://docs.python.org/3/library/decimal.html",
+      "x": 214,
+      "y": 702,
+      "width": 190.4691,
+      "height": 10.875
+    },
+    {
+      "page": 10,
+      "text": "Python: heapq",
+      "x": 42,
+      "y": 728,
+      "width": 61.980399999999996,
+      "height": 11.5
+    },
+    {
+      "page": 10,
+      "text": "https://docs.python.org/3/library/heapq.html",
+      "x": 214,
+      "y": 728,
+      "width": 184.1181,
+      "height": 10.875
+    },
+    {
+      "page": 10,
+      "text": "Evidencia de ejecución",
+      "x": 42,
+      "y": 754,
+      "width": 99.0288,
+      "height": 11.5
+    },
+    {
+      "page": 10,
+      "text": "evidence/verification/; semillas y SHA-256 en JSON.",
+      "x": 214,
+      "y": 754,
+      "width": 212.29739999999998,
+      "height": 10.875
+    }
+  ],
+  "bounds_issues": []
+}

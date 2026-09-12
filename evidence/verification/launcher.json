@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-09-12T01:55:13.944882+00:00",
+  "status": "pass",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "executable": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+    "subprocess_flags": [
+      "-S"
+    ],
+    "third_party_imports": "site-packages disabled"
+  },
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "Iniciar.cmd": "600b05365c38587cde74fa3a959fb2bd917d8c360980adbdf781b797dd8a3400",
+    "tests/test_cli.py": "d8a8806840b958f1c2f06217fb5678fe8320613ca6c398df95fda97dd40fbe71",
+    "scripts/verify_cli.py": "37b6f14b1349555113f2c0b21eb6638ab9eb5eb03c6219122f5e8e2a6273e52f"
+  },
+  "test_methods": 2,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "Two launcher checks extracted from the current CPython 3.11 CLI execution; not an additional run.",
+  "derived_from": {
+    "file": "evidence/verification/cli_python311.json",
+    "sha256": "564c5df0d2a8e3dceaceba1781354e2a08888ab5c9372c56efa1fe925c2ba7a2"
+  },
+  "results": [
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_check_in_spanish_path",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_propagates_occupied_port_failure",
+      "status": "pass"
+    }
+  ],
+  "commands": [
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_check_in_spanish_path",
+      "launcher": "Iniciar.cmd --check",
+      "returncode": 0,
+      "stdout": "VERTICE 1.0.0 / Python 3.11.9 / listo\r\n",
+      "note": "Launcher selects installed Python; version is printed in stdout"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_propagates_occupied_port_failure",
+      "launcher": "Iniciar.cmd --port <occupied> --no-open",
+      "returncode": 1,
+      "stderr": "No se pudo iniciar: [WinError 10048] Solo se permite un uso de cada direcci\\xf3n de socket (protocolo/direcci\\xf3n de red/puerto). Prueba otro puerto con --port.\r\n"
+    }
+  ]
+}

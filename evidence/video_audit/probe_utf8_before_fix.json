@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-09-12T02:03:36.889715+00:00",
+  "scope": "Strict UTF-8 read of real ffprobe output; no full film validation or new render",
+  "video_sha256": "93a64bf31516a2b1027ab91555b459de0afb0ef9aa230d957c0efbf4e38c17eb",
+  "ffprobe_stdout_sha256": "4f9024332009a65a23f81e0af20d9cbc48571eea4906cd407b54ac73da268d29",
+  "ffprobe_utf8_decoding": "strict success",
+  "actual_metadata": {
+    "chapters": [
+      {
+        "id": 0,
+        "time_base": "1/1000",
+        "start": 0,
+        "start_time": "0.000000",
+        "end": 17067,
+        "end_time": "17.067000",
+        "tags": {
+          "title": "El costo decide la ruta."
+        }
+      },
+      {
+        "id": 1,
+        "time_base": "1/1000",
+        "start": 17067,
+        "start_time": "17.067000",
+        "end": 40500,
+        "end_time": "40.500000",
+        "tags": {
+          "title": "Cuatro clases. Una responsabilidad clara."
+        }
+      },
+      {
+        "id": 2,
+        "time_base": "1/1000",
+        "start": 40500,
+        "start_time": "40.500000",
+        "end": 67500,
+        "end_time": "67.500000",
+        "tags": {
+          "title": "La frontera avanza."
+        }
+      },
+      {
+        "id": 3,
+        "time_base": "1/1000",
+        "start": 67500,
+        "start_time": "67.500000",
+        "end": 91433,
+        "end_time": "91.433000",
+        "tags": {
+          "title": "Mejorar una distancia cambia la decisi\u00f3n."
+        }
+      },
+      {
+        "id": 4,
+        "time_base": "1/1000",
+        "start": 91433,
+        "start_time": "91.433000",
+        "end": 113333,
+        "end_time": "113.333000",
+        "tags": {
+          "title": "Los decimales conservan su valor."
+        }
+      },
+      {
+        "id": 5,
+        "time_base": "1/1000",
+        "start": 113333,
+        "start_time": "113.333000",
+        "end": 136333,
+        "end_time": "136.333000",
+        "tags": {
+          "title": "Los casos dif\u00edciles tambi\u00e9n tienen respuesta."
+        }
+      },
+      {
+        "id": 6,
+        "time_base": "1/1000",
+        "start": 136333,
+        "start_time": "136.333000",
+        "end": 162700,
+        "end_time": "162.700000",
+        "tags": {
+          "title": "Comprobar desde otro algoritmo."
+        }
+      },
+      {
+        "id": 7,
+        "time_base": "1/1000",
+        "start": 162700,
+        "start_time": "162.700000",
+        "end": 186967,
+        "end_time": "186.967000",
+        "tags": {
+          "title": "Medir tambi\u00e9n exige separar los costos."
+        }
+      },
+      {
+        "id": 8,
+        "time_base": "1/1000",
+        "start": 186967,
+        "start_time": "186.967000",
+        "end": 209967,
+        "end_time": "209.967000",
+        "tags": {
+          "title": "Edita. Calcula. Comprueba."
+        }
+      }
+    ],
+    "format": {
+      "filename": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\web\\media\\VerticeSDV_Demo.mp4",
+      "nb_streams": 3,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "210.000000",
+      "size": "11540070",
+      "bit_rate": "439621",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "V\u00c9RTICE / SDV - Cada decisi\u00f3n a la vista",
+        "artist": "V\u00c9RTICE",
+        "encoder": "Lavf62.3.100"
+      }
+    }
+  },
+  "export_evidence_sha256": "148cd56272ff1d9f0c4cd26c3db3c9e847fc2a92ab5d741323ecfd6ac5cf7d81",
+  "saved_probe": {},
+  "saved_probe_format_tags_observed": {
+    "title": "V\u00c3\u2030RTICE / SDV - Cada decisi\u00c3\u00b3n a la vista",
+    "artist": "V\u00c3\u2030RTICE"
+  },
+  "saved_probe_capture_note": "These two fields were read from output.probe.format.tags in a separate tool output before the author corrected the proof. Initial automated capture incorrectly looked at the top-level probe key; the empty saved_probe does not imply missing metadata.",
+  "finding": "VID-10/P2: locale-dependent text decoding corrupted the exported evidence metadata; the real MP4 tags were valid UTF-8."
+}

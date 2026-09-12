@@ -1,0 +1,29 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "concurrent_workload": "Parent video render and browser endurance test; do not compare absolute latency with final benchmark.",
+  "method": "Three HTTP conversion microtimings. Separate tracemalloc probe with one syntactically valid but schema-invalid JSON payload.",
+  "response_bytes": 348811,
+  "http_duplicate_samples_ms": [
+    16.9324,
+    16.7739,
+    20.2019
+  ],
+  "http_duplicate_median_ms": 16.9324,
+  "direct_encode_samples_ms": [
+    0.0582,
+    0.0482,
+    0.0683
+  ],
+  "direct_encode_median_ms": 0.0582,
+  "max_payload": {
+    "bytes": 2097151,
+    "empty_objects": 699050,
+    "sha256": "2b5db9948de9425f8b0c4e06e760c25bc7c3a307b633776792d4e4d6716d50ed",
+    "rejection": "Búsqueda debe ser un objeto JSON.",
+    "tracemalloc_peak_bytes": 50676060,
+    "tracemalloc_current_bytes": 6700,
+    "instrumented_elapsed_ms": 1461.2289
+  },
+  "limits": "Not process RSS. Allocation peak is measured, not an upper bound for all JSON forms or browsers."
+}

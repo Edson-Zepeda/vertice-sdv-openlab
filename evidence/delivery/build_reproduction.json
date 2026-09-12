@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-09-12T01:50:25.125770+00:00",
+  "status": "pass",
+  "snapshot": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\Entrega Vértice con espacios-v7g4fssl\\proyecto",
+  "scope": "Fresh isolated Python3.11 environment from requirements-build; regenerate PDF and film plan only in temporary snapshot. No final MP4 rerender or publication.",
+  "requirements_sha256": "b96f373c6eef863c803517b51817855a238095f3f85b20b8281918d6a6fc47c1",
+  "installed": [
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "download": "https://files.pythonhosted.org/packages/63/c6/4bad1b18d132a50b27e1365e1ab163616f7a5bb56d330f66f9d1d9d4f9d4/pillow-12.3.0-cp311-cp311-win_amd64.whl",
+      "sha256": "8e95e1385e4998ae9694eeaa4730ba5457ff61185b3a55e2e7bea0880aef452a"
+    },
+    {
+      "name": "reportlab",
+      "version": "4.5.1",
+      "download": "https://files.pythonhosted.org/packages/a7/45/ea7fad10122440de6e845568d106bffdc456ca0e8a1d8ae10b46016087e4/reportlab-4.5.1-py3-none-any.whl",
+      "sha256": "06fce8cb56c83307cfa4909cdf4e6a2ddbb44e5d6ef4d2edca896d7e9769f091"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.60.1",
+      "download": "https://files.pythonhosted.org/packages/bb/78/0e1a6d22b427579ea5c8273e1c07def2f325b977faaf60bb7ddc01456cb1/fonttools-4.60.1-cp311-cp311-win_amd64.whl",
+      "sha256": "d066ea419f719ed87bc2c99a4a4bfd77c2e5949cb724588b9dd58f3fd90b92bf"
+    },
+    {
+      "name": "pypdf",
+      "version": "6.10.2",
+      "download": "https://files.pythonhosted.org/packages/0c/d6/1d5c60cc17bbdf37c1552d9c03862fc6d32c5836732a0415b2d637edc2d0/pypdf-6.10.2-py3-none-any.whl",
+      "sha256": "aa53be9826655b51c96741e5d7983ca224d898ac0a77896e64636810517624aa"
+    },
+    {
+      "name": "edge-tts",
+      "version": "7.2.8",
+      "download": "https://files.pythonhosted.org/packages/8c/2b/a8cb687b92a2690d2ad171f0c2fd1c8f18690363cca7618bab2bbe4cdf2b/edge_tts-7.2.8-py3-none-any.whl",
+      "sha256": "361fe48ce7ef613adbe30f664e3765dd71029c6cb57427279eff8ad6df2eb211"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.3",
+      "download": "https://files.pythonhosted.org/packages/73/0c/2af9d1674baccd1dbd47282a93d660a22e57ef6167c856deb24b4214fbab/aiohttp-3.14.3-cp311-cp311-win_amd64.whl",
+      "sha256": "e1e74298bab6ee0d6e749ed4fd1901c7e604bdda32c03d787a2cc71c46d0433d"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "download": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+      "name": "tabulate",
+      "version": "0.10.0",
+      "download": "https://files.pythonhosted.org/packages/99/55/db07de81b5c630da5cbf5c7df646580ca26dfaefa593667fc6f2fe016d2e/tabulate-0.10.0-py3-none-any.whl",
+      "sha256": "f0b0622e567335c8fabaaa659f1b33bcb6ddfe2e496071b743aa113f8774f2d3"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "download": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1",
+      "download": "https://files.pythonhosted.org/packages/e3/57/32f0ccea59e8612057c61d6fd22ef2cb63cca93c9fe594094919696ac170/charset_normalizer-3.5.1-cp311-cp311-win_amd64.whl",
+      "sha256": "f9b1e28d0e8dbfa858abdba91d6b547beaf2df1a59bec6da6faae7b96a4991a9"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1",
+      "download": "https://files.pythonhosted.org/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "download": "https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl",
+      "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "download": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "download": "https://files.pythonhosted.org/packages/0a/f5/603d0d6a02cfd4c8f2a095a54672b3cf967ad688a60fb9faf04fc4887f65/frozenlist-1.8.0-cp311-cp311-win_amd64.whl",
+      "sha256": "ac913f8403b36a2c8610bbfd25b8013488533e71e62b4b4adce9c86c8cea905b"
+    },
+    {
+      "name": "multidict",
+      "version": "6.8.0",
+      "download": "https://files.pythonhosted.org/packages/71/f8/1a959771a4dcd3224bd7bb40054f66b98ba5b20d6b74fd273f548f887e0a/multidict-6.8.0-cp311-cp311-win_amd64.whl",
+      "sha256": "b03ca066b47b18b205cc080dca6f76cbd159f8cdd33a02a0700164c13b37e463"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.2",
+      "download": "https://files.pythonhosted.org/packages/42/4e/f17363fb58c0afe05b067361cb6d86ed2d29de6506779a27547c4d183075/propcache-0.5.2-cp311-cp311-win_amd64.whl",
+      "sha256": "44e488ef40dbb452700b2b1f8188934121f6648f52c295055662d2191959ff82"
+    },
+    {
+      "name": "yarl",
+      "version": "1.24.5",
+      "download": "https://files.pythonhosted.org/packages/f5/46/d7bd3a8859d47dcfaffd7127af7076032a7da278a9a02e17b5f37bfb6712/yarl-1.24.5-cp311-cp311-win_amd64.whl",
+      "sha256": "f4239bbec5a3577ddb49e4b50aeb32d8e5792098262ae2f63723f916a29b1a25"
+    },
+    {
+      "name": "idna",
+      "version": "3.19",
+      "download": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
+      "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
+    }
+  ],
+  "commands": [
+    {
+      "label": "pip_check",
+      "arguments": [
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    {
+      "label": "rebuild_pdf",
+      "arguments": [
+        "scripts/build_report.py",
+        "--render"
+      ],
+      "exit": 0,
+      "stdout": "{\"pdf\": \"docs/VerticeSDV_Informe.pdf\", \"pages\": 10, \"pdf_sha256\": \"6052fd0d227b7067eac022ac232e83899b12c189e1e94bb4cb7baca79f0e74d1\", \"web_copy_identical\": true, \"independent_current\": true, \"benchmark_current\": true}\n",
+      "stderr": "Syntax Error: No display font for 'Symbol'\nSyntax Error: No display font for 'ArialUnicode'\n"
+    },
+    {
+      "label": "rebuild_film_plan_cached_voice",
+      "arguments": [
+        "scripts/build_film.py"
+      ],
+      "exit": 0,
+      "stdout": "{\"previews\": 9, \"duration_seconds\": 209.9666666666667, \"render\": false}\n",
+      "stderr": ""
+    }
+  ]
+}

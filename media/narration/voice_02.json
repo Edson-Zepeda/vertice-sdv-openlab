@@ -1,0 +1,273 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "edad65fc33117aaf997429b5ea3cafabcdd114270b81e09bda101d6d28311d51",
+  "text": "El inicio entra con costo cero. La cola elige el menor costo conocido. Al asentar un nodo, su distancia se vuelve definitiva. Después, el algoritmo compara sus conexiones y conserva únicamente las mejoras. El verde claro muestra la frontera: distancias tentativas que todavía pueden cambiar. La búsqueda termina cuando se asienta el destino.",
+  "words": [
+    {
+      "text": "El",
+      "start": 0.099,
+      "end": 0.295083
+    },
+    {
+      "text": "inicio",
+      "start": 0.307333,
+      "end": 0.687249
+    },
+    {
+      "text": "entra",
+      "start": 0.6995,
+      "end": 0.932333
+    },
+    {
+      "text": "con",
+      "start": 0.944625,
+      "end": 1.128458
+    },
+    {
+      "text": "costo",
+      "start": 1.140666,
+      "end": 1.471541
+    },
+    {
+      "text": "cero",
+      "start": 1.483833,
+      "end": 1.875999
+    },
+    {
+      "text": "La",
+      "start": 2.720583,
+      "end": 2.879916
+    },
+    {
+      "text": "cola",
+      "start": 2.892166,
+      "end": 3.174041
+    },
+    {
+      "text": "elige",
+      "start": 3.186291,
+      "end": 3.517166
+    },
+    {
+      "text": "el",
+      "start": 3.529416,
+      "end": 3.602957
+    },
+    {
+      "text": "menor",
+      "start": 3.615208,
+      "end": 3.933833
+    },
+    {
+      "text": "costo",
+      "start": 3.946083,
+      "end": 4.313749
+    },
+    {
+      "text": "conocido",
+      "start": 4.326,
+      "end": 4.951
+    },
+    {
+      "text": "Al",
+      "start": 5.796583,
+      "end": 5.992666
+    },
+    {
+      "text": "asentar",
+      "start": 6.004916,
+      "end": 6.458332
+    },
+    {
+      "text": "un",
+      "start": 6.470583,
+      "end": 6.568624
+    },
+    {
+      "text": "nodo",
+      "start": 6.580875,
+      "end": 6.91175
+    },
+    {
+      "text": "su",
+      "start": 7.169125,
+      "end": 7.291666
+    },
+    {
+      "text": "distancia",
+      "start": 7.303916,
+      "end": 7.830874
+    },
+    {
+      "text": "se",
+      "start": 7.843125,
+      "end": 7.977916
+    },
+    {
+      "text": "vuelve",
+      "start": 7.990208,
+      "end": 8.272083
+    },
+    {
+      "text": "definitiva",
+      "start": 8.284333,
+      "end": 9.019624
+    },
+    {
+      "text": "Después",
+      "start": 9.865208,
+      "end": 10.428916
+    },
+    {
+      "text": "el",
+      "start": 10.698541,
+      "end": 10.870124
+    },
+    {
+      "text": "algoritmo",
+      "start": 10.882333,
+      "end": 11.372541
+    },
+    {
+      "text": "compara",
+      "start": 11.384791,
+      "end": 11.789207
+    },
+    {
+      "text": "sus",
+      "start": 11.801458,
+      "end": 11.985291
+    },
+    {
+      "text": "conexiones",
+      "start": 11.997541,
+      "end": 12.683832
+    },
+    {
+      "text": "y",
+      "start": 12.696083,
+      "end": 12.769624
+    },
+    {
+      "text": "conserva",
+      "start": 12.781875,
+      "end": 13.308833
+    },
+    {
+      "text": "únicamente",
+      "start": 13.321083,
+      "end": 13.995083
+    },
+    {
+      "text": "las",
+      "start": 14.007333,
+      "end": 14.154374
+    },
+    {
+      "text": "mejoras",
+      "start": 14.166666,
+      "end": 14.767166
+    },
+    {
+      "text": "El",
+      "start": 15.61275,
+      "end": 15.808833
+    },
+    {
+      "text": "verde",
+      "start": 15.821083,
+      "end": 16.115208
+    },
+    {
+      "text": "claro",
+      "start": 16.127458,
+      "end": 16.409333
+    },
+    {
+      "text": "muestra",
+      "start": 16.421583,
+      "end": 16.801499
+    },
+    {
+      "text": "la",
+      "start": 16.813708,
+      "end": 16.911749
+    },
+    {
+      "text": "frontera",
+      "start": 16.924,
+      "end": 17.426458
+    },
+    {
+      "text": "distancias",
+      "start": 17.732833,
+      "end": 18.259791
+    },
+    {
+      "text": "tentativas",
+      "start": 18.272041,
+      "end": 18.921541
+    },
+    {
+      "text": "que",
+      "start": 18.933833,
+      "end": 19.080874
+    },
+    {
+      "text": "todavía",
+      "start": 19.093125,
+      "end": 19.607833
+    },
+    {
+      "text": "pueden",
+      "start": 19.620083,
+      "end": 19.926458
+    },
+    {
+      "text": "cambiar",
+      "start": 19.938708,
+      "end": 20.465666
+    },
+    {
+      "text": "La",
+      "start": 21.311291,
+      "end": 21.446082
+    },
+    {
+      "text": "búsqueda",
+      "start": 21.458333,
+      "end": 21.899499
+    },
+    {
+      "text": "termina",
+      "start": 21.91175,
+      "end": 22.340666
+    },
+    {
+      "text": "cuando",
+      "start": 22.352958,
+      "end": 22.634833
+    },
+    {
+      "text": "se",
+      "start": 22.647041,
+      "end": 22.757332
+    },
+    {
+      "text": "asienta",
+      "start": 22.769625,
+      "end": 23.149541
+    },
+    {
+      "text": "el",
+      "start": 23.16175,
+      "end": 23.223041
+    },
+    {
+      "text": "destino",
+      "start": 23.235291,
+      "end": 23.749999
+    }
+  ]
+}

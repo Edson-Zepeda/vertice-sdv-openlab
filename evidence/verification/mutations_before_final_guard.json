@@ -1,0 +1,4593 @@
+{
+  "created_utc": "2026-09-12T01:44:27.611725+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "method": "Ten hand-selected semantic mutants, each applied to an isolated source copy; selected assertions copied unmodified from the independent Bellman-Ford suite. No network, browser, worker or running server involvement.",
+  "limits": {
+    "wall_seconds_per_subprocess": 20,
+    "memory_bytes_per_subprocess": 536870912,
+    "largest_named_graph_nodes": 4,
+    "interpretation": "A selected defect detection count is evidence about this test selection, not a percentage of general correctness. Equivalent candidates are excluded from defect counts. Runtime/process failures and timeouts are reported separately."
+  },
+  "isolated_workspace": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox",
+  "production_sha256_before": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "server.py": "c4e59f691d42b787b74783852b96a44fa766f246d6118240f97c0226f0acb915",
+    "web/app.js": "f9ab184bcc92fa3f437eeb71caff4334db7b8d8922a78d221e24730f0a19f249",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/index.html": "fe815b693c1ea5ff75776c5e7eb309c5d2f7a3013ba502fa957e32476349bc02",
+    "web/style.css": "5d101cfecf44467f77ae6872cff92543ed7d4087a480b86cf6d0a38abedd32b2",
+    "tests/test_independent.py": "98224cd8bf2a566e6c070f7c3ad2488e281f9b2df945947893a9e730a2ebd16c",
+    "tests/independent_oracle.py": "2eecf935d38e6dff7d25b43aca628167273130c230f18ca64cc876678ab46e98"
+  },
+  "production_sha256_after": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "server.py": "c4e59f691d42b787b74783852b96a44fa766f246d6118240f97c0226f0acb915",
+    "web/app.js": "f9ab184bcc92fa3f437eeb71caff4334db7b8d8922a78d221e24730f0a19f249",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/index.html": "fe815b693c1ea5ff75776c5e7eb309c5d2f7a3013ba502fa957e32476349bc02",
+    "web/style.css": "5d101cfecf44467f77ae6872cff92543ed7d4087a480b86cf6d0a38abedd32b2",
+    "tests/test_independent.py": "98224cd8bf2a566e6c070f7c3ad2488e281f9b2df945947893a9e730a2ebd16c",
+    "tests/independent_oracle.py": "2eecf935d38e6dff7d25b43aca628167273130c230f18ca64cc876678ab46e98"
+  },
+  "source_sha256": "e26665ff6e75131cd2f99ce9c450f7df047365c506d1b34bd523d5a23ba23738",
+  "protected_files_unchanged": true,
+  "baseline": {
+    "guard": {
+      "kind": "Windows Job Object",
+      "memory_bytes": 536870912,
+      "cpu_seconds": 20,
+      "processes": 1
+    },
+    "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\baseline\\vertice\\__init__.py",
+    "checks": [
+      {
+        "selector": "named:single_node",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "edges": []
+          },
+          "source": "A",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "0",
+          "path": [
+            "A"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A"
+          ],
+          "edge_path": [],
+          "cost": "0",
+          "settled": [
+            "A"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00040919999992183875
+      },
+      {
+        "selector": "named:chain_reverse",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "2"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "3.5"
+              }
+            ]
+          },
+          "source": "C",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "5.5",
+          "path": [
+            "C",
+            "B",
+            "A"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "C",
+            "B",
+            "A"
+          ],
+          "edge_path": [
+            "e1",
+            "e0"
+          ],
+          "cost": "5.5",
+          "settled": [
+            "C",
+            "B",
+            "A"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 2,
+            "heap_pushes": 3,
+            "heap_pops": 3,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0006654000003436522
+      },
+      {
+        "selector": "named:cheaper_detour",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "D",
+                "label": "D",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "D",
+                "weight": "9"
+              },
+              {
+                "id": "e1",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e2",
+                "source": "B",
+                "target": "C",
+                "weight": "1"
+              },
+              {
+                "id": "e3",
+                "source": "C",
+                "target": "D",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "D",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "3",
+          "path": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edge_path": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "cost": "3",
+          "settled": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "stats": {
+            "settled": 4,
+            "relaxations": 4,
+            "heap_pushes": 5,
+            "heap_pops": 4,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0007109000002856192
+      },
+      {
+        "selector": "named:zero_cycle",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "D",
+                "label": "D",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "0"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "0"
+              },
+              {
+                "id": "e2",
+                "source": "C",
+                "target": "A",
+                "weight": "0"
+              },
+              {
+                "id": "e3",
+                "source": "C",
+                "target": "D",
+                "weight": "2"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "D",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "2",
+          "path": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edge_path": [
+            "e0",
+            "e1",
+            "e3"
+          ],
+          "cost": "2",
+          "settled": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "stats": {
+            "settled": 4,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 4,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0005559000001085224
+      },
+      {
+        "selector": "named:decimal_exact",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "0.1"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "0.2"
+              },
+              {
+                "id": "e2",
+                "source": "A",
+                "target": "C",
+                "weight": "0.300001"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "0.3",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edge_path": [
+            "e0",
+            "e1"
+          ],
+          "cost": "0.3",
+          "settled": [
+            "A",
+            "B",
+            "C"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 3,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0006989999997131235
+      },
+      {
+        "selector": "named:micro_delta",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "C",
+                "weight": "0.000003"
+              },
+              {
+                "id": "e1",
+                "source": "A",
+                "target": "B",
+                "weight": "0.000001"
+              },
+              {
+                "id": "e2",
+                "source": "B",
+                "target": "C",
+                "weight": "0.000001"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "0.000002",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edge_path": [
+            "e1",
+            "e2"
+          ],
+          "cost": "0.000002",
+          "settled": [
+            "A",
+            "B",
+            "C"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 3,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0005292999999255699
+      },
+      {
+        "selector": "named:large_exact",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1000000000000"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "999999999999.999999"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "1999999999999.999999",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edge_path": [
+            "e0",
+            "e1"
+          ],
+          "cost": "1999999999999.999999",
+          "settled": [
+            "A",
+            "B",
+            "C"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 2,
+            "heap_pushes": 3,
+            "heap_pops": 3,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0004449000002750836
+      },
+      {
+        "selector": "named:directed_no_reverse",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "C",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "C"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00032610000016575214
+      },
+      {
+        "selector": "named:disconnected",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "D",
+                "label": "D",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "C",
+                "target": "D",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "D",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "A",
+            "B"
+          ],
+          "stats": {
+            "settled": 2,
+            "relaxations": 1,
+            "heap_pushes": 2,
+            "heap_pops": 2,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00037320000001273
+      },
+      {
+        "selector": "named:isolated_source",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "B",
+                "target": "C",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "A"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0002380000000812288
+      },
+      {
+        "selector": "named:isolated_target",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "A",
+            "B"
+          ],
+          "stats": {
+            "settled": 2,
+            "relaxations": 1,
+            "heap_pushes": 2,
+            "heap_pops": 2,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00029930000027889037
+      },
+      {
+        "selector": "named:self_loops",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "A",
+                "weight": "0"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "B",
+                "weight": "10"
+              },
+              {
+                "id": "e2",
+                "source": "A",
+                "target": "B",
+                "weight": "2"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "B",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "2",
+          "path": [
+            "A",
+            "B"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B"
+          ],
+          "edge_path": [
+            "e2"
+          ],
+          "cost": "2",
+          "settled": [
+            "A",
+            "B"
+          ],
+          "stats": {
+            "settled": 2,
+            "relaxations": 1,
+            "heap_pushes": 2,
+            "heap_pops": 2,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0003455999999459891
+      },
+      {
+        "selector": "named:same_node_with_edges",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "5"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "A",
+                "weight": "0"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "0",
+          "path": [
+            "A"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A"
+          ],
+          "edge_path": [],
+          "cost": "0",
+          "settled": [
+            "A"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00028159999965282623
+      },
+      {
+        "selector": "named:deterministic_tie",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "S",
+                "label": "S",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "A",
+                "label": "A",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "T",
+                "label": "T",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "S",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "T",
+                "weight": "1"
+              },
+              {
+                "id": "e2",
+                "source": "S",
+                "target": "A",
+                "weight": "1"
+              },
+              {
+                "id": "e3",
+                "source": "A",
+                "target": "T",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "S",
+          "target": "T",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "2",
+          "path": [
+            "S",
+            "A",
+            "T"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "S",
+            "A",
+            "T"
+          ],
+          "edge_path": [
+            "e2",
+            "e3"
+          ],
+          "cost": "2",
+          "settled": [
+            "S",
+            "A",
+            "B",
+            "T"
+          ],
+          "stats": {
+            "settled": 4,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 4,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0005119000002196117
+      },
+      {
+        "selector": "named:not_global_lexicographic",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "S",
+                "label": "S",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "A",
+                "label": "A",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "T",
+                "label": "T",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "S",
+                "target": "B",
+                "weight": "0"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "T",
+                "weight": "2"
+              },
+              {
+                "id": "e2",
+                "source": "S",
+                "target": "A",
+                "weight": "1"
+              },
+              {
+                "id": "e3",
+                "source": "A",
+                "target": "T",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "S",
+          "target": "T",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "2",
+          "path": [
+            "S",
+            "B",
+            "T"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "S",
+            "B",
+            "T"
+          ],
+          "edge_path": [
+            "e0",
+            "e1"
+          ],
+          "cost": "2",
+          "settled": [
+            "S",
+            "B",
+            "A",
+            "T"
+          ],
+          "stats": {
+            "settled": 4,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 4,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0004918999998153595
+      },
+      {
+        "selector": "named:stale_heap_entry",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "Z",
+                "label": "Z",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "9"
+              },
+              {
+                "id": "e1",
+                "source": "A",
+                "target": "C",
+                "weight": "1"
+              },
+              {
+                "id": "e2",
+                "source": "C",
+                "target": "B",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "Z",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "A",
+            "C",
+            "B"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 4,
+            "stale_pops": 1
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0004288000000087777
+      },
+      {
+        "selector": "named:tentative_is_not_final",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "S",
+                "label": "S",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "T",
+                "label": "T",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "X",
+                "label": "X",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "Y",
+                "label": "Y",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "S",
+                "target": "T",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "S",
+                "target": "X",
+                "weight": "50"
+              },
+              {
+                "id": "e2",
+                "source": "S",
+                "target": "Y",
+                "weight": "2"
+              },
+              {
+                "id": "e3",
+                "source": "Y",
+                "target": "X",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "S",
+          "target": "T",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "1",
+          "path": [
+            "S",
+            "T"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "S",
+            "T"
+          ],
+          "edge_path": [
+            "e0"
+          ],
+          "cost": "1",
+          "settled": [
+            "S",
+            "T"
+          ],
+          "stats": {
+            "settled": 2,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 2,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0005407000003287976
+      },
+      {
+        "selector": "named:empty_edges",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": []
+          },
+          "source": "B",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "B"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0002310999998371699
+      },
+      {
+        "selector": "named:cheaper_detour",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "D",
+                "label": "D",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "D",
+                "weight": "9"
+              },
+              {
+                "id": "e1",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e2",
+                "source": "B",
+                "target": "C",
+                "weight": "1"
+              },
+              {
+                "id": "e3",
+                "source": "C",
+                "target": "D",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "D",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "3",
+          "path": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edge_path": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "cost": "3",
+          "settled": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "stats": {
+            "settled": 4,
+            "relaxations": 4,
+            "heap_pushes": 5,
+            "heap_pops": 4,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0006137999998827581
+      },
+      {
+        "selector": "method:ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected",
+        "status": "passed",
+        "failures": [],
+        "errors": [],
+        "elapsed_seconds": 0.001662399999986519
+      },
+      {
+        "selector": "named:decimal_exact",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "0.1"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "0.2"
+              },
+              {
+                "id": "e2",
+                "source": "A",
+                "target": "C",
+                "weight": "0.300001"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "0.3",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edge_path": [
+            "e0",
+            "e1"
+          ],
+          "cost": "0.3",
+          "settled": [
+            "A",
+            "B",
+            "C"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 3,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0005055999999967753
+      },
+      {
+        "selector": "named:large_exact",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1000000000000"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "999999999999.999999"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "C",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "1999999999999.999999",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edge_path": [
+            "e0",
+            "e1"
+          ],
+          "cost": "1999999999999.999999",
+          "settled": [
+            "A",
+            "B",
+            "C"
+          ],
+          "stats": {
+            "settled": 3,
+            "relaxations": 2,
+            "heap_pushes": 3,
+            "heap_pops": 3,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00042030000031445525
+      },
+      {
+        "selector": "named:directed_no_reverse",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": true,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "C",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "C",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "C"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0002623999998832005
+      },
+      {
+        "selector": "named:disconnected",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "D",
+                "label": "D",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "A",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "C",
+                "target": "D",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "A",
+          "target": "D",
+          "trace": true
+        },
+        "expected": {
+          "status": "no_path",
+          "cost": null,
+          "path": []
+        },
+        "actual": {
+          "status": "no_path",
+          "path": [],
+          "edge_path": [],
+          "cost": null,
+          "settled": [
+            "A",
+            "B"
+          ],
+          "stats": {
+            "settled": 2,
+            "relaxations": 1,
+            "heap_pushes": 2,
+            "heap_pops": 2,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00035209999987273477
+      },
+      {
+        "selector": "named:single_node",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "A",
+                "label": "A",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "edges": []
+          },
+          "source": "A",
+          "target": "A",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "0",
+          "path": [
+            "A"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "A"
+          ],
+          "edge_path": [],
+          "cost": "0",
+          "settled": [
+            "A"
+          ],
+          "stats": {
+            "settled": 1,
+            "relaxations": 0,
+            "heap_pushes": 1,
+            "heap_pops": 1,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.00016559999994569807
+      },
+      {
+        "selector": "method:IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace",
+        "status": "passed",
+        "failures": [],
+        "errors": [],
+        "elapsed_seconds": 0.0008247999999184685
+      },
+      {
+        "selector": "named:deterministic_tie",
+        "input": {
+          "graph": {
+            "schema_version": 1,
+            "directed": false,
+            "nodes": [
+              {
+                "id": "S",
+                "label": "S",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "x": 40,
+                "y": 0
+              },
+              {
+                "id": "A",
+                "label": "A",
+                "x": 80,
+                "y": 0
+              },
+              {
+                "id": "T",
+                "label": "T",
+                "x": 120,
+                "y": 0
+              }
+            ],
+            "edges": [
+              {
+                "id": "e0",
+                "source": "S",
+                "target": "B",
+                "weight": "1"
+              },
+              {
+                "id": "e1",
+                "source": "B",
+                "target": "T",
+                "weight": "1"
+              },
+              {
+                "id": "e2",
+                "source": "S",
+                "target": "A",
+                "weight": "1"
+              },
+              {
+                "id": "e3",
+                "source": "A",
+                "target": "T",
+                "weight": "1"
+              }
+            ]
+          },
+          "source": "S",
+          "target": "T",
+          "trace": true
+        },
+        "expected": {
+          "status": "ok",
+          "cost": "2",
+          "path": [
+            "S",
+            "A",
+            "T"
+          ]
+        },
+        "actual": {
+          "status": "ok",
+          "path": [
+            "S",
+            "A",
+            "T"
+          ],
+          "edge_path": [
+            "e2",
+            "e3"
+          ],
+          "cost": "2",
+          "settled": [
+            "S",
+            "A",
+            "B",
+            "T"
+          ],
+          "stats": {
+            "settled": 4,
+            "relaxations": 3,
+            "heap_pushes": 4,
+            "heap_pops": 4,
+            "stale_pops": 0
+          }
+        },
+        "status": "passed",
+        "elapsed_seconds": 0.0005095000001347216
+      },
+      {
+        "selector": "method:IndependentAlgorithmTests.test_decimal_context_cannot_erase_micro_difference",
+        "status": "passed",
+        "failures": [],
+        "errors": [],
+        "elapsed_seconds": 0.0006346000000121421
+      }
+    ],
+    "wall_seconds": 0.5715556999998626,
+    "mutated_source_sha256": null,
+    "classification": "survived_selection"
+  },
+  "summary": {
+    "detected_by_assertion": 9,
+    "equivalent_under_contract": 1
+  },
+  "mutants": [
+    {
+      "id": "stop_when_discovered",
+      "description": "Priorizar y finalizar el destino inmediatamente después de descubrirlo.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "                emit(\"relax\", source=node, target=neighbor, edge=edge.id,\n                     old_cost=decimal_or_none(previous), new_cost=canonical_decimal(candidate))",
+        "new": "                emit(\"relax\", source=node, target=neighbor, edge=edge.id,\n                     old_cost=decimal_or_none(previous), new_cost=canonical_decimal(candidate))\n                if neighbor == target:\n                    heap = [(candidate, neighbor)]\n                    break"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\stop_when_discovered\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:cheaper_detour",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "D",
+                  "weight": "9"
+                },
+                {
+                  "id": "e1",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "3",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "D"
+            ],
+            "edge_path": [
+              "e0"
+            ],
+            "cost": "9",
+            "settled": [
+              "A",
+              "D"
+            ],
+            "stats": {
+              "settled": 2,
+              "relaxations": 2,
+              "heap_pushes": 3,
+              "heap_pops": 2,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "'9' != '3'\n- 9\n+ 3\n",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\stop_when_discovered\\tests\\test_independent.py\", line 42, in assert_result\n    self.assertEqual(result['cost'], decimal_text(expected))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 1253, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 703, in fail\n    raise self.failureException(msg)\nAssertionError: '9' != '3'\n- 9\n+ 3\n\n",
+          "elapsed_seconds": 0.0038613000001532782
+        }
+      ],
+      "wall_seconds": 0.48710979999987103,
+      "mutated_source_sha256": "175a4ac6558a06d2afb79a5d2d7a798daaf7dd5c3f9e2d27d4fc43b393147166",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "keep_first_predecessor",
+      "description": "Mejorar la distancia sin sustituir un predecesor descubierto antes.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "                predecessors[neighbor] = (node, edge.id)",
+        "new": "                predecessors.setdefault(neighbor, (node, edge.id))"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\keep_first_predecessor\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:cheaper_detour",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "D",
+                  "weight": "9"
+                },
+                {
+                  "id": "e1",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "3",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "D"
+            ],
+            "edge_path": [
+              "e0"
+            ],
+            "cost": "3",
+            "settled": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "stats": {
+              "settled": 4,
+              "relaxations": 4,
+              "heap_pushes": 5,
+              "heap_pops": 4,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "9000000 != 3000000",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\keep_first_predecessor\\tests\\test_independent.py\", line 63, in assert_result\n    self.assertEqual(total, expected)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 866, in _baseAssertEqual\n    raise self.failureException(msg)\nAssertionError: 9000000 != 3000000\n",
+          "elapsed_seconds": 0.0038829999998597486
+        }
+      ],
+      "wall_seconds": 0.48638560000017605,
+      "mutated_source_sha256": "497a51c5652fb8fbaca8fb8505a5007344dea3a1f920be849bdd7709a75fe9bf",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "allow_negative_numeric_weight",
+      "description": "Omitir el rechazo de pesos numéricos negativos.",
+      "file": "vertice/graph.py",
+      "source_change": {
+        "old": "if not result.is_finite() or result < 0 or result > MAX_WEIGHT:",
+        "new": "if not result.is_finite() or result > MAX_WEIGHT:"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\allow_negative_numeric_weight\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "method:ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected",
+          "status": "assertion_failure",
+          "failures": [
+            {
+              "test": "test_invalid_weights_are_explicitly_rejected (test_independent.ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected) (weight='-1')",
+              "message": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\allow_negative_numeric_weight\\tests\\test_independent.py\", line 285, in test_invalid_weights_are_explicitly_rejected\n    self.assert_bad(payload)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\allow_negative_numeric_weight\\tests\\test_independent.py\", line 274, in assert_bad\n    with self.assertRaises(ValidationError):\nAssertionError: ValidationError not raised\n"
+            }
+          ],
+          "errors": [],
+          "elapsed_seconds": 0.003233100000215927
+        }
+      ],
+      "wall_seconds": 0.5006140999998934,
+      "mutated_source_sha256": "7c536b2cb03f9ae97f68c7dc6a53dd6a78a2431855e9002e060ffe7485697414",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "sum_through_float",
+      "description": "Realizar la suma mediante float antes de convertir de nuevo a Decimal.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "                candidate = cost + edge.weight",
+        "new": "                candidate = Decimal(str(float(cost) + float(edge.weight)))"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\sum_through_float\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:decimal_exact",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "0.1"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "0.2"
+                },
+                {
+                  "id": "e2",
+                  "source": "A",
+                  "target": "C",
+                  "weight": "0.300001"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "0.3",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edge_path": [
+              "e0",
+              "e1"
+            ],
+            "cost": "0.30000000000000004",
+            "settled": [
+              "A",
+              "B",
+              "C"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "'0.30000000000000004' != '0.3'\n- 0.30000000000000004\n+ 0.3\n",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\sum_through_float\\tests\\test_independent.py\", line 42, in assert_result\n    self.assertEqual(result['cost'], decimal_text(expected))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 1253, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 703, in fail\n    raise self.failureException(msg)\nAssertionError: '0.30000000000000004' != '0.3'\n- 0.30000000000000004\n+ 0.3\n\n",
+          "elapsed_seconds": 0.003935100000035163
+        },
+        {
+          "selector": "named:large_exact",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1000000000000"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "999999999999.999999"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "1999999999999.999999",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edge_path": [
+              "e0",
+              "e1"
+            ],
+            "cost": "2000000000000",
+            "settled": [
+              "A",
+              "B",
+              "C"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 2,
+              "heap_pushes": 3,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "'2000000000000' != '1999999999999.999999'\n- 2000000000000\n+ 1999999999999.999999\n",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\sum_through_float\\tests\\test_independent.py\", line 42, in assert_result\n    self.assertEqual(result['cost'], decimal_text(expected))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 1253, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 703, in fail\n    raise self.failureException(msg)\nAssertionError: '2000000000000' != '1999999999999.999999'\n- 2000000000000\n+ 1999999999999.999999\n\n",
+          "elapsed_seconds": 0.0017219000001205131
+        }
+      ],
+      "wall_seconds": 0.4865157000003819,
+      "mutated_source_sha256": "daa043112e13ae8afbf68098a75ea3d1774982351c10fdc614f2a5c0d66dc075",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "close_when_enqueued",
+      "description": "Marcar cada vecino como cerrado al encolarlo, antes de extraer el mínimo.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "                heapq.heappush(heap, (candidate, neighbor))",
+        "new": "                heapq.heappush(heap, (candidate, neighbor))\n                closed.add(neighbor)"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\close_when_enqueued\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:cheaper_detour",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "D",
+                  "weight": "9"
+                },
+                {
+                  "id": "e1",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "3",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "D"
+            ],
+            "edge_path": [
+              "e0"
+            ],
+            "cost": "9",
+            "settled": [
+              "A"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 2,
+              "heap_pushes": 3,
+              "heap_pops": 3,
+              "stale_pops": 2
+            }
+          },
+          "status": "assertion_failure",
+          "message": "'9' != '3'\n- 9\n+ 3\n",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\close_when_enqueued\\tests\\test_independent.py\", line 42, in assert_result\n    self.assertEqual(result['cost'], decimal_text(expected))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 1253, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 703, in fail\n    raise self.failureException(msg)\nAssertionError: '9' != '3'\n- 9\n+ 3\n\n",
+          "elapsed_seconds": 0.004838899999867863
+        }
+      ],
+      "wall_seconds": 0.5051635999998325,
+      "mutated_source_sha256": "fff47b3cd5e7aa88562f34d7617b046b185dce49a2c96899902a15b3ff02412d",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "ignore_direction",
+      "description": "Tratar como no dirigido un grafo que declara dirección.",
+      "file": "vertice/graph.py",
+      "source_change": {
+        "old": "        self._directed = directed",
+        "new": "        self._directed = False"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\ignore_direction\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:directed_no_reverse",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "C",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "C",
+              "B",
+              "A"
+            ],
+            "edge_path": [
+              "e1",
+              "e0"
+            ],
+            "cost": "2",
+            "settled": [
+              "C",
+              "B",
+              "A"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 2,
+              "heap_pushes": 3,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "'ok' != 'no_path'\n- ok\n+ no_path\n",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\ignore_direction\\tests\\test_independent.py\", line 39, in assert_result\n    self.assertEqual(result['status'], 'ok' if expected is not None else 'no_path')\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 1253, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 703, in fail\n    raise self.failureException(msg)\nAssertionError: 'ok' != 'no_path'\n- ok\n+ no_path\n\n",
+          "elapsed_seconds": 0.004670600000281411
+        }
+      ],
+      "wall_seconds": 0.5046913000001041,
+      "mutated_source_sha256": "24bd82ced9134d635bf76a817ca7387fc836d19ef5af4631283ad9b5534dad41",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "unreachable_cost_zero",
+      "description": "Devolver costo cero cuando no existe una ruta.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "        final_cost = decimal_or_none(distances[target]) if found else None",
+        "new": "        final_cost = decimal_or_none(distances[target]) if found else \"0\""
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\unreachable_cost_zero\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:disconnected",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": "0",
+            "settled": [
+              "A",
+              "B"
+            ],
+            "stats": {
+              "settled": 2,
+              "relaxations": 1,
+              "heap_pushes": 2,
+              "heap_pops": 2,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "'0' != None",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\unreachable_cost_zero\\tests\\test_independent.py\", line 42, in assert_result\n    self.assertEqual(result['cost'], decimal_text(expected))\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 873, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 866, in _baseAssertEqual\n    raise self.failureException(msg)\nAssertionError: '0' != None\n",
+          "elapsed_seconds": 0.004744200000004639
+        },
+        {
+          "selector": "named:single_node",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "edges": []
+            },
+            "source": "A",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "0",
+            "path": [
+              "A"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A"
+            ],
+            "edge_path": [],
+            "cost": "0",
+            "settled": [
+              "A"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 0,
+              "heap_pushes": 1,
+              "heap_pops": 1,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00037679999968531774
+        }
+      ],
+      "wall_seconds": 0.511402999999973,
+      "mutated_source_sha256": "c54ca79f44131e589f99cbc6c826f294df297ffbc5e0db205c2316ecfca8dcaa",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "neighbors_in_insertion_order",
+      "description": "Eliminar el orden de vecinos y dejar que el orden de importación altere la traza.",
+      "file": "vertice/graph.py",
+      "source_change": {
+        "old": "sorted(self._adjacency[node_id].items())",
+        "new": "self._adjacency[node_id].items()"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\neighbors_in_insertion_order\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "method:IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace",
+          "status": "assertion_failure",
+          "failures": [
+            {
+              "test": "test_input_order_does_not_change_tie_route_or_trace (test_independent.IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace)",
+              "message": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\neighbors_in_insertion_order\\tests\\test_independent.py\", line 227, in test_input_order_does_not_change_tie_route_or_trace\n    self.assertEqual(solve_payload(payload), expected)\nAssertionError: {'sta[406 chars]t': 'A', 'edge': 'e2', 'old_cost': None, 'new_[1235 chars]: 0}} != {'sta[406 chars]t': 'B', 'edge': 'e0', 'old_cost': None, 'new_[1235 chars]: 0}}\nDiff is 4534 characters long. Set self.maxDiff to None to see it.\n"
+            }
+          ],
+          "errors": [],
+          "elapsed_seconds": 0.008212400000047637
+        }
+      ],
+      "wall_seconds": 0.4938187000002472,
+      "mutated_source_sha256": "8878fd43be77a68fdbe43011be841194cf49b046bcf97bb048de603e9a1be9e8",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "replace_on_equal_cost",
+      "description": "Reemplazar un predecesor también ante costos iguales.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "candidate >= previous",
+        "new": "candidate > previous"
+      },
+      "equivalence_reason": null,
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\replace_on_equal_cost\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:deterministic_tie",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "S",
+                  "label": "S",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "T",
+                  "label": "T",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "S",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "T",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "S",
+                  "target": "A",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "A",
+                  "target": "T",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "S",
+            "target": "T",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "2",
+            "path": [
+              "S",
+              "A",
+              "T"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "S",
+              "B",
+              "T"
+            ],
+            "edge_path": [
+              "e0",
+              "e1"
+            ],
+            "cost": "2",
+            "settled": [
+              "S",
+              "A",
+              "B",
+              "T"
+            ],
+            "stats": {
+              "settled": 4,
+              "relaxations": 4,
+              "heap_pushes": 5,
+              "heap_pops": 4,
+              "stale_pops": 0
+            }
+          },
+          "status": "assertion_failure",
+          "message": "False is not true",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_mutations.py\", line 185, in worker\n    test.assert_result(case[\"payload\"], result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\replace_on_equal_cost\\tests\\test_independent.py\", line 82, in assert_result\n    self.assert_trace(payload, result, arc_map)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\replace_on_equal_cost\\tests\\test_independent.py\", line 125, in assert_trace\n    self.assertTrue(known[v] is None or new < known[v])\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\case.py\", line 715, in assertTrue\n    raise self.failureException(msg)\nAssertionError: False is not true\n",
+          "elapsed_seconds": 0.004729000000224914
+        }
+      ],
+      "wall_seconds": 0.5176136000000042,
+      "mutated_source_sha256": "d9b687273a58191551bade7b1dfd7609aa2d69109b74d47934fa2325e394c226",
+      "classification": "detected_by_assertion"
+    },
+    {
+      "id": "remove_redundant_stale_distance_check",
+      "description": "Quitar la comparación de costo obsoleto y conservar la comprobación del conjunto cerrado.",
+      "file": "vertice/dijkstra.py",
+      "source_change": {
+        "old": "            if node in closed or cost != distances[node]:",
+        "new": "            if node in closed:"
+      },
+      "equivalence_reason": "Con pesos no negativos y relajaciones estrictas, una entrada vieja tiene un costo mayor que la entrada que la reemplazó. El heap extrae primero el costo menor para el mismo nodo; cuando extrae la entrada vieja, el nodo ya pertenece al conjunto cerrado. No se insertan duplicados por costo igual. Si se termina antes por el destino, ninguna entrada posterior se procesa. Por ello el otro término de la condición es redundante bajo las invariantes actuales.",
+      "guard": {
+        "kind": "Windows Job Object",
+        "memory_bytes": 536870912,
+        "cpu_seconds": 20,
+        "processes": 1
+      },
+      "loaded_core": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\mutation-audit-mf8gp6ox\\remove_redundant_stale_distance_check\\vertice\\__init__.py",
+      "checks": [
+        {
+          "selector": "named:single_node",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "edges": []
+            },
+            "source": "A",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "0",
+            "path": [
+              "A"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A"
+            ],
+            "edge_path": [],
+            "cost": "0",
+            "settled": [
+              "A"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 0,
+              "heap_pushes": 1,
+              "heap_pops": 1,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00039520000018455903
+        },
+        {
+          "selector": "named:chain_reverse",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "2"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "3.5"
+                }
+              ]
+            },
+            "source": "C",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "5.5",
+            "path": [
+              "C",
+              "B",
+              "A"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "C",
+              "B",
+              "A"
+            ],
+            "edge_path": [
+              "e1",
+              "e0"
+            ],
+            "cost": "5.5",
+            "settled": [
+              "C",
+              "B",
+              "A"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 2,
+              "heap_pushes": 3,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0006158000001050823
+        },
+        {
+          "selector": "named:cheaper_detour",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "D",
+                  "weight": "9"
+                },
+                {
+                  "id": "e1",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "3",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "edge_path": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "cost": "3",
+            "settled": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "stats": {
+              "settled": 4,
+              "relaxations": 4,
+              "heap_pushes": 5,
+              "heap_pops": 4,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0008787000001575507
+        },
+        {
+          "selector": "named:zero_cycle",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "0"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "0"
+                },
+                {
+                  "id": "e2",
+                  "source": "C",
+                  "target": "A",
+                  "weight": "0"
+                },
+                {
+                  "id": "e3",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "2"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "2",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "edge_path": [
+              "e0",
+              "e1",
+              "e3"
+            ],
+            "cost": "2",
+            "settled": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "stats": {
+              "settled": 4,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 4,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0006324000000859087
+        },
+        {
+          "selector": "named:decimal_exact",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "0.1"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "0.2"
+                },
+                {
+                  "id": "e2",
+                  "source": "A",
+                  "target": "C",
+                  "weight": "0.300001"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "0.3",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edge_path": [
+              "e0",
+              "e1"
+            ],
+            "cost": "0.3",
+            "settled": [
+              "A",
+              "B",
+              "C"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0005227999999988242
+        },
+        {
+          "selector": "named:micro_delta",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "C",
+                  "weight": "0.000003"
+                },
+                {
+                  "id": "e1",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "0.000001"
+                },
+                {
+                  "id": "e2",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "0.000001"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "0.000002",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edge_path": [
+              "e1",
+              "e2"
+            ],
+            "cost": "0.000002",
+            "settled": [
+              "A",
+              "B",
+              "C"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0005328999995981576
+        },
+        {
+          "selector": "named:large_exact",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1000000000000"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "999999999999.999999"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "1999999999999.999999",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edge_path": [
+              "e0",
+              "e1"
+            ],
+            "cost": "1999999999999.999999",
+            "settled": [
+              "A",
+              "B",
+              "C"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 2,
+              "heap_pushes": 3,
+              "heap_pops": 3,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00045510000018111896
+        },
+        {
+          "selector": "named:directed_no_reverse",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "C",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": null,
+            "settled": [
+              "C"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 0,
+              "heap_pushes": 1,
+              "heap_pops": 1,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00032770000007076305
+        },
+        {
+          "selector": "named:disconnected",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "C",
+                  "target": "D",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "D",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": null,
+            "settled": [
+              "A",
+              "B"
+            ],
+            "stats": {
+              "settled": 2,
+              "relaxations": 1,
+              "heap_pushes": 2,
+              "heap_pops": 2,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0003806999998232641
+        },
+        {
+          "selector": "named:isolated_source",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "B",
+                  "target": "C",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": null,
+            "settled": [
+              "A"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 0,
+              "heap_pushes": 1,
+              "heap_pops": 1,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00025269999969168566
+        },
+        {
+          "selector": "named:isolated_target",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "C",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": null,
+            "settled": [
+              "A",
+              "B"
+            ],
+            "stats": {
+              "settled": 2,
+              "relaxations": 1,
+              "heap_pushes": 2,
+              "heap_pops": 2,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00034130000040022423
+        },
+        {
+          "selector": "named:self_loops",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "A",
+                  "weight": "0"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "B",
+                  "weight": "10"
+                },
+                {
+                  "id": "e2",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "2"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "B",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "2",
+            "path": [
+              "A",
+              "B"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A",
+              "B"
+            ],
+            "edge_path": [
+              "e2"
+            ],
+            "cost": "2",
+            "settled": [
+              "A",
+              "B"
+            ],
+            "stats": {
+              "settled": 2,
+              "relaxations": 1,
+              "heap_pushes": 2,
+              "heap_pops": 2,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00036499999987427145
+        },
+        {
+          "selector": "named:same_node_with_edges",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "5"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "A",
+                  "weight": "0"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "0",
+            "path": [
+              "A"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "A"
+            ],
+            "edge_path": [],
+            "cost": "0",
+            "settled": [
+              "A"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 0,
+              "heap_pushes": 1,
+              "heap_pops": 1,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0002515999999559426
+        },
+        {
+          "selector": "named:deterministic_tie",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "S",
+                  "label": "S",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "T",
+                  "label": "T",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "S",
+                  "target": "B",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "T",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "S",
+                  "target": "A",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "A",
+                  "target": "T",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "S",
+            "target": "T",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "2",
+            "path": [
+              "S",
+              "A",
+              "T"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "S",
+              "A",
+              "T"
+            ],
+            "edge_path": [
+              "e2",
+              "e3"
+            ],
+            "cost": "2",
+            "settled": [
+              "S",
+              "A",
+              "B",
+              "T"
+            ],
+            "stats": {
+              "settled": 4,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 4,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0005194000000301457
+        },
+        {
+          "selector": "named:not_global_lexicographic",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "S",
+                  "label": "S",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "T",
+                  "label": "T",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "S",
+                  "target": "B",
+                  "weight": "0"
+                },
+                {
+                  "id": "e1",
+                  "source": "B",
+                  "target": "T",
+                  "weight": "2"
+                },
+                {
+                  "id": "e2",
+                  "source": "S",
+                  "target": "A",
+                  "weight": "1"
+                },
+                {
+                  "id": "e3",
+                  "source": "A",
+                  "target": "T",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "S",
+            "target": "T",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "2",
+            "path": [
+              "S",
+              "B",
+              "T"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "S",
+              "B",
+              "T"
+            ],
+            "edge_path": [
+              "e0",
+              "e1"
+            ],
+            "cost": "2",
+            "settled": [
+              "S",
+              "B",
+              "A",
+              "T"
+            ],
+            "stats": {
+              "settled": 4,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 4,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00048150000020541484
+        },
+        {
+          "selector": "named:stale_heap_entry",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "Z",
+                  "label": "Z",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "A",
+                  "target": "B",
+                  "weight": "9"
+                },
+                {
+                  "id": "e1",
+                  "source": "A",
+                  "target": "C",
+                  "weight": "1"
+                },
+                {
+                  "id": "e2",
+                  "source": "C",
+                  "target": "B",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "A",
+            "target": "Z",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": null,
+            "settled": [
+              "A",
+              "C",
+              "B"
+            ],
+            "stats": {
+              "settled": 3,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 4,
+              "stale_pops": 1
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00044919999982084846
+        },
+        {
+          "selector": "named:tentative_is_not_final",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": true,
+              "nodes": [
+                {
+                  "id": "S",
+                  "label": "S",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "T",
+                  "label": "T",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "X",
+                  "label": "X",
+                  "x": 80,
+                  "y": 0
+                },
+                {
+                  "id": "Y",
+                  "label": "Y",
+                  "x": 120,
+                  "y": 0
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e0",
+                  "source": "S",
+                  "target": "T",
+                  "weight": "1"
+                },
+                {
+                  "id": "e1",
+                  "source": "S",
+                  "target": "X",
+                  "weight": "50"
+                },
+                {
+                  "id": "e2",
+                  "source": "S",
+                  "target": "Y",
+                  "weight": "2"
+                },
+                {
+                  "id": "e3",
+                  "source": "Y",
+                  "target": "X",
+                  "weight": "1"
+                }
+              ]
+            },
+            "source": "S",
+            "target": "T",
+            "trace": true
+          },
+          "expected": {
+            "status": "ok",
+            "cost": "1",
+            "path": [
+              "S",
+              "T"
+            ]
+          },
+          "actual": {
+            "status": "ok",
+            "path": [
+              "S",
+              "T"
+            ],
+            "edge_path": [
+              "e0"
+            ],
+            "cost": "1",
+            "settled": [
+              "S",
+              "T"
+            ],
+            "stats": {
+              "settled": 2,
+              "relaxations": 3,
+              "heap_pushes": 4,
+              "heap_pops": 2,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.0004398000000946922
+        },
+        {
+          "selector": "named:empty_edges",
+          "input": {
+            "graph": {
+              "schema_version": 1,
+              "directed": false,
+              "nodes": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "x": 40,
+                  "y": 0
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "x": 80,
+                  "y": 0
+                }
+              ],
+              "edges": []
+            },
+            "source": "B",
+            "target": "A",
+            "trace": true
+          },
+          "expected": {
+            "status": "no_path",
+            "cost": null,
+            "path": []
+          },
+          "actual": {
+            "status": "no_path",
+            "path": [],
+            "edge_path": [],
+            "cost": null,
+            "settled": [
+              "B"
+            ],
+            "stats": {
+              "settled": 1,
+              "relaxations": 0,
+              "heap_pushes": 1,
+              "heap_pops": 1,
+              "stale_pops": 0
+            }
+          },
+          "status": "passed",
+          "elapsed_seconds": 0.00019470000006549526
+        },
+        {
+          "selector": "method:IndependentAlgorithmTests.test_decimal_context_cannot_erase_micro_difference",
+          "status": "passed",
+          "failures": [],
+          "errors": [],
+          "elapsed_seconds": 0.00030049999986658804
+        },
+        {
+          "selector": "method:IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace",
+          "status": "passed",
+          "failures": [],
+          "errors": [],
+          "elapsed_seconds": 0.000807399999757763
+        }
+      ],
+      "wall_seconds": 0.5027538999997887,
+      "mutated_source_sha256": "04f7fc3d516278e1eed174f833cd9e8ee35761e6910b03eda8d4bdf64e1bdb20",
+      "classification": "equivalent_under_contract"
+    }
+  ]
+}

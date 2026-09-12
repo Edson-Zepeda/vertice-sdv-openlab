@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "package": "vertice",
+  "files": [
+    {
+      "name": "__init__.py",
+      "sha256": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+      "bytes": 343
+    },
+    {
+      "name": "graph.py",
+      "sha256": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+      "bytes": 13609
+    },
+    {
+      "name": "dijkstra.py",
+      "sha256": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+      "bytes": 4376
+    },
+    {
+      "name": "codec.py",
+      "sha256": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+      "bytes": 4700
+    }
+  ]
+}

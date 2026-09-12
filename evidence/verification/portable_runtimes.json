@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-12T01:14:41.931803+00:00",
+  "scope": "Temporary audit runtimes; not bundled with deliverable, no system installation",
+  "notes": "Python 3.10.11 is an old binary release used only to exercise the declared minimum series, not a recommendation to install this patch level. SHA-256 retained for both; 3.10 page publishes MD5, which is only an integrity cross-check, not authenticity proof.",
+  "packages": [
+    {
+      "version": "3.10.11",
+      "page": "https://www.python.org/downloads/release/python-31011/",
+      "url": "https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip",
+      "published_digest_algorithm": "md5",
+      "published_digest": "f1c0538b060e03cbb697ab3581cb73bc",
+      "archive_bytes": 8629277,
+      "sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d",
+      "published_digest_verified": true,
+      "runtime": "tmp\\compatibility\\python-3.10.11",
+      "reported_version": "Python 3.10.11",
+      "isolated_configuration": [
+        {
+          "file": "python310._pth",
+          "original": "python310.zip\n.\n\n# Uncomment to run site.main() automatically\n#import site\n",
+          "audit_change": "renamed only in isolated test runtime to permit cwd package imports"
+        }
+      ]
+    },
+    {
+      "version": "3.14.7",
+      "page": "https://www.python.org/downloads/release/python-3147/",
+      "url": "https://www.python.org/ftp/python/3.14.7/python-3.14.7-embed-amd64.zip",
+      "published_digest_algorithm": "sha256",
+      "published_digest": "d297e5ff019966817ad8502465176139f2d3d840fa4ed84b13bed399a6ab1f15",
+      "archive_bytes": 12673227,
+      "sha256": "d297e5ff019966817ad8502465176139f2d3d840fa4ed84b13bed399a6ab1f15",
+      "published_digest_verified": true,
+      "runtime": "tmp\\compatibility\\python-3.14.7",
+      "reported_version": "Python 3.14.7",
+      "isolated_configuration": [
+        {
+          "file": "python314._pth",
+          "original": "python314.zip\n.\n\n# Uncomment to run site.main() automatically\n#import site\n",
+          "audit_change": "renamed only in isolated test runtime to permit cwd package imports"
+        }
+      ]
+    }
+  ]
+}

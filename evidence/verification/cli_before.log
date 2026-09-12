@@ -1,0 +1,26 @@
+test_argument_errors_exit_two_without_traceback (test_cli.CleanCliTests.test_argument_errors_exit_two_without_traceback) ... ok
+test_documented_create_edit_validate_and_solve_sequence (test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence) ... ok
+test_existing_output_is_preserved_without_explicit_overwrite (test_cli.CleanCliTests.test_existing_output_is_preserved_without_explicit_overwrite) ... ok
+test_human_readable_route_and_trace_flag (test_cli.CleanCliTests.test_human_readable_route_and_trace_flag) ... ok
+test_invalid_edit_never_replaces_saved_graph (test_cli.CleanCliTests.test_invalid_edit_never_replaces_saved_graph) ... ok
+test_missing_input_or_output_directory_is_controlled (test_cli.CleanCliTests.test_missing_input_or_output_directory_is_controlled) ... ok
+test_no_path_is_valid_zero_exit_and_never_zero_cost (test_cli.CleanCliTests.test_no_path_is_valid_zero_exit_and_never_zero_cost) ... ok
+test_stdin_preserves_utf8_under_windows_legacy_locale (test_cli.CleanCliTests.test_stdin_preserves_utf8_under_windows_legacy_locale) ... FAIL
+test_updates_and_removals_change_subsequent_searches (test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches) ... ok
+test_utf8_file_round_trip_and_directed_choice (test_cli.CleanCliTests.test_utf8_file_round_trip_and_directed_choice) ... ok
+
+======================================================================
+FAIL: test_stdin_preserves_utf8_under_windows_legacy_locale (test_cli.CleanCliTests.test_stdin_preserves_utf8_under_windows_legacy_locale)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\Codex\2026-09-04\real\outputs\VerticeSDV\tests\test_cli.py", line 145, in test_stdin_preserves_utf8_under_windows_legacy_locale
+    self.assertEqual(next(node for node in saved['nodes'] if node['id'] == 'A')['label'], graph['nodes'][0]['label'])
+AssertionError: 'CafÃ© ðŸš— ä½\xa0å¥½' != 'Café 🚗 你好'
+- CafÃ© ðŸš— ä½ å¥½
++ Café 🚗 你好
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 9.701s
+
+FAILED (failures=1)

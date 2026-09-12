@@ -1,0 +1,283 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "62c7295d9fcddc860ddb64a8fc335932a8e143cf079d0560a5a41d3c78d99c9b",
+  "text": "Medimos por separado el solucionador y el proceso completo de validación, construcción y salida JSON. Cada barra resume nueve ejecuciones del mismo caso, después del calentamiento. El tamaño y la densidad del grafo importan. Estas mediciones corresponden a Python en esta computadora; no representan el tiempo de un vehículo ni el de todos los navegadores.",
+  "words": [
+    {
+      "text": "Medimos",
+      "start": 0.099,
+      "end": 0.576958
+    },
+    {
+      "text": "por",
+      "start": 0.589208,
+      "end": 0.723999
+    },
+    {
+      "text": "separado",
+      "start": 0.736291,
+      "end": 1.177457
+    },
+    {
+      "text": "el",
+      "start": 1.189708,
+      "end": 1.238708
+    },
+    {
+      "text": "solucionador",
+      "start": 1.251,
+      "end": 1.949541
+    },
+    {
+      "text": "y",
+      "start": 1.96175,
+      "end": 2.047541
+    },
+    {
+      "text": "el",
+      "start": 2.059791,
+      "end": 2.157832
+    },
+    {
+      "text": "proceso",
+      "start": 2.170083,
+      "end": 2.598999
+    },
+    {
+      "text": "completo",
+      "start": 2.611291,
+      "end": 3.076957
+    },
+    {
+      "text": "de",
+      "start": 3.089208,
+      "end": 3.174999
+    },
+    {
+      "text": "validación",
+      "start": 3.18725,
+      "end": 3.81225
+    },
+    {
+      "text": "construcción",
+      "start": 4.032833,
+      "end": 4.657833
+    },
+    {
+      "text": "y",
+      "start": 4.670083,
+      "end": 4.719083
+    },
+    {
+      "text": "salida",
+      "start": 4.731375,
+      "end": 5.148041
+    },
+    {
+      "text": "JSON",
+      "start": 5.160291,
+      "end": 5.564707
+    },
+    {
+      "text": "Cada",
+      "start": 6.409333,
+      "end": 6.642166
+    },
+    {
+      "text": "barra",
+      "start": 6.654416,
+      "end": 6.948541
+    },
+    {
+      "text": "resume",
+      "start": 6.960791,
+      "end": 7.365207
+    },
+    {
+      "text": "nueve",
+      "start": 7.377458,
+      "end": 7.634791
+    },
+    {
+      "text": "ejecuciones",
+      "start": 7.647041,
+      "end": 8.321041
+    },
+    {
+      "text": "del",
+      "start": 8.333333,
+      "end": 8.480374
+    },
+    {
+      "text": "mismo",
+      "start": 8.492666,
+      "end": 8.823541
+    },
+    {
+      "text": "caso",
+      "start": 8.835791,
+      "end": 9.191166
+    },
+    {
+      "text": "después",
+      "start": 9.473041,
+      "end": 9.852957
+    },
+    {
+      "text": "del",
+      "start": 9.865208,
+      "end": 9.987749
+    },
+    {
+      "text": "calentamiento",
+      "start": 10.0,
+      "end": 10.784333
+    },
+    {
+      "text": "El",
+      "start": 11.629916,
+      "end": 11.825999
+    },
+    {
+      "text": "tamaño",
+      "start": 11.83825,
+      "end": 12.218166
+    },
+    {
+      "text": "y",
+      "start": 12.230375,
+      "end": 12.279375
+    },
+    {
+      "text": "la",
+      "start": 12.291666,
+      "end": 12.389707
+    },
+    {
+      "text": "densidad",
+      "start": 12.401958,
+      "end": 12.904416
+    },
+    {
+      "text": "del",
+      "start": 12.916666,
+      "end": 13.075999
+    },
+    {
+      "text": "grafo",
+      "start": 13.08825,
+      "end": 13.370125
+    },
+    {
+      "text": "importan",
+      "start": 13.382333,
+      "end": 13.982833
+    },
+    {
+      "text": "Estas",
+      "start": 14.828416,
+      "end": 15.208332
+    },
+    {
+      "text": "mediciones",
+      "start": 15.220583,
+      "end": 15.772041
+    },
+    {
+      "text": "corresponden",
+      "start": 15.784333,
+      "end": 16.421583
+    },
+    {
+      "text": "a",
+      "start": 16.433833,
+      "end": 16.482833
+    },
+    {
+      "text": "Python",
+      "start": 16.495083,
+      "end": 16.948499
+    },
+    {
+      "text": "en",
+      "start": 16.960791,
+      "end": 17.083332
+    },
+    {
+      "text": "esta",
+      "start": 17.095583,
+      "end": 17.328416
+    },
+    {
+      "text": "computadora",
+      "start": 17.340666,
+      "end": 18.026957
+    },
+    {
+      "text": "no",
+      "start": 18.357833,
+      "end": 18.468124
+    },
+    {
+      "text": "representan",
+      "start": 18.480375,
+      "end": 19.093125
+    },
+    {
+      "text": "el",
+      "start": 19.105375,
+      "end": 19.240166
+    },
+    {
+      "text": "tiempo",
+      "start": 19.252458,
+      "end": 19.583333
+    },
+    {
+      "text": "de",
+      "start": 19.595583,
+      "end": 19.693624
+    },
+    {
+      "text": "un",
+      "start": 19.705875,
+      "end": 19.840666
+    },
+    {
+      "text": "vehículo",
+      "start": 19.852958,
+      "end": 20.355416
+    },
+    {
+      "text": "ni",
+      "start": 20.367666,
+      "end": 20.551499
+    },
+    {
+      "text": "el",
+      "start": 20.563708,
+      "end": 20.661749
+    },
+    {
+      "text": "de",
+      "start": 20.674,
+      "end": 20.784291
+    },
+    {
+      "text": "todos",
+      "start": 20.796583,
+      "end": 21.188749
+    },
+    {
+      "text": "los",
+      "start": 21.201,
+      "end": 21.348041
+    },
+    {
+      "text": "navegadores",
+      "start": 21.360291,
+      "end": 22.144624
+    }
+  ]
+}

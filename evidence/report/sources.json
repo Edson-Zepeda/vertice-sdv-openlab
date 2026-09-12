@@ -1,0 +1,473 @@
+{
+  "generated_at": "2026-09-12T02:23:03.174512+00:00",
+  "pages": 10,
+  "pdf": "docs/VerticeSDV_Informe.pdf",
+  "pdf_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
+  "web_copy_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
+  "web_copy_identical": true,
+  "independent_current": true,
+  "benchmark_current": true,
+  "inputs": {
+    "web/data/examples.json": "5c42484a650b23e68f019316770f80e47cffbc854fd7692bea2f012be2ef4194",
+    "docs/REQUISITOS.md": "1efd38ddac5d5073f2db217ff3c3861932ab82149046f94d41436c49ef8fc304",
+    "docs/CONTRATO.md": "194cfc37efa1ce8ac6f9762eb2a75cfc58b6bcbb877476fd83091c6b5cfebd64",
+    "docs/API.md": "34596cda0c3519f8e9889fb7c3a6ed1f82b811fd94ce325fb63fec41b057add9",
+    "docs/ALGORITMO.md": "7810d74e6b5ac212a57829e7726a20be6e62493aefbc0bf0bb8171411d9f5e40",
+    "docs/ARQUITECTURA.md": "8774d6383c234c71849149f0483c8288e98dfc2dcd8508f696a1dd0f0746ba3f",
+    "docs/AUDITORIA.md": "ede7ace62f508871b9abca017418f8c2cce95b6e3fe12705c58677526bb41f07",
+    "evidence/verification/independent.json": "f18bedb5505a6410e7f5fab7008189c1fd44d51c559e6e5ab94b62633476edc7",
+    "evidence/verification/benchmark.json": "5d8be32a9e60c24efd51a99201d6a089a81e0dad2182c9ef2849b462515539c7",
+    "evidence/verification/http.json": "9159db905a1d826f2fd4e9f0bfb0b861ec06f9ef46694f3fb45f90055d63382f",
+    "evidence/verification/mutations.json": "e02de29130451fc85dda30ef68a674c3a545891a3fdb188f75609369e96b643d",
+    "evidence/verification/cli_python311.json": "564c5df0d2a8e3dceaceba1781354e2a08888ab5c9372c56efa1fe925c2ba7a2",
+    "evidence/report_integration.json": "aa900a4f5c258049e25890a8b87d630467b21c6f7eff45c98568cc8ca012ccbc",
+    "evidence/verification/cli_python310.json": "8e2ae56d30a9c1ff4f6f7366f2f9c879db1bb38dfe9b769714e9c19646263dc0",
+    "evidence/verification/cli_python310_before_final_guard.json": "6d04305613e1de7c49277141cc0218892c0d6c67faad4d990f0c00048c45e54d",
+    "evidence/verification/cli_python311_before_final_guard.json": "5ed7e370de4d92131892f59ab56e8bb3ed605758553345c2366ba38d76c42fd0",
+    "evidence/verification/cli_python312.json": "1782381a95a37fc5079b982cf8ccacfa977406afab6b835ef93be5222916f7ae",
+    "evidence/verification/cli_python312_before_final_guard.json": "1a9c37e2e665acfb197cf25e5d3d51d8bc1fdb228e820b37e31919309e42bb52",
+    "evidence/verification/cli_python314.json": "00b3442153aa55ed875a82bb23e09883c758ca9617461bad8eb83d1c70e60d0e",
+    "evidence/verification/cli_python314_before_final_guard.json": "213405795a154e3ae8fa3a76dca08f4101a994e24d90abeaf476a334e593fb4b"
+  },
+  "core_source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b"
+  },
+  "example_result": {
+    "status": "ok",
+    "source": "S",
+    "target": "T",
+    "path": [
+      "S",
+      "B",
+      "D",
+      "E",
+      "T"
+    ],
+    "edge_path": [
+      "e2",
+      "e6",
+      "e9",
+      "e11"
+    ],
+    "cost": "11",
+    "distances": {
+      "A": "3",
+      "B": "2",
+      "C": "6",
+      "D": "6",
+      "E": "8",
+      "F": "9",
+      "S": "0",
+      "T": "11"
+    },
+    "settled": [
+      "S",
+      "B",
+      "A",
+      "C",
+      "D",
+      "E",
+      "F",
+      "T"
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "kind": "initialize",
+        "node": "S",
+        "source": "S",
+        "target": "T",
+        "cost": "0"
+      },
+      {
+        "step": 1,
+        "kind": "settle",
+        "node": "S",
+        "cost": "0"
+      },
+      {
+        "step": 2,
+        "kind": "consider",
+        "source": "S",
+        "target": "A",
+        "edge": "e1",
+        "old_cost": null,
+        "new_cost": "4"
+      },
+      {
+        "step": 3,
+        "kind": "relax",
+        "source": "S",
+        "target": "A",
+        "edge": "e1",
+        "old_cost": null,
+        "new_cost": "4"
+      },
+      {
+        "step": 4,
+        "kind": "consider",
+        "source": "S",
+        "target": "B",
+        "edge": "e2",
+        "old_cost": null,
+        "new_cost": "2"
+      },
+      {
+        "step": 5,
+        "kind": "relax",
+        "source": "S",
+        "target": "B",
+        "edge": "e2",
+        "old_cost": null,
+        "new_cost": "2"
+      },
+      {
+        "step": 6,
+        "kind": "settle",
+        "node": "B",
+        "cost": "2"
+      },
+      {
+        "step": 7,
+        "kind": "consider",
+        "source": "B",
+        "target": "A",
+        "edge": "e3",
+        "old_cost": "4",
+        "new_cost": "3"
+      },
+      {
+        "step": 8,
+        "kind": "relax",
+        "source": "B",
+        "target": "A",
+        "edge": "e3",
+        "old_cost": "4",
+        "new_cost": "3"
+      },
+      {
+        "step": 9,
+        "kind": "consider",
+        "source": "B",
+        "target": "D",
+        "edge": "e6",
+        "old_cost": null,
+        "new_cost": "6"
+      },
+      {
+        "step": 10,
+        "kind": "relax",
+        "source": "B",
+        "target": "D",
+        "edge": "e6",
+        "old_cost": null,
+        "new_cost": "6"
+      },
+      {
+        "step": 11,
+        "kind": "consider",
+        "source": "B",
+        "target": "S",
+        "edge": "e2",
+        "old_cost": "0",
+        "new_cost": "4"
+      },
+      {
+        "step": 12,
+        "kind": "settle",
+        "node": "A",
+        "cost": "3"
+      },
+      {
+        "step": 13,
+        "kind": "consider",
+        "source": "A",
+        "target": "B",
+        "edge": "e3",
+        "old_cost": "2",
+        "new_cost": "4"
+      },
+      {
+        "step": 14,
+        "kind": "consider",
+        "source": "A",
+        "target": "C",
+        "edge": "e4",
+        "old_cost": null,
+        "new_cost": "6"
+      },
+      {
+        "step": 15,
+        "kind": "relax",
+        "source": "A",
+        "target": "C",
+        "edge": "e4",
+        "old_cost": null,
+        "new_cost": "6"
+      },
+      {
+        "step": 16,
+        "kind": "consider",
+        "source": "A",
+        "target": "D",
+        "edge": "e5",
+        "old_cost": "6",
+        "new_cost": "9"
+      },
+      {
+        "step": 17,
+        "kind": "consider",
+        "source": "A",
+        "target": "S",
+        "edge": "e1",
+        "old_cost": "0",
+        "new_cost": "7"
+      },
+      {
+        "step": 18,
+        "kind": "stale",
+        "node": "A",
+        "cost": "4",
+        "new_cost": "3"
+      },
+      {
+        "step": 19,
+        "kind": "settle",
+        "node": "C",
+        "cost": "6"
+      },
+      {
+        "step": 20,
+        "kind": "consider",
+        "source": "C",
+        "target": "A",
+        "edge": "e4",
+        "old_cost": "3",
+        "new_cost": "9"
+      },
+      {
+        "step": 21,
+        "kind": "consider",
+        "source": "C",
+        "target": "D",
+        "edge": "e7",
+        "old_cost": "6",
+        "new_cost": "7"
+      },
+      {
+        "step": 22,
+        "kind": "consider",
+        "source": "C",
+        "target": "E",
+        "edge": "e8",
+        "old_cost": null,
+        "new_cost": "10"
+      },
+      {
+        "step": 23,
+        "kind": "relax",
+        "source": "C",
+        "target": "E",
+        "edge": "e8",
+        "old_cost": null,
+        "new_cost": "10"
+      },
+      {
+        "step": 24,
+        "kind": "settle",
+        "node": "D",
+        "cost": "6"
+      },
+      {
+        "step": 25,
+        "kind": "consider",
+        "source": "D",
+        "target": "A",
+        "edge": "e5",
+        "old_cost": "3",
+        "new_cost": "12"
+      },
+      {
+        "step": 26,
+        "kind": "consider",
+        "source": "D",
+        "target": "B",
+        "edge": "e6",
+        "old_cost": "2",
+        "new_cost": "10"
+      },
+      {
+        "step": 27,
+        "kind": "consider",
+        "source": "D",
+        "target": "C",
+        "edge": "e7",
+        "old_cost": "6",
+        "new_cost": "7"
+      },
+      {
+        "step": 28,
+        "kind": "consider",
+        "source": "D",
+        "target": "E",
+        "edge": "e9",
+        "old_cost": "10",
+        "new_cost": "8"
+      },
+      {
+        "step": 29,
+        "kind": "relax",
+        "source": "D",
+        "target": "E",
+        "edge": "e9",
+        "old_cost": "10",
+        "new_cost": "8"
+      },
+      {
+        "step": 30,
+        "kind": "consider",
+        "source": "D",
+        "target": "F",
+        "edge": "e10",
+        "old_cost": null,
+        "new_cost": "9"
+      },
+      {
+        "step": 31,
+        "kind": "relax",
+        "source": "D",
+        "target": "F",
+        "edge": "e10",
+        "old_cost": null,
+        "new_cost": "9"
+      },
+      {
+        "step": 32,
+        "kind": "settle",
+        "node": "E",
+        "cost": "8"
+      },
+      {
+        "step": 33,
+        "kind": "consider",
+        "source": "E",
+        "target": "C",
+        "edge": "e8",
+        "old_cost": "6",
+        "new_cost": "12"
+      },
+      {
+        "step": 34,
+        "kind": "consider",
+        "source": "E",
+        "target": "D",
+        "edge": "e9",
+        "old_cost": "6",
+        "new_cost": "10"
+      },
+      {
+        "step": 35,
+        "kind": "consider",
+        "source": "E",
+        "target": "T",
+        "edge": "e11",
+        "old_cost": null,
+        "new_cost": "11"
+      },
+      {
+        "step": 36,
+        "kind": "relax",
+        "source": "E",
+        "target": "T",
+        "edge": "e11",
+        "old_cost": null,
+        "new_cost": "11"
+      },
+      {
+        "step": 37,
+        "kind": "settle",
+        "node": "F",
+        "cost": "9"
+      },
+      {
+        "step": 38,
+        "kind": "consider",
+        "source": "F",
+        "target": "D",
+        "edge": "e10",
+        "old_cost": "6",
+        "new_cost": "12"
+      },
+      {
+        "step": 39,
+        "kind": "consider",
+        "source": "F",
+        "target": "T",
+        "edge": "e12",
+        "old_cost": "11",
+        "new_cost": "12"
+      },
+      {
+        "step": 40,
+        "kind": "stale",
+        "node": "E",
+        "cost": "10",
+        "new_cost": "8"
+      },
+      {
+        "step": 41,
+        "kind": "settle",
+        "node": "T",
+        "cost": "11"
+      },
+      {
+        "step": 42,
+        "kind": "finish",
+        "node": "T",
+        "status": "ok",
+        "cost": "11"
+      }
+    ],
+    "stats": {
+      "settled": 8,
+      "relaxations": 9,
+      "heap_pushes": 10,
+      "heap_pops": 10,
+      "stale_pops": 2
+    }
+  },
+  "integration_checks": [
+    {
+      "name": "API local HTTP",
+      "status": "pass",
+      "detail": "26 métodos. Solicitudes reales a localhost con fixtures aislados."
+    },
+    {
+      "name": "Terminal y arranque",
+      "status": "pass",
+      "detail": "12 métodos. CPython 3.10.11, 3.11.9, 3.12.14, 3.14.7. Misma suite; no son casos adicionales."
+    },
+    {
+      "name": "Python en navegador",
+      "status": "pass",
+      "detail": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "evidence": "evidence/publication/static-prefix/worker.json"
+    },
+    {
+      "name": "Editor y accesibilidad",
+      "status": "pending",
+      "detail": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
+      "evidence": "evidence/ui/qa.json"
+    },
+    {
+      "name": "Publicación y entrega",
+      "status": "pending",
+      "detail": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
+      "evidence": "evidence/publication/static-prefix/qa.json"
+    }
+  ]
+}

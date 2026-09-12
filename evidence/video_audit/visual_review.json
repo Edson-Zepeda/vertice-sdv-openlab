@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-09-12T01:37:13.600901+00:00",
+  "status": "reviewed_samples_no_blocking_findings",
+  "video_sha256": "530f352a435eda2e056ff72b982da5534d046c457d4157942b3dad20537a3eaf",
+  "contact_sheet": {
+    "path": "evidence\\video_audit\\contact-sheet.jpg",
+    "sha256": "fb2d6331ae7da36b9b730d69d5020c70c08caa9c588241fc3c61b890160ec47c",
+    "source": "Frames decoded from the final MP4; not renderer previews"
+  },
+  "full_size_images_reviewed": [
+    {
+      "id": "scene_03",
+      "requested_seconds": 56.16,
+      "frame_seconds": 56.166666666666664,
+      "seek_seconds": 56.16665666666666,
+      "frame_number": 1685,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_03.png",
+      "sha256": "637b57b02a4234be03fbfdead063f2ad0522bea3a42980f2e67f7581184f1e66",
+      "mean_rgb_absolute_error": 1.2953332368827162,
+      "region_mean_rgb_errors": {
+        "title": 1.1995307585211157,
+        "captions": 1.8748173304517854,
+        "explanation": 1.3308755235279623
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "La frontera avanza."
+    },
+    {
+      "id": "scene_08",
+      "requested_seconds": 176.7746666666667,
+      "frame_seconds": 176.8,
+      "seek_seconds": 176.79999,
+      "frame_number": 5304,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_08.png",
+      "sha256": "bc9ea369787d6fd6efb91dd23d35f518707cb5cdacc572e3807668da76d208ce",
+      "mean_rgb_absolute_error": 1.4265356545781893,
+      "region_mean_rgb_errors": {
+        "title": 1.4382852919438285,
+        "captions": 1.8321266851909026,
+        "explanation": 1.5321677137225918
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Medir también exige separar los costos."
+    },
+    {
+      "id": "directed_reverse",
+      "requested_seconds": 125.23137483333335,
+      "frame_seconds": 125.23333333333333,
+      "seek_seconds": 125.23332333333333,
+      "frame_number": 3757,
+      "path": "evidence\\video_audit\\decoded_frames\\directed_reverse.png",
+      "sha256": "587512529f99f47f9ef37b89b39884f0c05d1d0ef652281bba5a9b32d79e9160",
+      "mean_rgb_absolute_error": 1.5801541602366254,
+      "region_mean_rgb_errors": {
+        "title": 1.4500644562470992,
+        "captions": 1.7748584954203972,
+        "explanation": 1.826639258438039
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Los casos difíciles también tienen respuesta."
+    },
+    {
+      "id": "focus_solver",
+      "requested_seconds": 32.56666666666666,
+      "frame_seconds": 32.56666666666667,
+      "seek_seconds": 32.56665666666667,
+      "frame_number": 977,
+      "path": "evidence\\video_audit\\decoded_frames\\focus_solver.png",
+      "sha256": "53aa2f7feb12426b5921d198065bdb26788f3543520b4a0a8d32906d77ec0712",
+      "mean_rgb_absolute_error": 1.541678883744856,
+      "region_mean_rgb_errors": {
+        "title": 1.4590298905103216,
+        "captions": 1.8417824431408871,
+        "explanation": 1.7526650652870164
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Cuatro clases. Una responsabilidad clara."
+    }
+  ],
+  "observations": [
+    "The 16-frame contact sheet displays all nine scenes and the four corrected focus samples.",
+    "Trace distances are labeled tentative; D is settled at6 and E remains tentative at10 in the inspected frame.",
+    "Directed reverse case visibly shows arrows and D-to-A with no route.",
+    "Benchmark labels distinguish node and edge counts; 139.8ms corresponds to stored JSON median139.7735ms.",
+    "Solver focus and label are simultaneously legible; moving markers do not erase node letters in the inspected direction frame."
+  ],
+  "scope": "Visual review of the specified decoded samples, not every frame; no full human audio listening claimed."
+}

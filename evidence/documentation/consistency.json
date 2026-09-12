@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-12T02:03:07.737405+00:00",
+  "scope": "Documentation-only consistency review against current implementation, local evidence and Software requirements on Bootcamp SDV page 3. No production, UI, README, builders or PDF edits.",
+  "documents": {
+    "ALGORITMO.md": "7810d74e6b5ac212a57829e7726a20be6e62493aefbc0bf0bb8171411d9f5e40",
+    "API.md": "34596cda0c3519f8e9889fb7c3a6ed1f82b811fd94ce325fb63fec41b057add9",
+    "ARQUITECTURA.md": "8774d6383c234c71849149f0483c8288e98dfc2dcd8508f696a1dd0f0746ba3f",
+    "METODOLOGIA_PRUEBAS.md": "8b215dc0fab4a4843c90900967f69ccaf426f7b257daee0991a372b6430ba030",
+    "AUDITORIA.md": "ede7ace62f508871b9abca017418f8c2cce95b6e3fe12705c58677526bb41f07",
+    "DEFENSA.md": "5428b112ee5d5a5b3540f1720e61599dc58d386550a7631e7283e9ff8c40e931"
+  },
+  "requirement_pdf_sha256": "af12c207356864b7718b448fee1d279579fbc4813270ea627f85896a3b6b63df",
+  "local_links_checked": 44,
+  "broken_local_links": [],
+  "observed_contract_checks": {
+    "shared_node_values": true,
+    "shared_edge_values": true,
+    "no_error_message_attribute": true,
+    "error_args": true,
+    "json_integer_is_int": true,
+    "json_fraction_type": true
+  },
+  "constructor_signatures": {
+    "Node": "(id: 'str', label: 'str' = '', x: 'float' = 0.0, y: 'float' = 0.0) -> None",
+    "Edge": "(id: 'str', source: 'str', target: 'str', weight: 'Decimal') -> None",
+    "Graph": "(directed: 'bool' = False) -> 'None'",
+    "DijkstraSolver": "(graph: 'Graph') -> 'None'"
+  },
+  "findings_corrected": [
+    "Fictitious ValidationError.message attribute",
+    "Composition implied exclusive ownership although immutable values can be shared",
+    "All JSON numbers were described as Decimal; integers use int",
+    "Constructor defaults and edge endpoint-validation ownership omitted",
+    "API summary did not separately state full solver sorting bound and JSON preparation",
+    "HTTP abort scope could be mistaken for interrupting a running Python calculation",
+    "Final-count wording did not distinguish observed counters from later shared-suite runs",
+    "Critical audit did not cover later Unicode, MiB, pre-decode memory, packaging and video defects",
+    "Defense page-number references coupled the script to PDF pagination"
+  ],
+  "verified_examples": {
+    "original_desvio": {
+      "path": [
+        "S",
+        "B",
+        "D",
+        "E",
+        "T"
+      ],
+      "cost": "11"
+    },
+    "desvio_after_S_A_weight_1": {
+      "path": [
+        "S",
+        "A",
+        "C",
+        "D",
+        "E",
+        "T"
+      ],
+      "cost": "10"
+    }
+  },
+  "limitations": [
+    "The partial endurance run is not described as completed.",
+    "Prior video/clean-snapshot proofs retain their version scope; final replacements need their own checks.",
+    "No new benchmark or blanket grading claim."
+  ]
+}

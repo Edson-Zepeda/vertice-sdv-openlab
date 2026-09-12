@@ -1,0 +1,7 @@
+test_windows_launcher_check_in_spanish_path (test_cli.CleanCliTests.test_windows_launcher_check_in_spanish_path) ... ok
+test_windows_launcher_propagates_occupied_port_failure (test_cli.CleanCliTests.test_windows_launcher_propagates_occupied_port_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 2.753s
+
+OK

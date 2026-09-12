@@ -1,0 +1,516 @@
+{
+  "generated_at": "2026-09-12T01:11:13.856894+00:00",
+  "status": "fail",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "executable": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+    "subprocess_flags": [
+      "-S"
+    ],
+    "third_party_imports": "site-packages disabled"
+  },
+  "scope": "Clean source snapshot in path with spaces and Spanish accents; real CLI subprocesses",
+  "test_methods": 10,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "test_cli.CleanCliTests.test_argument_errors_exit_two_without_traceback",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_existing_output_is_preserved_without_explicit_overwrite",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_human_readable_route_and_trace_flag",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_invalid_edit_never_replaces_saved_graph",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_missing_input_or_output_directory_is_controlled",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_no_path_is_valid_zero_exit_and_never_zero_cost",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_stdin_preserves_utf8_under_windows_legacy_locale",
+      "status": "fail",
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_cli.py\", line 145, in test_stdin_preserves_utf8_under_windows_legacy_locale\n    self.assertEqual(next(node for node in saved['nodes'] if node['id'] == 'A')['label'], graph['nodes'][0]['label'])\nAssertionError: 'Caf\u00c3\u00a9 \u00f0\u0178\u0161\u2014 \u00e4\u00bd\\xa0\u00e5\u00a5\u00bd' != 'Caf\u00e9 \ud83d\ude97 \u4f60\u597d'\n- Caf\u00c3\u00a9 \u00f0\u0178\u0161\u2014 \u00e4\u00bd\u00a0\u00e5\u00a5\u00bd\n+ Caf\u00e9 \ud83d\ude97 \u4f60\u597d\n\n"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_utf8_file_round_trip_and_directed_choice",
+      "status": "pass"
+    }
+  ],
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "f06c6b78636a1d8c212bb4dc94604b129a2ec7c03fa8ae0ece614525a3c762c5",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "tests/test_cli.py": "8730b0d27754517c4264bba10ebbe0f868f2cc68c795e7cadbfb141d7e7edde6",
+    "scripts/verify_cli.py": "37b6f14b1349555113f2c0b21eb6638ab9eb5eb03c6219122f5e8e2a6273e52f"
+  },
+  "commands": [
+    {
+      "test": "test_cli.CleanCliTests.test_argument_errors_exit_two_without_traceback",
+      "arguments": [
+        "solve"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: cli.py solve [-h] --source SOURCE --target TARGET [--json] [--trace]\r\n                    file\r\ncli.py solve: error: the following arguments are required: file, --source/-s, --target/-t\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_argument_errors_exit_two_without_traceback",
+      "arguments": [
+        "invalid-command"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: cli.py [-h] {solve,validate,create,edit} ...\r\ncli.py: error: argument command: invalid choice: 'invalid-command' (choose from 'solve', 'validate', 'create', 'edit')\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_argument_errors_exit_two_without_traceback",
+      "arguments": [
+        "create",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: cli.py create [-h] [--directed] --output OUTPUT [--overwrite]\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --directed            Crear conexiones dirigidas\r\n  --output OUTPUT, -o OUTPUT\r\n                        Archivo JSON de salida\r\n  --overwrite           Permitir reemplazar el archivo de salida\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "arguments": [
+        "create",
+        "--output",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "add-node",
+        "A",
+        "--label",
+        "Inicio",
+        "--x",
+        "100",
+        "--y",
+        "150",
+        "--output",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "add-node",
+        "B",
+        "--label",
+        "Destino",
+        "--x",
+        "400",
+        "--y",
+        "150",
+        "--output",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "add-edge",
+        "ab",
+        "--source",
+        "A",
+        "--target",
+        "B",
+        "--weight",
+        "0.125",
+        "--output",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "arguments": [
+        "validate",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo v\u00e1lido: 2 nodos, 1 conexiones.\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_documented_create_edit_validate_and_solve_sequence",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_documented_create_edit_validate_and_solve_sequence\\grafo espa\u00f1ol.json",
+        "--source",
+        "A",
+        "--target",
+        "B",
+        "--json",
+        "--trace"
+      ],
+      "returncode": 0,
+      "stdout": "{\r\n  \"status\": \"ok\",\r\n  \"source\": \"A\",\r\n  \"target\": \"B\",\r\n  \"path\": [\r\n    \"A\",\r\n    \"B\"\r\n  ],\r\n  \"edge_path\": [\r\n    \"ab\"\r\n  ],\r\n  \"cost\": \"0.125\",\r\n  \"distances\": {\r\n    \"A\": \"0\",\r\n    \"B\": \"0.125\"\r\n  },\r\n  \"settled\": [\r\n    \"A\",\r\n    \"B\"\r\n  ],\r\n  \"trace\": [\r\n    {\r\n      \"step\": 0,\r\n      \"kind\": \"initialize\",\r\n      \"node\": \"A\",\r\n      \"source\": \"A\",\r\n      \"target\": \"B\",\r\n      \"cost\": \"0\"\r\n    },\r\n    {\r\n      \"step\": 1,\r\n      \"kind\": \"settle\",\r\n      \"node\": \"A\",\r\n      \"cost\": \"0\"\r\n    },\r\n    {\r\n      \"step\": 2,\r\n      \"kind\": \"consider\",\r\n      \"source\": \"A\",\r\n      \"target\": \"B\",\r\n      \"edge\": \"ab\",\r\n      \"old_cost\": null,\r\n      \"new_cost\": \"0.125\"\r\n    },\r\n    {\r\n      \"step\": 3,\r\n      \"kind\": \"relax\",\r\n      \"source\": \"A\",\r\n      \"target\": \"B\",\r\n      \"edge\": \"ab\",\r\n      \"old_cost\": null,\r\n      \"new_cost\": \"0.125\"\r\n    },\r\n    {\r\n      \"step\": 4,\r\n      \"kind\": \"settle\",\r\n      \"node\": \"B\",\r\n      \"cost\": \"0.125\"\r\n    },\r\n    {\r\n      \"step\": 5,\r\n      \"kind\": \"finish\",\r\n      \"node\": \"B\",\r\n      \"status\": \"ok\",\r\n      \"cost\": \"0.125\"\r\n    }\r\n  ],\r\n  \"stats\": {\r\n    \"settled\": 2,\r\n    \"relaxations\": 1,\r\n    \"heap_pushes\": 2,\r\n    \"heap_pops\": 2,\r\n    \"stale_pops\": 0\r\n  }\r\n}\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_existing_output_is_preserved_without_explicit_overwrite",
+      "arguments": [
+        "create",
+        "--output",
+        "<snapshot>\\test_existing_output_is_preserved_without_explicit_overwrite\\grafo espa\u00f1ol.json"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Error: El archivo de salida ya existe. Elige otro nombre o usa --overwrite.\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_existing_output_is_preserved_without_explicit_overwrite",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_existing_output_is_preserved_without_explicit_overwrite\\grafo espa\u00f1ol.json",
+        "update-edge",
+        "ab",
+        "--weight",
+        "9",
+        "--output",
+        "<snapshot>\\test_existing_output_is_preserved_without_explicit_overwrite\\grafo espa\u00f1ol.json"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Error: El archivo de salida ya existe. Elige otro nombre o usa --overwrite.\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_human_readable_route_and_trace_flag",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_human_readable_route_and_trace_flag\\grafo espa\u00f1ol.json",
+        "-s",
+        "A",
+        "-t",
+        "B"
+      ],
+      "returncode": 0,
+      "stdout": "Ruta: A \u2192 B\r\nCosto: 0.125\r\nNodos asentados: 2\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_human_readable_route_and_trace_flag",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_human_readable_route_and_trace_flag\\grafo espa\u00f1ol.json",
+        "-s",
+        "A",
+        "-t",
+        "B",
+        "--json"
+      ],
+      "returncode": 0,
+      "stdout": "{\r\n  \"status\": \"ok\",\r\n  \"source\": \"A\",\r\n  \"target\": \"B\",\r\n  \"path\": [\r\n    \"A\",\r\n    \"B\"\r\n  ],\r\n  \"edge_path\": [\r\n    \"ab\"\r\n  ],\r\n  \"cost\": \"0.125\",\r\n  \"distances\": {\r\n    \"A\": \"0\",\r\n    \"B\": \"0.125\"\r\n  },\r\n  \"settled\": [\r\n    \"A\",\r\n    \"B\"\r\n  ],\r\n  \"trace\": [],\r\n  \"stats\": {\r\n    \"settled\": 2,\r\n    \"relaxations\": 1,\r\n    \"heap_pushes\": 2,\r\n    \"heap_pops\": 2,\r\n    \"stale_pops\": 0\r\n  }\r\n}\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_invalid_edit_never_replaces_saved_graph",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_invalid_edit_never_replaces_saved_graph\\grafo espa\u00f1ol.json",
+        "update-edge",
+        "ab",
+        "--weight",
+        "-1",
+        "--output",
+        "<snapshot>\\test_invalid_edit_never_replaces_saved_graph\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Error: El peso debe ser texto decimal no negativo, sin espacios, signos ni exponentes.\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_missing_input_or_output_directory_is_controlled",
+      "arguments": [
+        "validate",
+        "<snapshot>\\test_missing_input_or_output_directory_is_controlled\\grafo espa\u00f1ol.json"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Error: [WinError 2] El sistema no puede encontrar el archivo especificado: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Codex\\\\2026-09-04\\\\real\\\\outputs\\\\VerticeSDV\\\\tmp\\\\V\u00e9rtice limpio con espacios-8vasoypt\\\\test_missing_input_or_output_directory_is_controlled\\\\grafo espa\u00f1ol.json'\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_missing_input_or_output_directory_is_controlled",
+      "arguments": [
+        "create",
+        "--output",
+        "<snapshot>\\test_missing_input_or_output_directory_is_controlled\\missing\\graph.json"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Error: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Codex\\\\2026-09-04\\\\real\\\\outputs\\\\VerticeSDV\\\\tmp\\\\V\u00e9rtice limpio con espacios-8vasoypt\\\\test_missing_input_or_output_directory_is_controlled\\\\missing\\\\.vertice-9xzlq51w.tmp'\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_no_path_is_valid_zero_exit_and_never_zero_cost",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_no_path_is_valid_zero_exit_and_never_zero_cost\\grafo espa\u00f1ol.json",
+        "-s",
+        "A",
+        "-t",
+        "B",
+        "--json"
+      ],
+      "returncode": 0,
+      "stdout": "{\r\n  \"status\": \"no_path\",\r\n  \"source\": \"A\",\r\n  \"target\": \"B\",\r\n  \"path\": [],\r\n  \"edge_path\": [],\r\n  \"cost\": null,\r\n  \"distances\": {\r\n    \"A\": \"0\",\r\n    \"B\": null\r\n  },\r\n  \"settled\": [\r\n    \"A\"\r\n  ],\r\n  \"trace\": [],\r\n  \"stats\": {\r\n    \"settled\": 1,\r\n    \"relaxations\": 0,\r\n    \"heap_pushes\": 1,\r\n    \"heap_pops\": 1,\r\n    \"stale_pops\": 0\r\n  }\r\n}\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_stdin_preserves_utf8_under_windows_legacy_locale",
+      "arguments": [
+        "edit",
+        "-",
+        "update-node",
+        "B",
+        "--label",
+        "Destino actualizado",
+        "--output",
+        "<snapshot>\\test_stdin_preserves_utf8_under_windows_legacy_locale\\copia desde entrada.json"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_stdin_preserves_utf8_under_windows_legacy_locale\\copia desde entrada.json\r\n",
+      "stderr": "",
+      "stdin_bytes": 233,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "update-node",
+        "A",
+        "--label",
+        "Salida nueva",
+        "--output",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "update-edge",
+        "ab",
+        "--weight",
+        "0",
+        "--output",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "-s",
+        "A",
+        "-t",
+        "B",
+        "--json"
+      ],
+      "returncode": 0,
+      "stdout": "{\r\n  \"status\": \"ok\",\r\n  \"source\": \"A\",\r\n  \"target\": \"B\",\r\n  \"path\": [\r\n    \"A\",\r\n    \"B\"\r\n  ],\r\n  \"edge_path\": [\r\n    \"ab\"\r\n  ],\r\n  \"cost\": \"0\",\r\n  \"distances\": {\r\n    \"A\": \"0\",\r\n    \"B\": \"0\"\r\n  },\r\n  \"settled\": [\r\n    \"A\",\r\n    \"B\"\r\n  ],\r\n  \"trace\": [],\r\n  \"stats\": {\r\n    \"settled\": 2,\r\n    \"relaxations\": 1,\r\n    \"heap_pushes\": 2,\r\n    \"heap_pops\": 2,\r\n    \"stale_pops\": 0\r\n  }\r\n}\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "remove-edge",
+        "ab",
+        "--output",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "-s",
+        "A",
+        "-t",
+        "B",
+        "--json"
+      ],
+      "returncode": 0,
+      "stdout": "{\r\n  \"status\": \"no_path\",\r\n  \"source\": \"A\",\r\n  \"target\": \"B\",\r\n  \"path\": [],\r\n  \"edge_path\": [],\r\n  \"cost\": null,\r\n  \"distances\": {\r\n    \"A\": \"0\",\r\n    \"B\": null\r\n  },\r\n  \"settled\": [\r\n    \"A\"\r\n  ],\r\n  \"trace\": [],\r\n  \"stats\": {\r\n    \"settled\": 1,\r\n    \"relaxations\": 0,\r\n    \"heap_pushes\": 1,\r\n    \"heap_pops\": 1,\r\n    \"stale_pops\": 0\r\n  }\r\n}\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "remove-node",
+        "B",
+        "--output",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "--overwrite"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_updates_and_removals_change_subsequent_searches",
+      "arguments": [
+        "solve",
+        "<snapshot>\\test_updates_and_removals_change_subsequent_searches\\grafo espa\u00f1ol.json",
+        "-s",
+        "A",
+        "-t",
+        "B",
+        "--json"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Error: No existe el nodo B.\r\n",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_utf8_file_round_trip_and_directed_choice",
+      "arguments": [
+        "edit",
+        "<snapshot>\\test_utf8_file_round_trip_and_directed_choice\\grafo espa\u00f1ol.json",
+        "update-node",
+        "B",
+        "--x",
+        "5",
+        "--output",
+        "<snapshot>\\test_utf8_file_round_trip_and_directed_choice\\copia v\u00e1lida.json"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_utf8_file_round_trip_and_directed_choice\\copia v\u00e1lida.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_utf8_file_round_trip_and_directed_choice",
+      "arguments": [
+        "create",
+        "--directed",
+        "--output",
+        "<snapshot>\\test_utf8_file_round_trip_and_directed_choice\\dirigido.json"
+      ],
+      "returncode": 0,
+      "stdout": "Grafo guardado: C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\V\u00e9rtice limpio con espacios-8vasoypt\\test_utf8_file_round_trip_and_directed_choice\\dirigido.json\r\n",
+      "stderr": "",
+      "stdin_bytes": null,
+      "site_packages_disabled": true
+    }
+  ]
+}

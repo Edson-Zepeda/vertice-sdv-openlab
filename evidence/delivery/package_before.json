@@ -1,0 +1,30 @@
+{
+  "source_sha256": "ed7a080be6e9db1934dcfcf8287ee9a6f17132126db9e4dba58f09680f8d9948",
+  "scope": "Isolated tracked-file fixture; git metadata stubbed, no repository copied or published",
+  "results": [
+    {
+      "case": "baseline",
+      "status": "completed",
+      "error": null,
+      "source_readme_preserved": true,
+      "output_exists": true,
+      "sha_sidecar_exists": true
+    },
+    {
+      "case": "unicode_filename",
+      "status": "exception",
+      "error": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xe9' in position 75: ordinal not in range(128)",
+      "source_readme_preserved": true,
+      "output_exists": true,
+      "sha_sidecar_exists": true
+    },
+    {
+      "case": "overwrite_source",
+      "status": "completed",
+      "error": null,
+      "source_readme_preserved": false,
+      "output_exists": true,
+      "sha_sidecar_exists": true
+    }
+  ]
+}

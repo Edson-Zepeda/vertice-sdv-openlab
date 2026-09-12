@@ -1,0 +1,290 @@
+{
+  "started_at": "2026-09-12T02:23:34.487Z",
+  "base": "http://127.0.0.1:8770/",
+  "checks": [
+    {
+      "name": "Actual MP4 metadata loads",
+      "passed": true,
+      "duration": 210,
+      "planned": 209.9666666666667
+    },
+    {
+      "name": "Nine chapter controls",
+      "passed": true
+    },
+    {
+      "name": "Page assets load from the same origin",
+      "passed": true,
+      "requests": [
+        "http://127.0.0.1:8770/proyecto.html",
+        "http://127.0.0.1:8770/project.css",
+        "http://127.0.0.1:8770/project.js",
+        "http://127.0.0.1:8770/favicon.svg",
+        "http://127.0.0.1:8770/media/VerticeSDV_Poster.jpg",
+        "http://127.0.0.1:8770/media/VerticeSDV_Demo.mp4",
+        "http://127.0.0.1:8770/fonts/DMSans.ttf",
+        "http://127.0.0.1:8770/fonts/Manrope.ttf",
+        "http://127.0.0.1:8770/data/film.json",
+        "http://127.0.0.1:8770/data/release.json",
+        "http://127.0.0.1:8770/favicon.svg"
+      ]
+    },
+    {
+      "name": "No page overflow at 320px",
+      "passed": true,
+      "sizes": {
+        "viewport": 320,
+        "body": 320,
+        "h1": 50
+      }
+    },
+    {
+      "name": "Readable heading at 320px",
+      "passed": true,
+      "font_px": 50
+    },
+    {
+      "name": "No page overflow at 390px",
+      "passed": true,
+      "sizes": {
+        "viewport": 390,
+        "body": 390,
+        "h1": 50
+      }
+    },
+    {
+      "name": "Readable heading at 390px",
+      "passed": true,
+      "font_px": 50
+    },
+    {
+      "name": "No page overflow at 768px",
+      "passed": true,
+      "sizes": {
+        "viewport": 768,
+        "body": 768,
+        "h1": 50
+      }
+    },
+    {
+      "name": "Readable heading at 768px",
+      "passed": true,
+      "font_px": 50
+    },
+    {
+      "name": "No page overflow at 1440px",
+      "passed": true,
+      "sizes": {
+        "viewport": 1440,
+        "body": 1440,
+        "h1": 93.6
+      }
+    },
+    {
+      "name": "Readable heading at 1440px",
+      "passed": true,
+      "font_px": 93.6
+    },
+    {
+      "name": "Playback at chapter 1: Idea",
+      "passed": true,
+      "state": {
+        "time": 0,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Idea",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 2: Clases",
+      "passed": true,
+      "state": {
+        "time": 17.093333,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Clases",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 3: Recorrido",
+      "passed": true,
+      "state": {
+        "time": 40.502326,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Recorrido",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 4: Relajación",
+      "passed": true,
+      "state": {
+        "time": 67.512401,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Relajación",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 5: Decimales",
+      "passed": true,
+      "state": {
+        "time": 91.451419,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Decimales",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 6: Casos",
+      "passed": true,
+      "state": {
+        "time": 113.342882,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Casos",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 7: Pruebas",
+      "passed": true,
+      "state": {
+        "time": 136.340771,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Pruebas",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 8: Rendimiento",
+      "passed": true,
+      "state": {
+        "time": 162.713418,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Rendimiento",
+      "passed": true
+    },
+    {
+      "name": "Playback at chapter 9: Estudio",
+      "passed": true,
+      "state": {
+        "time": 186.972473,
+        "ready": 4,
+        "error": null
+      }
+    },
+    {
+      "name": "Selected chapter is exposed: Estudio",
+      "passed": true
+    },
+    {
+      "name": "Spanish captions load as a native track",
+      "passed": true,
+      "caption": {
+        "tracks": 1,
+        "cues": 45,
+        "language": "es"
+      },
+      "expectedCues": 45
+    },
+    {
+      "name": "Chapters are usable by keyboard",
+      "passed": true
+    },
+    {
+      "name": "Method disclosure opens: Cómo encuentra la ruta",
+      "passed": true
+    },
+    {
+      "name": "Method disclosure opens: Cómo se comprueba",
+      "passed": true
+    },
+    {
+      "name": "Method disclosure opens: Qué representa",
+      "passed": true
+    },
+    {
+      "name": "The report download matches the delivered PDF",
+      "passed": true,
+      "bytes": 48354
+    },
+    {
+      "name": "The video supports accurate byte-range seeking",
+      "passed": true,
+      "status": 206,
+      "bytes": 128,
+      "content_range": "bytes 100000-100127/11540070"
+    },
+    {
+      "name": "Automated accessibility scan at 390px",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Automated accessibility scan at 1440px",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "No JavaScript errors in the verified interactions",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "Video controls survive unavailable chapter metadata",
+      "passed": true
+    },
+    {
+      "name": "No uncaught error when chapter metadata is unavailable",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "finished_at": "2026-09-12T02:23:43.207Z",
+  "passed": 41,
+  "failed": 0,
+  "source_hashes": {
+    "web/proyecto.html": "6134618b7879789d4319b6b6fa631a2010609b5b89569578e2edda42f5fa2abb",
+    "web/project.css": "64c499aae0cd5d1d700279f47827f5fa4a80716118a2b8be7183a3c7f15e6409",
+    "web/project.js": "771ab1226c5b20fadd228af853c906f2cf655196b585f8f229cbe400f02406f7",
+    "web/data/film.json": "4209913a787661a48fce20c2c2c999322224889499652bce6d29a385dceaaefd",
+    "web/media/VerticeSDV_Demo.mp4": "93a64bf31516a2b1027ab91555b459de0afb0ef9aa230d957c0efbf4e38c17eb",
+    "docs/VerticeSDV_Informe.pdf": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25"
+  }
+}

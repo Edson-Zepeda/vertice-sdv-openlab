@@ -1,0 +1,71 @@
+"""Paquete reproducible de archivos versionados y manifiesto de integridad.
+
+No incluye .git, entornos, credenciales, temporales ni archivos sin versionar.
+"""
+from __future__ import annotations
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path, PurePosixPath
+import subprocess
+import zipfile
+
+ROOT=Path(__file__).resolve().parents[1]
+PREFIX='VerticeSDV'
+
+def git(*args):
+    return subprocess.check_output(['git',*args],cwd=ROOT)
+
+def sha(data):return hashlib.sha256(data).hexdigest()
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,default=ROOT.parent/'VerticeSDV_Proyecto.zip')
+    parser.add_argument('--allow-dirty',action='store_true',help='Solo revisión local; marca paquete no publicable')
+    args=parser.parse_args()
+    dirty=bool(git('status','--porcelain').strip())
+    if dirty and not args.allow_dirty:parser.error('La fuente debe estar versionada y sin cambios antes de empaquetar.')
+    names=[value.decode('utf8') for value in git('ls-files','-z').split(b'\0') if value]
+    required={'README.md','Iniciar.cmd','server.py','project.json','vertice/dijkstra.py','web/index.html','web/python/manifest.json','docs/VerticeSDV_Informe.pdf','web/media/VerticeSDV_Demo.mp4'}
+    missing=required-set(names)
+    if missing:parser.error(f'Faltan entregables versionados: {sorted(missing)}')
+    revision=git('rev-parse','HEAD').decode().strip()
+    stamp=int(git('show','-s','--format=%ct','HEAD').decode().strip())
+    date=datetime.fromtimestamp(stamp,timezone.utc)
+    timestamp=(date.year,date.month,date.day,date.hour,date.minute,date.second//2*2)
+    entries=[];contents={}
+    for name in sorted(names):
+        relative=PurePosixPath(name)
+        if relative.is_absolute() or '..' in relative.parts or '\\' in name:raise ValueError(f'Ruta inválida: {name}')
+        path=ROOT/Path(*relative.parts)
+        if path.is_symlink() or not path.resolve().is_relative_to(ROOT.resolve()):raise ValueError(f'Enlace fuera del paquete: {name}')
+        if any(part in ('node_modules','.venv','__pycache__','tmp','.git') for part in relative.parts):raise ValueError(f'Temporal versionado accidentalmente: {name}')
+        data=path.read_bytes()
+        if not dirty and git('show',f'HEAD:{name}')!=data:raise ValueError(f'Bytes difieren del commit: {name}')
+        contents[name]=data
+        entries.append({'path':name,'bytes':len(data),'sha256':sha(data)})
+    manifest={'schema_version':1,'project':PREFIX,'version':json.loads(contents['project.json'])['version'],
+              'source_revision':revision,'source_dirty':dirty,'release_ready':not dirty,
+              'timestamp':date.isoformat(),'files':entries}
+    manifest_bytes=(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n').encode('utf8')
+    destination=args.output.resolve();destination.parent.mkdir(parents=True,exist_ok=True)
+    with zipfile.ZipFile(destination,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
+        for name,data in [*contents.items(),('MANIFEST.json',manifest_bytes)]:
+            info=zipfile.ZipInfo(f'{PREFIX}/{name}',date_time=timestamp)
+            info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+            archive.writestr(info,data,compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+    with zipfile.ZipFile(destination) as archive:
+        bad=archive.testzip()
+        if bad:raise ValueError(f'CRC incorrecto: {bad}')
+        stored=json.loads(archive.read(f'{PREFIX}/MANIFEST.json'))
+        assert len(archive.namelist())==len(entries)+1
+        for entry in stored['files']:
+            assert sha(archive.read(f'{PREFIX}/{entry["path"]}'))==entry['sha256']
+    package_hash=sha(destination.read_bytes())
+    destination.with_suffix('.sha256').write_text(f'{package_hash}  {destination.name}\n',encoding='ascii')
+    receipt={'file':str(destination),'bytes':destination.stat().st_size,'sha256':package_hash,'files':len(entries),'source_revision':revision,'source_dirty':dirty}
+    destination.with_suffix('.receipt.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8')
+    print(json.dumps(receipt))
+
+if __name__=='__main__':main()

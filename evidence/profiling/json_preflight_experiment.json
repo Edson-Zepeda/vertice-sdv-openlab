@@ -1,0 +1,132 @@
+{
+  "proposal_only": true,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "scope": "Python traced allocation, not process/browser RAM; browser endurance test runs concurrently.",
+  "checks": [
+    {
+      "name": "Maximum graph fixture",
+      "passed": true
+    },
+    {
+      "name": "aislado.json",
+      "passed": true
+    },
+    {
+      "name": "cero.json",
+      "passed": true
+    },
+    {
+      "name": "desvio.json",
+      "passed": true
+    },
+    {
+      "name": "direccion.json",
+      "passed": true
+    },
+    {
+      "name": "empate.json",
+      "passed": true
+    },
+    {
+      "name": "malla.json",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '[{,:}][{,:' ASCII=False",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '[{,:}][{,:' ASCII=True",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '\\\\\"\\\\\"\\\\\"\\\\\"\\\\\"' ASCII=False",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '\\\\\"\\\\\"\\\\\"\\\\\"\\\\\"' ASCII=True",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '\"\"\"\"\"\"\"\"\"\"' ASCII=False",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '\"\"\"\"\"\"\"\"\"\"' ASCII=True",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\' ASCII=False",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\' ASCII=True",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '🧭 ruta áéí' ASCII=False",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '🧭 ruta áéí' ASCII=True",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '}{][}{][}{' ASCII=False",
+      "passed": true
+    },
+    {
+      "name": "Escaped label '}{][}{][}{' ASCII=True",
+      "passed": true
+    }
+  ],
+  "valid_maximum_bytes": 270048,
+  "valid_preflight": {
+    "samples_ms": [
+      0.778,
+      0.8576,
+      0.9065,
+      0.7674,
+      1.0902
+    ],
+    "median_ms": 0.8576
+  },
+  "valid_current_pipeline": {
+    "samples_ms": [
+      123.619,
+      112.9158,
+      113.6407,
+      144.1842,
+      120.7679
+    ],
+    "median_ms": 120.7679
+  },
+  "hostile": {
+    "wide_objects": {
+      "message": "El JSON excede la estructura admitida para un grafo.",
+      "peak_python_bytes": 2097212,
+      "input_utf8_bytes": 2097151,
+      "sha256": "2b5db9948de9425f8b0c4e06e760c25bc7c3a307b633776792d4e4d6716d50ed"
+    },
+    "wide_integers": {
+      "message": "El JSON contiene demasiados campos para un grafo.",
+      "peak_python_bytes": 1000062,
+      "input_utf8_bytes": 1000001,
+      "sha256": "9de11044c4d2a684c930708d340ba35a1591a4e37021f723555e9d8bad133907"
+    },
+    "deep_array": {
+      "message": "Búsqueda debe ser un objeto JSON.",
+      "peak_python_bytes": 46892,
+      "input_utf8_bytes": 1000,
+      "sha256": "a6c6b45361ff77e7372a015a1f0289e9c09d1fe1ed59cf9773d599c55acf57cf"
+    },
+    "deep_object": {
+      "message": "Búsqueda: faltan graph, source, target.",
+      "peak_python_bytes": 99778,
+      "input_utf8_bytes": 3001,
+      "sha256": "c3da2e84af153f943f21585c85520e0639980f8b203430f644458cfcf68ef3ad"
+    }
+  },
+  "all_checks_passed": true,
+  "source_sha256": "5ae31971611d4e9e18c1b60167d4767255c99d180f9731e45c22e995ed68b59e"
+}

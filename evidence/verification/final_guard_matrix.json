@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-09-12T01:59:43.852925+00:00",
+  "all_passed": true,
+  "matrix": [
+    {
+      "python": "3.10.11",
+      "suites": [
+        {
+          "file": "evidence/verification/cli_python310.json",
+          "sha256": "8e2ae56d30a9c1ff4f6f7366f2f9c879db1bb38dfe9b769714e9c19646263dc0",
+          "test_methods": 12,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/http_python310.json",
+          "sha256": "121af73f5935939cc6e6b599ec3165f4f64e6770797919d13e5a6a9610f4cb4f",
+          "test_methods": 26,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/independent_python310.json",
+          "sha256": "8aaec64c9834a91d3f03461905cfb8978f1a1f10a3367867f32ce8ad7cc1747d",
+          "test_methods": 38,
+          "source_hashes_current": true,
+          "derived_from_shared_run": true
+        }
+      ]
+    },
+    {
+      "python": "3.11.9",
+      "suites": [
+        {
+          "file": "evidence/verification/cli_python311.json",
+          "sha256": "564c5df0d2a8e3dceaceba1781354e2a08888ab5c9372c56efa1fe925c2ba7a2",
+          "test_methods": 12,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/http.json",
+          "sha256": "9159db905a1d826f2fd4e9f0bfb0b861ec06f9ef46694f3fb45f90055d63382f",
+          "test_methods": 26,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/independent.json",
+          "sha256": "f18bedb5505a6410e7f5fab7008189c1fd44d51c559e6e5ab94b62633476edc7",
+          "test_methods": 38,
+          "source_hashes_current": true,
+          "derived_from_shared_run": true
+        }
+      ]
+    },
+    {
+      "python": "3.12.14",
+      "suites": [
+        {
+          "file": "evidence/verification/cli_python312.json",
+          "sha256": "1782381a95a37fc5079b982cf8ccacfa977406afab6b835ef93be5222916f7ae",
+          "test_methods": 12,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/http_python312.json",
+          "sha256": "2bbd75944c8902b99d607493d53a9613d315396130a6867d554d4b62df790e90",
+          "test_methods": 26,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/independent_python312.json",
+          "sha256": "bb8a23a87457c32bffb6c9027e41de818245c3eed14eec955fbdd1ac5351481b",
+          "test_methods": 38,
+          "source_hashes_current": true,
+          "derived_from_shared_run": true
+        }
+      ]
+    },
+    {
+      "python": "3.14.7",
+      "suites": [
+        {
+          "file": "evidence/verification/cli_python314.json",
+          "sha256": "00b3442153aa55ed875a82bb23e09883c758ca9617461bad8eb83d1c70e60d0e",
+          "test_methods": 12,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/http_python314.json",
+          "sha256": "331f4e98e888de29e62a6f6fcd2cc736770488b9bdf649e54d17df1bf73e5ca4",
+          "test_methods": 26,
+          "source_hashes_current": true,
+          "derived_from_shared_run": false
+        },
+        {
+          "file": "evidence/verification/independent_python314.json",
+          "sha256": "7e028f9b917284e84391e1042adf3396111eddbad95dab0940aef189a460d912",
+          "test_methods": 38,
+          "source_hashes_current": true,
+          "derived_from_shared_run": true
+        }
+      ]
+    }
+  ],
+  "scope": "Four runtimes on one Windows computer; repeated versions do not create additional unique scenarios. No Linux or remote CI execution is claimed.",
+  "collector_sha256": "112657d61f6481a9d10359bca415e5a2914cbf20447f43cc105aecd1d0e8cd7b"
+}

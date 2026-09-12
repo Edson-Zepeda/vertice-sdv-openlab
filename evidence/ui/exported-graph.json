@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "directed": false,
+  "nodes": [
+    {
+      "id": "A",
+      "label": "A",
+      "x": 130,
+      "y": 240
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "x": 360,
+      "y": 130
+    },
+    {
+      "id": "C",
+      "label": "C",
+      "x": 360,
+      "y": 390
+    },
+    {
+      "id": "Y",
+      "label": "Y",
+      "x": 730,
+      "y": 160
+    },
+    {
+      "id": "Z",
+      "label": "Z",
+      "x": 850,
+      "y": 350
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "A",
+      "target": "B",
+      "weight": "2"
+    },
+    {
+      "id": "e2",
+      "source": "A",
+      "target": "C",
+      "weight": "3"
+    },
+    {
+      "id": "e3",
+      "source": "B",
+      "target": "C",
+      "weight": "1"
+    },
+    {
+      "id": "e4",
+      "source": "Y",
+      "target": "Z",
+      "weight": "2"
+    }
+  ]
+}

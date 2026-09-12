@@ -1,0 +1,188 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "e7cfe9de6f323440b4e0ea1b7ce3768e655c2663862c72192c0cbbb7a67cf57b",
+  "text": "Una conexión puede cambiar todo el recorrido. Vértice convierte un grafo en una decisión que puedes explicar: crear nodos, asignar costos y encontrar la ruta mínima. Cada línea resaltada proviene de una ejecución real del algoritmo.",
+  "words": [
+    {
+      "text": "Una",
+      "start": 0.099,
+      "end": 0.295083
+    },
+    {
+      "text": "conexión",
+      "start": 0.307333,
+      "end": 0.858791
+    },
+    {
+      "text": "puede",
+      "start": 0.871083,
+      "end": 1.128416
+    },
+    {
+      "text": "cambiar",
+      "start": 1.140666,
+      "end": 1.581832
+    },
+    {
+      "text": "todo",
+      "start": 1.594125,
+      "end": 1.839208
+    },
+    {
+      "text": "el",
+      "start": 1.851458,
+      "end": 1.912749
+    },
+    {
+      "text": "recorrido",
+      "start": 1.925,
+      "end": 2.5255
+    },
+    {
+      "text": "Vértice",
+      "start": 3.370083,
+      "end": 3.860291
+    },
+    {
+      "text": "convierte",
+      "start": 3.872541,
+      "end": 4.362749
+    },
+    {
+      "text": "un",
+      "start": 4.375,
+      "end": 4.473041
+    },
+    {
+      "text": "grafo",
+      "start": 4.485291,
+      "end": 4.791666
+    },
+    {
+      "text": "en",
+      "start": 4.803916,
+      "end": 4.889707
+    },
+    {
+      "text": "una",
+      "start": 4.901958,
+      "end": 5.061291
+    },
+    {
+      "text": "decisión",
+      "start": 5.073541,
+      "end": 5.624999
+    },
+    {
+      "text": "que",
+      "start": 5.63725,
+      "end": 5.772041
+    },
+    {
+      "text": "puedes",
+      "start": 5.784333,
+      "end": 6.127458
+    },
+    {
+      "text": "explicar",
+      "start": 6.139708,
+      "end": 6.715708
+    },
+    {
+      "text": "crear",
+      "start": 6.985291,
+      "end": 7.340666
+    },
+    {
+      "text": "nodos",
+      "start": 7.352958,
+      "end": 7.794124
+    },
+    {
+      "text": "asignar",
+      "start": 8.039208,
+      "end": 8.541666
+    },
+    {
+      "text": "costos",
+      "start": 8.553916,
+      "end": 9.044124
+    },
+    {
+      "text": "y",
+      "start": 9.056375,
+      "end": 9.117666
+    },
+    {
+      "text": "encontrar",
+      "start": 9.129916,
+      "end": 9.681374
+    },
+    {
+      "text": "la",
+      "start": 9.693625,
+      "end": 9.791666
+    },
+    {
+      "text": "ruta",
+      "start": 9.803916,
+      "end": 10.110291
+    },
+    {
+      "text": "mínima",
+      "start": 10.122541,
+      "end": 10.600499
+    },
+    {
+      "text": "Cada",
+      "start": 11.446083,
+      "end": 11.691166
+    },
+    {
+      "text": "línea",
+      "start": 11.703416,
+      "end": 12.034291
+    },
+    {
+      "text": "resaltada",
+      "start": 12.046583,
+      "end": 12.634833
+    },
+    {
+      "text": "proviene",
+      "start": 12.647041,
+      "end": 13.051457
+    },
+    {
+      "text": "de",
+      "start": 13.063708,
+      "end": 13.186249
+    },
+    {
+      "text": "una",
+      "start": 13.198541,
+      "end": 13.357874
+    },
+    {
+      "text": "ejecución",
+      "start": 13.370083,
+      "end": 13.958333
+    },
+    {
+      "text": "real",
+      "start": 13.970583,
+      "end": 14.240208
+    },
+    {
+      "text": "del",
+      "start": 14.252458,
+      "end": 14.399499
+    },
+    {
+      "text": "algoritmo",
+      "start": 14.41175,
+      "end": 14.963208
+    }
+  ]
+}

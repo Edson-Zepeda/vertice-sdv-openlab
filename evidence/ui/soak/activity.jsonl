@@ -1,0 +1,819 @@
+{"at":"2026-09-12T01:59:10.206Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T01:59:11.349Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T01:59:12.997Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":144,"passed":true}
+{"at":"2026-09-12T01:59:15.184Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":77,"passed":true}
+{"at":"2026-09-12T01:59:16.344Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T01:59:17.967Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":121,"passed":true}
+{"at":"2026-09-12T01:59:20.139Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":58,"passed":true}
+{"at":"2026-09-12T01:59:21.345Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":95,"passed":true}
+{"at":"2026-09-12T01:59:22.896Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T01:59:25.090Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":21,"passed":true}
+{"at":"2026-09-12T01:59:26.240Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T01:59:27.847Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":92,"passed":true}
+{"at":"2026-09-12T01:59:30.004Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T01:59:31.160Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T01:59:32.748Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":85,"passed":true}
+{"at":"2026-09-12T01:59:34.907Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T01:59:36.105Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T01:59:37.648Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T01:59:39.770Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":18,"passed":true}
+{"at":"2026-09-12T01:59:40.903Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T01:59:42.498Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":88,"passed":true}
+{"at":"2026-09-12T01:59:44.647Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T01:59:45.790Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T01:59:47.370Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":67,"passed":true}
+{"at":"2026-09-12T01:59:49.523Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T01:59:50.707Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":81,"passed":true}
+{"at":"2026-09-12T01:59:52.260Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T01:59:54.384Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T01:59:55.538Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T01:59:57.137Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":94,"passed":true}
+{"at":"2026-09-12T01:59:59.298Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:00:00.455Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:00:02.052Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:00:04.207Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:00:05.415Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":94,"passed":true}
+{"at":"2026-09-12T02:00:06.962Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:00:09.090Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":18,"passed":true}
+{"at":"2026-09-12T02:00:10.234Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:00:11.843Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":97,"passed":true}
+{"at":"2026-09-12T02:00:13.993Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:00:15.137Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:00:16.717Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:00:18.875Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:00:20.060Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":82,"passed":true}
+{"at":"2026-09-12T02:00:21.618Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:00:23.734Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:00:24.874Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:00:26.474Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":90,"passed":true}
+{"at":"2026-09-12T02:00:28.652Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:00:29.821Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:00:31.418Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":96,"passed":true}
+{"at":"2026-09-12T02:00:33.573Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:00:34.778Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":93,"passed":true}
+{"at":"2026-09-12T02:00:36.325Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:00:38.447Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":21,"passed":true}
+{"at":"2026-09-12T02:00:39.592Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:00:41.188Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":86,"passed":true}
+{"at":"2026-09-12T02:00:43.330Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:00:44.487Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:00:46.055Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:00:48.200Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:00:49.384Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":78,"passed":true}
+{"at":"2026-09-12T02:00:50.932Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:00:53.050Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:00:54.178Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:00:55.756Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":76,"passed":true}
+{"at":"2026-09-12T02:00:57.920Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:00:59.069Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:01:00.653Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:01:02.809Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:01:03.997Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":82,"passed":true}
+{"at":"2026-09-12T02:01:05.536Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:01:07.658Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:01:08.788Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:01:10.378Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":87,"passed":true}
+{"at":"2026-09-12T02:01:12.520Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:01:13.664Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:01:15.242Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":68,"passed":true}
+{"at":"2026-09-12T02:01:17.404Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:01:18.593Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":83,"passed":true}
+{"at":"2026-09-12T02:01:20.137Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:01:22.259Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":21,"passed":true}
+{"at":"2026-09-12T02:01:23.399Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:01:25.015Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":107,"passed":true}
+{"at":"2026-09-12T02:01:27.164Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:01:28.313Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:01:29.890Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:01:32.043Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:01:33.226Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":83,"passed":true}
+{"at":"2026-09-12T02:01:34.769Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:01:36.897Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:01:38.045Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:01:39.637Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":82,"passed":true}
+{"at":"2026-09-12T02:01:41.795Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:01:42.938Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:01:44.516Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:01:46.667Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:01:47.856Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":86,"passed":true}
+{"at":"2026-09-12T02:01:49.399Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:01:51.529Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:01:52.678Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:01:54.255Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:01:56.394Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:01:57.542Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:01:59.113Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":67,"passed":true}
+{"at":"2026-09-12T02:02:01.258Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:02:02.437Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:02:03.985Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:02:06.101Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:02:07.237Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:02:08.820Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:02:10.975Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:02:12.122Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:02:13.694Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:02:15.850Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:02:17.028Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:02:18.563Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:02:20.689Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:02:21.831Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:02:23.416Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":81,"passed":true}
+{"at":"2026-09-12T02:02:25.564Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:02:26.710Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:02:28.275Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:02:30.428Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:02:31.633Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":90,"passed":true}
+{"at":"2026-09-12T02:02:33.203Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:02:35.335Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:02:36.484Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:02:38.093Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":102,"passed":true}
+{"at":"2026-09-12T02:02:40.262Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:02:41.405Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:02:42.979Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":61,"passed":true}
+{"at":"2026-09-12T02:02:45.129Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:02:46.317Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:02:47.851Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:02:49.976Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:02:51.102Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:02:52.677Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":67,"passed":true}
+{"at":"2026-09-12T02:02:54.816Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:02:55.948Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:02:57.504Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:02:59.648Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:03:00.827Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:03:02.402Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:03:04.537Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:03:05.728Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":83,"passed":true}
+{"at":"2026-09-12T02:03:07.340Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":106,"passed":true}
+{"at":"2026-09-12T02:03:09.491Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:03:10.649Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:03:12.215Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:03:14.362Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:03:15.525Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:03:17.056Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:03:19.169Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:03:20.301Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:03:21.871Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:03:24.005Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:03:25.143Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:03:26.714Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:03:28.852Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:03:30.030Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:03:31.571Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:03:33.696Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:03:34.827Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:03:36.410Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:03:38.549Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:03:39.689Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:03:41.255Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:03:43.386Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:03:44.560Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:03:46.099Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:03:48.217Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:03:49.372Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:03:50.956Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:03:53.108Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:03:54.254Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:03:55.829Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:03:57.977Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:03:59.156Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:04:00.696Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:04:02.815Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":15,"passed":true}
+{"at":"2026-09-12T02:04:03.961Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:04:05.549Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:04:07.698Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:04:08.865Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":61,"passed":true}
+{"at":"2026-09-12T02:04:10.439Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:04:12.581Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:04:13.767Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":77,"passed":true}
+{"at":"2026-09-12T02:04:15.310Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:04:17.436Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:04:18.575Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:04:20.167Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":78,"passed":true}
+{"at":"2026-09-12T02:04:22.322Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:04:23.465Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:04:25.038Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:04:27.187Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T02:04:28.381Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":82,"passed":true}
+{"at":"2026-09-12T02:04:29.922Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:04:32.093Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:04:33.224Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:04:34.795Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:04:36.936Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:04:38.086Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:04:39.663Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:04:41.818Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:04:43.001Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:04:44.536Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:04:46.654Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:04:47.795Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:04:49.386Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":81,"passed":true}
+{"at":"2026-09-12T02:04:51.522Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:04:52.659Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:04:54.235Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":69,"passed":true}
+{"at":"2026-09-12T02:04:56.386Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:04:57.587Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":91,"passed":true}
+{"at":"2026-09-12T02:04:59.136Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:05:01.258Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:05:02.394Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:05:03.983Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":77,"passed":true}
+{"at":"2026-09-12T02:05:06.141Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:05:07.298Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:05:08.861Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:05:11.009Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:05:12.190Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:05:13.726Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:05:15.857Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":15,"passed":true}
+{"at":"2026-09-12T02:05:17.000Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:05:18.598Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":91,"passed":true}
+{"at":"2026-09-12T02:05:20.747Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:05:21.899Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:05:23.472Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:05:25.616Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:05:26.804Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":85,"passed":true}
+{"at":"2026-09-12T02:05:28.350Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:05:30.476Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:05:31.619Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:05:33.198Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":72,"passed":true}
+{"at":"2026-09-12T02:05:35.344Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:05:36.497Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:05:38.067Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:05:40.223Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:05:41.415Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":82,"passed":true}
+{"at":"2026-09-12T02:05:42.960Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:05:45.076Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:05:46.211Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:05:47.790Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":76,"passed":true}
+{"at":"2026-09-12T02:05:49.947Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:05:51.099Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:05:52.663Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T02:05:54.805Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:05:55.980Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":69,"passed":true}
+{"at":"2026-09-12T02:05:57.524Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:05:59.646Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:06:00.782Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:06:02.369Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:06:04.515Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:06:05.657Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:06:07.237Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":68,"passed":true}
+{"at":"2026-09-12T02:06:09.386Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:06:10.560Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:06:12.103Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:06:14.231Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":18,"passed":true}
+{"at":"2026-09-12T02:06:15.365Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:06:16.951Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":85,"passed":true}
+{"at":"2026-09-12T02:06:19.100Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:06:20.249Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:06:21.817Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:06:23.962Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:06:25.151Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:06:26.691Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:06:28.815Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":15,"passed":true}
+{"at":"2026-09-12T02:06:29.954Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:06:31.540Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:06:33.684Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:06:34.830Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:06:36.397Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:06:38.546Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:06:39.733Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":79,"passed":true}
+{"at":"2026-09-12T02:06:41.268Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:06:43.388Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:06:44.518Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:06:46.098Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:06:48.236Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:06:49.376Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:06:50.940Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":54,"passed":true}
+{"at":"2026-09-12T02:06:53.094Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:06:54.280Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:06:55.839Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:06:57.957Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:06:59.093Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:07:00.679Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":81,"passed":true}
+{"at":"2026-09-12T02:07:02.841Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T02:07:03.991Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:07:05.557Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:07:07.712Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:07:08.897Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:07:10.445Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:07:12.565Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:07:13.700Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:07:15.284Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:07:17.423Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:07:18.566Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:07:20.125Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:07:22.262Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:07:23.439Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:07:24.976Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:07:27.091Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:07:28.227Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:07:29.812Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:07:31.954Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:07:33.100Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:07:34.651Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:07:36.790Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:07:37.964Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":67,"passed":true}
+{"at":"2026-09-12T02:07:39.496Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:07:41.622Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:07:42.756Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:07:44.329Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:07:46.465Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:07:47.598Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:07:49.164Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:07:51.301Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:07:52.474Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:07:54.005Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:07:56.130Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:07:57.257Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:07:58.836Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:08:00.974Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:08:02.106Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:08:03.659Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:08:05.790Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:08:06.956Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:08:08.496Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:08:10.620Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:08:11.755Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:08:13.325Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:08:15.471Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:08:16.615Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:08:18.173Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:08:20.309Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:08:21.474Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":54,"passed":true}
+{"at":"2026-09-12T02:08:23.018Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:08:25.137Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:08:26.271Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:08:27.844Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":58,"passed":true}
+{"at":"2026-09-12T02:08:29.988Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:08:31.132Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:08:32.688Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:08:34.824Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:08:35.990Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:08:37.527Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:08:39.652Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:08:40.778Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:08:42.344Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":61,"passed":true}
+{"at":"2026-09-12T02:08:44.485Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:08:45.625Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:08:47.187Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:08:49.324Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:08:50.492Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:08:52.028Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:08:54.142Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:08:55.274Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:08:56.852Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:08:59.005Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:09:00.143Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:09:01.707Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:09:03.852Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:09:05.023Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:09:06.588Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:09:08.706Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:09:09.845Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:09:11.429Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":72,"passed":true}
+{"at":"2026-09-12T02:09:13.585Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":54,"passed":true}
+{"at":"2026-09-12T02:09:14.729Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:09:16.289Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:09:18.439Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:09:19.616Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:09:21.158Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:09:23.279Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:09:24.418Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:09:25.987Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:09:28.135Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:09:29.273Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:09:30.832Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:09:32.984Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:09:34.148Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:09:35.698Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:09:37.854Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:09:38.984Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":22,"passed":true}
+{"at":"2026-09-12T02:09:40.554Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:09:42.707Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:09:43.841Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:09:45.403Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:09:47.553Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:09:48.715Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":61,"passed":true}
+{"at":"2026-09-12T02:09:50.242Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:09:52.359Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:09:53.490Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:09:55.060Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:09:57.196Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:09:58.337Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:09:59.889Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:10:02.028Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:10:03.199Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:10:04.732Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:10:06.845Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:10:07.969Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:10:09.543Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":68,"passed":true}
+{"at":"2026-09-12T02:10:11.678Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:10:12.818Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:10:14.397Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:10:16.542Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:10:17.710Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:10:19.246Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:10:21.363Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:10:22.500Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:10:24.062Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:10:26.203Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:10:27.345Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:10:28.902Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:10:31.035Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:10:32.208Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":68,"passed":true}
+{"at":"2026-09-12T02:10:33.743Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:10:35.865Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:10:36.988Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:10:38.553Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:10:40.691Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:10:41.837Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:10:43.386Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:10:45.518Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:10:46.698Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":66,"passed":true}
+{"at":"2026-09-12T02:10:48.238Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:10:50.364Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:10:51.488Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":22,"passed":true}
+{"at":"2026-09-12T02:10:53.060Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:10:55.193Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:10:56.324Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:10:57.906Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":72,"passed":true}
+{"at":"2026-09-12T02:11:00.046Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:11:01.220Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:11:02.755Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:11:04.871Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:11:06.005Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:11:07.569Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:11:09.708Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:11:10.856Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:11:12.412Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T02:11:14.560Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:11:15.734Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:11:17.265Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:11:19.380Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:11:20.504Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:11:22.070Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:11:24.200Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:11:25.333Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:11:26.907Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":65,"passed":true}
+{"at":"2026-09-12T02:11:29.044Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:11:30.211Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:11:31.756Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:11:33.875Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:11:35.007Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:11:36.588Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":65,"passed":true}
+{"at":"2026-09-12T02:11:38.725Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:11:39.857Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:11:41.423Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:11:43.569Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:11:44.740Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":65,"passed":true}
+{"at":"2026-09-12T02:11:46.275Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:11:48.391Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:11:49.526Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:11:51.094Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":68,"passed":true}
+{"at":"2026-09-12T02:11:53.227Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:11:54.366Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:11:55.930Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:11:58.065Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:11:59.238Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":67,"passed":true}
+{"at":"2026-09-12T02:12:00.769Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:12:02.895Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:12:04.034Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:12:05.604Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:12:07.742Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:12:08.875Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:12:10.441Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:12:12.586Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:12:13.749Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:12:15.283Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:12:17.405Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:12:18.534Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:12:20.104Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:12:22.242Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:12:23.374Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:12:24.937Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:12:27.080Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:12:28.236Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:12:29.769Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:12:31.894Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:12:33.033Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:12:34.603Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:12:36.735Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:12:37.874Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:12:39.439Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":54,"passed":true}
+{"at":"2026-09-12T02:12:41.576Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:12:42.758Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:12:44.292Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:12:46.419Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:12:47.552Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:12:49.137Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:12:51.276Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:12:52.407Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:12:53.966Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:12:56.108Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:12:57.267Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:12:58.804Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:13:00.915Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:13:02.052Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:13:03.632Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":78,"passed":true}
+{"at":"2026-09-12T02:13:05.769Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:13:06.907Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:13:08.464Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:13:10.606Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:13:11.774Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":58,"passed":true}
+{"at":"2026-09-12T02:13:13.312Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:13:15.432Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:13:16.560Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":19,"passed":true}
+{"at":"2026-09-12T02:13:18.117Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:13:20.249Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:13:21.386Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:13:22.929Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:13:25.067Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:13:26.231Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:13:27.756Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":22,"passed":true}
+{"at":"2026-09-12T02:13:29.872Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":9,"passed":true}
+{"at":"2026-09-12T02:13:30.999Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":19,"passed":true}
+{"at":"2026-09-12T02:13:32.578Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":64,"passed":true}
+{"at":"2026-09-12T02:13:34.715Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:13:35.849Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:13:37.403Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:13:39.566Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:13:40.723Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:13:42.256Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:13:44.370Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:13:45.506Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:13:47.098Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":85,"passed":true}
+{"at":"2026-09-12T02:13:49.228Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:13:50.367Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:13:51.940Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:13:54.097Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:13:55.257Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":54,"passed":true}
+{"at":"2026-09-12T02:13:56.786Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:13:58.897Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:14:00.027Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":21,"passed":true}
+{"at":"2026-09-12T02:14:01.593Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":61,"passed":true}
+{"at":"2026-09-12T02:14:03.800Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":93,"passed":true}
+{"at":"2026-09-12T02:14:04.945Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:14:06.505Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T02:14:08.652Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:14:09.810Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:14:11.349Z","phase":"local-editor-history","action":"Seek final trace event through keyboard","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:14:13.765Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:14:18.818Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":3941,"passed":true}
+{"at":"2026-09-12T02:14:20.383Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:14:24.387Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1892,"passed":true}
+{"at":"2026-09-12T02:14:25.529Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:14:27.089Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:14:29.313Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":121,"passed":true}
+{"at":"2026-09-12T02:14:30.440Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":15,"passed":true}
+{"at":"2026-09-12T02:14:31.983Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:14:34.139Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T02:14:37.124Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1871,"passed":true}
+{"at":"2026-09-12T02:14:38.638Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:14:40.791Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:14:41.999Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":96,"passed":true}
+{"at":"2026-09-12T02:14:43.558Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:14:45.737Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":65,"passed":true}
+{"at":"2026-09-12T02:14:46.885Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:14:50.265Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1868,"passed":true}
+{"at":"2026-09-12T02:14:52.385Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:14:53.586Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":98,"passed":true}
+{"at":"2026-09-12T02:14:55.202Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":105,"passed":true}
+{"at":"2026-09-12T02:14:57.326Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":15,"passed":true}
+{"at":"2026-09-12T02:14:58.487Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:15:00.032Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:15:04.000Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1854,"passed":true}
+{"at":"2026-09-12T02:15:05.126Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:15:06.692Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:15:08.898Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":101,"passed":true}
+{"at":"2026-09-12T02:15:10.017Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":18,"passed":true}
+{"at":"2026-09-12T02:15:11.596Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:15:13.747Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:15:16.740Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1883,"passed":true}
+{"at":"2026-09-12T02:15:18.265Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:15:20.415Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:15:21.629Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":111,"passed":true}
+{"at":"2026-09-12T02:15:23.145Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:15:25.286Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:15:26.426Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:15:29.812Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1873,"passed":true}
+{"at":"2026-09-12T02:15:31.928Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:15:33.087Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:15:34.712Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":114,"passed":true}
+{"at":"2026-09-12T02:15:36.826Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:15:37.974Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:15:39.511Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:15:43.483Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1867,"passed":true}
+{"at":"2026-09-12T02:15:44.600Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:15:46.149Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:15:48.345Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":83,"passed":true}
+{"at":"2026-09-12T02:15:49.473Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:15:51.033Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T02:15:53.185Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:15:56.175Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1880,"passed":true}
+{"at":"2026-09-12T02:15:57.699Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":15,"passed":true}
+{"at":"2026-09-12T02:15:59.902Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":98,"passed":true}
+{"at":"2026-09-12T02:16:01.171Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":168,"passed":true}
+{"at":"2026-09-12T02:16:02.691Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:16:04.838Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:16:05.968Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:16:09.334Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1861,"passed":true}
+{"at":"2026-09-12T02:16:11.450Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:16:12.612Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:16:14.204Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":82,"passed":true}
+{"at":"2026-09-12T02:16:16.323Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:16:17.475Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:16:19.008Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:16:23.021Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1898,"passed":true}
+{"at":"2026-09-12T02:16:24.145Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:16:25.697Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:16:27.877Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:16:29.001Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:16:30.550Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:16:32.683Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":26,"passed":true}
+{"at":"2026-09-12T02:16:35.642Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1851,"passed":true}
+{"at":"2026-09-12T02:16:37.159Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:16:39.305Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:16:40.487Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:16:42.006Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:16:44.145Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:16:45.284Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:16:48.654Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1867,"passed":true}
+{"at":"2026-09-12T02:16:50.775Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:16:51.923Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:16:53.533Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":99,"passed":true}
+{"at":"2026-09-12T02:16:55.657Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:16:56.815Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:16:58.374Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:17:02.359Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1877,"passed":true}
+{"at":"2026-09-12T02:17:03.479Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:17:05.085Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":96,"passed":true}
+{"at":"2026-09-12T02:17:07.299Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":105,"passed":true}
+{"at":"2026-09-12T02:17:08.417Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:17:09.976Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:17:12.117Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:17:15.089Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1866,"passed":true}
+{"at":"2026-09-12T02:17:16.615Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:17:18.777Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:17:19.983Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":98,"passed":true}
+{"at":"2026-09-12T02:17:21.502Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:17:23.654Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T02:17:24.782Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":22,"passed":true}
+{"at":"2026-09-12T02:17:28.150Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1854,"passed":true}
+{"at":"2026-09-12T02:17:30.269Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:17:31.422Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:17:32.994Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:17:35.112Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:17:36.279Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:17:37.809Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:17:41.775Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1860,"passed":true}
+{"at":"2026-09-12T02:17:42.900Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:17:44.456Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:17:46.644Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":81,"passed":true}
+{"at":"2026-09-12T02:17:47.768Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:17:49.319Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:17:51.457Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:17:54.437Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1868,"passed":true}
+{"at":"2026-09-12T02:17:55.957Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:17:58.115Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:17:59.295Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":73,"passed":true}
+{"at":"2026-09-12T02:18:00.816Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:18:02.977Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:18:04.125Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:18:07.517Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1880,"passed":true}
+{"at":"2026-09-12T02:18:09.636Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:18:10.828Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:18:12.438Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":106,"passed":true}
+{"at":"2026-09-12T02:18:14.563Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:18:15.703Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:18:17.234Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:18:21.207Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1858,"passed":true}
+{"at":"2026-09-12T02:18:22.331Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:18:23.889Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:18:26.072Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":78,"passed":true}
+{"at":"2026-09-12T02:18:27.185Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:18:28.716Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:18:30.856Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:18:33.842Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1873,"passed":true}
+{"at":"2026-09-12T02:18:35.353Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:18:37.509Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:18:38.687Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":71,"passed":true}
+{"at":"2026-09-12T02:18:40.203Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:18:42.351Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:18:43.491Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:18:46.867Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1870,"passed":true}
+{"at":"2026-09-12T02:18:48.988Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:18:50.132Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:18:51.703Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:18:53.825Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:18:54.967Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:18:56.509Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:19:00.484Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1872,"passed":true}
+{"at":"2026-09-12T02:19:01.595Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:19:03.148Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T02:19:05.346Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:19:06.466Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:19:08.026Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:19:10.180Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:19:13.159Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1867,"passed":true}
+{"at":"2026-09-12T02:19:14.681Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:19:16.887Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":95,"passed":true}
+{"at":"2026-09-12T02:19:18.103Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":113,"passed":true}
+{"at":"2026-09-12T02:19:19.627Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:19:21.772Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:19:22.901Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:19:26.277Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1862,"passed":true}
+{"at":"2026-09-12T02:19:28.391Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:19:29.550Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:19:31.130Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:19:33.241Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:19:34.391Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":35,"passed":true}
+{"at":"2026-09-12T02:19:35.914Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":20,"passed":true}
+{"at":"2026-09-12T02:19:39.867Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1850,"passed":true}
+{"at":"2026-09-12T02:19:40.979Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:19:42.521Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:19:44.695Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:19:45.846Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:19:47.399Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:19:49.534Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:19:52.492Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1850,"passed":true}
+{"at":"2026-09-12T02:19:54.004Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:19:56.149Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:19:57.328Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:19:58.849Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:20:01.001Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:20:02.142Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:20:05.519Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1868,"passed":true}
+{"at":"2026-09-12T02:20:07.644Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:20:08.798Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:20:10.371Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":68,"passed":true}
+{"at":"2026-09-12T02:20:12.488Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:20:13.652Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":58,"passed":true}
+{"at":"2026-09-12T02:20:15.205Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:20:19.175Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1861,"passed":true}
+{"at":"2026-09-12T02:20:20.288Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:20:21.883Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":81,"passed":true}
+{"at":"2026-09-12T02:20:24.102Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":111,"passed":true}
+{"at":"2026-09-12T02:20:25.224Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:20:26.762Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:20:28.903Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:20:31.860Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1856,"passed":true}
+{"at":"2026-09-12T02:20:33.379Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:20:35.542Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:20:36.730Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:20:38.250Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:20:40.397Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:20:41.532Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:20:44.910Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1862,"passed":true}
+{"at":"2026-09-12T02:20:47.033Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:20:48.181Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:20:49.762Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:20:51.882Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:20:53.025Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:20:54.558Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:20:58.518Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1858,"passed":true}
+{"at":"2026-09-12T02:20:59.646Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:21:01.200Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T02:21:03.396Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:21:04.520Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:21:06.067Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T02:21:08.209Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:21:11.193Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1872,"passed":true}
+{"at":"2026-09-12T02:21:12.720Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:21:14.882Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:21:16.071Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:21:17.590Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:21:19.749Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":56,"passed":true}
+{"at":"2026-09-12T02:21:20.893Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:21:24.284Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1876,"passed":true}
+{"at":"2026-09-12T02:21:26.408Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:21:27.608Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":95,"passed":true}
+{"at":"2026-09-12T02:21:29.230Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":112,"passed":true}
+{"at":"2026-09-12T02:21:31.350Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:21:32.509Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:21:34.053Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:21:38.035Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1873,"passed":true}
+{"at":"2026-09-12T02:21:39.155Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:21:40.730Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":61,"passed":true}
+{"at":"2026-09-12T02:21:42.932Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":95,"passed":true}
+{"at":"2026-09-12T02:21:44.048Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:21:45.621Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:21:47.757Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:21:50.737Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1873,"passed":true}
+{"at":"2026-09-12T02:21:52.262Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:21:54.417Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:21:55.588Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":70,"passed":true}
+{"at":"2026-09-12T02:21:57.101Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:21:59.243Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:22:00.384Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:22:03.749Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1859,"passed":true}
+{"at":"2026-09-12T02:22:05.873Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:22:07.033Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:22:08.630Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:22:10.748Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:22:11.905Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:22:13.438Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:22:17.431Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1882,"passed":true}
+{"at":"2026-09-12T02:22:18.557Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:22:20.122Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:22:22.313Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":88,"passed":true}
+{"at":"2026-09-12T02:22:23.434Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:22:25.012Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":74,"passed":true}

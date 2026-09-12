@@ -1,0 +1,8 @@
+# Optional authoring tools; the application and Python tests use the standard library.
+# Python >=3.10. External programs: FFmpeg/FFprobe and Poppler (pdftoppm).
+# Direct versions only, not a complete transitive lockfile. See README.md.
+Pillow==12.3.0
+reportlab==4.5.1
+fonttools==4.60.1
+pypdf==6.10.2
+edge-tts==7.2.8

@@ -1,0 +1,80 @@
+{
+  "builder_sha256": "aa87208fa22f164eb48260156c9bd87fdebac8bbb2a1f8797658c228df315820",
+  "voice_metadata_sha256": "8741a801d6b1c0217485e01fffc26a2deab581824210ff7d7bf1501a39cae85d",
+  "spoken_objects": [
+    [
+      "Nodo",
+      5.9299159999999995
+    ],
+    [
+      "Conexión",
+      8.809791
+    ],
+    [
+      "Grafo",
+      11.505875000000001
+    ],
+    [
+      "solucionador",
+      14.765666000000001
+    ]
+  ],
+  "old_focus_transitions": [
+    0.0,
+    5.858333333333333,
+    11.716666666666667,
+    17.575
+  ],
+  "decimal_word_boundaries": [
+    {
+      "text": "Un",
+      "start": 0.099,
+      "end": 0.258333
+    },
+    {
+      "text": "décimo",
+      "start": 0.270583,
+      "end": 0.674999
+    },
+    {
+      "text": "más",
+      "start": 0.68725,
+      "end": 0.944583
+    },
+    {
+      "text": "dos",
+      "start": 0.956875,
+      "end": 1.165208
+    },
+    {
+      "text": "décimos",
+      "start": 1.177458,
+      "end": 1.630874
+    },
+    {
+      "text": "debe",
+      "start": 1.643125,
+      "end": 1.875958
+    },
+    {
+      "text": "producir",
+      "start": 1.88825,
+      "end": 2.402958
+    },
+    {
+      "text": "tres",
+      "start": 2.415208,
+      "end": 2.672541
+    },
+    {
+      "text": "décimos",
+      "start": 2.684791,
+      "end": 3.285291
+    }
+  ],
+  "decimal_old_focus_transitions": [
+    0,
+    7.3,
+    14.6
+  ]
+}

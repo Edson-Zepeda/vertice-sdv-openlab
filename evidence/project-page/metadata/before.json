@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-09-12T02:02:32.780Z",
+  "cases": [
+    {
+      "id": "missing",
+      "metadata": {},
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [
+        "Cannot read properties of undefined (reading 'findLastIndex')"
+      ],
+      "passed": false
+    },
+    {
+      "id": "null",
+      "metadata": {
+        "chapters": null
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [
+        "Cannot read properties of null (reading 'findLastIndex')"
+      ],
+      "passed": false
+    },
+    {
+      "id": "bad_label",
+      "metadata": {
+        "chapters": [
+          {
+            "label": {
+              "bad": true
+            },
+            "start": 0
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 1,
+      "errors": [],
+      "passed": false
+    },
+    {
+      "id": "bad_time",
+      "metadata": {
+        "chapters": [
+          {
+            "label": "Prueba",
+            "start": "oops"
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 1,
+      "errors": [],
+      "passed": false
+    },
+    {
+      "id": "negative",
+      "metadata": {
+        "chapters": [
+          {
+            "label": "Prueba",
+            "start": -1
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 1,
+      "errors": [],
+      "passed": false
+    },
+    {
+      "id": "unordered",
+      "metadata": {
+        "chapters": [
+          {
+            "label": "A",
+            "start": 10
+          },
+          {
+            "label": "B",
+            "start": 2
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 2,
+      "errors": [],
+      "passed": false
+    }
+  ],
+  "passed": 0,
+  "failed": 6,
+  "source_hashes": {
+    "web/project.js": "6d643822f226231cd6d2d7833ec020ed5d3bb2a69adee5699ca85a5ae29d92c9",
+    "web/proyecto.html": "6134618b7879789d4319b6b6fa631a2010609b5b89569578e2edda42f5fa2abb"
+  }
+}

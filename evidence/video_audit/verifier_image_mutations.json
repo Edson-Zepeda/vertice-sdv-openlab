@@ -1,0 +1,155 @@
+{
+  "scope": "Synthetic counterexamples in memory, not an MP4 inspection or edit",
+  "source_hashes": {
+    "scripts/probe_film_pixels.py": "b3e385b1ece10caa052b347240bbc986857a656d1d6f149e9920df423c61d7d0",
+    "scripts/verify_film.py": "7ed624376f4d881f21526a578465f1cbab1d1fe7c4c89f3c48bc09914d4d04a3",
+    "scripts/build_film.py": "bbaf0320898ddba73a0f86af57f8d906b459feb83d5e701c758b90a85ca59041",
+    "media/render/film-plan.json": "2c7203bfe547c5534cbf3ebd6a906f4c3128c8a76e8af8f9cf607a9e60f20954"
+  },
+  "results": [
+    {
+      "scene": "intro",
+      "mutation": "erase_title",
+      "global_mae": 1.248641975308642,
+      "region_mae": 13.351126695199298,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "intro",
+      "mutation": "erase_captions",
+      "global_mae": 0.6339348636831276,
+      "region_mae": 10.146089327981889,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "objects",
+      "mutation": "erase_title",
+      "global_mae": 2.3521418467078186,
+      "region_mae": 25.150318843568986,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "objects",
+      "mutation": "erase_captions",
+      "global_mae": 0.4851040059156378,
+      "region_mae": 7.764060409591437,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "trace",
+      "mutation": "erase_title",
+      "global_mae": 1.0340440136316873,
+      "region_mae": 11.05653414462263,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "trace",
+      "mutation": "erase_captions",
+      "global_mae": 0.6137419624485597,
+      "region_mae": 9.822903159411341,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "relax",
+      "mutation": "erase_title",
+      "global_mae": 2.3613773148148147,
+      "region_mae": 25.249069251791884,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "relax",
+      "mutation": "erase_captions",
+      "global_mae": 0.5939342206790124,
+      "region_mae": 9.505881444890399,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "decimal",
+      "mutation": "erase_title",
+      "global_mae": 1.849604391718107,
+      "region_mae": 19.776928101204902,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "decimal",
+      "mutation": "erase_captions",
+      "global_mae": 0.6548527520576132,
+      "region_mae": 10.480878872079861,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "cases",
+      "mutation": "erase_title",
+      "global_mae": 2.0877173353909466,
+      "region_mae": 22.322955018133694,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "cases",
+      "mutation": "erase_captions",
+      "global_mae": 0.5922601594650206,
+      "region_mae": 9.47908819594525,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "oracle",
+      "mutation": "erase_title",
+      "global_mae": 1.9202563978909464,
+      "region_mae": 20.532375943209747,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "oracle",
+      "mutation": "erase_captions",
+      "global_mae": 0.6043955761316873,
+      "region_mae": 9.673314809097457,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "benchmark",
+      "mutation": "erase_title",
+      "global_mae": 2.2951766653806587,
+      "region_mae": 24.54121762147854,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "benchmark",
+      "mutation": "erase_captions",
+      "global_mae": 0.6630434992283951,
+      "region_mae": 10.611971287434393,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "studio",
+      "mutation": "erase_title",
+      "global_mae": 1.5249919624485597,
+      "region_mae": 16.306003884563157,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    },
+    {
+      "scene": "studio",
+      "mutation": "erase_captions",
+      "global_mae": 0.4789972350823046,
+      "region_mae": 7.666321910054543,
+      "old_global_criterion_accepts": true,
+      "regional_criterion_rejects": true
+    }
+  ]
+}

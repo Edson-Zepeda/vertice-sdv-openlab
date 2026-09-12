@@ -1,0 +1,175 @@
+{
+  "started_at": "2026-09-12T01:02:35.100772+00:00",
+  "finished_at": "2026-09-12T01:02:36.943540+00:00",
+  "status": "fail",
+  "environment": {
+    "python": "3.11.9",
+    "implementation": "CPython",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "test_methods": 33,
+  "failures": 1,
+  "errors": 3,
+  "skipped": 0,
+  "elapsed_seconds": 1.8415759,
+  "scenarios": {
+    "named_queries": 18,
+    "seeded_graphs": 160,
+    "seeded_queries": 631,
+    "trace_events": 18813
+  },
+  "scope": "Algorithm, object invariants and strict JSON boundary. Does not prove UI, HTTP or Pyodide parity.",
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "f06c6b78636a1d8c212bb4dc94604b129a2ec7c03fa8ae0ece614525a3c762c5",
+    "vertice/codec.py": "bdc0dd03ac9e4fee1c922aa822dd4a138365ade2abb7a09cd81197e2b8ce7b9f",
+    "vertice/dijkstra.py": "fc23d8b3070964688cb9de76ced792114c6c813d99ca0e2683b60f71387d3ca2",
+    "vertice/graph.py": "2d46915bfe447a5e4933171a240aa55bda4ab5a04aee8940fb42e6fbfe9fd4d7",
+    "tests/test_independent.py": "a8376a802e13797338c07d778acbac7a3b045f39b466e399340ab6790d6dd1a8",
+    "tests/independent_oracle.py": "1f01b18b0252ae5234a888d54d475159b8fd3a93e7fdbcb81ddae8590aa5e4ec",
+    "scripts/verify_independent.py": "9a84fdbf490f2f090a039af02520cfe907b94abb2987425a244ec7af0ef246c8"
+  },
+  "results": [
+    {
+      "test": "test_independent.GraphMutationTests.test_directed_remove_and_rewire_do_not_leave_reverse_arcs",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_edge_rewire_updates_both_undirected_adjacencies",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_edge_weight_update_changes_solution",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_external_views_and_value_objects_cannot_corrupt_graph",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_failed_mutations_are_atomic",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_node_update_does_not_change_routes",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_remove_and_readd_uses_new_weight",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_removing_node_removes_all_incident_edges",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_change_route_or_cost",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_erase_micro_difference",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_json_round_trip_preserves_exact_decimal_result",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_named_contract_scenarios",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_seeded_graphs_against_independent_oracle",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_solve_does_not_mutate_input_and_results_are_isolated",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_tentative_distance_is_not_replaced_by_final_oracle_value",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_trace_disabled_keeps_same_solution_without_events",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_coordinate_bounds_and_types",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_duplicate_nodes_edges_and_parallel_connections",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_error_messages_for_unexpected_keys_are_utf8_safe",
+      "status": "error",
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_independent.py\", line 344, in test_error_messages_for_unexpected_keys_are_utf8_safe\n    solve_payload(payload)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py\", line 51, in solve_payload\n    _check_object(payload, {\"graph\", \"source\", \"target\"}, {\"trace\"}, \"B\u00fasqueda\")\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\graph.py\", line 99, in _check_object\n    raise ValidationError(f\"{label}: campos no admitidos: {', '.join(sorted(unexpected))}.\")\nvertice.graph.ValidationError: B\u00fasqueda: campos no admitidos: \ud800.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_independent.py\", line 346, in test_error_messages_for_unexpected_keys_are_utf8_safe\n    str(exc).encode('utf-8')\nUnicodeEncodeError: 'utf-8' codec can't encode character '\\ud800' in position 31: surrogates not allowed\n"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_decimal_exponents_are_controlled (token='1e999999999999999999999999999999999')",
+      "status": "subtest_failure",
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_independent.py\", line 329, in test_extreme_decimal_exponents_are_controlled\n    solve_json(encoded.replace('\"weight\": \"1\"', '\"weight\": ' + token))\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py\", line 57, in solve_json\n    result = solve_payload(load_json(text))\n                           ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py\", line 40, in load_json\n    return json.loads(text, parse_float=Decimal, parse_constant=_constant,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py\", line 359, in loads\n    return cls(**kw).decode(s)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py\", line 353, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\ndecimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]\n"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_decimal_exponents_are_controlled (token='1e-999999999999999999999999999999999')",
+      "status": "subtest_failure",
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_independent.py\", line 329, in test_extreme_decimal_exponents_are_controlled\n    solve_json(encoded.replace('\"weight\": \"1\"', '\"weight\": ' + token))\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py\", line 57, in solve_json\n    result = solve_payload(load_json(text))\n                           ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\vertice\\codec.py\", line 40, in load_json\n    return json.loads(text, parse_float=Decimal, parse_constant=_constant,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py\", line 359, in loads\n    return cls(**kw).decode(s)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py\", line 353, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\ndecimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]\n"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_json_has_controlled_validation_error",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_json_parser_rejects_duplicates_and_nonstandard_numbers",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_maximum_edges_and_one_beyond",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_maximum_nodes_and_one_beyond",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_node_and_edge_identifier_contract",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_nonexistent_endpoints",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_oversized_numeric_representation_is_rejected_before_normalization",
+      "status": "fail",
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_independent.py\", line 334, in test_oversized_numeric_representation_is_rejected_before_normalization\n    with self.assertRaises(ValidationError):\nAssertionError: ValidationError not raised\n"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_precisely_representable_weight_variants",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_top_level_and_required_field_types",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_unicode_labels_remain_data_and_enforce_length",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_unpaired_surrogate_cannot_break_utf8_responses",
+      "status": "pass"
+    }
+  ]
+}

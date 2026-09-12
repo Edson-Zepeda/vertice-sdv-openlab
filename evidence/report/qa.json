@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-09-12T02:24:13.864180+00:00",
+  "status": "pass",
+  "pdf_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
+  "page_count": 10,
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "visual_review": "Full-page PNG inspection completed; no clipping, overlap or missing glyphs observed.",
+  "checks": {
+    "ten_pages": true,
+    "ten_rendered_pages": true,
+    "identical_web_copy": true,
+    "zero_bounds_issues": true,
+    "render_matches_pdf": true,
+    "rendered_page_hashes_match": true,
+    "source_receipt_matches_pdf": true,
+    "source_inputs_unchanged": true,
+    "independent_source_hashes_match": true,
+    "benchmark_source_hashes_match": true,
+    "no_replacement_character": true
+  },
+  "rendered_pages": [
+    {
+      "path": "evidence/report/pages/page-01.png",
+      "sha256": "b8e7bc594a771962c63c7a671827ec5991dbc154f24965ab1bea7b64d53b5cae"
+    },
+    {
+      "path": "evidence/report/pages/page-02.png",
+      "sha256": "c4a2025363a2d2cb0eac23be23bb6ebdf3354a9d29b908e778670f434127f851"
+    },
+    {
+      "path": "evidence/report/pages/page-03.png",
+      "sha256": "6459c2f760d90b0299f84750fd8dbc4531c12c7af58da9b28e31c7de23eb1095"
+    },
+    {
+      "path": "evidence/report/pages/page-04.png",
+      "sha256": "2100a087833bf8300cfa6d9dbb2ead90e39522ddbf6cbc3eee6e0e5169b0868e"
+    },
+    {
+      "path": "evidence/report/pages/page-05.png",
+      "sha256": "33be319e16e24c8cce3d8b0bfe1c2a8ebb78d886be9e809beb90406ea3a8657e"
+    },
+    {
+      "path": "evidence/report/pages/page-06.png",
+      "sha256": "9d2f641ce3d189cfa3b9f8c89d9eead74d1e5b137cb6041beb5ac08aa8c5dd56"
+    },
+    {
+      "path": "evidence/report/pages/page-07.png",
+      "sha256": "69bc16e58a3e6d507491c6dfc5419eb6862e582eb94bc732e5cc28a0493a7cdb"
+    },
+    {
+      "path": "evidence/report/pages/page-08.png",
+      "sha256": "61043e44420bdcfe5dbcce8ab9a6600c6296feaa25a6e4a83d8baded15648aa7"
+    },
+    {
+      "path": "evidence/report/pages/page-09.png",
+      "sha256": "88bcd54e1451607f9e730a41076160d617ddbd933276750c613e436af2ea04c9"
+    },
+    {
+      "path": "evidence/report/pages/page-10.png",
+      "sha256": "b22756742d9041f2c5a3c9195bbc6c14c1d08c9553500405f65c927d4953c01c"
+    }
+  ],
+  "integration_state": [
+    {
+      "name": "API local HTTP",
+      "status": "pass",
+      "detail": "26 métodos. Solicitudes reales a localhost con fixtures aislados."
+    },
+    {
+      "name": "Terminal y arranque",
+      "status": "pass",
+      "detail": "12 métodos. CPython 3.10.11, 3.11.9, 3.12.14, 3.14.7. Misma suite; no son casos adicionales."
+    },
+    {
+      "name": "Python en navegador",
+      "status": "pass",
+      "detail": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "evidence": "evidence/publication/static-prefix/worker.json"
+    },
+    {
+      "name": "Editor y accesibilidad",
+      "status": "pending",
+      "detail": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
+      "evidence": "evidence/ui/qa.json"
+    },
+    {
+      "name": "Publicación y entrega",
+      "status": "pending",
+      "detail": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
+      "evidence": "evidence/publication/static-prefix/qa.json"
+    }
+  ]
+}

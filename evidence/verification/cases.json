@@ -1,0 +1,1051 @@
+{
+  "schema_version": 1,
+  "origin": "synthetic educational contract fixtures",
+  "oracle": "Bellman-Ford with integer micro-units; independent of delivered algorithm",
+  "cases": [
+    {
+      "id": "single_node",
+      "title": "Inicio y destino en el único nodo",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "edges": []
+        },
+        "source": "A",
+        "target": "A",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "0",
+        "path": [
+          "A"
+        ]
+      }
+    },
+    {
+      "id": "chain_reverse",
+      "title": "Una conexión no dirigida se recorre en ambos sentidos",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "2"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "C",
+              "weight": "3.5"
+            }
+          ]
+        },
+        "source": "C",
+        "target": "A",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "5.5",
+        "path": [
+          "C",
+          "B",
+          "A"
+        ]
+      }
+    },
+    {
+      "id": "cheaper_detour",
+      "title": "Más conexiones pueden costar menos",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "D",
+              "weight": "9"
+            },
+            {
+              "id": "e1",
+              "source": "A",
+              "target": "B",
+              "weight": "1"
+            },
+            {
+              "id": "e2",
+              "source": "B",
+              "target": "C",
+              "weight": "1"
+            },
+            {
+              "id": "e3",
+              "source": "C",
+              "target": "D",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "D",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "3",
+        "path": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "id": "zero_cycle",
+      "title": "Ciclo con costo cero y destino alcanzable",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "0"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "C",
+              "weight": "0"
+            },
+            {
+              "id": "e2",
+              "source": "C",
+              "target": "A",
+              "weight": "0"
+            },
+            {
+              "id": "e3",
+              "source": "C",
+              "target": "D",
+              "weight": "2"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "D",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "2",
+        "path": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "id": "decimal_exact",
+      "title": "0.1 + 0.2 gana a 0.300001",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "0.1"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "C",
+              "weight": "0.2"
+            },
+            {
+              "id": "e2",
+              "source": "A",
+              "target": "C",
+              "weight": "0.300001"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "C",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "0.3",
+        "path": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "id": "micro_delta",
+      "title": "Diferencia mínima representable",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "C",
+              "weight": "0.000003"
+            },
+            {
+              "id": "e1",
+              "source": "A",
+              "target": "B",
+              "weight": "0.000001"
+            },
+            {
+              "id": "e2",
+              "source": "B",
+              "target": "C",
+              "weight": "0.000001"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "C",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "0.000002",
+        "path": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "id": "large_exact",
+      "title": "Suma exacta por encima del máximo de una conexión",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "1000000000000"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "C",
+              "weight": "999999999999.999999"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "C",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "1999999999999.999999",
+        "path": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "id": "directed_no_reverse",
+      "title": "La dirección impide volver al inicio",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "1"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "C",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "C",
+        "target": "A",
+        "trace": true
+      },
+      "expected": {
+        "status": "no_path",
+        "cost": null,
+        "path": []
+      }
+    },
+    {
+      "id": "disconnected",
+      "title": "Componentes separadas",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "1"
+            },
+            {
+              "id": "e1",
+              "source": "C",
+              "target": "D",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "D",
+        "trace": true
+      },
+      "expected": {
+        "status": "no_path",
+        "cost": null,
+        "path": []
+      }
+    },
+    {
+      "id": "isolated_source",
+      "title": "Inicio sin conexiones",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "B",
+              "target": "C",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "C",
+        "trace": true
+      },
+      "expected": {
+        "status": "no_path",
+        "cost": null,
+        "path": []
+      }
+    },
+    {
+      "id": "isolated_target",
+      "title": "Destino aislado",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "C",
+        "trace": true
+      },
+      "expected": {
+        "status": "no_path",
+        "cost": null,
+        "path": []
+      }
+    },
+    {
+      "id": "self_loops",
+      "title": "Bucles propios de costo cero y positivo",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "A",
+              "weight": "0"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "B",
+              "weight": "10"
+            },
+            {
+              "id": "e2",
+              "source": "A",
+              "target": "B",
+              "weight": "2"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "B",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "2",
+        "path": [
+          "A",
+          "B"
+        ]
+      }
+    },
+    {
+      "id": "same_node_with_edges",
+      "title": "Inicio igual al destino no requiere recorrer un ciclo",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "5"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "A",
+              "weight": "0"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "A",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "0",
+        "path": [
+          "A"
+        ]
+      }
+    },
+    {
+      "id": "deterministic_tie",
+      "title": "Empate reproducible por identificador local",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "S",
+              "label": "S",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "T",
+              "label": "T",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "S",
+              "target": "B",
+              "weight": "1"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "T",
+              "weight": "1"
+            },
+            {
+              "id": "e2",
+              "source": "S",
+              "target": "A",
+              "weight": "1"
+            },
+            {
+              "id": "e3",
+              "source": "A",
+              "target": "T",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "S",
+        "target": "T",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "2",
+        "path": [
+          "S",
+          "A",
+          "T"
+        ]
+      }
+    },
+    {
+      "id": "not_global_lexicographic",
+      "title": "No se promete el menor camino lexicográfico global",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "S",
+              "label": "S",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "T",
+              "label": "T",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "S",
+              "target": "B",
+              "weight": "0"
+            },
+            {
+              "id": "e1",
+              "source": "B",
+              "target": "T",
+              "weight": "2"
+            },
+            {
+              "id": "e2",
+              "source": "S",
+              "target": "A",
+              "weight": "1"
+            },
+            {
+              "id": "e3",
+              "source": "A",
+              "target": "T",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "S",
+        "target": "T",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "2",
+        "path": [
+          "S",
+          "B",
+          "T"
+        ]
+      }
+    },
+    {
+      "id": "stale_heap_entry",
+      "title": "Relajación posterior vuelve obsoleta una entrada de cola",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "Z",
+              "label": "Z",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "A",
+              "target": "B",
+              "weight": "9"
+            },
+            {
+              "id": "e1",
+              "source": "A",
+              "target": "C",
+              "weight": "1"
+            },
+            {
+              "id": "e2",
+              "source": "C",
+              "target": "B",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "A",
+        "target": "Z",
+        "trace": true
+      },
+      "expected": {
+        "status": "no_path",
+        "cost": null,
+        "path": []
+      }
+    },
+    {
+      "id": "tentative_is_not_final",
+      "title": "Parada temprana deja una distancia tentativa no óptima",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": true,
+          "nodes": [
+            {
+              "id": "S",
+              "label": "S",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "T",
+              "label": "T",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "X",
+              "label": "X",
+              "x": 80,
+              "y": 0
+            },
+            {
+              "id": "Y",
+              "label": "Y",
+              "x": 120,
+              "y": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": "e0",
+              "source": "S",
+              "target": "T",
+              "weight": "1"
+            },
+            {
+              "id": "e1",
+              "source": "S",
+              "target": "X",
+              "weight": "50"
+            },
+            {
+              "id": "e2",
+              "source": "S",
+              "target": "Y",
+              "weight": "2"
+            },
+            {
+              "id": "e3",
+              "source": "Y",
+              "target": "X",
+              "weight": "1"
+            }
+          ]
+        },
+        "source": "S",
+        "target": "T",
+        "trace": true
+      },
+      "expected": {
+        "status": "ok",
+        "cost": "1",
+        "path": [
+          "S",
+          "T"
+        ]
+      }
+    },
+    {
+      "id": "empty_edges",
+      "title": "Varios nodos sin conexiones",
+      "payload": {
+        "graph": {
+          "schema_version": 1,
+          "directed": false,
+          "nodes": [
+            {
+              "id": "A",
+              "label": "A",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "x": 40,
+              "y": 0
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "x": 80,
+              "y": 0
+            }
+          ],
+          "edges": []
+        },
+        "source": "B",
+        "target": "A",
+        "trace": true
+      },
+      "expected": {
+        "status": "no_path",
+        "cost": null,
+        "path": []
+      }
+    }
+  ]
+}

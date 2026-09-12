@@ -1,0 +1,243 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "03a4aac0ed63b4d5545e8920d33c4ed1417bbc05a1e60a9d08255fbe29e31ce1",
+  "text": "El reto de software pide Dijkstra desde cero y programación orientada a objetos. Nodo conserva identidad y posición. Conexión guarda extremos y peso. Grafo mantiene las relaciones válidas. El solucionador consulta esa estructura y calcula la ruta. La interfaz y la terminal usan el mismo núcleo Python.",
+  "words": [
+    {
+      "text": "El",
+      "start": 0.099,
+      "end": 0.295083
+    },
+    {
+      "text": "reto",
+      "start": 0.307333,
+      "end": 0.564666
+    },
+    {
+      "text": "de",
+      "start": 0.576958,
+      "end": 0.674999
+    },
+    {
+      "text": "software",
+      "start": 0.68725,
+      "end": 1.177458
+    },
+    {
+      "text": "pide",
+      "start": 1.189708,
+      "end": 1.459333
+    },
+    {
+      "text": "Dijkstra",
+      "start": 1.471583,
+      "end": 1.875999
+    },
+    {
+      "text": "desde",
+      "start": 1.88825,
+      "end": 2.170125
+    },
+    {
+      "text": "cero",
+      "start": 2.182333,
+      "end": 2.488708
+    },
+    {
+      "text": "y",
+      "start": 2.501,
+      "end": 2.55
+    },
+    {
+      "text": "programación",
+      "start": 2.56225,
+      "end": 3.248541
+    },
+    {
+      "text": "orientada",
+      "start": 3.260791,
+      "end": 3.836791
+    },
+    {
+      "text": "a",
+      "start": 3.849,
+      "end": 3.898
+    },
+    {
+      "text": "objetos",
+      "start": 3.910291,
+      "end": 4.535291
+    },
+    {
+      "text": "Nodo",
+      "start": 5.379916,
+      "end": 5.686291
+    },
+    {
+      "text": "conserva",
+      "start": 5.698541,
+      "end": 6.164207
+    },
+    {
+      "text": "identidad",
+      "start": 6.176458,
+      "end": 6.727916
+    },
+    {
+      "text": "y",
+      "start": 6.740208,
+      "end": 6.789208
+    },
+    {
+      "text": "posición",
+      "start": 6.801458,
+      "end": 7.414208
+    },
+    {
+      "text": "Conexión",
+      "start": 8.259791,
+      "end": 8.774499
+    },
+    {
+      "text": "guarda",
+      "start": 8.78675,
+      "end": 9.093125
+    },
+    {
+      "text": "extremos",
+      "start": 9.105375,
+      "end": 9.632333
+    },
+    {
+      "text": "y",
+      "start": 9.644625,
+      "end": 9.693625
+    },
+    {
+      "text": "peso",
+      "start": 9.705875,
+      "end": 10.110291
+    },
+    {
+      "text": "Grafo",
+      "start": 10.955875,
+      "end": 11.31125
+    },
+    {
+      "text": "mantiene",
+      "start": 11.323541,
+      "end": 11.801499
+    },
+    {
+      "text": "las",
+      "start": 11.813708,
+      "end": 11.985291
+    },
+    {
+      "text": "relaciones",
+      "start": 11.997541,
+      "end": 12.585791
+    },
+    {
+      "text": "válidas",
+      "start": 12.598041,
+      "end": 13.186291
+    },
+    {
+      "text": "El",
+      "start": 14.031875,
+      "end": 14.203458
+    },
+    {
+      "text": "solucionador",
+      "start": 14.215666,
+      "end": 14.901957
+    },
+    {
+      "text": "consulta",
+      "start": 14.914208,
+      "end": 15.465666
+    },
+    {
+      "text": "esa",
+      "start": 15.477958,
+      "end": 15.661791
+    },
+    {
+      "text": "estructura",
+      "start": 15.674,
+      "end": 16.237708
+    },
+    {
+      "text": "y",
+      "start": 16.25,
+      "end": 16.323541
+    },
+    {
+      "text": "calcula",
+      "start": 16.335791,
+      "end": 16.813749
+    },
+    {
+      "text": "la",
+      "start": 16.826,
+      "end": 16.936291
+    },
+    {
+      "text": "ruta",
+      "start": 16.948541,
+      "end": 17.352957
+    },
+    {
+      "text": "La",
+      "start": 18.198541,
+      "end": 18.345582
+    },
+    {
+      "text": "interfaz",
+      "start": 18.357833,
+      "end": 18.897041
+    },
+    {
+      "text": "y",
+      "start": 18.909333,
+      "end": 18.958333
+    },
+    {
+      "text": "la",
+      "start": 18.970583,
+      "end": 19.068624
+    },
+    {
+      "text": "terminal",
+      "start": 19.080875,
+      "end": 19.558833
+    },
+    {
+      "text": "usan",
+      "start": 19.571083,
+      "end": 19.840708
+    },
+    {
+      "text": "el",
+      "start": 19.852958,
+      "end": 19.975499
+    },
+    {
+      "text": "mismo",
+      "start": 19.98775,
+      "end": 20.343125
+    },
+    {
+      "text": "núcleo",
+      "start": 20.355375,
+      "end": 20.772041
+    },
+    {
+      "text": "Python",
+      "start": 20.784333,
+      "end": 21.335791
+    }
+  ]
+}

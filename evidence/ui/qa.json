@@ -1,0 +1,310 @@
+{
+  "started_at": "2026-09-12T01:57:10.739Z",
+  "url": "http://127.0.0.1:8770/",
+  "engine": "actual local Python",
+  "checks": [
+    {
+      "name": "Initial example: 8 nodes and 12 edges",
+      "passed": true
+    },
+    {
+      "name": "The local Python engine is identified",
+      "passed": true
+    },
+    {
+      "name": "No external font or script requests",
+      "passed": true,
+      "requests": [
+        "http://127.0.0.1:8770/",
+        "http://127.0.0.1:8770/style.css",
+        "http://127.0.0.1:8770/app.js",
+        "http://127.0.0.1:8770/fonts/DMSans.ttf",
+        "http://127.0.0.1:8770/fonts/Manrope.ttf",
+        "http://127.0.0.1:8770/engine.js",
+        "http://127.0.0.1:8770/api/health",
+        "http://127.0.0.1:8770/data/examples.json",
+        "http://127.0.0.1:8770/favicon.svg",
+        "http://127.0.0.1:8770/api/solve",
+        "http://127.0.0.1:8770/api/validate",
+        "http://127.0.0.1:8770/api/validate",
+        "http://127.0.0.1:8770/api/validate",
+        "http://127.0.0.1:8770/api/validate",
+        "http://127.0.0.1:8770/api/validate",
+        "http://127.0.0.1:8770/api/solve",
+        "http://127.0.0.1:8770/api/solve",
+        "http://127.0.0.1:8770/api/solve",
+        "http://127.0.0.1:8770/",
+        "http://127.0.0.1:8770/style.css",
+        "http://127.0.0.1:8770/app.js",
+        "http://127.0.0.1:8770/fonts/DMSans.ttf",
+        "http://127.0.0.1:8770/fonts/Manrope.ttf",
+        "http://127.0.0.1:8770/engine.js",
+        "http://127.0.0.1:8770/api/health",
+        "http://127.0.0.1:8770/data/examples.json",
+        "http://127.0.0.1:8770/favicon.svg",
+        "http://127.0.0.1:8770/",
+        "http://127.0.0.1:8770/style.css",
+        "http://127.0.0.1:8770/app.js",
+        "http://127.0.0.1:8770/fonts/DMSans.ttf",
+        "http://127.0.0.1:8770/fonts/Manrope.ttf",
+        "http://127.0.0.1:8770/engine.js",
+        "http://127.0.0.1:8770/api/health",
+        "http://127.0.0.1:8770/data/examples.json",
+        "http://127.0.0.1:8770/favicon.svg",
+        "http://127.0.0.1:8770/api/solve",
+        "http://127.0.0.1:8770/__qa__/axe.min.js"
+      ]
+    },
+    {
+      "name": "Python solves initial graph with exact cost 11",
+      "passed": true
+    },
+    {
+      "name": "Completed route is announced in an active accessible status region",
+      "passed": true
+    },
+    {
+      "name": "Real optimal route rendered",
+      "passed": true
+    },
+    {
+      "name": "All 43 actual events are available",
+      "passed": true
+    },
+    {
+      "name": "Trace begins with source at tentative zero",
+      "passed": true
+    },
+    {
+      "name": "Settling removes source from frontier",
+      "passed": true
+    },
+    {
+      "name": "Playback progresses and pause freezes its position",
+      "passed": true,
+      "step": "3"
+    },
+    {
+      "name": "Slider keyboard reaches the final event",
+      "passed": true
+    },
+    {
+      "name": "User labels are text, not HTML",
+      "passed": true
+    },
+    {
+      "name": "Editing invalidates the previous route",
+      "passed": true
+    },
+    {
+      "name": "Rename and coordinate form persist exact edit",
+      "passed": true
+    },
+    {
+      "name": "Node moves through keyboard without dragging",
+      "passed": true
+    },
+    {
+      "name": "Pointer dragging commits node coordinates",
+      "passed": true
+    },
+    {
+      "name": "Zero-cost self loops can be created",
+      "passed": true
+    },
+    {
+      "name": "Trailing decimal zeroes normalize exactly",
+      "passed": true
+    },
+    {
+      "name": "Invalid cost -1 is rejected without mutation",
+      "passed": true,
+      "message": "Usa un costo desde 0, con punto decimal y hasta 6 decimales."
+    },
+    {
+      "name": "Invalid cost NaN is rejected without mutation",
+      "passed": true,
+      "message": "Usa un costo desde 0, con punto decimal y hasta 6 decimales."
+    },
+    {
+      "name": "Invalid cost Infinity is rejected without mutation",
+      "passed": true,
+      "message": "Usa un costo desde 0, con punto decimal y hasta 6 decimales."
+    },
+    {
+      "name": "Invalid cost 0.1234567 is rejected without mutation",
+      "passed": true,
+      "message": "Usa un costo desde 0, con punto decimal y hasta 6 decimales."
+    },
+    {
+      "name": "Invalid cost 1000000000000.000001 is rejected without mutation",
+      "passed": true,
+      "message": "El costo máximo es 1 000 000 000 000."
+    },
+    {
+      "name": "Inclusive maximum cost is accepted exactly",
+      "passed": true
+    },
+    {
+      "name": "Node deletion removes its incident edges",
+      "passed": true
+    },
+    {
+      "name": "Undo restores deleted node and its connection",
+      "passed": true
+    },
+    {
+      "name": "Redo restores deletion",
+      "passed": true
+    },
+    {
+      "name": "Directed conversion preserves both traversable directions",
+      "passed": true
+    },
+    {
+      "name": "Asymmetric direction change is blocked without deleting information",
+      "passed": true,
+      "message": "Las conexiones A ↔ S tienen costos distintos. Iguala sus costos o elimina una antes de quitar la dirección."
+    },
+    {
+      "name": "Equivalent opposite edges merge with original costs",
+      "passed": true
+    },
+    {
+      "name": "Raw JSON precision overflow is rejected by Python before JavaScript parsing",
+      "passed": true,
+      "message": "El peso debe estar entre 0 y 1000000000000 y ser finito."
+    },
+    {
+      "name": "Numeric underflow never becomes a false zero edge",
+      "passed": true,
+      "message": "El peso admite como máximo seis posiciones decimales, sin redondear."
+    },
+    {
+      "name": "Duplicate JSON keys are rejected before import",
+      "passed": true,
+      "message": "El JSON repite la clave 'directed'; corrige la ambigüedad."
+    },
+    {
+      "name": "Malformed import leaves the graph intact",
+      "passed": true
+    },
+    {
+      "name": "Raw numeric cost imports as canonical exact text",
+      "passed": true
+    },
+    {
+      "name": "Imported decimal solves as exact text",
+      "passed": true
+    },
+    {
+      "name": "Source equals target has zero cost and one-node route",
+      "passed": true
+    },
+    {
+      "name": "Unreachable destination has explicit no-route state",
+      "passed": true
+    },
+    {
+      "name": "Downloaded JSON contains the current exact graph",
+      "passed": true
+    },
+    {
+      "name": "A reload restores the saved graph",
+      "passed": true
+    },
+    {
+      "name": "Corrupt persistence exposes recovery without discarding original",
+      "passed": true
+    },
+    {
+      "name": "Previous valid backup can be restored",
+      "passed": true
+    },
+    {
+      "name": "Help dialog opens with keyboard focus contained",
+      "passed": true
+    },
+    {
+      "name": "Escape closes help",
+      "passed": true
+    },
+    {
+      "name": "Primary controls use at least 16px type",
+      "passed": true,
+      "sizes": {
+        "#node-label": 16,
+        "#node-x": 16,
+        "#edge-weight": 16,
+        "#source": 18,
+        "#target": 18,
+        "#node-submit": 16,
+        "#edge-submit": 16,
+        "#tab-edit": 16
+      }
+    },
+    {
+      "name": "Mobile viewport has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile graph labels remain readable",
+      "passed": true,
+      "font": 19.999982300884955,
+      "matrix": 0.46017699115044247,
+      "width": 44
+    },
+    {
+      "name": "Mobile execution shows the same Python result",
+      "passed": true
+    },
+    {
+      "name": "Small 320px viewport has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion disables ornamental transitions",
+      "passed": true,
+      "transition": "0s"
+    },
+    {
+      "name": "Accessibility scan: edit",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Accessibility scan: result",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Accessibility scan: trace",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "No runtime or failed-resource errors during the verified flows",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "panel": "edit",
+      "violations": []
+    },
+    {
+      "panel": "result",
+      "violations": []
+    },
+    {
+      "panel": "trace",
+      "violations": []
+    }
+  ],
+  "expected_validation_rejections": 4,
+  "finished_at": "2026-09-12T01:57:21.529Z",
+  "passed": 54,
+  "failed": 0
+}

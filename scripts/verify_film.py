@@ -1,0 +1,319 @@
+"""Verify the delivered film, not just its generation plan.
+
+Requires ffmpeg/ffprobe and Pillow (the same optional tooling as build_film.py).
+Exit 0: all recorded technical checks passed; 1: failed; 2: MP4 still pending.
+No result from this script substitutes for viewing/listening to the actual film.
+"""
+from __future__ import annotations
+
+import argparse
+from datetime import datetime, timezone
+from fractions import Fraction
+import hashlib
+import importlib.util
+import json
+import math
+from pathlib import Path
+import re
+import shutil
+import struct
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def digest(path):
+    hasher = hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+
+def top_level_boxes(path):
+    """Read MP4 top-level headers, including extended lengths, without media RAM copies."""
+    size = Path(path).stat().st_size
+    result = []
+    with Path(path).open('rb') as stream:
+        offset = 0
+        while offset < size:
+            stream.seek(offset)
+            header = stream.read(8)
+            if len(header) != 8:
+                raise ValueError('Truncated MP4 box header')
+            length, kind = struct.unpack('>I4s', header)
+            minimum = 8
+            if length == 1:
+                extended = stream.read(8)
+                if len(extended) != 8:
+                    raise ValueError('Truncated extended MP4 box header')
+                length = struct.unpack('>Q', extended)[0]
+                minimum = 16
+            elif length == 0:
+                length = size - offset
+            if length < minimum or offset + length > size:
+                raise ValueError('Invalid MP4 box length')
+            result.append({'type': kind.decode('ascii', 'replace'), 'offset': offset, 'bytes': length})
+            offset += length
+    return result
+
+
+def seconds(value):
+    h, m, s = value.split(':')
+    return int(h) * 3600 + int(m) * 60 + float(s)
+
+
+def read_vtt(path):
+    blocks = re.split(r'\n\s*\n', Path(path).read_text(encoding='utf-8-sig').replace('\r\n', '\n').strip())
+    if not blocks or blocks[0].strip() != 'WEBVTT':
+        raise ValueError('Missing WEBVTT signature')
+    cues = []
+    pattern = re.compile(r'^(\d{2}:\d{2}:\d{2}\.\d{3}) --> (\d{2}:\d{2}:\d{2}\.\d{3})$')
+    for block in blocks[1:]:
+        lines = block.splitlines()
+        match = pattern.fullmatch(lines[0])
+        if not match or len(lines) < 2:
+            raise ValueError('Unexpected VTT block')
+        cues.append({'start': seconds(match[1]), 'end': seconds(match[2]), 'text': '\n'.join(lines[1:])})
+    return cues
+
+
+def run(command, timeout=180):
+    result = subprocess.run(command, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=timeout)
+    if result.returncode:
+        raise RuntimeError(f'{Path(command[0]).name} exited {result.returncode}: {result.stderr[-2000:]}')
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--video', type=Path, default=ROOT / 'web/media/VerticeSDV_Demo.mp4')
+    parser.add_argument('--plan', type=Path, help='Plan explícito; por defecto usa el plan local o la evidencia de exportación incluida.')
+    parser.add_argument('--proof', type=Path, default=ROOT / 'evidence/video.json')
+    parser.add_argument('--output', type=Path, default=ROOT / 'evidence/video_audit/verification.json')
+    parser.add_argument('--ffmpeg', default=shutil.which('ffmpeg'))
+    parser.add_argument('--ffprobe', default=shutil.which('ffprobe'))
+    args = parser.parse_args()
+    for name in ('video', 'plan', 'proof', 'output'):
+        if getattr(args, name) is not None:
+            setattr(args, name, getattr(args, name).resolve())
+    report = {'generated_at': datetime.now(timezone.utc).isoformat(), 'status': 'running',
+              'verifier_sha256': digest(__file__), 'video': str(args.video.resolve()), 'checks': [],
+              'scope': 'Technical inspection and actual MP4 decoding; not a claim of listening comprehension, general correctness, or universal playback support.'}
+
+    def check(name, passed, detail=None):
+        report['checks'].append({'name': name, 'passed': bool(passed), 'detail': detail})
+
+    def save(status, code):
+        report['status'] = status
+        report['passed_checks'] = sum(row['passed'] for row in report['checks'])
+        report['failed_checks'] = sum(not row['passed'] for row in report['checks'])
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps({'status': status, 'passed': report['passed_checks'], 'failed': report['failed_checks'], 'report': str(args.output)}), flush=True)
+        return code
+
+    if not args.video.is_file():
+        report['pending_reason'] = 'The final MP4 does not exist. No encoded-media check was performed.'
+        return save('pending', 2)
+    try:
+        if not args.ffmpeg or not args.ffprobe:
+            raise RuntimeError('ffmpeg and ffprobe are required')
+        from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageStat
+        proof = json.loads(args.proof.read_text(encoding='utf-8'))
+        plan_path = args.plan or ROOT / 'media/render/film-plan.json'
+        if plan_path.is_file():
+            plan = json.loads(plan_path.read_text(encoding='utf-8'))
+            report['plan_source'] = 'explicit_or_local_render_plan'
+            report['plan_sha256'] = digest(plan_path)
+        elif args.plan is not None:
+            raise FileNotFoundError(f'El plan solicitado no existe: {args.plan}')
+        else:
+            # Clean delivery archives omit render intermediates. The export proof
+            # already preserves the exact scene plan and every source/asset hash.
+            plan = {key: value for key, value in proof.items() if key != 'output'}
+            report['plan_source'] = 'included_export_proof'
+            report['plan_sha256'] = digest(args.proof)
+        report['proof_sha256'] = digest(args.proof)
+        report['video_sha256'] = digest(args.video)
+        report['video_bytes'] = args.video.stat().st_size
+        report['tools'] = {name: run([tool, '-version']).stdout.splitlines()[0]
+                           for name, tool in [('ffmpeg', args.ffmpeg), ('ffprobe', args.ffprobe)]}
+        scenes = plan['scenes']
+        total = float(plan['duration_seconds'])
+        check('nine_continuous_frame_aligned_scenes', len(scenes) == 9 and
+              all(s['duration'] > 0 and abs(s['duration'] * 30 - round(s['duration'] * 30)) < 1e-7 and
+                  abs(s['start'] - sum(p['duration'] for p in scenes[:i])) < 1e-7
+                  for i, s in enumerate(scenes)) and abs(total - sum(s['duration'] for s in scenes)) < 1e-7,
+              {'count': len(scenes), 'seconds': total})
+        check('export_proof_matches_current_plan', all(proof.get(k) == plan.get(k) for k in
+              ('resolution', 'fps', 'duration_seconds', 'scenes', 'source_hashes', 'asset_hashes', 'voice', 'generated_voice')))
+        check('export_proof_identifies_actual_mp4', proof['output']['sha256'] == report['video_sha256'] and
+              proof['output']['bytes'] == report['video_bytes'])
+        required_sources = {'web/data/examples.json', 'evidence/verification/benchmark.json',
+                            'tests/independent_oracle.py', 'vertice/graph.py', 'vertice/dijkstra.py',
+                            'vertice/codec.py', 'scripts/build_film.py'}
+        required_assets = {'output/playwright/desktop-route.png', 'web/fonts/Manrope.ttf', 'web/fonts/DMSans.ttf'}
+        required_assets.update(f'media/narration/voice_{i:02}.{suffix}' for i in range(9) for suffix in ('mp3', 'json'))
+        mismatches = []
+        for key, required in [('source_hashes', required_sources), ('asset_hashes', required_assets)]:
+            hashes = plan.get(key, {})
+            mismatches.extend({'path': p, 'issue': 'missing_from_manifest'} for p in sorted(required - hashes.keys()))
+            for path, expected in hashes.items():
+                candidate = (ROOT / path).resolve()
+                if not candidate.is_relative_to(ROOT) or not candidate.is_file() or digest(candidate) != expected:
+                    mismatches.append({'path': path, 'issue': 'missing_or_changed'})
+        check('all_source_and_asset_hashes_current', not mismatches, mismatches)
+
+        probe_result = run([args.ffprobe, '-v', 'error', '-count_frames', '-show_format', '-show_streams',
+                            '-show_chapters', '-of', 'json', str(args.video)])
+        probe = json.loads(probe_result.stdout)
+        check('no_decoder_errors_reported', not probe_result.stderr.strip(), probe_result.stderr[-2000:])
+        report['probe'] = probe
+        video_streams = [s for s in probe['streams'] if s['codec_type'] == 'video']
+        audio_streams = [s for s in probe['streams'] if s['codec_type'] == 'audio']
+        check('one_video_one_audio_stream', len(video_streams) == 1 and len(audio_streams) == 1)
+        v, a = video_streams[0], audio_streams[0]
+        check('h264_1920x1080_yuv420p_30fps', v['codec_name'] == 'h264' and
+              (v['width'], v['height']) == (1920, 1080) and v['pix_fmt'] == 'yuv420p' and
+              Fraction(v['avg_frame_rate']) == 30 and Fraction(v['r_frame_rate']) == 30)
+        check('all_expected_video_frames_decode', int(v.get('nb_read_frames', 0)) == round(total * 30),
+              {'decoded_frames': v.get('nb_read_frames'), 'expected': round(total * 30)})
+        check('duration_matches_plan', abs(float(v['duration']) - total) <= 1 / 30 + .002 and
+              abs(float(a['duration']) - total) <= .15 and abs(float(probe['format']['duration']) - total) <= .15,
+              {'plan': total, 'video': v['duration'], 'audio': a['duration'], 'container': probe['format']['duration']})
+        check('aac_audio_has_samples', a['codec_name'] == 'aac' and int(a['channels']) >= 1 and
+              int(a['sample_rate']) >= 22050 and int(a.get('nb_read_frames', 0)) > 0)
+        chapters = probe.get('chapters', [])
+        check('nine_embedded_chapters_match_plan', len(chapters) == 9 and all(
+              abs(float(c['start_time']) - s['start']) <= .002 and
+              abs(float(c['end_time']) - s['start'] - s['duration']) <= .002 and
+              c.get('tags', {}).get('title') == s['title'] for c, s in zip(chapters, scenes)))
+        boxes = top_level_boxes(args.video)
+        report['mp4_top_level_boxes'] = boxes
+        kinds = [b['type'] for b in boxes]
+        check('faststart_moov_precedes_mdat', 'moov' in kinds and 'mdat' in kinds and kinds.index('moov') < kinds.index('mdat'))
+
+        cues = read_vtt(ROOT / 'web/media/VerticeSDV.vtt')
+        expected_cues = [{'start': s['start'] + c['start'], 'end': s['start'] + min(c['end'], s['duration']), 'text': c['text']}
+                         for s in scenes for c in s['cues']]
+        check('vtt_matches_burned_caption_plan', len(cues) == len(expected_cues) and all(
+              abs(c['start'] - e['start']) <= .000501 and abs(c['end'] - e['end']) <= .000501 and c['text'] == e['text']
+              for c, e in zip(cues, expected_cues)), {'cues': len(cues)})
+        check('captions_do_not_overlap_or_exceed_film', bool(cues) and
+              all(0 <= c['start'] < c['end'] <= total and c['text'].strip() for c in cues) and
+              all(c['end'] <= following['start'] for c, following in zip(cues, cues[1:])))
+        website = json.loads((ROOT / 'web/data/film.json').read_text(encoding='utf-8'))
+        check('website_chapters_match_video', abs(website['duration'] - total) < .001 and len(website['chapters']) == 9 and
+              all(c['title'] == s['title'] and abs(c['start'] - s['start']) < .001
+                  for c, s in zip(website['chapters'], scenes)))
+        voice_problems = []
+        focus_problems = []
+        for i, scene in enumerate(scenes):
+            meta = json.loads((ROOT / f'media/narration/voice_{i:02}.json').read_text(encoding='utf-8'))
+            expected_hash = hashlib.sha256((scene['narration'] + plan['voice'] + '+2%').encode()).hexdigest()
+            narration = re.sub(r'[^\w]', '', scene['narration'].lower())
+            subtitled = re.sub(r'[^\w]', '', ' '.join(c['text'] for c in scene['cues']).lower())
+            words = meta['words']
+            if (meta['text_hash'] != expected_hash or meta['text'] != scene['narration'] or narration != subtitled or
+                    not words or not all(0 <= w['start'] <= w['end'] and w['end'] + .55 <= scene['duration'] for w in words)):
+                voice_problems.append(scene['id'])
+            focus_groups = {'objects': ('classes', ['Nodo conserva', 'Conexión guarda', 'Grafo mantiene', 'El solucionador']),
+                            'decimal': ('values', ['Un décimo', 'dos décimos', 'tres décimos'])}
+            if scene['id'] in focus_groups:
+                key, phrases = focus_groups[scene['id']]
+                words_normalized = [''.join(c.lower() for c in w['text'] if c.isalnum()) for w in words]
+                actual_beats = scene.get('beats', {}).get(key, [])
+                for position, phrase in enumerate(phrases):
+                    target = phrase.lower().split()
+                    hits = [w['start'] + .55 for j, w in enumerate(words)
+                            if words_normalized[j:j + len(target)] == target]
+                    if not hits or position >= len(actual_beats) or abs(actual_beats[position] - hits[0]) > .001:
+                        focus_problems.append({'scene': scene['id'], 'phrase': phrase})
+        check('narration_metadata_and_caption_text_consistent', not voice_problems, voice_problems)
+        check('class_and_decimal_focus_matches_spoken_words', not focus_problems, focus_problems)
+        loudness = run([args.ffmpeg, '-hide_banner', '-nostats', '-i', str(args.video), '-vn',
+                        '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-']).stderr
+        match = re.search(r'\{\s*"input_i"[\s\S]*?\}', loudness)
+        loudness_data = json.loads(match.group()) if match else {}
+        report['audio_loudness_analysis'] = loudness_data
+        integrated = float(loudness_data.get('input_i', '-inf'))
+        peak = float(loudness_data.get('input_tp', 'inf'))
+        check('audible_nonclipping_audio', math.isfinite(integrated) and -24 <= integrated <= -10 and peak <= 0,
+              {'integrated_lufs': integrated if math.isfinite(integrated) else None,
+               'true_peak_dbtp': peak if math.isfinite(peak) else None, 'acceptance_lufs': [-24, -10]})
+
+        # Seek/decode actual compressed frames. Compare with the exact deterministic
+        # render time; the perceptual check tolerates H.264 loss, not another slide.
+        spec = importlib.util.spec_from_file_location('film_builder_for_verification', ROOT / 'scripts/build_film.py')
+        builder = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(builder)
+        renderer = builder.Renderer(builder.sources(), scenes)
+        sample_dir = args.output.parent / 'decoded_frames'
+        sample_dir.mkdir(parents=True, exist_ok=True)
+        requests = [(i, s['start'] + s['duration'] * .58, f'scene_{i + 1:02}') for i, s in enumerate(scenes)]
+        case_scene = next((i, s) for i, s in enumerate(scenes) if s['id'] == 'cases')
+        i, scene = case_scene
+        requests.append((i, scene['start'] + sum(scene['beats'].values()) / 2, 'directed_reverse'))
+        oracle_i, oracle_scene = next((i, s) for i, s in enumerate(scenes) if s['id'] == 'oracle')
+        requests.append((oracle_i, oracle_scene['start'] + oracle_scene['duration'] * .7, 'oracle_no_path'))
+        requests.append((len(scenes) - 1, total - 1 / 30, 'last_frame'))
+        requests.extend([(1, scenes[1]['start'] + 6.3, 'focus_node'), (1, scenes[1]['start'] + 15.5, 'focus_solver'),
+                         (4, scenes[4]['start'] + 1.65, 'focus_decimal_second'),
+                         (4, scenes[4]['start'] + 3.15, 'focus_decimal_total')])
+        samples = []
+        for scene_i, requested, label in requests:
+            # Round upward because -ss selects the first frame whose timestamp is >= request.
+            frame_number = min(round(total * 30) - 1, math.ceil(requested * 30 - 1e-7))
+            actual_time = frame_number / 30
+            seek_time = max(0, actual_time - .00001)
+            output = sample_dir / f'{label}.png'
+            run([args.ffmpeg, '-v', 'error', '-y', '-ss', f'{seek_time:.9f}', '-i', str(args.video),
+                 '-map', '0:v:0', '-frames:v', '1', '-threads', '1', str(output)])
+            actual = Image.open(output).convert('RGB')
+            current = scenes[scene_i]
+            local = actual_time - current['start']
+            expected = renderer.frame(scene_i, local, current['duration'])
+            error = sum(ImageStat.Stat(ImageChops.difference(actual, expected)).mean) / 3
+            regions = {'title': (77, 180, 1840, 290), 'captions': (170, 923, 1750, 1005),
+                       'explanation': (80, 300, 1840, 915)}
+            region_errors = {name: sum(ImageStat.Stat(ImageChops.difference(actual.crop(rect), expected.crop(rect))).mean) / 3
+                             for name, rect in regions.items()}
+            samples.append({'id': label, 'requested_seconds': requested, 'frame_seconds': actual_time,
+                            'seek_seconds': seek_time,
+                            'frame_number': frame_number, 'path': str(output.relative_to(ROOT)),
+                            'sha256': digest(output), 'mean_rgb_absolute_error': error,
+                            'region_mean_rgb_errors': region_errors,
+                            'size': list(actual.size), 'scene_title': current['title']})
+        report['decoded_samples'] = samples
+        check('sixteen_seeks_decode_current_render', len(samples) == 16 and all(
+              s['size'] == [1920, 1080] and s['mean_rgb_absolute_error'] <= 6 and
+              all(s['region_mean_rgb_errors'][r] <= limit for r, limit in
+                  [('title', 3), ('captions', 3), ('explanation', 6)]) for s in samples),
+              {'samples': len(samples), 'maximum_mean_rgb_error': max(s['mean_rgb_absolute_error'] for s in samples),
+               'global_threshold': 6, 'title_and_caption_threshold': 3, 'explanation_threshold': 6,
+               'scope': '16 specified frames; not every frame, OCR, or a semantic evaluation'})
+        sheet = Image.new('RGB', (1920, math.ceil(len(samples) / 3) * 402), '#153d37')
+        draw = ImageDraw.Draw(sheet)
+        label_font = ImageFont.truetype(str(ROOT / 'web/fonts/DMSans.ttf'), 22)
+        for i, sample in enumerate(samples):
+            x, y = (i % 3) * 640, (i // 3) * 402
+            thumbnail = Image.open(ROOT / sample['path']).convert('RGB').resize((640, 360), Image.Resampling.LANCZOS)
+            sheet.paste(thumbnail, (x, y))
+            draw.text((x + 12, y + 369), f'{sample["id"]} · {sample["frame_seconds"]:.3f} s', font=label_font, fill='#fffef9')
+        sheet_path = args.output.parent / 'contact-sheet.jpg'
+        sheet.save(sheet_path, quality=92)
+        report['contact_sheet'] = {'path': str(sheet_path.relative_to(ROOT)), 'sha256': digest(sheet_path),
+                                   'source': 'Frames decoded from the final MP4; not renderer previews'}
+        check('source_hashes_stable_through_verification', all((ROOT / p).is_file() and digest(ROOT / p) == h
+              for group in ('source_hashes', 'asset_hashes') for p, h in plan[group].items()) and
+              digest(args.video) == report['video_sha256'])
+    except Exception as exc:
+        check('verification_completed_without_error', False, f'{type(exc).__name__}: {exc}')
+    return save('passed' if all(row['passed'] for row in report['checks']) else 'failed',
+                0 if all(row['passed'] for row in report['checks']) else 1)
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

@@ -1,0 +1,104 @@
+{
+  "at": "2026-09-12T01:58:18.112Z",
+  "phase": "after",
+  "checks": [
+    {
+      "name": "A direct pointer click keeps the node selected for editing",
+      "passed": true
+    },
+    {
+      "name": "A valid graph at exactly 2 MiB imports through Python",
+      "passed": true,
+      "bytes": 2097152,
+      "message": "Grafo importado. Puedes deshacer."
+    },
+    {
+      "name": "A graph exceeding 2 MiB is rejected without changing data",
+      "passed": true,
+      "bytes": 2097153,
+      "message": "El archivo supera 2 MiB. Importa un grafo de hasta 500 nodos y 4 000 conexiones."
+    },
+    {
+      "name": "Manual label: empty label preserved exactly",
+      "passed": true,
+      "stored_code_points": 0,
+      "notice": "Nodo actualizado."
+    },
+    {
+      "name": "Manual label: only spaces preserved exactly",
+      "passed": true,
+      "stored_code_points": 3,
+      "notice": "Nodo actualizado."
+    },
+    {
+      "name": "Manual label: preserved outer spaces preserved exactly",
+      "passed": true,
+      "stored_code_points": 11,
+      "notice": "Nodo actualizado."
+    },
+    {
+      "name": "Manual label: 80 Unicode emoji preserved exactly",
+      "passed": true,
+      "stored_code_points": 80,
+      "notice": "Nodo actualizado."
+    },
+    {
+      "name": "Manual label: 81 ASCII characters rejected without changing graph",
+      "passed": true,
+      "stored_code_points": 80,
+      "notice": "El nombre de A debe ser texto de hasta 80 caracteres."
+    },
+    {
+      "name": "Manual label: 81 Unicode emoji rejected without changing graph",
+      "passed": true,
+      "stored_code_points": 80,
+      "notice": "El nombre de A debe ser texto de hasta 80 caracteres."
+    },
+    {
+      "name": "Manual label: C0 control rejected without changing graph",
+      "passed": true,
+      "stored_code_points": 80,
+      "notice": "El nombre de A no admite caracteres de control ni Unicode inválido."
+    },
+    {
+      "name": "Manual label: C1 control rejected without changing graph",
+      "passed": true,
+      "stored_code_points": 80,
+      "notice": "El nombre de A no admite caracteres de control ni Unicode inválido."
+    },
+    {
+      "name": "Manual label: unpaired surrogate rejected without changing graph",
+      "passed": true,
+      "stored_code_points": 80,
+      "notice": "El nombre de A no admite caracteres de control ni Unicode inválido."
+    },
+    {
+      "name": "Omitted optional label canonicalizes to empty text and displays its ID",
+      "passed": true
+    },
+    {
+      "name": "Keyboard selection from node list moves focus to node form",
+      "passed": true
+    },
+    {
+      "name": "Keyboard selection from edge list moves focus to edge form",
+      "passed": true
+    },
+    {
+      "name": "Metadata has its own area outside the SVG at 1440px",
+      "passed": true,
+      "graph_bottom": 857.09375,
+      "metadata_top": 879.25,
+      "reserved_pixels": 22.15625
+    },
+    {
+      "name": "Metadata has its own area outside the SVG at 390px",
+      "passed": true,
+      "graph_bottom": 1035.671875,
+      "metadata_top": 1065.078125,
+      "reserved_pixels": 29.40625
+    }
+  ],
+  "passed": 17,
+  "failed": 0
+}

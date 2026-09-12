@@ -1,0 +1,54 @@
+{
+  "name": "Pyodide",
+  "version": "314.0.6",
+  "python_version": "3.14.2",
+  "source": "https://github.com/pyodide/pyodide/releases/download/314.0.6/pyodide-core-314.0.6.tar.bz2",
+  "archive_sha256": "1016c31e39ce3764d9a418cbb491a392c802c1b86ccc1367f009f5c59bf8f5fd",
+  "retrieved_at": "2026-09-12T01:07:34.668123+00:00",
+  "licenses": [
+    "https://raw.githubusercontent.com/pyodide/pyodide/314.0.6/LICENSE",
+    "https://raw.githubusercontent.com/python/cpython/v3.14.2/LICENSE"
+  ],
+  "files": [
+    {
+      "path": "web/vendor/pyodide/CPYTHON-LICENSE",
+      "bytes": 13804,
+      "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+    },
+    {
+      "path": "web/vendor/pyodide/LICENSE",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "web/vendor/pyodide/package.json",
+      "bytes": 2999,
+      "sha256": "c69222016d717d8094af683c914538bb97c2a92531b9f69360eef8494534408d"
+    },
+    {
+      "path": "web/vendor/pyodide/pyodide-lock.json",
+      "bytes": 114440,
+      "sha256": "3fdaef09e9e365c85e002737720f8d0ab8f278c1c244a2dde6a37663cf488ad4"
+    },
+    {
+      "path": "web/vendor/pyodide/pyodide.asm.mjs",
+      "bytes": 1250344,
+      "sha256": "2ac5eba365ec12839c75c03b39b3be1dd63b798852cc460b014b52238be042f7"
+    },
+    {
+      "path": "web/vendor/pyodide/pyodide.asm.wasm",
+      "bytes": 9598218,
+      "sha256": "3a0a00dfeaa348ac20f9ef09904233d32d33f644339662d4af368f8a2010f37a"
+    },
+    {
+      "path": "web/vendor/pyodide/pyodide.mjs",
+      "bytes": 17931,
+      "sha256": "69e3f6ccec3e14b465df60be577ca62f536251406b9a00cce019eac5252a2495"
+    },
+    {
+      "path": "web/vendor/pyodide/python_stdlib.zip",
+      "bytes": 2545564,
+      "sha256": "80c5be6babfe03297069703410c3c29404dcf2525d2b128746bae5536f94831f"
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+{
+  "generated_at": "2026-09-12T02:03:51Z",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "duration_seconds": 209.9666666666667,
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "El costo decide la ruta.",
+      "label": "VÉRTICE / SDV",
+      "minimum": 14,
+      "narration": "Una conexión puede cambiar todo el recorrido. Vértice convierte un grafo en una decisión que puedes explicar: crear nodos, asignar costos y encontrar la ruta mínima. Cada línea resaltada proviene de una ejecución real del algoritmo.",
+      "duration": 17.066666666666666,
+      "start": 0,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 5.450957999999999,
+          "text": "Una conexión puede cambiar todo el recorrido. Vértice convierte un grafo en"
+        },
+        {
+          "start": 5.451957999999999,
+          "end": 10.352916,
+          "text": "una decisión que puedes explicar: crear nodos, asignar costos y encontrar la"
+        },
+        {
+          "start": 10.353916,
+          "end": 14.96075,
+          "text": "ruta mínima. Cada línea resaltada proviene de una ejecución real del"
+        },
+        {
+          "start": 14.96175,
+          "end": 15.663208000000001,
+          "text": "algoritmo."
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "title": "Cuatro clases. Una responsabilidad clara.",
+      "label": "PROGRAMACIÓN ORIENTADA A OBJETOS",
+      "minimum": 18,
+      "narration": "El reto de software pide Dijkstra desde cero y programación orientada a objetos. Nodo conserva identidad y posición. Conexión guarda extremos y peso. Grafo mantiene las relaciones válidas. El solucionador consulta esa estructura y calcula la ruta. La interfaz y la terminal usan el mismo núcleo Python.",
+      "duration": 23.433333333333334,
+      "start": 17.066666666666666,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 4.459291,
+          "text": "El reto de software pide Dijkstra desde cero y programación orientada a"
+        },
+        {
+          "start": 4.460291,
+          "end": 9.654375000000002,
+          "text": "objetos. Nodo conserva identidad y posición. Conexión guarda"
+        },
+        {
+          "start": 9.655375000000001,
+          "end": 14.764666000000002,
+          "text": "extremos y peso. Grafo mantiene las relaciones válidas. El"
+        },
+        {
+          "start": 14.765666000000001,
+          "end": 19.629875,
+          "text": "solucionador consulta esa estructura y calcula la ruta. La interfaz y la"
+        },
+        {
+          "start": 19.630875,
+          "end": 22.035791,
+          "text": "terminal usan el mismo núcleo Python."
+        }
+      ],
+      "beats": {
+        "classes": [
+          5.9299159999999995,
+          8.809791,
+          11.505875000000001,
+          14.581875
+        ]
+      }
+    },
+    {
+      "id": "trace",
+      "title": "La frontera avanza.",
+      "label": "EVENTOS EMITIDOS POR PYTHON",
+      "minimum": 27,
+      "narration": "El inicio entra con costo cero. La cola elige el menor costo conocido. Al asentar un nodo, su distancia se vuelve definitiva. Después, el algoritmo compara sus conexiones y conserva únicamente las mejoras. El verde claro muestra la frontera: distancias tentativas que todavía pueden cambiar. La búsqueda termina cuando se asienta el destino.",
+      "duration": 27.0,
+      "start": 40.5,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 5.6209999999999996,
+          "text": "El inicio entra con costo cero. La cola elige el menor costo conocido."
+        },
+        {
+          "start": 6.346583,
+          "end": 11.431333,
+          "text": "Al asentar un nodo, su distancia se vuelve definitiva. Después, el"
+        },
+        {
+          "start": 11.432333,
+          "end": 16.370083,
+          "text": "algoritmo compara sus conexiones y conserva únicamente las mejoras. El"
+        },
+        {
+          "start": 16.371083,
+          "end": 20.487707999999998,
+          "text": "verde claro muestra la frontera: distancias tentativas que todavía pueden"
+        },
+        {
+          "start": 20.488708,
+          "end": 24.449999,
+          "text": "cambiar. La búsqueda termina cuando se asienta el destino."
+        }
+      ]
+    },
+    {
+      "id": "relax",
+      "title": "Mejorar una distancia cambia la decisión.",
+      "label": "RELAJACIÓN / EJEMPLO EJECUTADO",
+      "minimum": 21,
+      "narration": "Llegar directamente del nodo ese al nodo a cuesta cuatro. Pero pasar por el nodo be cuesta dos más uno: tres. Esa mejora reemplaza el costo conocido de a. La entrada antigua permanece en la cola y se descarta al extraerse. Los predecesores guardan cómo reconstruir la ruta encontrada, sin confundir una visita con una mejora.",
+      "duration": 23.933333333333334,
+      "start": 67.5,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 5.450957999999999,
+          "text": "Llegar directamente del nodo ese al nodo a cuesta cuatro. Pero pasar por el"
+        },
+        {
+          "start": 5.451957999999999,
+          "end": 10.242625000000002,
+          "text": "nodo be cuesta dos más uno: tres. Esa mejora reemplaza el costo"
+        },
+        {
+          "start": 10.243625000000002,
+          "end": 15.071041000000001,
+          "text": "conocido de a. La entrada antigua permanece en la cola y se descarta al"
+        },
+        {
+          "start": 15.072041,
+          "end": 19.959208,
+          "text": "extraerse. Los predecesores guardan cómo reconstruir la ruta encontrada,"
+        },
+        {
+          "start": 20.121083000000002,
+          "end": 22.501499,
+          "text": "sin confundir una visita con una mejora."
+        }
+      ]
+    },
+    {
+      "id": "decimal",
+      "title": "Los decimales conservan su valor.",
+      "label": "ENTRADA Y ARITMÉTICA EXACTAS",
+      "minimum": 18,
+      "narration": "Un décimo más dos décimos debe producir tres décimos. El motor conserva el texto numérico, valida sus límites y suma con aritmética decimal. También rechaza pesos negativos y valores demasiado precisos. Importar un archivo no debe redondear silenciosamente el problema que la persona quiere resolver.",
+      "duration": 21.9,
+      "start": 91.43333333333334,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 5.794083,
+          "text": "Un décimo más dos décimos debe producir tres décimos. El motor conserva el"
+        },
+        {
+          "start": 5.795083,
+          "end": 10.032708,
+          "text": "texto numérico, valida sus límites y suma con aritmética decimal."
+        },
+        {
+          "start": 10.758333,
+          "end": 15.806333,
+          "text": "También rechaza pesos negativos y valores demasiado precisos. Importar un"
+        },
+        {
+          "start": 15.807333,
+          "end": 19.715666,
+          "text": "archivo no debe redondear silenciosamente el problema que la persona quiere"
+        },
+        {
+          "start": 19.716666,
+          "end": 20.479416,
+          "text": "resolver."
+        }
+      ],
+      "beats": {
+        "values": [
+          0.649,
+          1.506875,
+          2.9652079999999996
+        ]
+      }
+    },
+    {
+      "id": "cases",
+      "title": "Los casos difíciles también tienen respuesta.",
+      "label": "GRAFOS DIDÁCTICOS / RESULTADOS REALES",
+      "minimum": 23,
+      "narration": "Un ciclo de costo cero no debe atrapar la búsqueda. Dos rutas empatadas pueden ser óptimas; se muestra una de forma reproducible. En un grafo dirigido, invertir el recorrido puede impedir llegar. Y cuando el destino está desconectado, la respuesta correcta es sin ruta. Estos casos forman parte de las pruebas.",
+      "duration": 23.0,
+      "start": 113.33333333333334,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 5.51225,
+          "text": "Un ciclo de costo cero no debe atrapar la búsqueda. Dos rutas empatadas"
+        },
+        {
+          "start": 5.51325,
+          "end": 10.218125,
+          "text": "pueden ser óptimas; se muestra una de forma reproducible. En un grafo"
+        },
+        {
+          "start": 10.219125,
+          "end": 15.071041000000001,
+          "text": "dirigido, invertir el recorrido puede impedir llegar. Y cuando el destino"
+        },
+        {
+          "start": 15.072041,
+          "end": 20.230375,
+          "text": "está desconectado, la respuesta correcta es sin ruta. Estos casos forman"
+        },
+        {
+          "start": 20.231375,
+          "end": 21.521083,
+          "text": "parte de las pruebas."
+        }
+      ],
+      "beats": {
+        "direction": 9.594125,
+        "disconnected": 14.201958000000001
+      }
+    },
+    {
+      "id": "oracle",
+      "title": "Comprobar desde otro algoritmo.",
+      "label": "VERIFICACIÓN INDEPENDIENTE",
+      "minimum": 22,
+      "narration": "Para revisar Dijkstra usamos Bellman Ford, un algoritmo independiente, con costos enteros en micro unidades. Contrastamos el costo mínimo con ese oráculo. Revisamos las conexiones de la ruta y las trazas mediante invariantes. Conservamos las pruebas que fallaron antes de corregirlas. Esa evidencia muestra lo que se comprobó, sin convertir las pruebas en una garantía absoluta.",
+      "duration": 26.366666666666667,
+      "start": 136.33333333333334,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 4.912707999999999,
+          "text": "Para revisar Dijkstra usamos Bellman Ford, un algoritmo independiente, con"
+        },
+        {
+          "start": 4.913708,
+          "end": 9.752416000000002,
+          "text": "costos enteros en micro unidades. Contrastamos el costo mínimo con ese"
+        },
+        {
+          "start": 9.753416000000001,
+          "end": 14.102916,
+          "text": "oráculo. Revisamos las conexiones de la ruta y las trazas mediante"
+        },
+        {
+          "start": 14.103916,
+          "end": 18.917583,
+          "text": "invariantes. Conservamos las pruebas que fallaron antes de corregirlas."
+        },
+        {
+          "start": 19.643125,
+          "end": 23.661749999999998,
+          "text": "Esa evidencia muestra lo que se comprobó, sin convertir las pruebas en una"
+        },
+        {
+          "start": 23.66275,
+          "end": 24.952458,
+          "text": "garantía absoluta."
+        }
+      ]
+    },
+    {
+      "id": "benchmark",
+      "title": "Medir también exige separar los costos.",
+      "label": "MEDICIONES LOCALES / MILISEGUNDOS",
+      "minimum": 23,
+      "narration": "Medimos por separado el solucionador y el proceso completo de validación, construcción y salida JSON. Cada barra resume nueve ejecuciones del mismo caso, después del calentamiento. El tamaño y la densidad del grafo importan. Estas mediciones corresponden a Python en esta computadora; no representan el tiempo de un vehículo ni el de todos los navegadores.",
+      "duration": 24.266666666666666,
+      "start": 162.70000000000002,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 4.4822500000000005,
+          "text": "Medimos por separado el solucionador y el proceso completo de validación,"
+        },
+        {
+          "start": 4.582833,
+          "end": 9.384791000000002,
+          "text": "construcción y salida JSON. Cada barra resume nueve ejecuciones del mismo"
+        },
+        {
+          "start": 9.385791000000001,
+          "end": 14.652833,
+          "text": "caso, después del calentamiento. El tamaño y la densidad del grafo importan."
+        },
+        {
+          "start": 15.378416000000001,
+          "end": 19.654374999999998,
+          "text": "Estas mediciones corresponden a Python en esta computadora; no representan"
+        },
+        {
+          "start": 19.655375,
+          "end": 22.844624,
+          "text": "el tiempo de un vehículo ni el de todos los navegadores."
+        }
+      ]
+    },
+    {
+      "id": "studio",
+      "title": "Edita. Calcula. Comprueba.",
+      "label": "ESTUDIO INTERACTIVO",
+      "minimum": 20,
+      "narration": "En el estudio puedes cambiar el grafo, deshacer una edición e importar o exportar tus ejemplos. La reproducción permite detenerse en cada decisión. El informe conecta requisitos, clases, pruebas y límites. El resultado es un proyecto de software que puedes explorar, reproducir y defender con el código abierto a la vista.",
+      "duration": 23.0,
+      "start": 186.9666666666667,
+      "cues": [
+        {
+          "start": 0.649,
+          "end": 4.508333,
+          "text": "En el estudio puedes cambiar el grafo, deshacer una edición e importar o"
+        },
+        {
+          "start": 4.509333,
+          "end": 9.775375,
+          "text": "exportar tus ejemplos. La reproducción permite detenerse en cada decisión."
+        },
+        {
+          "start": 10.501000000000001,
+          "end": 15.438708000000002,
+          "text": "El informe conecta requisitos, clases, pruebas y límites. El"
+        },
+        {
+          "start": 15.439708000000001,
+          "end": 19.237707999999998,
+          "text": "resultado es un proyecto de software que puedes explorar, reproducir y"
+        },
+        {
+          "start": 19.238708,
+          "end": 21.557831999999998,
+          "text": "defender con el código abierto a la vista."
+        }
+      ]
+    }
+  ],
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "charts": "Graph geometry and trace data from actual Python executions; benchmark data from stored measurements.",
+  "source_hashes": {
+    "web/data/examples.json": "5c42484a650b23e68f019316770f80e47cffbc854fd7692bea2f012be2ef4194",
+    "evidence/verification/benchmark.json": "5d8be32a9e60c24efd51a99201d6a089a81e0dad2182c9ef2849b462515539c7",
+    "tests/independent_oracle.py": "2eecf935d38e6dff7d25b43aca628167273130c230f18ca64cc876678ab46e98",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "scripts/build_film.py": "bf1cca1419f1ef3db53c91037fef54daef360e643be5afd9d2d27aa9f2aa0d46"
+  },
+  "asset_hashes": {
+    "output/playwright/desktop-route.png": "7650fb42d1a770df537b6637049ae8bf7c107ad27e6d407cca4b87b83a15cc28",
+    "web/fonts/Manrope.ttf": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40",
+    "web/fonts/DMSans.ttf": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d",
+    "media/narration/voice_00.mp3": "30528d11b2a6847f3c01868166bc854faf2225fbf9a4cca18fa0e761e7c61e0e",
+    "media/narration/voice_00.json": "f3a04fcb4faa7ed936a1aed3b92b47fe20988000cc79f8641eb66dbc619b42f4",
+    "media/narration/voice_01.mp3": "c7f3be97693889ff9147712c2108f696c59f348a03352cdcfed197065009d809",
+    "media/narration/voice_01.json": "8741a801d6b1c0217485e01fffc26a2deab581824210ff7d7bf1501a39cae85d",
+    "media/narration/voice_02.mp3": "91a855c439c2fd805a6fc2d9e7ddeb771d12bfc5234d1017a81eca4c1abd7b21",
+    "media/narration/voice_02.json": "b81b19a184d07663b235f0a0932de964a8d9efd013bb3080c430041833ef64fc",
+    "media/narration/voice_03.mp3": "739175c90ce43d07507fd57bf78cdf6971ad81737e4b08187ae20896be86d7e2",
+    "media/narration/voice_03.json": "b43aba8d63ab07991c1a66d9f0d7816bb26739a5fdcf476670c8b7df833e029e",
+    "media/narration/voice_04.mp3": "33612275b1549f9abf74b604bdfa09b875b05fdbaa9a9ddc001b8a31988bbda3",
+    "media/narration/voice_04.json": "14526fd026e0e6d9691c9664d34517f4339769590043c20878d8edfc11ad5327",
+    "media/narration/voice_05.mp3": "241b3126638b87085abf476d109b85f2a0cd381314eb6d45c5232b92362a69f3",
+    "media/narration/voice_05.json": "be22549bf3cfb8108215557b5ba6ac4c48e409043214ce2148bf6ec785960246",
+    "media/narration/voice_06.mp3": "9e672eacc73123d92c61fa56141cdc1d3a28bc3fcfcea51a1351c4f9b090eb79",
+    "media/narration/voice_06.json": "302b660f17fca15deaabae2db277a593357a9c75e269a9ee34fac7dc0f5342b0",
+    "media/narration/voice_07.mp3": "0ecbdb36244a68a539f95386ebe36fd00fb289909124d5fc199f1cb40d6421a5",
+    "media/narration/voice_07.json": "31a72c3e51958f73c867df40cd4a644ceece401ed34155c45a2ebb92f8cb4ee8",
+    "media/narration/voice_08.mp3": "66e00588693616386f581347f8f6c7b89ff9f41663ff97d9d9391242877d2357",
+    "media/narration/voice_08.json": "5d64e4627d42a52041a0aabf09e99c6d03a96b17c338828ec8cf3be0979895e5"
+  },
+  "output": {
+    "path": "web/media/VerticeSDV_Demo.mp4",
+    "sha256": "93a64bf31516a2b1027ab91555b459de0afb0ef9aa230d957c0efbf4e38c17eb",
+    "bytes": 11540070,
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1080,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 3225088,
+          "duration": "209.966667",
+          "bit_rate": "267848",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "6299",
+          "extradata_size": 47,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc62.11.100 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "96000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/96000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 20160000,
+          "duration": "210.000000",
+          "bit_rate": "163195",
+          "nb_frames": "19686",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        },
+        {
+          "index": 2,
+          "codec_name": "bin_data",
+          "codec_long_name": "binary data",
+          "codec_type": "data",
+          "codec_tag_string": "text",
+          "codec_tag": "0x74786574",
+          "id": "0x3",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/1000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 209967,
+          "duration": "209.967000",
+          "bit_rate": "16",
+          "nb_frames": "9",
+          "extradata_size": 63,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "eng",
+            "handler_name": "SubtitleHandler"
+          }
+        }
+      ],
+      "format": {
+        "filename": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\web\\media\\VerticeSDV_Demo.mp4",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "210.000000",
+        "size": "11540070",
+        "bit_rate": "439621",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "title": "VÉRTICE / SDV - Cada decisión a la vista",
+          "artist": "VÉRTICE",
+          "encoder": "Lavf62.3.100"
+        }
+      }
+    }
+  }
+}

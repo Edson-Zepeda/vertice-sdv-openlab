@@ -1,0 +1,263 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "62afbacf1af67fda903e88fc042f382045680c4b66a0f5e23d9abdbb9e8168b1",
+  "text": "En el estudio puedes cambiar el grafo, deshacer una edición e importar o exportar tus ejemplos. La reproducción permite detenerse en cada decisión. El informe conecta requisitos, clases, pruebas y límites. El resultado es un proyecto de software que puedes explorar, reproducir y defender con el código abierto a la vista.",
+  "words": [
+    {
+      "text": "En",
+      "start": 0.099,
+      "end": 0.270583
+    },
+    {
+      "text": "el",
+      "start": 0.282833,
+      "end": 0.393124
+    },
+    {
+      "text": "estudio",
+      "start": 0.405375,
+      "end": 0.822041
+    },
+    {
+      "text": "puedes",
+      "start": 0.834333,
+      "end": 1.152958
+    },
+    {
+      "text": "cambiar",
+      "start": 1.165208,
+      "end": 1.532874
+    },
+    {
+      "text": "el",
+      "start": 1.545083,
+      "end": 1.630874
+    },
+    {
+      "text": "grafo",
+      "start": 1.643125,
+      "end": 1.9985
+    },
+    {
+      "text": "deshacer",
+      "start": 2.317166,
+      "end": 2.758332
+    },
+    {
+      "text": "una",
+      "start": 2.770583,
+      "end": 2.905374
+    },
+    {
+      "text": "edición",
+      "start": 2.917666,
+      "end": 3.309832
+    },
+    {
+      "text": "e",
+      "start": 3.322041,
+      "end": 3.358791
+    },
+    {
+      "text": "importar",
+      "start": 3.371083,
+      "end": 3.885791
+    },
+    {
+      "text": "o",
+      "start": 3.898041,
+      "end": 3.947041
+    },
+    {
+      "text": "exportar",
+      "start": 3.959333,
+      "end": 4.498541
+    },
+    {
+      "text": "tus",
+      "start": 4.510791,
+      "end": 4.694624
+    },
+    {
+      "text": "ejemplos",
+      "start": 4.706875,
+      "end": 5.344125
+    },
+    {
+      "text": "La",
+      "start": 6.188708,
+      "end": 6.360291
+    },
+    {
+      "text": "reproducción",
+      "start": 6.372541,
+      "end": 7.034291
+    },
+    {
+      "text": "permite",
+      "start": 7.046583,
+      "end": 7.463249
+    },
+    {
+      "text": "detenerse",
+      "start": 7.4755,
+      "end": 8.06375
+    },
+    {
+      "text": "en",
+      "start": 8.076,
+      "end": 8.198541
+    },
+    {
+      "text": "cada",
+      "start": 8.210791,
+      "end": 8.468124
+    },
+    {
+      "text": "decisión",
+      "start": 8.480375,
+      "end": 9.105375
+    },
+    {
+      "text": "El",
+      "start": 9.951,
+      "end": 10.122583
+    },
+    {
+      "text": "informe",
+      "start": 10.134791,
+      "end": 10.551457
+    },
+    {
+      "text": "conecta",
+      "start": 10.563708,
+      "end": 10.992624
+    },
+    {
+      "text": "requisitos",
+      "start": 11.004916,
+      "end": 11.715707
+    },
+    {
+      "text": "clases",
+      "start": 11.960791,
+      "end": 12.463249
+    },
+    {
+      "text": "pruebas",
+      "start": 12.708333,
+      "end": 13.124999
+    },
+    {
+      "text": "y",
+      "start": 13.13725,
+      "end": 13.18625
+    },
+    {
+      "text": "límites",
+      "start": 13.198541,
+      "end": 13.848041
+    },
+    {
+      "text": "El",
+      "start": 14.693625,
+      "end": 14.877458
+    },
+    {
+      "text": "resultado",
+      "start": 14.889708,
+      "end": 15.416666
+    },
+    {
+      "text": "es",
+      "start": 15.428916,
+      "end": 15.551457
+    },
+    {
+      "text": "un",
+      "start": 15.563708,
+      "end": 15.661749
+    },
+    {
+      "text": "proyecto",
+      "start": 15.674,
+      "end": 16.127416
+    },
+    {
+      "text": "de",
+      "start": 16.139708,
+      "end": 16.237749
+    },
+    {
+      "text": "software",
+      "start": 16.25,
+      "end": 16.740208
+    },
+    {
+      "text": "que",
+      "start": 16.752458,
+      "end": 16.887249
+    },
+    {
+      "text": "puedes",
+      "start": 16.8995,
+      "end": 17.242625
+    },
+    {
+      "text": "explorar",
+      "start": 17.254916,
+      "end": 17.757374
+    },
+    {
+      "text": "reproducir",
+      "start": 18.026958,
+      "end": 18.627458
+    },
+    {
+      "text": "y",
+      "start": 18.639708,
+      "end": 18.676458
+    },
+    {
+      "text": "defender",
+      "start": 18.688708,
+      "end": 19.191166
+    },
+    {
+      "text": "con",
+      "start": 19.203416,
+      "end": 19.387249
+    },
+    {
+      "text": "el",
+      "start": 19.3995,
+      "end": 19.509791
+    },
+    {
+      "text": "código",
+      "start": 19.522041,
+      "end": 19.901957
+    },
+    {
+      "text": "abierto",
+      "start": 19.914208,
+      "end": 20.306374
+    },
+    {
+      "text": "a",
+      "start": 20.318625,
+      "end": 20.330875
+    },
+    {
+      "text": "la",
+      "start": 20.343125,
+      "end": 20.428916
+    },
+    {
+      "text": "vista",
+      "start": 20.441166,
+      "end": 20.857832
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "generated_at": "2026-09-12T01:16:37.990260+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "implementation": "CPython",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "machine": "AMD64",
+    "timer": "perf_counter_ns"
+  },
+  "method": {
+    "warmups_per_solver": 2,
+    "timed_repeats_per_variant": 9,
+    "graph_seed": 20260912,
+    "oracle": "synchronous Bellman-Ford integer micro-units, untimed",
+    "solver_only": "Preconstructed Graph; graph parsing and construction excluded",
+    "json_to_json": "solve_json; includes validation, graph construction, solve and JSON serialization",
+    "memory": "Separate tracemalloc run; peak Python allocations, not complete process RAM",
+    "p95": "Nearest-rank descriptive percentile; with 9 samples this equals maximum",
+    "scope": "Single local Windows machine, CPython. Not a browser, real-time or vehicle guarantee."
+  },
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "scripts/benchmark.py": "52967ce233197d5cc26e86c313339acea07a2d669622e6c478726f7a58eb7cd6",
+    "tests/independent_oracle.py": "2eecf935d38e6dff7d25b43aca628167273130c230f18ca64cc876678ab46e98"
+  },
+  "workload_count": 7,
+  "measured_variants": 14,
+  "results": [
+    {
+      "id": "chain_50",
+      "nodes": 50,
+      "edges": 49,
+      "directed": true,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N000",
+      "target": "N049",
+      "cost": "55.125",
+      "oracle_match": true,
+      "stats": {
+        "settled": 50,
+        "relaxations": 49,
+        "heap_pushes": 50,
+        "heap_pops": 50,
+        "stale_pops": 0
+      },
+      "payload_sha256": "babccd46dae4317b484b05c98322190e0abcbc797da57904fd25b4bbf540c3b6",
+      "payload_bytes": 5307,
+      "solver_only": {
+        "samples_ms": [
+          0.5219,
+          0.5449,
+          0.5902,
+          0.6689,
+          0.555,
+          0.5271,
+          0.5379,
+          0.538,
+          0.5452
+        ],
+        "median_ms": 0.5449,
+        "min_ms": 0.5219,
+        "max_ms": 0.6689,
+        "p95_nearest_rank_ms": 0.6689
+      },
+      "json_to_json": {
+        "samples_ms": [
+          2.3464,
+          2.1955,
+          2.1179,
+          2.1642,
+          2.1474,
+          2.1737,
+          2.1356,
+          2.2361,
+          2.117
+        ],
+        "median_ms": 2.1642,
+        "min_ms": 2.117,
+        "max_ms": 2.3464,
+        "p95_nearest_rank_ms": 2.3464
+      },
+      "solver_tracemalloc_peak_bytes": 19754
+    },
+    {
+      "id": "chain_50",
+      "nodes": 50,
+      "edges": 49,
+      "directed": true,
+      "trace_enabled": true,
+      "trace_events": 150,
+      "source": "N000",
+      "target": "N049",
+      "cost": "55.125",
+      "oracle_match": true,
+      "stats": {
+        "settled": 50,
+        "relaxations": 49,
+        "heap_pushes": 50,
+        "heap_pops": 50,
+        "stale_pops": 0
+      },
+      "payload_sha256": "8b84595f30a840d2ef8bf776a59f81bcfd778b985ce809df562e4e39967c994b",
+      "payload_bytes": 5306,
+      "solver_only": {
+        "samples_ms": [
+          0.6384,
+          0.585,
+          0.5756,
+          0.5838,
+          0.6195,
+          0.5795,
+          0.6858,
+          0.6031,
+          0.5754
+        ],
+        "median_ms": 0.585,
+        "min_ms": 0.5754,
+        "max_ms": 0.6858,
+        "p95_nearest_rank_ms": 0.6858
+      },
+      "json_to_json": {
+        "samples_ms": [
+          3.1789,
+          2.5814,
+          2.5189,
+          2.5913,
+          2.4845,
+          2.7031,
+          2.6029,
+          2.5239,
+          2.5734
+        ],
+        "median_ms": 2.5814,
+        "min_ms": 2.4845,
+        "max_ms": 3.1789,
+        "p95_nearest_rank_ms": 3.1789
+      },
+      "solver_tracemalloc_peak_bytes": 51937
+    },
+    {
+      "id": "chain_200",
+      "nodes": 200,
+      "edges": 199,
+      "directed": true,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N000",
+      "target": "N199",
+      "cost": "223.875",
+      "oracle_match": true,
+      "stats": {
+        "settled": 200,
+        "relaxations": 199,
+        "heap_pushes": 200,
+        "heap_pops": 200,
+        "stale_pops": 0
+      },
+      "payload_sha256": "477956734b8873502bdb2afc4122dfa4ebe9c4d784cb79894ee99aa997dbc08b",
+      "payload_bytes": 21407,
+      "solver_only": {
+        "samples_ms": [
+          2.5017,
+          2.2821,
+          2.0319,
+          2.0099,
+          2.3628,
+          2.1121,
+          2.0191,
+          2.1338,
+          2.1871
+        ],
+        "median_ms": 2.1338,
+        "min_ms": 2.0099,
+        "max_ms": 2.5017,
+        "p95_nearest_rank_ms": 2.5017
+      },
+      "json_to_json": {
+        "samples_ms": [
+          8.3224,
+          8.3611,
+          8.0554,
+          11.2146,
+          9.2319,
+          10.3622,
+          8.301,
+          8.1464,
+          8.645
+        ],
+        "median_ms": 8.3611,
+        "min_ms": 8.0554,
+        "max_ms": 11.2146,
+        "p95_nearest_rank_ms": 11.2146
+      },
+      "solver_tracemalloc_peak_bytes": 67165
+    },
+    {
+      "id": "chain_200",
+      "nodes": 200,
+      "edges": 199,
+      "directed": true,
+      "trace_enabled": true,
+      "trace_events": 600,
+      "source": "N000",
+      "target": "N199",
+      "cost": "223.875",
+      "oracle_match": true,
+      "stats": {
+        "settled": 200,
+        "relaxations": 199,
+        "heap_pushes": 200,
+        "heap_pops": 200,
+        "stale_pops": 0
+      },
+      "payload_sha256": "e2f2f576c80ea8eb2a7363eea1c533467f1a7b4b37aa7b1ada9ee268f4f138ad",
+      "payload_bytes": 21406,
+      "solver_only": {
+        "samples_ms": [
+          2.5458,
+          2.4022,
+          2.446,
+          2.4143,
+          2.3839,
+          2.341,
+          2.3388,
+          2.374,
+          2.3653
+        ],
+        "median_ms": 2.3839,
+        "min_ms": 2.3388,
+        "max_ms": 2.5458,
+        "p95_nearest_rank_ms": 2.5458
+      },
+      "json_to_json": {
+        "samples_ms": [
+          10.2338,
+          10.2843,
+          9.915,
+          9.9251,
+          10.1003,
+          10.2881,
+          10.1607,
+          10.6377,
+          10.2655
+        ],
+        "median_ms": 10.2338,
+        "min_ms": 9.915,
+        "max_ms": 10.6377,
+        "p95_nearest_rank_ms": 10.6377
+      },
+      "solver_tracemalloc_peak_bytes": 246023
+    },
+    {
+      "id": "chain_500",
+      "nodes": 500,
+      "edges": 499,
+      "directed": true,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N000",
+      "target": "N499",
+      "cost": "561.375",
+      "oracle_match": true,
+      "stats": {
+        "settled": 500,
+        "relaxations": 499,
+        "heap_pushes": 500,
+        "heap_pops": 500,
+        "stale_pops": 0
+      },
+      "payload_sha256": "ccf13198289f9f9c143e16d92f656e5332f4d8319457babadd99a1669261c908",
+      "payload_bytes": 53759,
+      "solver_only": {
+        "samples_ms": [
+          5.2712,
+          5.0959,
+          5.1552,
+          5.2082,
+          5.3082,
+          5.2024,
+          5.2297,
+          5.5717,
+          5.4191
+        ],
+        "median_ms": 5.2297,
+        "min_ms": 5.0959,
+        "max_ms": 5.5717,
+        "p95_nearest_rank_ms": 5.5717
+      },
+      "json_to_json": {
+        "samples_ms": [
+          20.9948,
+          20.7686,
+          20.5918,
+          20.3061,
+          20.4209,
+          20.6618,
+          21.5117,
+          21.6091,
+          20.7708
+        ],
+        "median_ms": 20.7686,
+        "min_ms": 20.3061,
+        "max_ms": 21.6091,
+        "p95_nearest_rank_ms": 21.6091
+      },
+      "solver_tracemalloc_peak_bytes": 165125
+    },
+    {
+      "id": "chain_500",
+      "nodes": 500,
+      "edges": 499,
+      "directed": true,
+      "trace_enabled": true,
+      "trace_events": 1500,
+      "source": "N000",
+      "target": "N499",
+      "cost": "561.375",
+      "oracle_match": true,
+      "stats": {
+        "settled": 500,
+        "relaxations": 499,
+        "heap_pushes": 500,
+        "heap_pops": 500,
+        "stale_pops": 0
+      },
+      "payload_sha256": "095f43ba3ae9538c7f702b3023ae917226e3dff75bedc886f343d3c8ffeecff3",
+      "payload_bytes": 53758,
+      "solver_only": {
+        "samples_ms": [
+          6.3629,
+          6.4145,
+          6.3097,
+          6.5142,
+          6.6689,
+          7.5398,
+          6.7244,
+          6.499,
+          6.3521
+        ],
+        "median_ms": 6.499,
+        "min_ms": 6.3097,
+        "max_ms": 7.5398,
+        "p95_nearest_rank_ms": 7.5398
+      },
+      "json_to_json": {
+        "samples_ms": [
+          27.455,
+          26.0842,
+          25.5095,
+          24.8602,
+          27.3323,
+          25.2846,
+          25.4402,
+          25.4047,
+          25.7997
+        ],
+        "median_ms": 25.5095,
+        "min_ms": 24.8602,
+        "max_ms": 27.455,
+        "p95_nearest_rank_ms": 27.455
+      },
+      "solver_tracemalloc_peak_bytes": 644376
+    },
+    {
+      "id": "directed_500_4000",
+      "nodes": 500,
+      "edges": 4000,
+      "directed": true,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N000",
+      "target": "N499",
+      "cost": "8.1",
+      "oracle_match": true,
+      "stats": {
+        "settled": 254,
+        "relaxations": 883,
+        "heap_pushes": 884,
+        "heap_pops": 270,
+        "stale_pops": 16
+      },
+      "payload_sha256": "bbb05664752de41c86afc7c25d2d84ee4ef8f31ff40d06f64c8ab39fd7ef937d",
+      "payload_bytes": 270049,
+      "solver_only": {
+        "samples_ms": [
+          11.4653,
+          11.9397,
+          10.9932,
+          10.8833,
+          11.0692,
+          10.9259,
+          11.0794,
+          11.0632,
+          10.978
+        ],
+        "median_ms": 11.0632,
+        "min_ms": 10.8833,
+        "max_ms": 11.9397,
+        "p95_nearest_rank_ms": 11.9397
+      },
+      "json_to_json": {
+        "samples_ms": [
+          101.2867,
+          100.4778,
+          105.2749,
+          99.5065,
+          96.3955,
+          97.2292,
+          106.8348,
+          97.7481,
+          148.6296
+        ],
+        "median_ms": 100.4778,
+        "min_ms": 96.3955,
+        "max_ms": 148.6296,
+        "p95_nearest_rank_ms": 148.6296
+      },
+      "solver_tracemalloc_peak_bytes": 194011
+    },
+    {
+      "id": "directed_500_4000",
+      "nodes": 500,
+      "edges": 4000,
+      "directed": true,
+      "trace_enabled": true,
+      "trace_events": 3177,
+      "source": "N000",
+      "target": "N499",
+      "cost": "8.1",
+      "oracle_match": true,
+      "stats": {
+        "settled": 254,
+        "relaxations": 883,
+        "heap_pushes": 884,
+        "heap_pops": 270,
+        "stale_pops": 16
+      },
+      "payload_sha256": "98de552a46a037864781a6477bd3dbe40a5ca732bad7c448c56055f9c54176d5",
+      "payload_bytes": 270048,
+      "solver_only": {
+        "samples_ms": [
+          19.121,
+          17.6713,
+          22.9099,
+          15.8949,
+          16.0364,
+          14.8769,
+          18.1885,
+          20.0761,
+          14.8516
+        ],
+        "median_ms": 17.6713,
+        "min_ms": 14.8516,
+        "max_ms": 22.9099,
+        "p95_nearest_rank_ms": 22.9099
+      },
+      "json_to_json": {
+        "samples_ms": [
+          126.6662,
+          127.5757,
+          126.8033,
+          136.4713,
+          143.2695,
+          189.816,
+          173.9884,
+          168.8847,
+          139.7735
+        ],
+        "median_ms": 139.7735,
+        "min_ms": 126.6662,
+        "max_ms": 189.816,
+        "p95_nearest_rank_ms": 189.816
+      },
+      "solver_tracemalloc_peak_bytes": 1385642
+    },
+    {
+      "id": "undirected_grid_400",
+      "nodes": 400,
+      "edges": 760,
+      "directed": false,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N000",
+      "target": "N399",
+      "cost": "38",
+      "oracle_match": true,
+      "stats": {
+        "settled": 400,
+        "relaxations": 399,
+        "heap_pushes": 400,
+        "heap_pops": 400,
+        "stale_pops": 0
+      },
+      "payload_sha256": "bc11aca839e0d5a331e523951af8c82b380fdf8a731744709f208d601d4fc33b",
+      "payload_bytes": 62679,
+      "solver_only": {
+        "samples_ms": [
+          8.0417,
+          10.3272,
+          11.1588,
+          9.6097,
+          9.1658,
+          7.6647,
+          9.5114,
+          8.3108,
+          8.7464
+        ],
+        "median_ms": 9.1658,
+        "min_ms": 7.6647,
+        "max_ms": 11.1588,
+        "p95_nearest_rank_ms": 11.1588
+      },
+      "json_to_json": {
+        "samples_ms": [
+          36.6975,
+          38.8735,
+          35.1167,
+          39.129,
+          34.5089,
+          33.6774,
+          44.3427,
+          40.4454,
+          40.2075
+        ],
+        "median_ms": 38.8735,
+        "min_ms": 33.6774,
+        "max_ms": 44.3427,
+        "p95_nearest_rank_ms": 44.3427
+      },
+      "solver_tracemalloc_peak_bytes": 144704
+    },
+    {
+      "id": "undirected_grid_400",
+      "nodes": 400,
+      "edges": 760,
+      "directed": false,
+      "trace_enabled": true,
+      "trace_events": 2319,
+      "source": "N000",
+      "target": "N399",
+      "cost": "38",
+      "oracle_match": true,
+      "stats": {
+        "settled": 400,
+        "relaxations": 399,
+        "heap_pushes": 400,
+        "heap_pops": 400,
+        "stale_pops": 0
+      },
+      "payload_sha256": "3284ace9c6644e2718ab94a69869a9abc7c2bf0d52c29c41d9aad4a52d578559",
+      "payload_bytes": 62678,
+      "solver_only": {
+        "samples_ms": [
+          11.7159,
+          12.6667,
+          13.414,
+          15.2884,
+          16.3943,
+          22.2087,
+          14.3035,
+          12.238,
+          11.6662
+        ],
+        "median_ms": 13.414,
+        "min_ms": 11.6662,
+        "max_ms": 22.2087,
+        "p95_nearest_rank_ms": 22.2087
+      },
+      "json_to_json": {
+        "samples_ms": [
+          51.5267,
+          55.057,
+          58.9152,
+          59.8727,
+          58.4888,
+          56.8568,
+          60.1953,
+          61.7946,
+          57.6918
+        ],
+        "median_ms": 58.4888,
+        "min_ms": 51.5267,
+        "max_ms": 61.7946,
+        "p95_nearest_rank_ms": 61.7946
+      },
+      "solver_tracemalloc_peak_bytes": 958329
+    },
+    {
+      "id": "unreachable_500_zero_chain",
+      "nodes": 500,
+      "edges": 498,
+      "directed": true,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N000",
+      "target": "N499",
+      "cost": null,
+      "oracle_match": true,
+      "stats": {
+        "settled": 499,
+        "relaxations": 498,
+        "heap_pushes": 499,
+        "heap_pops": 499,
+        "stale_pops": 0
+      },
+      "payload_sha256": "b323fa509360b07f4b96d18f6c7e580a5fa67450644c332dd32cf1b00cf4f6b5",
+      "payload_bytes": 51704,
+      "solver_only": {
+        "samples_ms": [
+          5.5641,
+          4.6336,
+          5.1679,
+          4.0567,
+          5.9365,
+          5.2985,
+          3.9783,
+          4.2109,
+          5.5986
+        ],
+        "median_ms": 5.1679,
+        "min_ms": 3.9783,
+        "max_ms": 5.9365,
+        "p95_nearest_rank_ms": 5.9365
+      },
+      "json_to_json": {
+        "samples_ms": [
+          30.7388,
+          34.3884,
+          30.0644,
+          27.9904,
+          32.5686,
+          32.0001,
+          36.2766,
+          23.572,
+          24.171
+        ],
+        "median_ms": 30.7388,
+        "min_ms": 23.572,
+        "max_ms": 36.2766,
+        "p95_nearest_rank_ms": 36.2766
+      },
+      "solver_tracemalloc_peak_bytes": 135872
+    },
+    {
+      "id": "unreachable_500_zero_chain",
+      "nodes": 500,
+      "edges": 498,
+      "directed": true,
+      "trace_enabled": true,
+      "trace_events": 1497,
+      "source": "N000",
+      "target": "N499",
+      "cost": null,
+      "oracle_match": true,
+      "stats": {
+        "settled": 499,
+        "relaxations": 498,
+        "heap_pushes": 499,
+        "heap_pops": 499,
+        "stale_pops": 0
+      },
+      "payload_sha256": "2c5c6dcc12614e1f77dc40f56d53e72748769b215db33f88520f8d666c029dbc",
+      "payload_bytes": 51703,
+      "solver_only": {
+        "samples_ms": [
+          7.4931,
+          7.2291,
+          4.8695,
+          5.7926,
+          5.3859,
+          12.1185,
+          8.8679,
+          8.4894,
+          6.8651
+        ],
+        "median_ms": 7.2291,
+        "min_ms": 4.8695,
+        "max_ms": 12.1185,
+        "p95_nearest_rank_ms": 12.1185
+      },
+      "json_to_json": {
+        "samples_ms": [
+          33.4851,
+          31.8454,
+          39.8358,
+          31.8913,
+          33.4093,
+          29.9252,
+          34.7742,
+          44.9018,
+          43.2107
+        ],
+        "median_ms": 33.4851,
+        "min_ms": 29.9252,
+        "max_ms": 44.9018,
+        "p95_nearest_rank_ms": 44.9018
+      },
+      "solver_tracemalloc_peak_bytes": 532408
+    },
+    {
+      "id": "same_source_target_500",
+      "nodes": 500,
+      "edges": 4000,
+      "directed": true,
+      "trace_enabled": false,
+      "trace_events": 0,
+      "source": "N250",
+      "target": "N250",
+      "cost": "0",
+      "oracle_match": true,
+      "stats": {
+        "settled": 1,
+        "relaxations": 0,
+        "heap_pushes": 1,
+        "heap_pops": 1,
+        "stale_pops": 0
+      },
+      "payload_sha256": "c993fe0087f96a4f07081c69992720c0fea119f3af76ca60be57db523140f4f1",
+      "payload_bytes": 270049,
+      "solver_only": {
+        "samples_ms": [
+          0.2921,
+          0.3172,
+          0.2768,
+          0.2724,
+          0.2781,
+          0.2748,
+          0.2855,
+          0.2804,
+          0.3283
+        ],
+        "median_ms": 0.2804,
+        "min_ms": 0.2724,
+        "max_ms": 0.3283,
+        "p95_nearest_rank_ms": 0.3283
+      },
+      "json_to_json": {
+        "samples_ms": [
+          150.4429,
+          162.6209,
+          143.0075,
+          137.9313,
+          147.6899,
+          133.1847,
+          132.2057,
+          131.7904,
+          120.6664
+        ],
+        "median_ms": 137.9313,
+        "min_ms": 120.6664,
+        "max_ms": 162.6209,
+        "p95_nearest_rank_ms": 162.6209
+      },
+      "solver_tracemalloc_peak_bytes": 34080
+    },
+    {
+      "id": "same_source_target_500",
+      "nodes": 500,
+      "edges": 4000,
+      "directed": true,
+      "trace_enabled": true,
+      "trace_events": 3,
+      "source": "N250",
+      "target": "N250",
+      "cost": "0",
+      "oracle_match": true,
+      "stats": {
+        "settled": 1,
+        "relaxations": 0,
+        "heap_pushes": 1,
+        "heap_pops": 1,
+        "stale_pops": 0
+      },
+      "payload_sha256": "55351921cc27ac825ba3455a485d81261649f07db14d5db53a09fdcb4b514f3b",
+      "payload_bytes": 270048,
+      "solver_only": {
+        "samples_ms": [
+          0.2445,
+          0.249,
+          0.2404,
+          0.2227,
+          0.2301,
+          0.2291,
+          0.2262,
+          0.2276,
+          0.2445
+        ],
+        "median_ms": 0.2301,
+        "min_ms": 0.2227,
+        "max_ms": 0.249,
+        "p95_nearest_rank_ms": 0.249
+      },
+      "json_to_json": {
+        "samples_ms": [
+          143.4987,
+          128.9521,
+          140.8932,
+          146.5378,
+          134.5687,
+          130.9773,
+          134.121,
+          124.1245,
+          134.9073
+        ],
+        "median_ms": 134.5687,
+        "min_ms": 124.1245,
+        "max_ms": 146.5378,
+        "p95_nearest_rank_ms": 146.5378
+      },
+      "solver_tracemalloc_peak_bytes": 34320
+    }
+  ]
+}

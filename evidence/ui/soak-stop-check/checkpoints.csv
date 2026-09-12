@@ -1,0 +1,1 @@
+elapsed_minutes,phase,actions,cycles,solves,javascript_heap_bytes_after_gc,dom_nodes,live_elements,graph_nodes,graph_edges,documents,event_listeners,solve_last_50_median_ms,solve_last_50_max_ms

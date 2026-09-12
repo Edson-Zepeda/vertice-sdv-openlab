@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "name": "Python en navegador",
+      "status": "pass",
+      "detail": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "evidence": "evidence/publication/static-prefix/worker.json"
+    },
+    {
+      "name": "Editor y accesibilidad",
+      "status": "pending",
+      "detail": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
+      "evidence": "evidence/ui/qa.json"
+    },
+    {
+      "name": "Publicación y entrega",
+      "status": "pending",
+      "detail": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
+      "evidence": "evidence/publication/static-prefix/qa.json"
+    }
+  ]
+}

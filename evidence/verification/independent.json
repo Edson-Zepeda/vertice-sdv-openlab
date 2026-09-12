@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-09-12T01:57:07.365170+00:00",
+  "status": "pass",
+  "timestamp_scope": "Completion of the shared matrix collector; individual start/end timestamps were not captured.",
+  "environment": {
+    "python": "3.11.9",
+    "implementation": "CPython",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "executable": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "subprocess_flags": [
+      "-S"
+    ]
+  },
+  "test_methods": 38,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 3.727,
+  "elapsed_scope": "Rounded unittest suite duration from the retained log, excluding subprocess startup.",
+  "scenarios": {
+    "named_queries": 18,
+    "seeded_graphs": 160,
+    "seeded_queries": 631,
+    "exhaustive_graphs": 729,
+    "exhaustive_queries": 6561,
+    "trace_events": 59070
+  },
+  "scenario_count_provenance": {
+    "mode": "Prior instrumentation of the identical deterministic suite and unchanged graph/solver",
+    "file": "evidence/verification/independent_before_final_guard.json",
+    "sha256": "a629c87ffd54c569235a4feb21dd295950a4654d4eba3c0315d193b3e96f6f7a",
+    "note": "The shared rerun passed all 38 methods but did not emit AUDIT_COUNTS. Counts are retained coverage definitions, not new counter observations."
+  },
+  "scope": "Algorithm, object invariants and strict JSON boundary. Does not prove UI, HTTP or Pyodide parity.",
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "tests/test_independent.py": "98224cd8bf2a566e6c070f7c3ad2488e281f9b2df945947893a9e730a2ebd16c",
+    "tests/independent_oracle.py": "2eecf935d38e6dff7d25b43aca628167273130c230f18ca64cc876678ab46e98",
+    "scripts/verify_json_guard.py": "3a76fa95a4606eb57a3ef47aaf8b9c5c2cec70f3b2bd21e65b49eda0a1ef6159",
+    "scripts/consolidate_regression.py": "112657d61f6481a9d10359bca415e5a2914cbf20447f43cc105aecd1d0e8cd7b"
+  },
+  "derived_from": {
+    "matrix": "evidence/verification/json_guard.json",
+    "matrix_sha256": "26b5f4b72327e3a51537628c91b702338052cbd11550004cdd2f808f32c1f174",
+    "log": "evidence/verification/json_guard_python_3119.log",
+    "log_sha256": "8b813419a4eaee62c8f72e6f83664e8a95ed738353ec5c76d9f2517e09d92703",
+    "note": "Extracted from an actual shared execution of unittest; verify_independent.py was not run again."
+  },
+  "results": [
+    {
+      "test": "test_independent.GraphMutationTests.test_directed_remove_and_rewire_do_not_leave_reverse_arcs",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_edge_rewire_updates_both_undirected_adjacencies",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_edge_weight_update_changes_solution",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_external_views_and_value_objects_cannot_corrupt_graph",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_failed_mutations_are_atomic",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_node_update_does_not_change_routes",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_remove_and_readd_uses_new_weight",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.GraphMutationTests.test_removing_node_removes_all_incident_edges",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_bijective_renaming_preserves_optimal_cost",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_change_route_or_cost",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_erase_micro_difference",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_disconnected_extension_cannot_change_existing_solution",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_exhaustive_three_node_directed_graphs",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_json_round_trip_preserves_exact_decimal_result",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_named_contract_scenarios",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_oracle_cross_check_with_floyd_warshall",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_positive_scaling_preserves_unique_route",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_seeded_graphs_against_independent_oracle",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_solve_does_not_mutate_input_and_results_are_isolated",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_tentative_distance_is_not_replaced_by_final_oracle_value",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.IndependentAlgorithmTests.test_trace_disabled_keeps_same_solution_without_events",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_coordinate_bounds_and_types",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_duplicate_nodes_edges_and_parallel_connections",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_error_messages_for_unexpected_keys_are_utf8_safe",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_decimal_exponents_are_controlled",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_extreme_json_has_controlled_validation_error",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_json_parser_rejects_duplicates_and_nonstandard_numbers",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_maximum_edges_and_one_beyond",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_maximum_nodes_and_one_beyond",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_node_and_edge_identifier_contract",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_nonexistent_endpoints",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_oversized_numeric_representation_is_rejected_before_normalization",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_precisely_representable_weight_variants",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_top_level_and_required_field_types",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_unicode_labels_remain_data_and_enforce_length",
+      "status": "pass"
+    },
+    {
+      "test": "test_independent.ValidationBoundaryTests.test_unpaired_surrogate_cannot_break_utf8_responses",
+      "status": "pass"
+    }
+  ]
+}

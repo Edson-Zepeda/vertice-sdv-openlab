@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-09-12T02:04:21.452Z",
+  "source": "evidence/ui/soak-stop-check/report.json",
+  "status": "deliberately_interrupted",
+  "started_at": "2026-09-12T01:56:53.270Z",
+  "finished_at": "2026-09-12T01:57:07.902Z",
+  "requested_minutes": 1,
+  "elapsed_minutes": 0.24386666666666668,
+  "actions": 8,
+  "cycles": 1,
+  "real_python_solves": 1,
+  "journal_matches_report_counts": true,
+  "initial_and_final_source_hashes_match": true,
+  "failures": [],
+  "interruption": {
+    "at": "2026-09-12T01:57:07.902Z",
+    "reason": "Revisión controlada del mecanismo de parada, separada del ensayo de 75 minutos."
+  },
+  "phases": [
+    {
+      "name": "local-editor-history",
+      "engine": "actual local Python",
+      "actions": 8,
+      "real_python_solves": 1,
+      "solve_action_latency_ms": {
+        "median": 89,
+        "minimum": 89,
+        "maximum": 89
+      },
+      "renderer_heap_after_gc_bytes": null,
+      "renderer_documents": null,
+      "observations": []
+    }
+  ],
+  "limits": [
+    "Solve-action latency includes the UI action, real engine result, rendering and the engine-mode verification; it is not pure algorithm time.",
+    "The first browser solve includes Python/Wasm initialization; compare warmed runs separately.",
+    "CDP metrics cover the main UI renderer, not direct worker/Wasm or whole-process memory.",
+    "Graphs, panel state and viewport vary by phase; raw DOM and listener counts are not directly comparable between different graph states.",
+    "A completed run only supports the exercised workflows on the recorded environment and does not prove absence of every memory leak or accessibility issue."
+  ]
+}

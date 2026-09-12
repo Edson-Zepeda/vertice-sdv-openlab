@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-09-12T01:56:53.270Z",
+  "requested_minutes": 1,
+  "scope": "Paced UI endurance, real local Python and browser Pyodide; no idle-duration claim and no simulated successful solver results.",
+  "metric_scope": "CDP Performance metrics describe the main UI renderer. Worker/Wasm heap size is not directly measured; results do not assert a global process-memory leak proof.",
+  "code_hashes": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "web/style.css": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b"
+  },
+  "phases": [
+    {
+      "name": "local-editor-history",
+      "began_at": "2026-09-12T01:56:55.336Z",
+      "engine": "actual local Python"
+    }
+  ],
+  "checkpoints": [],
+  "failures": [],
+  "actions": 8,
+  "cycles": 1,
+  "solves": 1,
+  "engine_modes": [
+    "local"
+  ],
+  "completed": false,
+  "interrupted": true,
+  "interruption": {
+    "at": "2026-09-12T01:57:07.902Z",
+    "reason": "Revisión controlada del mecanismo de parada, separada del ensayo de 75 minutos."
+  },
+  "finished_at": "2026-09-12T01:57:07.902Z",
+  "elapsed_minutes": 0.24386666666666668,
+  "code_hashes_after": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "web/style.css": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b"
+  }
+}

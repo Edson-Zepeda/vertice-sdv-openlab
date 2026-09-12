@@ -1,0 +1,91 @@
+test_core.py
+test_error_messages_are_unicode_safe_and_bounded (test_core.CodecAndTerminal.test_error_messages_are_unicode_safe_and_bounded) ... ok
+test_hostile_numeric_tokens_raise_validation_without_expensive_normalization (test_core.CodecAndTerminal.test_hostile_numeric_tokens_raise_validation_without_expensive_normalization) ... ok
+test_json_and_payload_share_exact_engine_result (test_core.CodecAndTerminal.test_json_and_payload_share_exact_engine_result) ... ok
+test_json_rejects_duplicate_keys_nonfinite_and_bad_structure (test_core.CodecAndTerminal.test_json_rejects_duplicate_keys_nonfinite_and_bad_structure) ... ok
+test_terminal_creates_edits_solves_and_preserves_existing_files (test_core.CodecAndTerminal.test_terminal_creates_edits_solves_and_preserves_existing_files) ... ok
+test_utf8_stdin_preserves_labels_under_windows_legacy_encoding (test_core.CodecAndTerminal.test_utf8_stdin_preserves_labels_under_windows_legacy_encoding) ... ok
+test_validation_rejects_unknown_fields_without_mutation (test_core.CodecAndTerminal.test_validation_rejects_unknown_fields_without_mutation) ... ok
+test_decimal_precision_and_traps_are_isolated (test_core.DijkstraBehavior.test_decimal_precision_and_traps_are_isolated) ... ok
+test_default_context_mutation_does_not_change_the_engine (test_core.DijkstraBehavior.test_default_context_mutation_does_not_change_the_engine) ... ok
+test_early_stop_does_not_claim_all_distances_final (test_core.DijkstraBehavior.test_early_stop_does_not_claim_all_distances_final) ... ok
+test_equal_costs_are_stable_under_input_permutation (test_core.DijkstraBehavior.test_equal_costs_are_stable_under_input_permutation) ... ok
+test_lazy_heap_discards_stale_entries (test_core.DijkstraBehavior.test_lazy_heap_discards_stale_entries) ... ok
+test_lower_cost_can_require_more_edges (test_core.DijkstraBehavior.test_lower_cost_can_require_more_edges) ... ok
+test_same_node_is_zero_without_traversal (test_core.DijkstraBehavior.test_same_node_is_zero_without_traversal) ... ok
+test_trace_is_consistent_and_optional (test_core.DijkstraBehavior.test_trace_is_consistent_and_optional) ... ok
+test_unreachable_target_retains_reachable_distances (test_core.DijkstraBehavior.test_unreachable_target_retains_reachable_distances) ... ok
+test_zero_cycle_does_not_create_predecessor_cycle (test_core.DijkstraBehavior.test_zero_cycle_does_not_create_predecessor_cycle) ... ok
+test_directed_reverse_edge_is_distinct (test_core.GraphInvariants.test_directed_reverse_edge_is_distinct) ... ok
+test_duplicate_and_missing_references_are_atomic (test_core.GraphInvariants.test_duplicate_and_missing_references_are_atomic) ... ok
+test_export_import_preserves_graph_but_not_mutable_aliases (test_core.GraphInvariants.test_export_import_preserves_graph_but_not_mutable_aliases) ... ok
+test_invalid_update_preserves_old_edge_and_adjacency (test_core.GraphInvariants.test_invalid_update_preserves_old_edge_and_adjacency) ... ok
+test_node_validation_is_explicit (test_core.GraphInvariants.test_node_validation_is_explicit) ... ok
+test_read_only_views_do_not_allow_invariant_bypass (test_core.GraphInvariants.test_read_only_views_do_not_allow_invariant_bypass) ... ok
+test_rewiring_and_node_removal_rebuild_incidence (test_core.GraphInvariants.test_rewiring_and_node_removal_rebuild_incidence) ... ok
+test_weights_never_round_or_accept_nonfinite (test_core.GraphInvariants.test_weights_never_round_or_accept_nonfinite) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.196s
+
+OK
+
+test_independent.py
+test_directed_remove_and_rewire_do_not_leave_reverse_arcs (test_independent.GraphMutationTests.test_directed_remove_and_rewire_do_not_leave_reverse_arcs) ... ok
+test_edge_rewire_updates_both_undirected_adjacencies (test_independent.GraphMutationTests.test_edge_rewire_updates_both_undirected_adjacencies) ... ok
+test_edge_weight_update_changes_solution (test_independent.GraphMutationTests.test_edge_weight_update_changes_solution) ... ok
+test_external_views_and_value_objects_cannot_corrupt_graph (test_independent.GraphMutationTests.test_external_views_and_value_objects_cannot_corrupt_graph) ... ok
+test_failed_mutations_are_atomic (test_independent.GraphMutationTests.test_failed_mutations_are_atomic) ... ok
+test_node_update_does_not_change_routes (test_independent.GraphMutationTests.test_node_update_does_not_change_routes) ... ok
+test_remove_and_readd_uses_new_weight (test_independent.GraphMutationTests.test_remove_and_readd_uses_new_weight) ... ok
+test_removing_node_removes_all_incident_edges (test_independent.GraphMutationTests.test_removing_node_removes_all_incident_edges) ... ok
+test_bijective_renaming_preserves_optimal_cost (test_independent.IndependentAlgorithmTests.test_bijective_renaming_preserves_optimal_cost) ... ok
+test_decimal_context_cannot_change_route_or_cost (test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_change_route_or_cost) ... ok
+test_decimal_context_cannot_erase_micro_difference (test_independent.IndependentAlgorithmTests.test_decimal_context_cannot_erase_micro_difference) ... ok
+test_disconnected_extension_cannot_change_existing_solution (test_independent.IndependentAlgorithmTests.test_disconnected_extension_cannot_change_existing_solution) ... ok
+test_exhaustive_three_node_directed_graphs (test_independent.IndependentAlgorithmTests.test_exhaustive_three_node_directed_graphs) ... ok
+test_input_order_does_not_change_tie_route_or_trace (test_independent.IndependentAlgorithmTests.test_input_order_does_not_change_tie_route_or_trace) ... ok
+test_json_round_trip_preserves_exact_decimal_result (test_independent.IndependentAlgorithmTests.test_json_round_trip_preserves_exact_decimal_result) ... ok
+test_named_contract_scenarios (test_independent.IndependentAlgorithmTests.test_named_contract_scenarios) ... ok
+test_oracle_cross_check_with_floyd_warshall (test_independent.IndependentAlgorithmTests.test_oracle_cross_check_with_floyd_warshall) ... ok
+test_positive_scaling_preserves_unique_route (test_independent.IndependentAlgorithmTests.test_positive_scaling_preserves_unique_route) ... ok
+test_seeded_graphs_against_independent_oracle (test_independent.IndependentAlgorithmTests.test_seeded_graphs_against_independent_oracle) ... ok
+test_solve_does_not_mutate_input_and_results_are_isolated (test_independent.IndependentAlgorithmTests.test_solve_does_not_mutate_input_and_results_are_isolated) ... ok
+test_tentative_distance_is_not_replaced_by_final_oracle_value (test_independent.IndependentAlgorithmTests.test_tentative_distance_is_not_replaced_by_final_oracle_value) ... ok
+test_trace_disabled_keeps_same_solution_without_events (test_independent.IndependentAlgorithmTests.test_trace_disabled_keeps_same_solution_without_events) ... ok
+test_coordinate_bounds_and_types (test_independent.ValidationBoundaryTests.test_coordinate_bounds_and_types) ... ok
+test_duplicate_nodes_edges_and_parallel_connections (test_independent.ValidationBoundaryTests.test_duplicate_nodes_edges_and_parallel_connections) ... ok
+test_error_messages_for_unexpected_keys_are_utf8_safe (test_independent.ValidationBoundaryTests.test_error_messages_for_unexpected_keys_are_utf8_safe) ... ok
+test_extreme_decimal_exponents_are_controlled (test_independent.ValidationBoundaryTests.test_extreme_decimal_exponents_are_controlled) ... ok
+test_extreme_json_has_controlled_validation_error (test_independent.ValidationBoundaryTests.test_extreme_json_has_controlled_validation_error) ... ok
+test_invalid_weights_are_explicitly_rejected (test_independent.ValidationBoundaryTests.test_invalid_weights_are_explicitly_rejected) ... ok
+test_json_parser_rejects_duplicates_and_nonstandard_numbers (test_independent.ValidationBoundaryTests.test_json_parser_rejects_duplicates_and_nonstandard_numbers) ... ok
+test_maximum_edges_and_one_beyond (test_independent.ValidationBoundaryTests.test_maximum_edges_and_one_beyond) ... ok
+test_maximum_nodes_and_one_beyond (test_independent.ValidationBoundaryTests.test_maximum_nodes_and_one_beyond) ... ok
+test_node_and_edge_identifier_contract (test_independent.ValidationBoundaryTests.test_node_and_edge_identifier_contract) ... ok
+test_nonexistent_endpoints (test_independent.ValidationBoundaryTests.test_nonexistent_endpoints) ... ok
+test_oversized_numeric_representation_is_rejected_before_normalization (test_independent.ValidationBoundaryTests.test_oversized_numeric_representation_is_rejected_before_normalization) ... ok
+test_precisely_representable_weight_variants (test_independent.ValidationBoundaryTests.test_precisely_representable_weight_variants) ... ok
+test_top_level_and_required_field_types (test_independent.ValidationBoundaryTests.test_top_level_and_required_field_types) ... ok
+test_unicode_labels_remain_data_and_enforce_length (test_independent.ValidationBoundaryTests.test_unicode_labels_remain_data_and_enforce_length) ... ok
+test_unpaired_surrogate_cannot_break_utf8_responses (test_independent.ValidationBoundaryTests.test_unpaired_surrogate_cannot_break_utf8_responses) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 3.727s
+
+OK
+
+test_json_guard.py
+test_brackets_and_escaped_quotes_inside_strings_are_not_structure (test_json_guard.JsonStructureGuardTests.test_brackets_and_escaped_quotes_inside_strings_are_not_structure) ... ok
+test_container_limit_accepts_boundary_rejects_one_more_before_decoder (test_json_guard.JsonStructureGuardTests.test_container_limit_accepts_boundary_rejects_one_more_before_decoder) ... ok
+test_decimal_reading_remains_exact_on_slow_scan (test_json_guard.JsonStructureGuardTests.test_decimal_reading_remains_exact_on_slow_scan) ... ok
+test_existing_syntax_and_duplicate_errors_survive_slow_scan (test_json_guard.JsonStructureGuardTests.test_existing_syntax_and_duplicate_errors_survive_slow_scan) ... ok
+test_maximum_graph_accepts_labels_that_force_slow_scan (test_json_guard.JsonStructureGuardTests.test_maximum_graph_accepts_labels_that_force_slow_scan) ... ok
+test_punctuation_limit_accepts_boundary_rejects_one_more_before_decoder (test_json_guard.JsonStructureGuardTests.test_punctuation_limit_accepts_boundary_rejects_one_more_before_decoder) ... ok
+test_small_nested_invalid_input_remains_controlled (test_json_guard.JsonStructureGuardTests.test_small_nested_invalid_input_remains_controlled) ... ok
+test_utf8_and_byte_limit_run_before_structural_scan (test_json_guard.JsonStructureGuardTests.test_utf8_and_byte_limit_run_before_structural_scan) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.191s
+
+OK

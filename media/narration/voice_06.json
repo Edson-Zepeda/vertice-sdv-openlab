@@ -1,0 +1,288 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "8f665905b34506be155bfd5c35cb48b8a1c9cabb588618ecafd89b01e770b096",
+  "text": "Para revisar Dijkstra usamos Bellman Ford, un algoritmo independiente, con costos enteros en micro unidades. Contrastamos el costo mínimo con ese oráculo. Revisamos las conexiones de la ruta y las trazas mediante invariantes. Conservamos las pruebas que fallaron antes de corregirlas. Esa evidencia muestra lo que se comprobó, sin convertir las pruebas en una garantía absoluta.",
+  "words": [
+    {
+      "text": "Para",
+      "start": 0.099,
+      "end": 0.331833
+    },
+    {
+      "text": "revisar",
+      "start": 0.344125,
+      "end": 0.773041
+    },
+    {
+      "text": "Dijkstra",
+      "start": 0.785291,
+      "end": 1.189707
+    },
+    {
+      "text": "usamos",
+      "start": 1.201958,
+      "end": 1.643124
+    },
+    {
+      "text": "Bellman",
+      "start": 1.655375,
+      "end": 1.98625
+    },
+    {
+      "text": "Ford",
+      "start": 1.998541,
+      "end": 2.292666
+    },
+    {
+      "text": "un",
+      "start": 2.611291,
+      "end": 2.697082
+    },
+    {
+      "text": "algoritmo",
+      "start": 2.709333,
+      "end": 3.174999
+    },
+    {
+      "text": "independiente",
+      "start": 3.18725,
+      "end": 3.959291
+    },
+    {
+      "text": "con",
+      "start": 4.167666,
+      "end": 4.351499
+    },
+    {
+      "text": "costos",
+      "start": 4.363708,
+      "end": 4.731374
+    },
+    {
+      "text": "enteros",
+      "start": 4.743625,
+      "end": 5.209291
+    },
+    {
+      "text": "en",
+      "start": 5.221583,
+      "end": 5.356374
+    },
+    {
+      "text": "micro",
+      "start": 5.368625,
+      "end": 5.68725
+    },
+    {
+      "text": "unidades",
+      "start": 5.6995,
+      "end": 6.3735
+    },
+    {
+      "text": "Contrastamos",
+      "start": 7.218125,
+      "end": 7.916666
+    },
+    {
+      "text": "el",
+      "start": 7.928916,
+      "end": 8.026957
+    },
+    {
+      "text": "costo",
+      "start": 8.039208,
+      "end": 8.370083
+    },
+    {
+      "text": "mínimo",
+      "start": 8.382333,
+      "end": 8.786749
+    },
+    {
+      "text": "con",
+      "start": 8.799,
+      "end": 8.982833
+    },
+    {
+      "text": "ese",
+      "start": 8.995083,
+      "end": 9.191166
+    },
+    {
+      "text": "oráculo",
+      "start": 9.203416,
+      "end": 9.705874
+    },
+    {
+      "text": "Revisamos",
+      "start": 10.551458,
+      "end": 11.176458
+    },
+    {
+      "text": "las",
+      "start": 11.188708,
+      "end": 11.323499
+    },
+    {
+      "text": "conexiones",
+      "start": 11.335791,
+      "end": 11.936291
+    },
+    {
+      "text": "de",
+      "start": 11.948541,
+      "end": 12.022082
+    },
+    {
+      "text": "la",
+      "start": 12.034333,
+      "end": 12.120124
+    },
+    {
+      "text": "ruta",
+      "start": 12.132333,
+      "end": 12.450958
+    },
+    {
+      "text": "y",
+      "start": 12.46325,
+      "end": 12.51225
+    },
+    {
+      "text": "las",
+      "start": 12.5245,
+      "end": 12.720583
+    },
+    {
+      "text": "trazas",
+      "start": 12.732833,
+      "end": 13.137249
+    },
+    {
+      "text": "mediante",
+      "start": 13.1495,
+      "end": 13.541666
+    },
+    {
+      "text": "invariantes",
+      "start": 13.553916,
+      "end": 14.350499
+    },
+    {
+      "text": "Conservamos",
+      "start": 15.196083,
+      "end": 15.894624
+    },
+    {
+      "text": "las",
+      "start": 15.906875,
+      "end": 16.053916
+    },
+    {
+      "text": "pruebas",
+      "start": 16.066166,
+      "end": 16.433832
+    },
+    {
+      "text": "que",
+      "start": 16.446083,
+      "end": 16.556374
+    },
+    {
+      "text": "fallaron",
+      "start": 16.568625,
+      "end": 17.022041
+    },
+    {
+      "text": "antes",
+      "start": 17.034333,
+      "end": 17.340708
+    },
+    {
+      "text": "de",
+      "start": 17.352958,
+      "end": 17.438749
+    },
+    {
+      "text": "corregirlas",
+      "start": 17.451,
+      "end": 18.247583
+    },
+    {
+      "text": "Esa",
+      "start": 19.093125,
+      "end": 19.350458
+    },
+    {
+      "text": "evidencia",
+      "start": 19.36275,
+      "end": 19.852958
+    },
+    {
+      "text": "muestra",
+      "start": 19.865208,
+      "end": 20.245124
+    },
+    {
+      "text": "lo",
+      "start": 20.257333,
+      "end": 20.367624
+    },
+    {
+      "text": "que",
+      "start": 20.379916,
+      "end": 20.477957
+    },
+    {
+      "text": "se",
+      "start": 20.490208,
+      "end": 20.612749
+    },
+    {
+      "text": "comprobó",
+      "start": 20.625,
+      "end": 21.151958
+    },
+    {
+      "text": "sin",
+      "start": 21.446083,
+      "end": 21.642166
+    },
+    {
+      "text": "convertir",
+      "start": 21.654416,
+      "end": 22.193624
+    },
+    {
+      "text": "las",
+      "start": 22.205875,
+      "end": 22.365208
+    },
+    {
+      "text": "pruebas",
+      "start": 22.377458,
+      "end": 22.769624
+    },
+    {
+      "text": "en",
+      "start": 22.781875,
+      "end": 22.916666
+    },
+    {
+      "text": "una",
+      "start": 22.928916,
+      "end": 23.100499
+    },
+    {
+      "text": "garantía",
+      "start": 23.11275,
+      "end": 23.627458
+    },
+    {
+      "text": "absoluta",
+      "start": 23.639708,
+      "end": 24.252458
+    }
+  ]
+}

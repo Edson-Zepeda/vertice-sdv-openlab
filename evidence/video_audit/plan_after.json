@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-09-12T01:23:41.614346+00:00",
+  "status": "pre_export_diagnostic",
+  "plan_sha256": "7b822530470e817df4c8920765a24e3acb0c404d69354d885d0d580595020557",
+  "builder_sha256": "a17651e92a747730fcec7519211e813a0d3465652f22ec521e24939437909805",
+  "scope": "Three renderer samples per scene, not verification of final encoded MP4 or animation quality",
+  "scenes": [
+    {
+      "id": "intro",
+      "duration": 17.066666666666666,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 4.266666666666667,
+          "content_sha256": "9ba85fe7cb410bcf9643c6b74292cf31b59f879e6f8d1e22d25cdf6d8cc191a5"
+        },
+        {
+          "local_seconds": 8.533333333333333,
+          "content_sha256": "adfd7b582e93e6efc1fc516180f5063e1fe3b27d5c7bfdba18e467931565fb2d"
+        },
+        {
+          "local_seconds": 12.8,
+          "content_sha256": "83a76260e700e834decdca319418d919235dd7b87c8ca9404dc5197893de92fe"
+        }
+      ],
+      "distinct_content_samples": 3
+    },
+    {
+      "id": "objects",
+      "duration": 23.433333333333334,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 5.858333333333333,
+          "content_sha256": "401aa73826ff771724f9c4d4c205433edbe5e66d72c8a45febf6e65fac13e3a4"
+        },
+        {
+          "local_seconds": 11.716666666666667,
+          "content_sha256": "5fec27c2e9df84791124517634ed2dcde7b1fafaf1f9de4928ecc0269b39acdc"
+        },
+        {
+          "local_seconds": 17.575,
+          "content_sha256": "cc70b317f7347a4fab91f3f99aec9486c9c78e678f6149f75751d887fd687815"
+        }
+      ],
+      "distinct_content_samples": 3
+    },
+    {
+      "id": "trace",
+      "duration": 27.0,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 6.75,
+          "content_sha256": "c6baa0cefe31cf896c862ca6bf4e864b708a2a4ffcbc7b14b089e0493952cf2c"
+        },
+        {
+          "local_seconds": 13.5,
+          "content_sha256": "70c15335e30dd98e2db0388e727e92d827a91fd253dc0faa16edb3495d42496c"
+        },
+        {
+          "local_seconds": 20.25,
+          "content_sha256": "8bdd61cb2827d64f5b5a8fd1146df04f34e4542e7ed837ecd9cb22dda814d57f"
+        }
+      ],
+      "distinct_content_samples": 3
+    },
+    {
+      "id": "relax",
+      "duration": 23.933333333333334,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 5.983333333333333,
+          "content_sha256": "39da128b2ca926aa98b7ddda0a68f6b525f0e4b4c233fd256d9b476e3e1f96e1"
+        },
+        {
+          "local_seconds": 11.966666666666667,
+          "content_sha256": "ca83a0f83511034b70226008b1118fc9cbec70830a84cc5c1ccd755727c62170"
+        },
+        {
+          "local_seconds": 17.95,
+          "content_sha256": "ca83a0f83511034b70226008b1118fc9cbec70830a84cc5c1ccd755727c62170"
+        }
+      ],
+      "distinct_content_samples": 2
+    },
+    {
+      "id": "decimal",
+      "duration": 21.9,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 5.475,
+          "content_sha256": "12f74b7422ad99c7a2480cecd413f90672e2de5c0ecc69f58e9ec51c7e060dd3"
+        },
+        {
+          "local_seconds": 10.95,
+          "content_sha256": "1487e6cc68720c9f4a8791b1e270792f57556478c5d365cd62c5aac78fc0d818"
+        },
+        {
+          "local_seconds": 16.424999999999997,
+          "content_sha256": "ac11424ae217d0faf5f4e1f70ed525e4040efab0b276308f263e4ab3fec3b149"
+        }
+      ],
+      "distinct_content_samples": 3
+    },
+    {
+      "id": "cases",
+      "duration": 23.0,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 5.75,
+          "content_sha256": "86379f3fa83e2b4f56a05578134a0b4650927d787801f2d350753d0b28ae25bc"
+        },
+        {
+          "local_seconds": 11.5,
+          "content_sha256": "0dbbc885da326bd97281911e213028d5f3b952da278e7e40c0273b26ee36f31d"
+        },
+        {
+          "local_seconds": 17.25,
+          "content_sha256": "33517eaf067b1b65ec45c3946d64fd9dd990b32313be1edace8fe31645c9a894"
+        }
+      ],
+      "distinct_content_samples": 3
+    },
+    {
+      "id": "oracle",
+      "duration": 26.366666666666667,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 6.591666666666667,
+          "content_sha256": "02169e668b44d906764786441ee6e9cc84015e6a3f5716defb3928748aa7252d"
+        },
+        {
+          "local_seconds": 13.183333333333334,
+          "content_sha256": "8ce0061e8b60f6e6abc3309bce3ec8895eefdefe778f1a66b0c07b493216124c"
+        },
+        {
+          "local_seconds": 19.775,
+          "content_sha256": "6c87cf58ad2ac65eeb0c0556de386887fc280b0a73a485b1467558ab9f04b874"
+        }
+      ],
+      "distinct_content_samples": 3
+    },
+    {
+      "id": "benchmark",
+      "duration": 24.266666666666666,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 6.066666666666666,
+          "content_sha256": "331ffd38069e2ae1e0b0deaa4be7aff042b4f9f35ce090f4a442af6ef2002588"
+        },
+        {
+          "local_seconds": 12.133333333333333,
+          "content_sha256": "331ffd38069e2ae1e0b0deaa4be7aff042b4f9f35ce090f4a442af6ef2002588"
+        },
+        {
+          "local_seconds": 18.2,
+          "content_sha256": "331ffd38069e2ae1e0b0deaa4be7aff042b4f9f35ce090f4a442af6ef2002588"
+        }
+      ],
+      "distinct_content_samples": 1
+    },
+    {
+      "id": "studio",
+      "duration": 23.0,
+      "cue_overlaps": [],
+      "content_samples": [
+        {
+          "local_seconds": 5.75,
+          "content_sha256": "8eb4f9afb93754546eb45ccf6135b5b331da45e995eedc887de6073d3ad5995c"
+        },
+        {
+          "local_seconds": 11.5,
+          "content_sha256": "a82715289070379b013b7bd7e827432db338d0f290a679585348f2cf4e8e0b14"
+        },
+        {
+          "local_seconds": 17.25,
+          "content_sha256": "7b813c942b730c5135beb59cb2a4ea949ff19a68b74a3594d26ccd8c140e0556"
+        }
+      ],
+      "distinct_content_samples": 3
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-09-12T02:22:57.511450+00:00",
+  "status": "pass",
+  "scope": "VID-10 regression only: strict UTF-8 metadata from actual MP4 matches export proof; not another full film audit.",
+  "video_sha256": "93a64bf31516a2b1027ab91555b459de0afb0ef9aa230d957c0efbf4e38c17eb",
+  "proof_sha256": "cf1bffd037c59f673db7effc823f15da2913bc9a2f8a7012b9f6294c6f66fc90",
+  "builder_sha256": "bf1cca1419f1ef3db53c91037fef54daef360e643be5afd9d2d27aa9f2aa0d46",
+  "ffprobe_stdout_sha256": "4f9024332009a65a23f81e0af20d9cbc48571eea4906cd407b54ac73da268d29",
+  "actual_format_tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "V\u00c9RTICE / SDV - Cada decisi\u00f3n a la vista",
+    "artist": "V\u00c9RTICE",
+    "encoder": "Lavf62.3.100"
+  },
+  "saved_format_tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "V\u00c9RTICE / SDV - Cada decisi\u00f3n a la vista",
+    "artist": "V\u00c9RTICE",
+    "encoder": "Lavf62.3.100"
+  },
+  "chapter_titles": [
+    "El costo decide la ruta.",
+    "Cuatro clases. Una responsabilidad clara.",
+    "La frontera avanza.",
+    "Mejorar una distancia cambia la decisi\u00f3n.",
+    "Los decimales conservan su valor.",
+    "Los casos dif\u00edciles tambi\u00e9n tienen respuesta.",
+    "Comprobar desde otro algoritmo.",
+    "Medir tambi\u00e9n exige separar los costos.",
+    "Edita. Calcula. Comprueba."
+  ]
+}

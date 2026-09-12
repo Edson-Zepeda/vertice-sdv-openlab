@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "directed": false,
+  "nodes": [
+    {
+      "id": "A",
+      "label": "A",
+      "x": 150,
+      "y": 240
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "x": 360,
+      "y": 100
+    },
+    {
+      "id": "C",
+      "label": "C",
+      "x": 380,
+      "y": 370
+    },
+    {
+      "id": "D",
+      "label": "D",
+      "x": 650,
+      "y": 250
+    },
+    {
+      "id": "E",
+      "label": "E",
+      "x": 840,
+      "y": 130
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "A",
+      "target": "B",
+      "weight": "0"
+    },
+    {
+      "id": "e2",
+      "source": "B",
+      "target": "C",
+      "weight": "0"
+    },
+    {
+      "id": "e3",
+      "source": "C",
+      "target": "A",
+      "weight": "0"
+    },
+    {
+      "id": "e4",
+      "source": "C",
+      "target": "D",
+      "weight": "0.25"
+    },
+    {
+      "id": "e5",
+      "source": "A",
+      "target": "D",
+      "weight": "1"
+    },
+    {
+      "id": "e6",
+      "source": "D",
+      "target": "E",
+      "weight": "0.1"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "started_at": "2026-09-12T01:56:15.785Z",
+  "scope": "Small controlled comparison after the paced endurance run. CDP renderer metrics after forced GC; excludes direct worker heap measurement.",
+  "series": [
+    {
+      "mode": "native-form-control",
+      "observations": [
+        {
+          "cycle": 0,
+          "heap": 680628,
+          "cdp_nodes": 26,
+          "live_elements": 11,
+          "documents": 1,
+          "listeners": 1
+        },
+        {
+          "cycle": 10,
+          "heap": 1513944,
+          "cdp_nodes": 42,
+          "live_elements": 11,
+          "documents": 1,
+          "listeners": 14
+        },
+        {
+          "cycle": 20,
+          "heap": 1519668,
+          "cdp_nodes": 52,
+          "live_elements": 11,
+          "documents": 1,
+          "listeners": 14
+        },
+        {
+          "cycle": 30,
+          "heap": 1529572,
+          "cdp_nodes": 62,
+          "live_elements": 11,
+          "documents": 1,
+          "listeners": 14
+        },
+        {
+          "cycle": 40,
+          "heap": 1555848,
+          "cdp_nodes": 72,
+          "live_elements": 11,
+          "documents": 1,
+          "listeners": 14
+        },
+        {
+          "cycle": 50,
+          "heap": 1558788,
+          "cdp_nodes": 82,
+          "live_elements": 11,
+          "documents": 1,
+          "listeners": 14
+        }
+      ],
+      "after_navigation": {
+        "cycle": 50,
+        "heap": 753080,
+        "cdp_nodes": 4,
+        "live_elements": 3,
+        "documents": 1,
+        "listeners": 0
+      }
+    },
+    {
+      "mode": "graph-render-only",
+      "observations": [
+        {
+          "cycle": 0,
+          "heap": 1541316,
+          "cdp_nodes": 1089,
+          "live_elements": 385,
+          "documents": 1,
+          "listeners": 111
+        },
+        {
+          "cycle": 10,
+          "heap": 2549128,
+          "cdp_nodes": 1203,
+          "live_elements": 442,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 20,
+          "heap": 2593024,
+          "cdp_nodes": 1203,
+          "live_elements": 442,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 30,
+          "heap": 2617028,
+          "cdp_nodes": 1203,
+          "live_elements": 442,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 40,
+          "heap": 2656988,
+          "cdp_nodes": 1203,
+          "live_elements": 442,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 50,
+          "heap": 2695548,
+          "cdp_nodes": 1203,
+          "live_elements": 442,
+          "documents": 1,
+          "listeners": 124
+        }
+      ],
+      "after_navigation": {
+        "cycle": 50,
+        "heap": 999192,
+        "cdp_nodes": 4,
+        "live_elements": 3,
+        "documents": 1,
+        "listeners": 0
+      }
+    },
+    {
+      "mode": "graph-form-edits",
+      "observations": [
+        {
+          "cycle": 0,
+          "heap": 1541316,
+          "cdp_nodes": 1089,
+          "live_elements": 385,
+          "documents": 1,
+          "listeners": 111
+        },
+        {
+          "cycle": 10,
+          "heap": 2523432,
+          "cdp_nodes": 1213,
+          "live_elements": 386,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 20,
+          "heap": 2562988,
+          "cdp_nodes": 1223,
+          "live_elements": 386,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 30,
+          "heap": 2645404,
+          "cdp_nodes": 1233,
+          "live_elements": 386,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 40,
+          "heap": 2678916,
+          "cdp_nodes": 1243,
+          "live_elements": 386,
+          "documents": 1,
+          "listeners": 124
+        },
+        {
+          "cycle": 50,
+          "heap": 2692728,
+          "cdp_nodes": 1253,
+          "live_elements": 386,
+          "documents": 1,
+          "listeners": 124
+        }
+      ],
+      "after_navigation": {
+        "cycle": 50,
+        "heap": 994084,
+        "cdp_nodes": 4,
+        "live_elements": 3,
+        "documents": 1,
+        "listeners": 0
+      }
+    }
+  ],
+  "finished_at": "2026-09-12T01:56:32.357Z"
+}

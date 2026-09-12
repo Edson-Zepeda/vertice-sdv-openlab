@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-12T01:17:13.400062+00:00",
+  "status": "pass",
+  "test_methods": 2,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "Only two launcher checks in a clean snapshot; no browser opened",
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "vertice/codec.py": "104eb05d3f55c3747d46440948bfdfb7293a614e6d89399e69d2c0bb6fa740c9",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "server.py": "c4e59f691d42b787b74783852b96a44fa766f246d6118240f97c0226f0acb915",
+    "Iniciar.cmd": "600b05365c38587cde74fa3a959fb2bd917d8c360980adbdf781b797dd8a3400",
+    "tests/test_cli.py": "d8a8806840b958f1c2f06217fb5678fe8320613ca6c398df95fda97dd40fbe71",
+    "scripts/verify_launcher.py": "e6c728d81307473abd190976e4a53084993b9a9447f5840746883f7c6e7c187a"
+  },
+  "results": [
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_check_in_spanish_path",
+      "status": "pass"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_propagates_occupied_port_failure",
+      "status": "pass"
+    }
+  ],
+  "commands": [
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_check_in_spanish_path",
+      "launcher": "Iniciar.cmd --check",
+      "returncode": 0,
+      "stdout": "VERTICE 1.0.0 / Python 3.11.9 / listo\r\n",
+      "note": "Launcher selects installed Python; version is printed in stdout"
+    },
+    {
+      "test": "test_cli.CleanCliTests.test_windows_launcher_propagates_occupied_port_failure",
+      "launcher": "Iniciar.cmd --port <occupied> --no-open",
+      "returncode": 1,
+      "stderr": "No se pudo iniciar: [WinError 10048] Solo se permite un uso de cada direcci\\xf3n de socket (protocolo/direcci\\xf3n de red/puerto). Prueba otro puerto con --port.\r\n"
+    }
+  ]
+}

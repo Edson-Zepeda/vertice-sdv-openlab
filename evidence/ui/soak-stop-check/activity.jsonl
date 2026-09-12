@@ -1,0 +1,9 @@
+{"at":"2026-09-12T01:56:55.357Z","phase":"local-editor-history","action":"Open didactic graph","elapsed_ms":19,"passed":true}
+{"at":"2026-09-12T01:56:56.499Z","phase":"local-editor-history","action":"Open node editor","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T01:56:58.158Z","phase":"local-editor-history","action":"Rename and move a node through form","elapsed_ms":152,"passed":true}
+{"at":"2026-09-12T01:57:00.322Z","phase":"local-editor-history","action":"Undo the edit","elapsed_ms":51,"passed":true}
+{"at":"2026-09-12T01:57:01.470Z","phase":"local-editor-history","action":"Redo the edit","elapsed_ms":33,"passed":true}
+{"at":"2026-09-12T01:57:03.068Z","phase":"local-editor-history","action":"Compute with real Python after edit history","elapsed_ms":89,"passed":true}
+{"at":"2026-09-12T01:57:05.204Z","phase":"local-editor-history","action":"Explore actual initialization","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T01:57:06.390Z","phase":"local-editor-history","action":"Advance actual settled and considered events","elapsed_ms":76,"passed":true}
+{"at":"2026-09-12T01:57:07.902Z","phase":"local-editor-history","action":"Requested graceful stop","reason":"Revisión controlada del mecanismo de parada, separada del ensayo de 75 minutos."}

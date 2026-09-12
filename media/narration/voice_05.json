@@ -1,0 +1,263 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "4423ff5478f2801168b2b6e0fb87f30f43fc575819a348a88a3ed7e1b8f6e621",
+  "text": "Un ciclo de costo cero no debe atrapar la búsqueda. Dos rutas empatadas pueden ser óptimas; se muestra una de forma reproducible. En un grafo dirigido, invertir el recorrido puede impedir llegar. Y cuando el destino está desconectado, la respuesta correcta es sin ruta. Estos casos forman parte de las pruebas.",
+  "words": [
+    {
+      "text": "Un",
+      "start": 0.099,
+      "end": 0.258333
+    },
+    {
+      "text": "ciclo",
+      "start": 0.270583,
+      "end": 0.589208
+    },
+    {
+      "text": "de",
+      "start": 0.601458,
+      "end": 0.699499
+    },
+    {
+      "text": "costo",
+      "start": 0.71175,
+      "end": 1.054875
+    },
+    {
+      "text": "cero",
+      "start": 1.067166,
+      "end": 1.361291
+    },
+    {
+      "text": "no",
+      "start": 1.373541,
+      "end": 1.557374
+    },
+    {
+      "text": "debe",
+      "start": 1.569625,
+      "end": 1.790208
+    },
+    {
+      "text": "atrapar",
+      "start": 1.802458,
+      "end": 2.219124
+    },
+    {
+      "text": "la",
+      "start": 2.231375,
+      "end": 2.304916
+    },
+    {
+      "text": "búsqueda",
+      "start": 2.317166,
+      "end": 2.868624
+    },
+    {
+      "text": "Dos",
+      "start": 3.71325,
+      "end": 4.007375
+    },
+    {
+      "text": "rutas",
+      "start": 4.019625,
+      "end": 4.33825
+    },
+    {
+      "text": "empatadas",
+      "start": 4.3505,
+      "end": 4.951
+    },
+    {
+      "text": "pueden",
+      "start": 4.96325,
+      "end": 5.269625
+    },
+    {
+      "text": "ser",
+      "start": 5.281875,
+      "end": 5.477958
+    },
+    {
+      "text": "óptimas",
+      "start": 5.490208,
+      "end": 5.943624
+    },
+    {
+      "text": "se",
+      "start": 6.188708,
+      "end": 6.372541
+    },
+    {
+      "text": "muestra",
+      "start": 6.384791,
+      "end": 6.764707
+    },
+    {
+      "text": "una",
+      "start": 6.776958,
+      "end": 6.948541
+    },
+    {
+      "text": "de",
+      "start": 6.960791,
+      "end": 7.083332
+    },
+    {
+      "text": "forma",
+      "start": 7.095583,
+      "end": 7.426458
+    },
+    {
+      "text": "reproducible",
+      "start": 7.438708,
+      "end": 8.198499
+    },
+    {
+      "text": "En",
+      "start": 9.044125,
+      "end": 9.215708
+    },
+    {
+      "text": "un",
+      "start": 9.227958,
+      "end": 9.350499
+    },
+    {
+      "text": "grafo",
+      "start": 9.36275,
+      "end": 9.656875
+    },
+    {
+      "text": "dirigido",
+      "start": 9.669125,
+      "end": 10.220583
+    },
+    {
+      "text": "invertir",
+      "start": 10.490208,
+      "end": 10.980416
+    },
+    {
+      "text": "el",
+      "start": 10.992666,
+      "end": 11.078457
+    },
+    {
+      "text": "recorrido",
+      "start": 11.090666,
+      "end": 11.642124
+    },
+    {
+      "text": "puede",
+      "start": 11.654416,
+      "end": 11.899499
+    },
+    {
+      "text": "impedir",
+      "start": 11.91175,
+      "end": 12.328416
+    },
+    {
+      "text": "llegar",
+      "start": 12.340666,
+      "end": 12.806332
+    },
+    {
+      "text": "Y",
+      "start": 13.651958,
+      "end": 13.786749
+    },
+    {
+      "text": "cuando",
+      "start": 13.799,
+      "end": 14.044083
+    },
+    {
+      "text": "el",
+      "start": 14.056375,
+      "end": 14.117666
+    },
+    {
+      "text": "destino",
+      "start": 14.129916,
+      "end": 14.509832
+    },
+    {
+      "text": "está",
+      "start": 14.522041,
+      "end": 14.718124
+    },
+    {
+      "text": "desconectado",
+      "start": 14.730375,
+      "end": 15.502416
+    },
+    {
+      "text": "la",
+      "start": 15.845583,
+      "end": 15.943624
+    },
+    {
+      "text": "respuesta",
+      "start": 15.955875,
+      "end": 16.446083
+    },
+    {
+      "text": "correcta",
+      "start": 16.458333,
+      "end": 16.960791
+    },
+    {
+      "text": "es",
+      "start": 16.973041,
+      "end": 17.095582
+    },
+    {
+      "text": "sin",
+      "start": 17.107833,
+      "end": 17.291666
+    },
+    {
+      "text": "ruta",
+      "start": 17.303916,
+      "end": 17.683832
+    },
+    {
+      "text": "Estos",
+      "start": 18.529416,
+      "end": 18.897082
+    },
+    {
+      "text": "casos",
+      "start": 18.909333,
+      "end": 19.264708
+    },
+    {
+      "text": "forman",
+      "start": 19.276958,
+      "end": 19.669124
+    },
+    {
+      "text": "parte",
+      "start": 19.681375,
+      "end": 20.0
+    },
+    {
+      "text": "de",
+      "start": 20.01225,
+      "end": 20.110291
+    },
+    {
+      "text": "las",
+      "start": 20.122541,
+      "end": 20.269582
+    },
+    {
+      "text": "pruebas",
+      "start": 20.281875,
+      "end": 20.821083
+    }
+  ]
+}

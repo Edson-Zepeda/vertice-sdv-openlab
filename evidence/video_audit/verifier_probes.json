@@ -1,0 +1,48 @@
+{
+  "verifier_sha256": "3a2ea46ab7931bc783f9f10313fbe351c2af852d8d5b9d7bb6e3d151ae3cfba5",
+  "scope": "Verifier parser/negative-path probes only; not validation of project video",
+  "results": [
+    {
+      "case": "faststart_standard",
+      "passed": true
+    },
+    {
+      "case": "extended_box",
+      "passed": true
+    },
+    {
+      "case": "truncated_header",
+      "passed": true
+    },
+    {
+      "case": "length_overrun",
+      "passed": true
+    },
+    {
+      "case": "length_underflow",
+      "passed": true
+    },
+    {
+      "case": "vtt_valid",
+      "passed": true
+    },
+    {
+      "case": "vtt_no_signature",
+      "passed": true
+    },
+    {
+      "case": "vtt_empty_text",
+      "passed": true
+    },
+    {
+      "case": "missing_mp4_never_approved",
+      "passed": true,
+      "returncode": 2
+    },
+    {
+      "case": "missing_proof_never_approved",
+      "passed": true,
+      "returncode": 1
+    }
+  ]
+}

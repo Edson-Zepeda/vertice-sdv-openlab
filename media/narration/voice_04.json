@@ -1,0 +1,233 @@
+{
+  "voice": "es-MX-JorgeNeural",
+  "generated_voice": true,
+  "text_hash": "32b979125ca2ec40f9cb7845344fd1d9548f9ef3f9174d66d05be7905e090ada",
+  "text": "Un décimo más dos décimos debe producir tres décimos. El motor conserva el texto numérico, valida sus límites y suma con aritmética decimal. También rechaza pesos negativos y valores demasiado precisos. Importar un archivo no debe redondear silenciosamente el problema que la persona quiere resolver.",
+  "words": [
+    {
+      "text": "Un",
+      "start": 0.099,
+      "end": 0.258333
+    },
+    {
+      "text": "décimo",
+      "start": 0.270583,
+      "end": 0.674999
+    },
+    {
+      "text": "más",
+      "start": 0.68725,
+      "end": 0.944583
+    },
+    {
+      "text": "dos",
+      "start": 0.956875,
+      "end": 1.165208
+    },
+    {
+      "text": "décimos",
+      "start": 1.177458,
+      "end": 1.630874
+    },
+    {
+      "text": "debe",
+      "start": 1.643125,
+      "end": 1.875958
+    },
+    {
+      "text": "producir",
+      "start": 1.88825,
+      "end": 2.402958
+    },
+    {
+      "text": "tres",
+      "start": 2.415208,
+      "end": 2.672541
+    },
+    {
+      "text": "décimos",
+      "start": 2.684791,
+      "end": 3.285291
+    },
+    {
+      "text": "El",
+      "start": 4.129916,
+      "end": 4.301499
+    },
+    {
+      "text": "motor",
+      "start": 4.313708,
+      "end": 4.632333
+    },
+    {
+      "text": "conserva",
+      "start": 4.644625,
+      "end": 5.110291
+    },
+    {
+      "text": "el",
+      "start": 5.122541,
+      "end": 5.232832
+    },
+    {
+      "text": "texto",
+      "start": 5.245083,
+      "end": 5.588208
+    },
+    {
+      "text": "numérico",
+      "start": 5.6005,
+      "end": 6.127458
+    },
+    {
+      "text": "valida",
+      "start": 6.458333,
+      "end": 6.801458
+    },
+    {
+      "text": "sus",
+      "start": 6.813708,
+      "end": 7.046541
+    },
+    {
+      "text": "límites",
+      "start": 7.058833,
+      "end": 7.561291
+    },
+    {
+      "text": "y",
+      "start": 7.573541,
+      "end": 7.634832
+    },
+    {
+      "text": "suma",
+      "start": 7.647041,
+      "end": 7.977916
+    },
+    {
+      "text": "con",
+      "start": 7.990208,
+      "end": 8.174041
+    },
+    {
+      "text": "aritmética",
+      "start": 8.186291,
+      "end": 8.786791
+    },
+    {
+      "text": "decimal",
+      "start": 8.799,
+      "end": 9.362708
+    },
+    {
+      "text": "También",
+      "start": 10.208333,
+      "end": 10.575999
+    },
+    {
+      "text": "rechaza",
+      "start": 10.58825,
+      "end": 11.017166
+    },
+    {
+      "text": "pesos",
+      "start": 11.029416,
+      "end": 11.372541
+    },
+    {
+      "text": "negativos",
+      "start": 11.384791,
+      "end": 12.009791
+    },
+    {
+      "text": "y",
+      "start": 12.022041,
+      "end": 12.083332
+    },
+    {
+      "text": "valores",
+      "start": 12.095583,
+      "end": 12.512249
+    },
+    {
+      "text": "demasiado",
+      "start": 12.5245,
+      "end": 13.051458
+    },
+    {
+      "text": "precisos",
+      "start": 13.063708,
+      "end": 13.713208
+    },
+    {
+      "text": "Importar",
+      "start": 14.558833,
+      "end": 15.122541
+    },
+    {
+      "text": "un",
+      "start": 15.134791,
+      "end": 15.245082
+    },
+    {
+      "text": "archivo",
+      "start": 15.257333,
+      "end": 15.698499
+    },
+    {
+      "text": "no",
+      "start": 15.710791,
+      "end": 15.919124
+    },
+    {
+      "text": "debe",
+      "start": 15.931375,
+      "end": 16.151958
+    },
+    {
+      "text": "redondear",
+      "start": 16.164208,
+      "end": 16.666666
+    },
+    {
+      "text": "silenciosamente",
+      "start": 16.678916,
+      "end": 17.561249
+    },
+    {
+      "text": "el",
+      "start": 17.573541,
+      "end": 17.659332
+    },
+    {
+      "text": "problema",
+      "start": 17.671583,
+      "end": 18.100499
+    },
+    {
+      "text": "que",
+      "start": 18.11275,
+      "end": 18.247541
+    },
+    {
+      "text": "la",
+      "start": 18.259791,
+      "end": 18.345582
+    },
+    {
+      "text": "persona",
+      "start": 18.357833,
+      "end": 18.835791
+    },
+    {
+      "text": "quiere",
+      "start": 18.848041,
+      "end": 19.154416
+    },
+    {
+      "text": "resolver",
+      "start": 19.166666,
+      "end": 19.779416
+    }
+  ]
+}

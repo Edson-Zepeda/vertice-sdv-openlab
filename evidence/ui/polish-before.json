@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-12T01:52:03.135Z",
+  "phase": "before",
+  "checks": [
+    {
+      "name": "A direct pointer click keeps the node selected for editing",
+      "passed": true
+    },
+    {
+      "name": "A valid graph at exactly 2 MiB imports through Python",
+      "passed": false,
+      "bytes": 2097152,
+      "message": "El archivo supera 2 MB. Importa un grafo de hasta 500 nodos y 4 000 conexiones."
+    },
+    {
+      "name": "A graph exceeding 2 MiB is rejected without changing data",
+      "passed": false,
+      "bytes": 2097153,
+      "message": "El archivo supera 2 MB. Importa un grafo de hasta 500 nodos y 4 000 conexiones."
+    },
+    {
+      "name": "Keyboard selection from node list moves focus to node form",
+      "passed": false
+    },
+    {
+      "name": "Keyboard selection from edge list moves focus to edge form",
+      "passed": false
+    },
+    {
+      "name": "Metadata has its own area outside the SVG at 1440px",
+      "passed": false,
+      "graph_bottom": 924.09375,
+      "metadata_top": 882.25,
+      "reserved_pixels": -41.84375
+    },
+    {
+      "name": "Metadata has its own area outside the SVG at 390px",
+      "passed": false,
+      "graph_bottom": 1138.671875,
+      "metadata_top": 1068.078125,
+      "reserved_pixels": -70.59375
+    }
+  ],
+  "passed": 1,
+  "failed": 6
+}

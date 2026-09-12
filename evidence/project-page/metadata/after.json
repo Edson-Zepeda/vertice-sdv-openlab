@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-09-12T02:03:01.920Z",
+  "cases": [
+    {
+      "id": "missing",
+      "metadata": {},
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "null",
+      "metadata": {
+        "chapters": null
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "bad_label",
+      "metadata": {
+        "chapters": [
+          {
+            "label": {
+              "bad": true
+            },
+            "start": 0
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "bad_time",
+      "metadata": {
+        "chapters": [
+          {
+            "label": "Prueba",
+            "start": "oops"
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "negative",
+      "metadata": {
+        "chapters": [
+          {
+            "label": "Prueba",
+            "start": -1
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "unordered",
+      "metadata": {
+        "chapters": [
+          {
+            "label": "A",
+            "start": 10
+          },
+          {
+            "label": "B",
+            "start": 2
+          }
+        ]
+      },
+      "state": {
+        "playing": true,
+        "controls": true,
+        "error": null
+      },
+      "buttons": 0,
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "source_hashes": {
+    "web/project.js": "771ab1226c5b20fadd228af853c906f2cf655196b585f8f229cbe400f02406f7",
+    "web/proyecto.html": "6134618b7879789d4319b6b6fa631a2010609b5b89569578e2edda42f5fa2abb"
+  }
+}

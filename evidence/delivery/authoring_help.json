@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-09-12T02:02:01.811956+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "win32",
+  "environment_overrides": {
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "checks": [
+    {
+      "script": "scripts/build_report.py",
+      "sha256": "8b99f7658272e1c7dc7824242b1d019b09f6c3ed40fc9cbb919747246f24aca3",
+      "arguments": [
+        "--help"
+      ],
+      "exit_code": 0,
+      "documented_options_present": [
+        "--render",
+        "--poppler"
+      ],
+      "stdout": "usage: build_report.py [-h] [--integration INTEGRATION] [--render]\n                       [--poppler POPPLER] [--record-review]\n\noptions:\n  -h, --help            show this help message and exit\n  --integration INTEGRATION\n  --render\n  --poppler POPPLER\n  --record-review       Registrar revisi\u00f3n visual ya realizada, sin volver a\n                        generar el PDF\n"
+    },
+    {
+      "script": "scripts/build_film.py",
+      "sha256": "6f22ceabe0ddf640c91ae0a8cb450b3e7be762c6e0cd046939d9f051c60c20d1",
+      "arguments": [
+        "--help"
+      ],
+      "exit_code": 0,
+      "documented_options_present": [
+        "--render",
+        "--ffmpeg",
+        "--ffprobe"
+      ],
+      "stdout": "usage: build_film.py [-h] [--render] [--ffmpeg FFMPEG] [--ffprobe FFPROBE]\n\noptions:\n  -h, --help         show this help message and exit\n  --render\n  --ffmpeg FFMPEG\n  --ffprobe FFPROBE\n"
+    },
+    {
+      "script": "scripts/verify_film.py",
+      "sha256": "606551e9b203b25fdfac775706d32b4f3e9e58fce197c5ef5a21a57b126b22af",
+      "arguments": [
+        "--help"
+      ],
+      "exit_code": 0,
+      "documented_options_present": [
+        "--ffmpeg",
+        "--ffprobe",
+        "--plan",
+        "--proof"
+      ],
+      "stdout": "usage: verify_film.py [-h] [--video VIDEO] [--plan PLAN] [--proof PROOF]\n                      [--output OUTPUT] [--ffmpeg FFMPEG] [--ffprobe FFPROBE]\n\nVerify the delivered film, not just its generation plan. Requires\nffmpeg/ffprobe and Pillow (the same optional tooling as build_film.py). Exit\n0: all recorded technical checks passed; 1: failed; 2: MP4 still pending. No\nresult from this script substitutes for viewing/listening to the actual film.\n\noptions:\n  -h, --help         show this help message and exit\n  --video VIDEO\n  --plan PLAN        Plan expl\u00edcito; por defecto usa el plan local o la\n                     evidencia de exportaci\u00f3n incluida.\n  --proof PROOF\n  --output OUTPUT\n  --ffmpeg FFMPEG\n  --ffprobe FFPROBE\n"
+    }
+  ],
+  "status": "pass",
+  "scope": "Help/options inspection only in the previously created authoring venv on Windows. No regeneration, rendering, network request, Linux or macOS execution."
+}

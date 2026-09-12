@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-09-12T01:01:36.536453+00:00",
+  "python": "3.11.9",
+  "source_hashes": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/cli.py": "f06c6b78636a1d8c212bb4dc94604b129a2ec7c03fa8ae0ece614525a3c762c5",
+    "vertice/codec.py": "bdc0dd03ac9e4fee1c922aa822dd4a138365ade2abb7a09cd81197e2b8ce7b9f",
+    "vertice/dijkstra.py": "fc23d8b3070964688cb9de76ced792114c6c813d99ca0e2683b60f71387d3ca2",
+    "vertice/graph.py": "2d46915bfe447a5e4933171a240aa55bda4ab5a04aee8940fb42e6fbfe9fd4d7"
+  },
+  "probes": [
+    {
+      "id": "large_positive_exponent",
+      "input_bytes": 219,
+      "elapsed_ms": 0.0733,
+      "input_sha256": "2d872f5090b1100211e8e24a0c8674308f4389999e0032770e36ec46f6a71794",
+      "outcome": "exception",
+      "exception_type": "InvalidOperation",
+      "message": "[<class 'decimal.InvalidOperation'>]"
+    },
+    {
+      "id": "large_negative_exponent",
+      "input_bytes": 220,
+      "elapsed_ms": 0.0411,
+      "input_sha256": "1a0d197024dadf36219ea5457930425d32ed9e714c8fce84012d43ce7f9f41e1",
+      "outcome": "exception",
+      "exception_type": "InvalidOperation",
+      "message": "[<class 'decimal.InvalidOperation'>]"
+    },
+    {
+      "id": "trailing_zero_2000",
+      "input_bytes": 2187,
+      "elapsed_ms": 6.2337,
+      "input_sha256": "fd394fd4f13c7b25c0bd724e6b27a0902f398e5795b22dcd4201ea68aaa52c09",
+      "outcome": "accepted",
+      "cost": "0.1"
+    },
+    {
+      "id": "trailing_zero_20000",
+      "input_bytes": 20187,
+      "elapsed_ms": 445.426,
+      "input_sha256": "1abc1400fc68fe93ec326335e4b4f5909accbad872590c83b7b35a3aea1b8fb1",
+      "outcome": "accepted",
+      "cost": "0.1"
+    }
+  ]
+}

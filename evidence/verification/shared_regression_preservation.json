@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-09-12T01:59:43.774312+00:00",
+  "files": [
+    {
+      "original": "evidence/verification/independent_python310.json",
+      "preserved": "evidence/verification/independent_python310_before_final_guard.json",
+      "sha256": "d36f722b6f95f3554e319cd447432d3b18fc3b8c58e832e47eafa34121b3532a"
+    },
+    {
+      "original": "evidence/verification/independent_python310.log",
+      "preserved": "evidence/verification/independent_python310_before_final_guard.log",
+      "sha256": "a6f8c8d4c35a85c22cb710f62b82b47eeeb358d9c20dc867db7d55dd82b270fe"
+    },
+    {
+      "original": "evidence/verification/independent.json",
+      "preserved": "evidence/verification/independent_before_final_guard.json",
+      "sha256": "a629c87ffd54c569235a4feb21dd295950a4654d4eba3c0315d193b3e96f6f7a"
+    },
+    {
+      "original": "evidence/verification/independent.log",
+      "preserved": "evidence/verification/independent_before_final_guard.log",
+      "sha256": "a3dc44f2b96e4fec5fa1c90b25fe8491c58bc5356684de308e12d59a412f6161"
+    },
+    {
+      "original": "evidence/verification/independent_python312.json",
+      "preserved": "evidence/verification/independent_python312_before_final_guard.json",
+      "sha256": "329e45144f80d596e58f130ef0150c323740644461358c741ced33c9c741eb97"
+    },
+    {
+      "original": "evidence/verification/independent_python312.log",
+      "preserved": "evidence/verification/independent_python312_before_final_guard.log",
+      "sha256": "28847245b7157db16c5081b228c8f1fe59620fd0d89e1ecbc358e8ae7f98f5ba"
+    },
+    {
+      "original": "evidence/verification/independent_python314.json",
+      "preserved": "evidence/verification/independent_python314_before_final_guard.json",
+      "sha256": "2f6c160c138d2055a2d078dd68433022ad9b1830b4d6eb37d38eaadba8e83544"
+    },
+    {
+      "original": "evidence/verification/independent_python314.log",
+      "preserved": "evidence/verification/independent_python314_before_final_guard.log",
+      "sha256": "4aa3aa67cf2167e3ea4d7b354539c83d3af77f87bf4371fca3e80c75bdcd31da"
+    },
+    {
+      "original": "evidence/verification/launcher.json",
+      "preserved": "evidence/verification/launcher_before_final_guard.json",
+      "sha256": "480ffb724b4c1bdab7e95441be59004e5b785499dd7bc312dd0549766507c23d"
+    },
+    {
+      "original": "evidence/verification/launcher.log",
+      "preserved": "evidence/verification/launcher_before_final_guard.log",
+      "sha256": "b5b6f9a5c84897fa2b48c91471754a1748d4a77f8384673ec8fc4fe6534fe8c6"
+    }
+  ],
+  "normalized_independent_reports": [
+    "independent_python310.json",
+    "independent.json",
+    "independent_python312.json",
+    "independent_python314.json"
+  ],
+  "launcher_derived_from": "cli_python311.json"
+}

@@ -1,0 +1,15 @@
+{
+  "video_sha256": "23b88e59c909055da1a21e8fbf65906bcb2105d401719c5a5b0add7df625b174",
+  "frames": [
+    {
+      "path": "evidence\\video_audit\\focus_node_export_before.png",
+      "seek_seconds": 23.366666666666667,
+      "sha256": "c2f3fe774437b0a062f78f5ad85f98607fdf585f01ebaf406845b2c72374d9ee"
+    },
+    {
+      "path": "evidence\\video_audit\\focus_solver_export_before.png",
+      "seek_seconds": 32.56666666666666,
+      "sha256": "e10042de252edd3f28e01636da27b30199be9cae83ae0015beed8da061fa3939"
+    }
+  ]
+}

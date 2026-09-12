@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "directed": false,
+  "nodes": [
+    {
+      "id": "S",
+      "label": "S",
+      "x": 90,
+      "y": 250
+    },
+    {
+      "id": "A",
+      "label": "A",
+      "x": 270,
+      "y": 100
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "x": 260,
+      "y": 390
+    },
+    {
+      "id": "C",
+      "label": "C",
+      "x": 470,
+      "y": 110
+    },
+    {
+      "id": "D",
+      "label": "D",
+      "x": 480,
+      "y": 290
+    },
+    {
+      "id": "E",
+      "label": "E",
+      "x": 710,
+      "y": 130
+    },
+    {
+      "id": "F",
+      "label": "F",
+      "x": 700,
+      "y": 420
+    },
+    {
+      "id": "T",
+      "label": "T",
+      "x": 920,
+      "y": 260
+    },
+    {
+      "id": "N1",
+      "label": "Sin almacenamiento",
+      "x": 505,
+      "y": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "S",
+      "target": "A",
+      "weight": "4"
+    },
+    {
+      "id": "e2",
+      "source": "S",
+      "target": "B",
+      "weight": "2"
+    },
+    {
+      "id": "e3",
+      "source": "A",
+      "target": "B",
+      "weight": "1"
+    },
+    {
+      "id": "e4",
+      "source": "A",
+      "target": "C",
+      "weight": "3"
+    },
+    {
+      "id": "e5",
+      "source": "A",
+      "target": "D",
+      "weight": "6"
+    },
+    {
+      "id": "e6",
+      "source": "B",
+      "target": "D",
+      "weight": "4"
+    },
+    {
+      "id": "e7",
+      "source": "C",
+      "target": "D",
+      "weight": "1"
+    },
+    {
+      "id": "e8",
+      "source": "C",
+      "target": "E",
+      "weight": "4"
+    },
+    {
+      "id": "e9",
+      "source": "D",
+      "target": "E",
+      "weight": "2"
+    },
+    {
+      "id": "e10",
+      "source": "D",
+      "target": "F",
+      "weight": "3"
+    },
+    {
+      "id": "e11",
+      "source": "E",
+      "target": "T",
+      "weight": "3"
+    },
+    {
+      "id": "e12",
+      "source": "F",
+      "target": "T",
+      "weight": "3"
+    }
+  ]
+}

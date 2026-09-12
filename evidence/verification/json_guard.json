@@ -1,0 +1,330 @@
+{
+  "created_utc": "2026-09-12T01:57:07.365170+00:00",
+  "python_for_memory": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "status": "integrated",
+  "all_passed": true,
+  "source_sha256": "3a76fa95a4606eb57a3ef47aaf8b9c5c2cec70f3b2bd21e65b49eda0a1ef6159",
+  "test_source_sha256": "bc9b00ea44ba136ca4ea8a0ca4b87096964297719769839a9912a3e15645ffdb",
+  "protected_sha256": {
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/cli.py": "eafa7dbff5f920101b458521d241ec6f6725b4b7451ace1553aa2543ed071ef0",
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "evidence/profiling/json_memory.json": "2b027726b15747a8d60b7d3250bbd1f54dbb2e831ebd23481ea8330cc27a52b8",
+    "evidence/profiling/import_profile.json": "c3cef02f66fd58273391725faca6cc90b41bbb5df92e999db597e5087887efe8",
+    "scripts/profile_import.py": "19721a7d8986397b6e86212f7484010c42c32c3b6ccb488dafb2c7d3c3a07e92",
+    "scripts/profile_json_memory.py": "bd9c17b461edf198469e5252bf663e7d4e8c667351d66c6c4499323e79fc0d47"
+  },
+  "protected_unchanged": true,
+  "limits": {
+    "json_bytes": 2097152,
+    "containers": 5000,
+    "punctuation": 50000
+  },
+  "memory": {
+    "baseline_source": "evidence/profiling/json_memory.json",
+    "baseline_python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "before": {
+      "bytes": 2097151,
+      "empty_objects": 699050,
+      "sha256": "2b5db9948de9425f8b0c4e06e760c25bc7c3a307b633776792d4e4d6716d50ed",
+      "rejection": "Búsqueda debe ser un objeto JSON.",
+      "tracemalloc_peak_bytes": 50676060,
+      "tracemalloc_current_bytes": 6700,
+      "instrumented_elapsed_ms": 1461.2289
+    },
+    "after": {
+      "input_utf8_bytes": 2097151,
+      "sha256": "2b5db9948de9425f8b0c4e06e760c25bc7c3a307b633776792d4e4d6716d50ed",
+      "tracemalloc_peak_bytes": 2097212,
+      "rejection": "El JSON excede la estructura admitida para un grafo."
+    },
+    "reduction_percent": 95.86153303946676,
+    "residual_examples": {
+      "field_object_below_punctuation_limit": {
+        "input_utf8_bytes": 438873,
+        "sha256": "8a62a29ac8ee12c0496a61de3328eeac974011b4fab8daa7a246afab1decd667",
+        "tracemalloc_peak_bytes": 7371791,
+        "rejection": "Búsqueda: faltan graph, source, target."
+      },
+      "decimals_below_punctuation_limit": {
+        "input_utf8_bytes": 550001,
+        "sha256": "b6ad9aa3b1bb6da60d6137bcb876281fb41e3370c154246dd7013dafa2233645",
+        "tracemalloc_peak_bytes": 5647604,
+        "rejection": "Búsqueda debe ser un objeto JSON."
+      }
+    },
+    "interpretation": "Before is the preserved historical measurement, not a rerun in the current environment. Identical input bytes and SHA-256. Python allocation peaks are not process RSS, browser RAM, a general upper bound or a benchmark. Existing baseline files were not overwritten."
+  },
+  "equivalence": {
+    "seed": 260913,
+    "all_passed": true,
+    "counts": {
+      "small_graphs": 600,
+      "large_graphs": 10,
+      "lexical_mutations": 1000,
+      "threshold_cases": 18
+    },
+    "total": 1628,
+    "large_valid_counts": [
+      {
+        "label_prefix": "'[[[[[[[[['",
+        "ascii": false,
+        "bytes": 332011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'[[[[[[[[['",
+        "ascii": true,
+        "bytes": 332011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "',,,,,,,,,'",
+        "ascii": false,
+        "bytes": 332011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "',,,,,,,,,'",
+        "ascii": true,
+        "bytes": 332011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'\\\\\"\\\\\"\\\\\"\\\\\"\\\\'",
+        "ascii": false,
+        "bytes": 372011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'\\\\\"\\\\\"\\\\\"\\\\\"\\\\'",
+        "ascii": true,
+        "bytes": 372011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'🧭🧭🧭🧭🧭🧭🧭🧭🧭'",
+        "ascii": false,
+        "bytes": 452011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'🧭🧭🧭🧭🧭🧭🧭🧭🧭'",
+        "ascii": true,
+        "bytes": 772011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'🧭[{,:}]\\\\\"'",
+        "ascii": false,
+        "bytes": 348011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      },
+      {
+        "label_prefix": "'🧭[{,:}]\\\\\"'",
+        "ascii": true,
+        "bytes": 380011,
+        "counts": [
+          4504,
+          36012,
+          4
+        ]
+      }
+    ],
+    "limits": "Proposal and production outcomes compared with an independently implemented lexical state machine. Malformed fragments only test structural accounting; grammar remains the standard parser's responsibility."
+  },
+  "matrix": [
+    {
+      "version": "Python 3.10.11",
+      "executable": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\compatibility\\python-3.10.11\\python.exe",
+      "suites": [
+        {
+          "name": "test_core.py",
+          "passed": true,
+          "tests": 25,
+          "wall_seconds": 0.6194346000002042,
+          "exit_code": 0
+        },
+        {
+          "name": "test_independent.py",
+          "passed": true,
+          "tests": 38,
+          "wall_seconds": 4.398143999999775,
+          "exit_code": 0
+        },
+        {
+          "name": "test_json_guard.py",
+          "passed": true,
+          "tests": 8,
+          "wall_seconds": 1.6352108999999473,
+          "exit_code": 0
+        }
+      ],
+      "log": "evidence/verification/json_guard_python_31011.log",
+      "all_passed": true
+    },
+    {
+      "version": "Python 3.11.9",
+      "executable": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+      "suites": [
+        {
+          "name": "test_core.py",
+          "passed": true,
+          "tests": 25,
+          "wall_seconds": 0.7485703000002104,
+          "exit_code": 0
+        },
+        {
+          "name": "test_independent.py",
+          "passed": true,
+          "tests": 38,
+          "wall_seconds": 4.124976699999934,
+          "exit_code": 0
+        },
+        {
+          "name": "test_json_guard.py",
+          "passed": true,
+          "tests": 8,
+          "wall_seconds": 1.7817578999993202,
+          "exit_code": 0
+        }
+      ],
+      "log": "evidence/verification/json_guard_python_3119.log",
+      "all_passed": true
+    },
+    {
+      "version": "Python 3.12.14",
+      "executable": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "suites": [
+        {
+          "name": "test_core.py",
+          "passed": true,
+          "tests": 25,
+          "wall_seconds": 0.675821700000597,
+          "exit_code": 0
+        },
+        {
+          "name": "test_independent.py",
+          "passed": true,
+          "tests": 38,
+          "wall_seconds": 4.406560399999762,
+          "exit_code": 0
+        },
+        {
+          "name": "test_json_guard.py",
+          "passed": true,
+          "tests": 8,
+          "wall_seconds": 1.5112810999999056,
+          "exit_code": 0
+        }
+      ],
+      "log": "evidence/verification/json_guard_python_31214.log",
+      "all_passed": true
+    },
+    {
+      "version": "Python 3.14.7",
+      "executable": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tmp\\compatibility\\python-3.14.7\\python.exe",
+      "suites": [
+        {
+          "name": "test_core.py",
+          "passed": true,
+          "tests": 25,
+          "wall_seconds": 0.5548641000004864,
+          "exit_code": 0
+        },
+        {
+          "name": "test_independent.py",
+          "passed": true,
+          "tests": 38,
+          "wall_seconds": 4.143435799999679,
+          "exit_code": 0
+        },
+        {
+          "name": "test_json_guard.py",
+          "passed": true,
+          "tests": 8,
+          "wall_seconds": 1.7236060999994152,
+          "exit_code": 0
+        }
+      ],
+      "log": "evidence/verification/json_guard_python_3147.log",
+      "all_passed": true
+    }
+  ],
+  "http_serialization_byte_equivalence": [
+    {
+      "example": "aislado.json",
+      "identical_bytes": true,
+      "sha256": "3075034b5a68605393e276359421e8867b354153f1b5422074355b3cfb10f4b0"
+    },
+    {
+      "example": "cero.json",
+      "identical_bytes": true,
+      "sha256": "8e3e42194eae52434dfb3af0fc7b559170bc2958fe57a3b0ab07b027b48d585b"
+    },
+    {
+      "example": "desvio.json",
+      "identical_bytes": true,
+      "sha256": "dbf1b3e65e111ad1090b523345947ba819e48d40af5afc70881a11804e1185d6"
+    },
+    {
+      "example": "direccion.json",
+      "identical_bytes": true,
+      "sha256": "0ca1ae899d13f7e7eb3c32b4bc7d9fbf24e84ab97c5bb7a9f405e88ce645616c"
+    },
+    {
+      "example": "empate.json",
+      "identical_bytes": true,
+      "sha256": "f45fc87107159be09224fa0d437ac7310b61acbb17f30555cef46054dc64f04d"
+    },
+    {
+      "example": "malla.json",
+      "identical_bytes": true,
+      "sha256": "1ef3544ac005c911067731e876d3aed49be12e37da6f1319ea25df7318a3b4a1"
+    }
+  ],
+  "http_scope": "The applied server calls solve_payload(load_json(text)) and retains _json. This check compares serialized bodies locally; it is not an HTTP request suite or a deployment check.",
+  "web_core_sync": {
+    "passed": true,
+    "message": "Núcleo nativo, copia web y manifiesto idénticos (4 archivos)."
+  }
+}
