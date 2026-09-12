@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
+  "pdf_sha256": "e632c9438922adef0465cd29d3464d85822dea88451f8747404ff155c2005bf9",
   "rendered_pages": [
     {
       "path": "evidence/report/pages/page-01.png",
@@ -31,11 +31,11 @@
     },
     {
       "path": "evidence/report/pages/page-08.png",
-      "sha256": "61043e44420bdcfe5dbcce8ab9a6600c6296feaa25a6e4a83d8baded15648aa7"
+      "sha256": "19ae014a53d98acda07db43dee11ecb745d3c7414ec3f2cbd92ff0c3266707ae"
     },
     {
       "path": "evidence/report/pages/page-09.png",
-      "sha256": "88bcd54e1451607f9e730a41076160d617ddbd933276750c613e436af2ea04c9"
+      "sha256": "e8645904ef00f54a7c59bb8b22f5854327e06c219ed9d965bfb2b0f5f7c0a719"
     },
     {
       "path": "evidence/report/pages/page-10.png",

@@ -1,0 +1,46 @@
+# Evaluación de entrega frente al reto SDV
+
+**Dictamen al corte de esta revisión: software, documentación, informe y video completos localmente para el perfil Software; publicación y paquete final todavía en proceso.** No se observó un componente solicitado sin implementación local. El ensayo prolongado sigue activo y no se presenta como concluido.
+
+La referencia es `Bootcamp SDV.pdf`, página 3. Se contrastó su texto con los archivos y evidencias actuales, sin repetir suites cuyo código conserva los hashes registrados. La fecha exacta, archivos y comprobaciones de esta revisión están en [su registro](../evidence/documentation/final_evaluation.json). No se asigna una nota oficial ni una calificación inventada.
+
+## Requisitos literales y evidencia
+
+La tarea principal pide Dijkstra orientado a objetos en Python o C++. Las actividades de la página 3 se evalúan a continuación. La GUI es opcional; la creación, modificación y consulta del grafo sí forman parte de la actividad. El documento titula su lista de archivos «Entregables sugeridos» y no establece una rúbrica numérica para este perfil.
+
+| Actividad del documento | Archivo que la satisface | Comprobación actual | Límite de la conclusión |
+|---|---|---|---|
+| «Implementación de una interfaz de usuario que permita crear y modificar el grafo, seleccionar un punto de inicio y un punto de destino, y solicitar la ruta óptima.» | [Editor](../web/index.html), [comportamiento](../web/app.js), [terminal](../vertice/cli.py) | La [verificación de interfaz](../evidence/ui/qa.json) cubre edición, selección, cálculo, historial y consulta de pasos; la [copia estática](../evidence/publication/static-prefix/qa.json) identifica los bytes servidos. | Son flujos ejecutados en el entorno registrado; el ensayo prolongado sigue abierto. |
+| «Implementación del algoritmo de Dijkstra desde cero para encontrar la ruta de menor costo.» | [DijkstraSolver](../vertice/dijkstra.py) | Las relajaciones, asentamiento, predecesores y reconstrucción están implementados en Python; la [suite independiente](../evidence/verification/independent.json) compara con Bellman–Ford. Los hashes del núcleo coinciden. | `heapq` aporta la cola de prioridad, no una función de caminos mínimos. El contrato exige pesos no negativos. |
+| «Uso de programación orientada a objetos para representar los elementos del sistema, como nodos, conexiones y el grafo.» | [Node, Edge y Graph](../vertice/graph.py), [DijkstraSolver](../vertice/dijkstra.py) | Las clases existen, mantienen responsabilidades separadas y tienen comprobaciones de edición, adyacencia y objetos inmutables. | La encapsulación no es una frontera de seguridad contra código Python que acceda deliberadamente a atributos privados. |
+| «Documentación del código, explicando cada clase, sus atributos, métodos y responsabilidades.» | [API](API.md), [arquitectura](ARQUITECTURA.md), docstrings del núcleo | Se documentan constructores, valores iniciales, atributos, métodos, resultados, invariantes y errores. La [revisión de consistencia](../evidence/documentation/consistency.json) comprobó las propiedades relevantes contra el código. | La documentación editable es la referencia actual; el PDF debe regenerarse cuando cambian sus fuentes. |
+| «Representación visual de la estructura de datos utilizada y explicación de cómo se relacionan sus componentes.» | [Diagramas de clases](ARQUITECTURA.md), [informe](VerticeSDV_Informe.pdf) | El diagrama relaciona Node, Edge, Graph y DijkstraSolver. La página de arquitectura del PDF muestra además adyacencia `nodo → vecino → ID de conexión`, comprobada en su texto y evidencia de revisión. | El PDF disponible tiene una revisión identificada por hash; no acredita por anticipado una regeneración posterior. |
+| «Realización de pruebas con diferentes grafos, puntos de inicio y destino.» | [Ejemplos](../examples/), [pruebas independientes](../tests/test_independent.py), [resultados](../evidence/verification/independent.json) | Hay grafos dirigidos y no dirigidos, distintos extremos, empates, decimales, bucles, ciclos cero y componentes separadas. Los resultados actuales conservan hashes válidos. | Los casos, eventos y repeticiones de compatibilidad son unidades distintas; aprobarlos no prueba todos los programas o entornos posibles. |
+| «Manejo de casos en los que no exista una ruta disponible.» | [Resultado del solver](../vertice/dijkstra.py), [ejemplo aislado](../examples/aislado.json) | La suite distingue `no_path`, rutas vacías y `cost=null` de la consulta inicio=destino con costo cero. La interfaz presenta el estado específico. | La ausencia de ruta se refiere únicamente al grafo introducido. |
+| «Explicación de las decisiones tomadas durante la implementación y del funcionamiento del algoritmo.» | [Funcionamiento y corrección](ALGORITMO.md), [API](API.md), [defensa](DEFENSA.md), trazas del editor | Se explican pesos no negativos, Decimal, desempates, parada al asentar el destino, entradas antiguas y complejidad. La guía contiene recorridos contrastados con el núcleo. | La guía es material de preparación; no prueba que una defensa oral ya se haya realizado. |
+
+## ¿Puede un evaluador encontrar los entregables?
+
+Se revisaron el [README](../README.md), la [página Proyecto](../web/proyecto.html) y sus destinos locales. Los archivos existen. La disponibilidad desde una copia local y la posibilidad de descargarlos desde un sitio aislado son estados distintos.
+
+| Entregable sugerido en la página 3 | Desde README / copia local | Desde la página Proyecto al corte |
+|---|---|---|
+| Código fuente funcional | La tabla «Qué incluye» identifica `vertice/`; las instrucciones explican arranque y uso de terminal. | El enlace **Código** está oculto mientras `release.json` indique `published=false`. Pendiente habilitarlo con el repositorio verificado. |
+| Interfaz para creación y consulta | Instrucciones directas para `Iniciar.cmd` y `server.py`; carpeta `web/` identificada. | **Abrir estudio** y **Explorar el grafo** llevan al editor. |
+| Documentación de clases y estructura | Se localizan `docs/API.md` y `docs/ARQUITECTURA.md`; hay enlace directo al informe. | **Informe** abre la copia web del PDF. El acceso al código/documentos editables depende del enlace de repositorio pendiente. |
+| Representación visual de la estructura | Diagrama en arquitectura e informe identificado desde README. | Se encuentra dentro del informe descargable. |
+| Ejemplos de pruebas y resultados | La tabla identifica `examples/`, `tests/` y `evidence/verification/`; hay instrucciones de verificación. | El informe resume pruebas y resultados. Descargar todos los ejemplos y registros depende de **Código** o **Proyecto completo**, todavía ocultos. |
+
+La ruta local de cada componente puede localizarse desde README, aunque varias entradas están escritas como rutas y no como enlaces. **Todavía no se cumple la descarga completa desde la página Proyecto por sí sola.** No es ausencia de implementación: es una tarea de cierre de publicación que debe verificarse antes de compartir esa página como entrega autosuficiente.
+
+## Qué está cerrado y qué sigue abierto
+
+- **Implementación local:** están presentes el algoritmo propio, las clases, la interfaz, la terminal, los ejemplos y la documentación de las actividades de la página 3. La evidencia funcional y de contrato del núcleo corresponde a sus archivos actuales.
+- **Prueba prolongada:** el [ensayo actual](../evidence/ui/soak/report.json) continúa con `completed=false` al corte. El [ensayo anterior](../evidence/ui/soak-baseline/INTERRUPCION.md) fue interrumpido deliberadamente y no se cuenta como una ejecución completa.
+- **Publicación:** la [configuración de enlaces](../web/data/release.json) aún indica `published=false`. La prueba de prefijo estático usa una dirección local y declara `public_origin=false`; acredita esa copia, no una publicación accesible en Internet.
+- **Paquete final:** existen un empaquetador y pruebas de integridad/protección de fuentes. La [auditoría de entrega](AUDITORIA_ENTREGA.md) distingue sus fixtures del ZIP final, que necesita extracción y comprobación propias antes de distribuirse.
+- **PDF y video actuales:** el [informe revisado](../evidence/report/qa.json) contiene diez páginas verificadas; su SHA-256 es `94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25`. El [video exportado](../evidence/video_audit/verification.json) pasa sus 20 comprobaciones técnicas. Se contrastaron los archivos y las fuentes de esas evidencias durante esta revisión. La [página Proyecto](../evidence/project-page/qa.json) también dispone de verificación actual de reproducción y navegación. Una modificación posterior debe renovar únicamente las comprobaciones afectadas.
+
+El ensayo prolongado, el video y la publicación añaden valor a esta entrega; la página 3 no los convierte en validación de conducción, integración vehicular ni trabajo del área de Visión o Electrónica. Tampoco se puede inferir la aprobación de GitHub Actions a partir de pruebas locales o de un archivo de flujo existente.
+
+Para cerrar la entrega pública faltan resultados del ensayo activo, ZIP final verificado y enlaces habilitados y comprobados desde un contexto sin sesión. Este documento conserva el estado observado; no anticipa el resultado de esas acciones.

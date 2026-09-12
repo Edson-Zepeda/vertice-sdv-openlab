@@ -1,0 +1,368 @@
+{
+  "started_at": "2026-09-12T03:43:01.067Z",
+  "phase": "before",
+  "scope": "Actual headless Chrome pointer clicks and hit testing; real Python import, solve and trace. No force clicks or synthetic event dispatch.",
+  "code_hashes": {
+    "web/style.css": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b",
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "scripts/verify_zoom_viewport.cjs": "d4731dbfe39fef2d4b2d51c87e01637ee137363cfe941116f03bdf81a8364ac6"
+  },
+  "cases": [
+    {
+      "name": "390px-90nodes",
+      "width": 390,
+      "nodes": 90,
+      "passed": false,
+      "error": "zoom-in pointer action 2"
+    },
+    {
+      "name": "390px-150nodes",
+      "width": 390,
+      "nodes": 150,
+      "passed": false,
+      "error": "zoom-in pointer action 2"
+    },
+    {
+      "name": "768px-90nodes",
+      "width": 768,
+      "nodes": 90,
+      "passed": false,
+      "error": "zoom-in pointer action 4"
+    },
+    {
+      "name": "768px-150nodes",
+      "width": 768,
+      "nodes": 150,
+      "passed": false,
+      "error": "zoom-in pointer action 5"
+    },
+    {
+      "name": "1440px-90nodes",
+      "width": 1440,
+      "nodes": 90,
+      "passed": false,
+      "error": "zoom-in pointer action 3"
+    },
+    {
+      "name": "1440px-150nodes",
+      "width": 1440,
+      "nodes": 150,
+      "passed": false,
+      "error": "zoom-in pointer action 2"
+    }
+  ],
+  "checks": [
+    {
+      "case": "390px-90nodes",
+      "name": "Real browser Python returns expected route",
+      "passed": true
+    },
+    {
+      "case": "390px-90nodes",
+      "name": "zoom-in pointer action 1",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 305,
+        "y": 340.671875,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "390px-90nodes",
+      "name": "Zoom 1 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "390px-90nodes",
+      "name": "zoom-in pointer action 2",
+      "passed": false,
+      "hit": {
+        "owns_center": false,
+        "x": 305,
+        "y": 340.671875,
+        "front": "<circle r=\"49.5\" class=\"node-body\"></circle>"
+      },
+      "error": "locator.click: Timeout 1800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"49.5\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"49.5\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    3 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"49.5\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "case": "390px-150nodes",
+      "name": "Real browser Python returns expected route",
+      "passed": true
+    },
+    {
+      "case": "390px-150nodes",
+      "name": "zoom-in pointer action 1",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 305,
+        "y": 340.671875,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "390px-150nodes",
+      "name": "Zoom 1 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "390px-150nodes",
+      "name": "zoom-in pointer action 2",
+      "passed": false,
+      "hit": {
+        "owns_center": false,
+        "x": 305,
+        "y": 340.671875,
+        "front": "<circle r=\"40.5\" class=\"node-halo\"></circle>"
+      },
+      "error": "locator.click: Timeout 1800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"40.5\" class=\"node-halo\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"40.5\" class=\"node-halo\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    3 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"40.5\" class=\"node-halo\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "Real browser Python returns expected route",
+      "passed": true
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "zoom-in pointer action 1",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "Zoom 1 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "zoom-in pointer action 2",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "Zoom 2 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "zoom-in pointer action 3",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "Zoom 3 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-90nodes",
+      "name": "zoom-in pointer action 4",
+      "passed": false,
+      "hit": {
+        "owns_center": false,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<circle r=\"38\" class=\"node-halo\"></circle>"
+      },
+      "error": "locator.click: Timeout 1800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"38\" class=\"node-halo\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"38\" class=\"node-halo\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    3 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"38\" class=\"node-halo\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "Real browser Python returns expected route",
+      "passed": true
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "zoom-in pointer action 1",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "Zoom 1 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "zoom-in pointer action 2",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "Zoom 2 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "zoom-in pointer action 3",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "Zoom 3 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "zoom-in pointer action 4",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "Zoom 4 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "768px-150nodes",
+      "name": "zoom-in pointer action 5",
+      "passed": false,
+      "hit": {
+        "owns_center": false,
+        "x": 668,
+        "y": 245.453125,
+        "front": "<path d=\"M 1247.0449051428166 181.07959123809863 Q 720 225 198.9343694066527 268.42213588277895\" class=\"edge-hit\"></path>"
+      },
+      "error": "locator.click: Timeout 1800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <path class=\"edge-hit\" d=\"M 1247.0449051428166 181.07959123809863 Q 720 225 198.9343694066527 268.42213588277895\"></path> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <path class=\"edge-hit\" d=\"M 1247.0449051428166 181.07959123809863 Q 720 225 198.9343694066527 268.42213588277895\"></path> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    3 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <path class=\"edge-hit\" d=\"M 1247.0449051428166 181.07959123809863 Q 720 225 198.9343694066527 268.42213588277895\"></path> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "case": "1440px-90nodes",
+      "name": "Real browser Python returns expected route",
+      "passed": true
+    },
+    {
+      "case": "1440px-90nodes",
+      "name": "zoom-in pointer action 1",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 927.40625,
+        "y": 198.59375,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "1440px-90nodes",
+      "name": "Zoom 1 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "1440px-90nodes",
+      "name": "zoom-in pointer action 2",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 927.40625,
+        "y": 198.59375,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "1440px-90nodes",
+      "name": "Zoom 2 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "1440px-90nodes",
+      "name": "zoom-in pointer action 3",
+      "passed": false,
+      "hit": {
+        "owns_center": false,
+        "x": 927.40625,
+        "y": 198.59375,
+        "front": "<circle r=\"30\" class=\"node-body\"></circle>"
+      },
+      "error": "locator.click: Timeout 1800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"30\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"30\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    3 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"30\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "case": "1440px-150nodes",
+      "name": "Real browser Python returns expected route",
+      "passed": true
+    },
+    {
+      "case": "1440px-150nodes",
+      "name": "zoom-in pointer action 1",
+      "passed": true,
+      "hit": {
+        "owns_center": true,
+        "x": 927.40625,
+        "y": 198.59375,
+        "front": "<button id=\"zoom-in\" class=\"icon-button\" aria-label=\"Acercar grafo\" title=\"Acercar\">\n                +</button>"
+      },
+      "error": null
+    },
+    {
+      "case": "1440px-150nodes",
+      "name": "Zoom 1 changes the camera",
+      "passed": true
+    },
+    {
+      "case": "1440px-150nodes",
+      "name": "zoom-in pointer action 2",
+      "passed": false,
+      "hit": {
+        "owns_center": false,
+        "x": 927.40625,
+        "y": 198.59375,
+        "front": "<circle r=\"28.582096885133144\" class=\"node-halo\"></circle>"
+      },
+      "error": "locator.click: Timeout 1800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle class=\"node-halo\" r=\"28.582096885133144\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle class=\"node-halo\" r=\"28.582096885133144\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    3 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle class=\"node-halo\" r=\"28.582096885133144\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-09-12T03:43:51.749Z",
+  "passed": 30,
+  "failed": 6,
+  "completed": false
+}

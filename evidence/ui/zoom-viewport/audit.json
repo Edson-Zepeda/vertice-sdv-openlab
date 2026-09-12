@@ -1,0 +1,87 @@
+{
+  "finding": "SVG content escaped #graph because overflow was visible; zoomed circles intercepted toolbar pointer events.",
+  "fix": "Clip SVG paint and hit testing with overflow:hidden on #graph. No z-index workaround, force clicks, graph data, camera algorithm, or solver change.",
+  "before": {
+    "cases_failed": 6,
+    "checks_passed": 30,
+    "checks_failed": 6,
+    "report": "before.json",
+    "css_sha256": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b"
+  },
+  "after": {
+    "cases_passed": 6,
+    "checks_passed": 192,
+    "checks_failed": 0,
+    "report": "after.json",
+    "css_sha256": "e3c92a6ea83e8966850b8dcbc8e4f86b950b6a725f1c8c307201e631f82621a1"
+  },
+  "intermediate_attempt": "A CRLF-specific byte replacement assertion failed because style.css uses LF. The immediately launched after-labelled test still used original CSS and was stopped. Two failure captures are retained with aborted-before-css-change names; that run produced no completion report. The final after.json starts after the successful LF-preserving change.",
+  "visual_review": {
+    "reviewed": [
+      "before-390px-90nodes-failure.png",
+      "after-390px-90nodes-zoomed.png",
+      "after-768px-150nodes-zoomed.png",
+      "after-1440px-150nodes-zoomed.png"
+    ],
+    "result": "Zoomed graph remains bounded by its viewport; controls and reserved metadata stay unobstructed. Cropping of zoomed off-screen geometry is intentional."
+  },
+  "screenshots": [
+    {
+      "file": "aborted-before-css-change-390px-150nodes-failure.png",
+      "sha256": "75ebbc19a0088b50b40834e9122dddfd84f37bf91c84ec0dddbf519b0336ed27"
+    },
+    {
+      "file": "aborted-before-css-change-390px-90nodes-failure.png",
+      "sha256": "cf763d5461b38781e8b769c3d78ced185066733dfe255799c54dbf68a766ccee"
+    },
+    {
+      "file": "after-1440px-150nodes-zoomed.png",
+      "sha256": "5272584e8f8c72a79464e6d397659eb73d5e111273ef53ec1aa509e30bc8ad15"
+    },
+    {
+      "file": "after-1440px-90nodes-zoomed.png",
+      "sha256": "07c8702c79a2fd873640f27375f49deff6d8f74fbd2ee1bea4016b2bf7a17f67"
+    },
+    {
+      "file": "after-390px-150nodes-zoomed.png",
+      "sha256": "b55c964f22ed11ae2272a12b209e8243b0818977a7ec3046fdc426caff987d40"
+    },
+    {
+      "file": "after-390px-90nodes-zoomed.png",
+      "sha256": "b9b0a86bb321280860c550fd46af86646ee2c1855b6504b7e7773c0b8d9d5ce8"
+    },
+    {
+      "file": "after-768px-150nodes-zoomed.png",
+      "sha256": "4fc588eb03783b4584cf9df9cfd9a18c430642aab9629a2e68d01519a9be1cd3"
+    },
+    {
+      "file": "after-768px-90nodes-zoomed.png",
+      "sha256": "c075f0a437d2d1a27d069ae565c2c094d20abe1ad90dd29f0d5e76c7eb0b854d"
+    },
+    {
+      "file": "before-1440px-150nodes-failure.png",
+      "sha256": "9f7dc7c27f6e097476bfad293b7541fe651d6fe01d55687c9a30e042047f9aba"
+    },
+    {
+      "file": "before-1440px-90nodes-failure.png",
+      "sha256": "6dff176e614bc237727c18df024593326c36f3e2e30504ada698c61dd2d4be3d"
+    },
+    {
+      "file": "before-390px-150nodes-failure.png",
+      "sha256": "75ebbc19a0088b50b40834e9122dddfd84f37bf91c84ec0dddbf519b0336ed27"
+    },
+    {
+      "file": "before-390px-90nodes-failure.png",
+      "sha256": "cf763d5461b38781e8b769c3d78ced185066733dfe255799c54dbf68a766ccee"
+    },
+    {
+      "file": "before-768px-150nodes-failure.png",
+      "sha256": "64bd6a9b2c2784c5f023b2f5d71072b7eea2a8a5cf23a281a377c2c584fadd9d"
+    },
+    {
+      "file": "before-768px-90nodes-failure.png",
+      "sha256": "8653e3907d1eb5dcc81174eced77df030694fe26069277795bd6fdc37dc78e64"
+    }
+  ],
+  "scope_limit": "Six deterministic browser-Python scenarios, not an endurance result. The root task runs the subsequent sustained test separately."
+}

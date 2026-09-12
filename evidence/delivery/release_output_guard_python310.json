@@ -1,0 +1,357 @@
+{
+  "generated_at": "2026-09-12T03:22:48.009941+00:00",
+  "status": "pass",
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_json_symlink_to_receipt_resolves_to_protected_input (__main__.ReleaseOutputGuardTests)",
+      "reason": "Symbolic links unavailable: [WinError 1314] El cliente no dispone de un privilegio requerido: 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-n_ya5oep\\\\Entrega Vértice.receipt.json' -> 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-n_ya5oep\\\\Receipt symbolic alias.json'"
+    }
+  ],
+  "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\verify_release.py",
+  "source_sha256": "201dfcc177b2074611f5baa21879886fce8bae57b144bf5653d1e5ec87197b84",
+  "test_sha256": "5e343d9fd6bbe84c229d74454d509780239fab7f6ba7162245949d2267ee9dbe",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "scope": "Output protection only; external synthetic files, no network and no published-release validation.",
+  "scenarios": [
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-rttmop7n\\Receipt alias.json",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-942hsvj4\\Evidence with spaces\\Verificación.json",
+      "fixture_outside_repository": true,
+      "exit": 1,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-254oa6wk\\Entrega Vértice.zip",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-254oa6wk\\Entrega Vértice.receipt.json",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-254oa6wk\\Entrega Vértice.sha256",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-254oa6wk\\wrong.txt",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\never-created-release-output.json",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-254oa6wk\\Nested directory\\..\\Entrega Vértice.receipt.json",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-2z3eau4e\\Entrega Vértice.zip",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-2z3eau4e\\Entrega Vértice.receipt.json",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-2z3eau4e\\Entrega Vértice.sha256",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-2z3eau4e\\Existing evidence.txt",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "test_output": "test_existing_json_hardlink_to_receipt_preserves_receipt (__main__.ReleaseOutputGuardTests) ... ok\ntest_json_symlink_to_receipt_resolves_to_protected_input (__main__.ReleaseOutputGuardTests) ... skipped \"Symbolic links unavailable: [WinError 1314] El cliente no dispone de un privilegio requerido: 'C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\Verificación Vértice externa-n_ya5oep\\\\\\\\Entrega Vértice.receipt.json' -> 'C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\Verificación Vértice externa-n_ya5oep\\\\\\\\Receipt symbolic alias.json'\"\ntest_separate_json_can_record_a_local_failure_without_network (__main__.ReleaseOutputGuardTests) ... ok\ntest_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests) ... ok\ntest_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.217s\n\nOK (skipped=1)\n"
+}

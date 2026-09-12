@@ -1,0 +1,206 @@
+{
+  "started_at": "2026-09-12T02:27:55.971Z",
+  "checks": [
+    {
+      "name": "Static deployment calculates through actual browser Python",
+      "passed": true
+    },
+    {
+      "name": "Actual trace can be inspected",
+      "passed": true
+    },
+    {
+      "name": "Mobile static studio has no page overflow",
+      "passed": true
+    },
+    {
+      "name": "Whole results, traces, raw imports and queue match native reference",
+      "passed": 29,
+      "checks": 29
+    },
+    {
+      "name": "Delivered bytes match: index.html",
+      "passed": true,
+      "status": 200,
+      "bytes": 20359,
+      "sha256": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565"
+    },
+    {
+      "name": "Delivered bytes match: app.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 53452,
+      "sha256": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0"
+    },
+    {
+      "name": "Delivered bytes match: engine.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 7371,
+      "sha256": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0"
+    },
+    {
+      "name": "Delivered bytes match: python-worker.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 3083,
+      "sha256": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b"
+    },
+    {
+      "name": "Delivered bytes match: proyecto.html",
+      "passed": true,
+      "status": 200,
+      "bytes": 3781,
+      "sha256": "6134618b7879789d4319b6b6fa631a2010609b5b89569578e2edda42f5fa2abb"
+    },
+    {
+      "name": "Delivered bytes match: project.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 2161,
+      "sha256": "771ab1226c5b20fadd228af853c906f2cf655196b585f8f229cbe400f02406f7"
+    },
+    {
+      "name": "Delivered bytes match: project.css",
+      "passed": true,
+      "status": 200,
+      "bytes": 5720,
+      "sha256": "64c499aae0cd5d1d700279f47827f5fa4a80716118a2b8be7183a3c7f15e6409"
+    },
+    {
+      "name": "Delivered bytes match: style.css",
+      "passed": true,
+      "status": 200,
+      "bytes": 36232,
+      "sha256": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b"
+    },
+    {
+      "name": "Delivered bytes match: python/manifest.json",
+      "passed": true,
+      "status": 200,
+      "bytes": 671,
+      "sha256": "5aad82e16a4d77c103c02a60d0375f7320f240f04762cd37550cc76456896f4a"
+    },
+    {
+      "name": "Delivered bytes match: vendor/pyodide/pyodide.mjs",
+      "passed": true,
+      "status": 200,
+      "bytes": 17931,
+      "sha256": "69e3f6ccec3e14b465df60be577ca62f536251406b9a00cce019eac5252a2495"
+    },
+    {
+      "name": "Delivered bytes match: vendor/pyodide/pyodide.asm.wasm",
+      "passed": true,
+      "status": 200,
+      "bytes": 9598218,
+      "sha256": "3a0a00dfeaa348ac20f9ef09904233d32d33f644339662d4af368f8a2010f37a"
+    },
+    {
+      "name": "Delivered bytes match: vendor/pyodide/pyodide.asm.mjs",
+      "passed": true,
+      "status": 200,
+      "bytes": 1250344,
+      "sha256": "2ac5eba365ec12839c75c03b39b3be1dd63b798852cc460b014b52238be042f7"
+    },
+    {
+      "name": "Delivered bytes match: vendor/pyodide/python_stdlib.zip",
+      "passed": true,
+      "status": 200,
+      "bytes": 2545564,
+      "sha256": "80c5be6babfe03297069703410c3c29404dcf2525d2b128746bae5536f94831f"
+    },
+    {
+      "name": "Delivered bytes match: fonts/Manrope.ttf",
+      "passed": true,
+      "status": 200,
+      "bytes": 165420,
+      "sha256": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40"
+    },
+    {
+      "name": "Delivered bytes match: fonts/DMSans.ttf",
+      "passed": true,
+      "status": 200,
+      "bytes": 240164,
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d"
+    },
+    {
+      "name": "Delivered bytes match: docs/VerticeSDV_Informe.pdf",
+      "passed": true,
+      "status": 200,
+      "bytes": 48354,
+      "sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25"
+    },
+    {
+      "name": "Delivered bytes match: media/VerticeSDV_Demo.mp4",
+      "passed": true,
+      "status": 200,
+      "bytes": 11540070,
+      "sha256": "93a64bf31516a2b1027ab91555b459de0afb0ef9aa230d957c0efbf4e38c17eb"
+    },
+    {
+      "name": "Delivered bytes match: media/VerticeSDV.vtt",
+      "passed": true,
+      "status": 200,
+      "bytes": 4455,
+      "sha256": "0bffbb1b96a14c130883d05dc53b7f8031ebc9a755679ec908defb2e27da2f08"
+    },
+    {
+      "name": "Delivered bytes match: python/vertice/__init__.py",
+      "passed": true,
+      "status": 200,
+      "bytes": 343,
+      "sha256": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7"
+    },
+    {
+      "name": "Delivered bytes match: python/vertice/graph.py",
+      "passed": true,
+      "status": 200,
+      "bytes": 13609,
+      "sha256": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b"
+    },
+    {
+      "name": "Delivered bytes match: python/vertice/dijkstra.py",
+      "passed": true,
+      "status": 200,
+      "bytes": 4376,
+      "sha256": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352"
+    },
+    {
+      "name": "Delivered bytes match: python/vertice/codec.py",
+      "passed": true,
+      "status": 200,
+      "bytes": 4700,
+      "sha256": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22"
+    },
+    {
+      "name": "The served video supports accurate partial downloads",
+      "passed": true,
+      "status": 206,
+      "range": "bytes 500000-500255/11540070"
+    },
+    {
+      "name": "The delivered video plays after chapter seeking",
+      "passed": true
+    },
+    {
+      "name": "Mobile deliverables heading preserves word separation",
+      "passed": true
+    },
+    {
+      "name": "No external resource requests from the page",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "scope": "Fresh, unauthenticated browser context and HTTP requests. Public only when VERTICE_URL names a public origin.",
+  "base": "https://edson-zepeda.github.io/vertice-sdv-openlab/",
+  "public_origin": true,
+  "finished_at": "2026-09-12T02:28:19.604Z",
+  "passed": 31,
+  "failed": 0
+}

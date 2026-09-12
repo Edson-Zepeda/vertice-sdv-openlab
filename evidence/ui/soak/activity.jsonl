@@ -817,3 +817,210 @@
 {"at":"2026-09-12T02:22:22.313Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":88,"passed":true}
 {"at":"2026-09-12T02:22:23.434Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":16,"passed":true}
 {"at":"2026-09-12T02:22:25.012Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:22:27.159Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:22:30.163Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1901,"passed":true}
+{"at":"2026-09-12T02:22:31.691Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:22:33.903Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":109,"passed":true}
+{"at":"2026-09-12T02:22:35.166Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":156,"passed":true}
+{"at":"2026-09-12T02:22:36.695Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":18,"passed":true}
+{"at":"2026-09-12T02:22:38.864Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:22:40.007Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:22:43.406Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1889,"passed":true}
+{"at":"2026-09-12T02:22:45.518Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:22:46.691Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":63,"passed":true}
+{"at":"2026-09-12T02:22:48.293Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":92,"passed":true}
+{"at":"2026-09-12T02:22:50.412Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:22:51.568Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":41,"passed":true}
+{"at":"2026-09-12T02:22:53.103Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:22:57.097Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1878,"passed":true}
+{"at":"2026-09-12T02:22:58.217Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:22:59.871Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":138,"passed":true}
+{"at":"2026-09-12T02:23:02.092Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":117,"passed":true}
+{"at":"2026-09-12T02:23:03.213Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:23:04.767Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:23:06.903Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:23:09.877Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1869,"passed":true}
+{"at":"2026-09-12T02:23:11.396Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:23:13.551Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:23:14.731Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":72,"passed":true}
+{"at":"2026-09-12T02:23:16.253Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:23:18.395Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:23:19.535Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:23:22.907Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1862,"passed":true}
+{"at":"2026-09-12T02:23:25.032Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:23:26.180Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:23:27.758Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:23:29.882Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:23:31.041Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:23:32.592Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":43,"passed":true}
+{"at":"2026-09-12T02:23:36.564Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1867,"passed":true}
+{"at":"2026-09-12T02:23:37.691Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:23:39.384Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":193,"passed":true}
+{"at":"2026-09-12T02:23:41.695Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":210,"passed":true}
+{"at":"2026-09-12T02:23:42.823Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":20,"passed":true}
+{"at":"2026-09-12T02:23:44.387Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:23:46.520Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:23:49.493Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1858,"passed":true}
+{"at":"2026-09-12T02:23:51.022Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:23:53.196Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:23:54.390Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":86,"passed":true}
+{"at":"2026-09-12T02:23:55.908Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:23:58.053Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:23:59.192Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:24:02.560Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1853,"passed":true}
+{"at":"2026-09-12T02:24:04.677Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:24:05.825Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:24:07.415Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:24:09.536Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:24:10.738Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":89,"passed":true}
+{"at":"2026-09-12T02:24:12.276Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:24:16.255Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1864,"passed":true}
+{"at":"2026-09-12T02:24:17.367Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:24:18.920Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T02:24:21.106Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:24:22.220Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:24:23.771Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:24:25.903Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:24:28.869Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1863,"passed":true}
+{"at":"2026-09-12T02:24:30.391Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:24:32.586Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":79,"passed":true}
+{"at":"2026-09-12T02:24:33.814Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":113,"passed":true}
+{"at":"2026-09-12T02:24:35.339Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:24:37.544Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":98,"passed":true}
+{"at":"2026-09-12T02:24:38.713Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:24:42.130Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1915,"passed":true}
+{"at":"2026-09-12T02:24:44.258Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":23,"passed":true}
+{"at":"2026-09-12T02:24:45.539Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":170,"passed":true}
+{"at":"2026-09-12T02:24:47.176Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":137,"passed":true}
+{"at":"2026-09-12T02:24:49.338Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:24:50.506Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":60,"passed":true}
+{"at":"2026-09-12T02:24:52.059Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:24:56.019Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1856,"passed":true}
+{"at":"2026-09-12T02:24:57.136Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:24:58.695Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:25:00.895Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":93,"passed":true}
+{"at":"2026-09-12T02:25:02.011Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:25:03.563Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":37,"passed":true}
+{"at":"2026-09-12T02:25:05.711Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:25:08.670Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1853,"passed":true}
+{"at":"2026-09-12T02:25:10.182Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:25:12.333Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:25:13.523Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":76,"passed":true}
+{"at":"2026-09-12T02:25:15.050Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:25:17.199Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:25:18.337Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":30,"passed":true}
+{"at":"2026-09-12T02:25:21.712Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1872,"passed":true}
+{"at":"2026-09-12T02:25:23.834Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:25:24.993Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:25:26.590Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:25:28.708Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:25:29.854Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:25:31.400Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:25:35.378Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1864,"passed":true}
+{"at":"2026-09-12T02:25:36.500Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:25:38.061Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":53,"passed":true}
+{"at":"2026-09-12T02:25:40.249Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":84,"passed":true}
+{"at":"2026-09-12T02:25:41.376Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":20,"passed":true}
+{"at":"2026-09-12T02:25:42.946Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:25:45.139Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":80,"passed":true}
+{"at":"2026-09-12T02:25:48.137Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1890,"passed":true}
+{"at":"2026-09-12T02:25:49.656Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:25:51.882Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":114,"passed":true}
+{"at":"2026-09-12T02:25:53.111Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":121,"passed":true}
+{"at":"2026-09-12T02:25:54.633Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:25:56.790Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":48,"passed":true}
+{"at":"2026-09-12T02:25:57.922Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":29,"passed":true}
+{"at":"2026-09-12T02:26:01.304Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1880,"passed":true}
+{"at":"2026-09-12T02:26:03.424Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":16,"passed":true}
+{"at":"2026-09-12T02:26:04.588Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":50,"passed":true}
+{"at":"2026-09-12T02:26:06.175Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":77,"passed":true}
+{"at":"2026-09-12T02:26:08.293Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:26:09.442Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:26:10.980Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:26:14.972Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1879,"passed":true}
+{"at":"2026-09-12T02:26:16.088Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:26:17.642Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:26:19.824Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:26:20.948Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:26:22.501Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:26:24.636Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":28,"passed":true}
+{"at":"2026-09-12T02:26:27.595Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1856,"passed":true}
+{"at":"2026-09-12T02:26:29.114Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:26:31.267Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:26:32.466Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":85,"passed":true}
+{"at":"2026-09-12T02:26:33.993Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:26:36.149Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:26:37.287Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:26:40.695Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1895,"passed":true}
+{"at":"2026-09-12T02:26:42.811Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:26:43.962Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:26:45.549Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":72,"passed":true}
+{"at":"2026-09-12T02:26:47.671Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:26:48.836Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":58,"passed":true}
+{"at":"2026-09-12T02:26:50.394Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":46,"passed":true}
+{"at":"2026-09-12T02:26:54.373Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1874,"passed":true}
+{"at":"2026-09-12T02:26:55.493Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:26:57.107Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":108,"passed":true}
+{"at":"2026-09-12T02:26:59.329Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":114,"passed":true}
+{"at":"2026-09-12T02:27:00.456Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:27:01.997Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:27:04.137Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:27:07.103Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1859,"passed":true}
+{"at":"2026-09-12T02:27:08.626Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:27:10.795Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":55,"passed":true}
+{"at":"2026-09-12T02:27:11.993Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":85,"passed":true}
+{"at":"2026-09-12T02:27:13.525Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":17,"passed":true}
+{"at":"2026-09-12T02:27:15.720Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":87,"passed":true}
+{"at":"2026-09-12T02:27:16.864Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":34,"passed":true}
+{"at":"2026-09-12T02:27:20.255Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1877,"passed":true}
+{"at":"2026-09-12T02:27:22.373Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:27:23.533Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":44,"passed":true}
+{"at":"2026-09-12T02:27:25.108Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":74,"passed":true}
+{"at":"2026-09-12T02:27:27.231Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":10,"passed":true}
+{"at":"2026-09-12T02:27:28.372Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:27:29.911Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":27,"passed":true}
+{"at":"2026-09-12T02:27:33.879Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1865,"passed":true}
+{"at":"2026-09-12T02:27:34.993Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:27:36.553Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":45,"passed":true}
+{"at":"2026-09-12T02:27:38.732Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":79,"passed":true}
+{"at":"2026-09-12T02:27:39.848Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:27:41.401Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":38,"passed":true}
+{"at":"2026-09-12T02:27:43.536Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":25,"passed":true}
+{"at":"2026-09-12T02:27:46.524Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1881,"passed":true}
+{"at":"2026-09-12T02:27:48.050Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:27:50.204Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":49,"passed":true}
+{"at":"2026-09-12T02:27:51.393Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":75,"passed":true}
+{"at":"2026-09-12T02:27:52.914Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":14,"passed":true}
+{"at":"2026-09-12T02:27:55.116Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":95,"passed":true}
+{"at":"2026-09-12T02:27:56.287Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":57,"passed":true}
+{"at":"2026-09-12T02:27:59.708Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1905,"passed":true}
+{"at":"2026-09-12T02:28:01.828Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":18,"passed":true}
+{"at":"2026-09-12T02:28:03.060Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":133,"passed":true}
+{"at":"2026-09-12T02:28:04.821Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":253,"passed":true}
+{"at":"2026-09-12T02:28:06.960Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:28:08.127Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":62,"passed":true}
+{"at":"2026-09-12T02:28:09.658Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":31,"passed":true}
+{"at":"2026-09-12T02:28:13.651Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1886,"passed":true}
+{"at":"2026-09-12T02:28:14.787Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":21,"passed":true}
+{"at":"2026-09-12T02:28:16.361Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":59,"passed":true}
+{"at":"2026-09-12T02:28:18.629Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":157,"passed":true}
+{"at":"2026-09-12T02:28:19.746Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:28:21.297Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":40,"passed":true}
+{"at":"2026-09-12T02:28:23.433Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":32,"passed":true}
+{"at":"2026-09-12T02:28:26.434Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1892,"passed":true}
+{"at":"2026-09-12T02:28:27.956Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":11,"passed":true}
+{"at":"2026-09-12T02:28:30.110Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":42,"passed":true}
+{"at":"2026-09-12T02:28:31.300Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":76,"passed":true}
+{"at":"2026-09-12T02:28:32.826Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":19,"passed":true}
+{"at":"2026-09-12T02:28:34.987Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":47,"passed":true}
+{"at":"2026-09-12T02:28:36.111Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":24,"passed":true}
+{"at":"2026-09-12T02:28:39.489Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1873,"passed":true}
+{"at":"2026-09-12T02:28:41.615Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":13,"passed":true}
+{"at":"2026-09-12T02:28:42.779Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":52,"passed":true}
+{"at":"2026-09-12T02:28:44.388Z","phase":"browser-real-traces","action":"Inspect route and zoom","elapsed_ms":95,"passed":true}
+{"at":"2026-09-12T02:28:46.503Z","phase":"browser-real-traces","action":"Change graph for browser Python","elapsed_ms":12,"passed":true}
+{"at":"2026-09-12T02:28:47.643Z","phase":"browser-real-traces","action":"Compute with browser Pyodide","elapsed_ms":39,"passed":true}
+{"at":"2026-09-12T02:28:49.182Z","phase":"browser-real-traces","action":"Open actual Python trace","elapsed_ms":36,"passed":true}
+{"at":"2026-09-12T02:28:53.156Z","phase":"browser-real-traces","action":"Run paced trace playback","elapsed_ms":1870,"passed":true}
+{"at":"2026-09-12T02:28:54.285Z","phase":"browser-real-traces","action":"Inspect frontier table","elapsed_ms":21,"passed":true}
+{"at":"2026-09-12T02:28:55.858Z","phase":"browser-real-traces","action":"Seek to final event and back one event","elapsed_ms":61,"passed":true}

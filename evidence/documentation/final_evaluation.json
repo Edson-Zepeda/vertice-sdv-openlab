@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-12T05:08:21.336505+00:00",
+  "scope": "Final local requirement-to-artifact review and completed twelve-minute five-phase closure. External final ZIP/tag/site proofs are published separately as release assets.",
+  "checks": {
+    "required_local_artifacts_present": true,
+    "report_visual_review_passed": true,
+    "video_verification_passed": true,
+    "anonymous_initial_public_checks_passed": true,
+    "complete_five_phase_ui_run_passed": true
+  },
+  "source_hashes": {
+    "docs/EVALUACION_FINAL.md": "2ce03a25bbfd8753e3bb08ce73a778d7c8310201f8e5649f6ac8f257e3870b26",
+    "docs/REQUISITOS.md": "1efd38ddac5d5073f2db217ff3c3861932ab82149046f94d41436c49ef8fc304",
+    "docs/API.md": "34596cda0c3519f8e9889fb7c3a6ed1f82b811fd94ce325fb63fec41b057add9",
+    "docs/ALGORITMO.md": "7810d74e6b5ac212a57829e7726a20be6e62493aefbc0bf0bb8171411d9f5e40",
+    "docs/ARQUITECTURA.md": "8774d6383c234c71849149f0483c8288e98dfc2dcd8508f696a1dd0f0746ba3f",
+    "docs/DEFENSA.md": "5428b112ee5d5a5b3540f1720e61599dc58d386550a7631e7283e9ff8c40e931",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/style.css": "e3c92a6ea83e8966850b8dcbc8e4f86b950b6a725f1c8c307201e631f82621a1",
+    "README.md": "d7ff488718f74f576cf192e5ce6b220d6bab30415d32c17e26f41bba1a6fd571",
+    "evidence/report/qa.json": "cba3353e74d78b646615c367f79f1da86ddf1b12750fa25960a8b4cb2c883526",
+    "evidence/video_audit/verification.json": "8299fe6041e74677b209d00ddc6e9e6005b2808c49a0bd91d31e5124a4b44c13",
+    "evidence/publication/public-initial/qa.json": "f6edeaf9ce05f5d2d838bef3a7278ac06c4b74abc70f76912e3b2a7c9a8632c4",
+    "evidence/ui/soak-complete/closure.json": "1fa37cc85acc27a518c09e978b750b6eee891796054a51aea33c0eb0c6240d8d",
+    "evidence/ui/zoom-viewport/after.json": "ce3666963eab2965edc17fe927080980ff3e0551f4ab5ecc281e3eb3b13a3c4f"
+  }
+}

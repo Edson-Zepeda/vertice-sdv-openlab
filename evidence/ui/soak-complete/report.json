@@ -1,0 +1,151 @@
+{
+  "started_at": "2026-09-12T04:54:49.698Z",
+  "requested_minutes": 12,
+  "scope": "Paced UI endurance, real local Python and browser Pyodide; no idle-duration claim and no simulated successful solver results.",
+  "metric_scope": "CDP Performance metrics describe the main UI renderer. Worker/Wasm heap size is not directly measured; results do not assert a global process-memory leak proof.",
+  "code_hashes": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "web/style.css": "e3c92a6ea83e8966850b8dcbc8e4f86b950b6a725f1c8c307201e631f82621a1",
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "web/python/manifest.json": "5aad82e16a4d77c103c02a60d0375f7320f240f04762cd37550cc76456896f4a",
+    "web/python/vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "web/python/vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "web/python/vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "web/python/vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352"
+  },
+  "phases": [
+    {
+      "name": "local-editor-history",
+      "began_at": "2026-09-12T04:54:51.967Z",
+      "engine": "actual local Python"
+    },
+    {
+      "name": "browser-real-traces",
+      "began_at": "2026-09-12T04:57:18.638Z",
+      "engine": "actual browser Pyodide"
+    },
+    {
+      "name": "local-import-persistence",
+      "began_at": "2026-09-12T04:59:49.684Z",
+      "engine": "actual local Python"
+    },
+    {
+      "name": "browser-moderate-density",
+      "began_at": "2026-09-12T05:02:12.969Z",
+      "engine": "actual browser Pyodide"
+    },
+    {
+      "name": "local-mixed-session",
+      "began_at": "2026-09-12T05:04:26.607Z",
+      "engine": "actual local Python"
+    }
+  ],
+  "checkpoints": [
+    {
+      "at": "2026-09-12T04:55:06.792Z",
+      "elapsed_minutes": 0.2849,
+      "phase": "local-editor-history",
+      "actions": 9,
+      "cycles": 1,
+      "solves": 1,
+      "javascript_heap_bytes_after_gc": 2050536,
+      "dom_nodes": 1237,
+      "live_elements": 443,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 110,
+      "solve_last_50_max_ms": 110
+    },
+    {
+      "at": "2026-09-12T05:00:12.074Z",
+      "elapsed_minutes": 5.372933333333333,
+      "phase": "local-import-persistence",
+      "actions": 179,
+      "cycles": 23,
+      "solves": 25,
+      "javascript_heap_bytes_after_gc": 2699276,
+      "dom_nodes": 5064,
+      "live_elements": 2303,
+      "graph_nodes": 90,
+      "graph_edges": 270,
+      "documents": 1,
+      "event_listeners": 804,
+      "solve_last_50_median_ms": 65,
+      "solve_last_50_max_ms": 5483
+    },
+    {
+      "at": "2026-09-12T05:05:12.519Z",
+      "elapsed_minutes": 10.38035,
+      "phase": "local-mixed-session",
+      "actions": 343,
+      "cycles": 47,
+      "solves": 60,
+      "javascript_heap_bytes_after_gc": 2193128,
+      "dom_nodes": 1242,
+      "live_elements": 443,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 179,
+      "solve_last_50_max_ms": 5483
+    },
+    {
+      "at": "2026-09-12T05:06:59.267Z",
+      "elapsed_minutes": 12.159483333333334,
+      "phase": "local-mixed-session",
+      "actions": 408,
+      "cycles": 54,
+      "solves": 67,
+      "javascript_heap_bytes_after_gc": 2125140,
+      "dom_nodes": 1239,
+      "live_elements": 443,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 169,
+      "solve_last_50_max_ms": 296
+    }
+  ],
+  "failures": [],
+  "actions": 408,
+  "cycles": 54,
+  "solves": 67,
+  "engine_modes": [
+    "local",
+    "browser",
+    "local",
+    "browser",
+    "local"
+  ],
+  "completed": true,
+  "finished_at": "2026-09-12T05:06:59.276Z",
+  "elapsed_minutes": 12.159633333333334,
+  "code_hashes_after": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "web/style.css": "e3c92a6ea83e8966850b8dcbc8e4f86b950b6a725f1c8c307201e631f82621a1",
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "web/python/manifest.json": "5aad82e16a4d77c103c02a60d0375f7320f240f04762cd37550cc76456896f4a",
+    "web/python/vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "web/python/vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "web/python/vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "web/python/vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352"
+  }
+}

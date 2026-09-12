@@ -433,8 +433,9 @@ def build(output, integration_path):
         ('Etiquetas y límite del archivo', 'Espacios perdidos y emoji cortados.', 'Datos intactos y límite de 2 MiB.'),
         ('Salida del empaquetador', 'Podía sobrescribir un archivo fuente.', 'Salida externa y escritura temporal.'),
         ('Cabeceras y rangos HTTP', 'Ambigüedad y semántica incorrecta.', 'Validación estricta y regresiones.'),
+        ('Zoom sobre grafos densos', 'Los nodos tapaban los controles.', 'Recorte al viewport del SVG.'),
     ]
-    r.table(['HALLAZGO', 'CONSECUENCIA', 'CAMBIO'], rows, [164, 175, 172], y=182, row_height=49, size=10.1)
+    r.table(['HALLAZGO', 'CONSECUENCIA', 'CAMBIO'], rows, [164, 175, 172], y=182, row_height=44, size=10.1)
     r.label('La revisión deja límites visibles', MARGIN, 634)
     r.para('Aprobar pruebas no demuestra ausencia de todos los defectos. Los costos son abstractos, la legibilidad de grafos densos '
            'tiene límites y una medición local no representa otros equipos. La defensa debe poder explicar y modificar el código.',

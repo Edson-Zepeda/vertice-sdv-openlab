@@ -1,0 +1,185 @@
+{
+  "started_at": "2026-09-12T03:08:52.115Z",
+  "requested_minutes": 45,
+  "scope": "Paced UI endurance, real local Python and browser Pyodide; no idle-duration claim and no simulated successful solver results.",
+  "metric_scope": "CDP Performance metrics describe the main UI renderer. Worker/Wasm heap size is not directly measured; results do not assert a global process-memory leak proof.",
+  "code_hashes": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "web/style.css": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b",
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "web/python/manifest.json": "5aad82e16a4d77c103c02a60d0375f7320f240f04762cd37550cc76456896f4a",
+    "web/python/vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "web/python/vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "web/python/vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "web/python/vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352"
+  },
+  "phases": [
+    {
+      "name": "local-editor-history",
+      "began_at": "2026-09-12T03:08:54.771Z",
+      "engine": "actual local Python"
+    },
+    {
+      "name": "browser-real-traces",
+      "began_at": "2026-09-12T03:18:06.779Z",
+      "engine": "actual browser Pyodide"
+    },
+    {
+      "name": "local-import-persistence",
+      "began_at": "2026-09-12T03:26:57.912Z",
+      "engine": "actual local Python"
+    },
+    {
+      "name": "browser-moderate-density",
+      "began_at": "2026-09-12T03:35:56.540Z",
+      "engine": "actual browser Pyodide"
+    }
+  ],
+  "checkpoints": [
+    {
+      "at": "2026-09-12T03:09:09.427Z",
+      "elapsed_minutes": 0.2885333333333333,
+      "phase": "local-editor-history",
+      "actions": 9,
+      "cycles": 1,
+      "solves": 1,
+      "javascript_heap_bytes_after_gc": 2047528,
+      "dom_nodes": 1237,
+      "live_elements": 443,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 80,
+      "solve_last_50_max_ms": 80
+    },
+    {
+      "at": "2026-09-12T03:14:13.929Z",
+      "elapsed_minutes": 5.363566666666666,
+      "phase": "local-editor-history",
+      "actions": 198,
+      "cycles": 22,
+      "solves": 22,
+      "javascript_heap_bytes_after_gc": 2336000,
+      "dom_nodes": 1300,
+      "live_elements": 443,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "documents": 1,
+      "event_listeners": 111,
+      "solve_last_50_median_ms": 47,
+      "solve_last_50_max_ms": 80
+    },
+    {
+      "at": "2026-09-12T03:19:16.849Z",
+      "elapsed_minutes": 10.412233333333333,
+      "phase": "browser-real-traces",
+      "actions": 377,
+      "cycles": 43,
+      "solves": 43,
+      "javascript_heap_bytes_after_gc": 2128612,
+      "dom_nodes": 1060,
+      "live_elements": 361,
+      "graph_nodes": 5,
+      "graph_edges": 6,
+      "documents": 1,
+      "event_listeners": 95,
+      "solve_last_50_median_ms": 50,
+      "solve_last_50_max_ms": 4494
+    },
+    {
+      "at": "2026-09-12T03:24:20.079Z",
+      "elapsed_minutes": 15.466066666666666,
+      "phase": "browser-real-traces",
+      "actions": 538,
+      "cycles": 66,
+      "solves": 66,
+      "javascript_heap_bytes_after_gc": 2397148,
+      "dom_nodes": 1215,
+      "live_elements": 434,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "documents": 1,
+      "event_listeners": 113,
+      "solve_last_50_median_ms": 50,
+      "solve_last_50_max_ms": 4494
+    },
+    {
+      "at": "2026-09-12T03:29:26.649Z",
+      "elapsed_minutes": 20.575566666666667,
+      "phase": "local-import-persistence",
+      "actions": 706,
+      "cycles": 92,
+      "solves": 106,
+      "javascript_heap_bytes_after_gc": 2634432,
+      "dom_nodes": 5064,
+      "live_elements": 2303,
+      "graph_nodes": 90,
+      "graph_edges": 270,
+      "documents": 1,
+      "event_listeners": 804,
+      "solve_last_50_median_ms": 115,
+      "solve_last_50_max_ms": 195
+    },
+    {
+      "at": "2026-09-12T03:34:30.463Z",
+      "elapsed_minutes": 25.639133333333334,
+      "phase": "local-import-persistence",
+      "actions": 874,
+      "cycles": 120,
+      "solves": 162,
+      "javascript_heap_bytes_after_gc": 2621052,
+      "dom_nodes": 5064,
+      "live_elements": 2303,
+      "graph_nodes": 90,
+      "graph_edges": 270,
+      "documents": 1,
+      "event_listeners": 804,
+      "solve_last_50_median_ms": 174,
+      "solve_last_50_max_ms": 323
+    }
+  ],
+  "failures": [
+    {
+      "at": "2026-09-12T03:36:38.126Z",
+      "kind": "test-failure",
+      "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#zoom-in')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"zoom-in\" title=\"Acercar\" class=\"icon-button\" aria-label=\"Acercar grafo\">↵                +</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"49.5\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <circle r=\"49.5\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <circle r=\"49.5\" class=\"node-body\"></circle> from <div id=\"graph-wrap\" class=\"graph-wrap\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\soak_ui.cjs:409:42\n    at async action (C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\soak_ui.cjs:97:3)\n    at async C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\scripts\\soak_ui.cjs:407:9"
+    }
+  ],
+  "actions": 926,
+  "cycles": 129,
+  "solves": 179,
+  "engine_modes": [
+    "local",
+    "browser",
+    "local",
+    "browser"
+  ],
+  "completed": false,
+  "finished_at": "2026-09-12T03:36:38.126Z",
+  "elapsed_minutes": 27.76685,
+  "code_hashes_after": {
+    "web/app.js": "5d48b6a39fbf756306fffd459a4095c86ad4551eca2a49fd8708c42599bd00c0",
+    "web/engine.js": "3d27e62f04fa21db1860f71f8803cdb1691493cc6bc4f41072dd11c4020961c0",
+    "web/python-worker.js": "394c243468e739601e511425d990620c2846d2cc394b9fd5f790a7755d54a09b",
+    "web/index.html": "d64096eabec97883d277899064cb9a45950de25dbec13b5a0a9b58267bffe565",
+    "web/style.css": "390d15d0e039cabb9f0ec19deec24978c9c07584c89ccb3d311769a543b4a79b",
+    "server.py": "a6afdb769a44eb5ef7406b7aaa12006fcf610c4ee30ef706dc0ac3e27b7e6137",
+    "vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352",
+    "web/python/manifest.json": "5aad82e16a4d77c103c02a60d0375f7320f240f04762cd37550cc76456896f4a",
+    "web/python/vertice/__init__.py": "aebf8b64f66f57e80a9bedbd608553244bf3eb7fda4cf337f99ba5a7a01adaf7",
+    "web/python/vertice/codec.py": "43aecef6a529d629c9cbb560bb5b8a2eebdb7c52f57a14acfecddf98ee03fc22",
+    "web/python/vertice/graph.py": "d133d7192f7927bbdb8b6a4600a83e673687a80ded4bf8fb942fe6c62553da9b",
+    "web/python/vertice/dijkstra.py": "429e1d1219588288d882ceeb7be53c0c57598fe6500e3c7a7a0b316d7773a352"
+  }
+}

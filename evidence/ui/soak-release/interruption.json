@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-09-12T04:54:39.910724+00:00",
+  "status": "interrupted_without_final_report",
+  "completed": false,
+  "started_at": "2026-09-12T03:46:16.002Z",
+  "last_recorded_action_at": "2026-09-12T03:56:55.367Z",
+  "recorded_actions": 387,
+  "cause": "The continued session found no managed soak process and no events after the last recorded action. The interrupted 45-minute attempt is not a successful endurance result. A separate 12-minute five-phase run replaces the closure attempt.",
+  "report_sha256": "1bc6dbf2342b8efa3e2f94cc3787eb06110b1e7adc6124dd57662a23844d2b66",
+  "activity_sha256": "02a57c49e93b7c4001182b8010440f347a6dea1d4576909f289dd2028871aa28"
+}

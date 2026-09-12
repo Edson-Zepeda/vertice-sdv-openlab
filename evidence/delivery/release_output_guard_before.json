@@ -1,0 +1,357 @@
+{
+  "generated_at": "2026-09-12T03:22:05.023067+00:00",
+  "status": "fail",
+  "tests": 5,
+  "failures": 10,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_json_symlink_to_receipt_resolves_to_protected_input (__main__.ReleaseOutputGuardTests.test_json_symlink_to_receipt_resolves_to_protected_input)",
+      "reason": "Symbolic links unavailable: [WinError 1314] El cliente no dispone de un privilegio requerido: 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-sktct9kv\\\\Entrega Vértice.receipt.json' -> 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-sktct9kv\\\\Receipt symbolic alias.json'"
+    }
+  ],
+  "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\evidence\\delivery\\before\\verify_release_output_guard.py.txt",
+  "source_sha256": "7b2bdbf3cf688c38577884b5e2c3a4a856e907f71e3b0f9f952efb37a4c9e6aa",
+  "test_sha256": "5e343d9fd6bbe84c229d74454d509780239fab7f6ba7162245949d2267ee9dbe",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "scope": "Output protection only; external synthetic files, no network and no published-release validation.",
+  "scenarios": [
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-n9fupip9\\Receipt alias.json",
+      "fixture_outside_repository": true,
+      "exception": "AssertionError: Input read before output validation",
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 1,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-nsmlmwvq\\Evidence with spaces\\Verificación.json",
+      "fixture_outside_repository": true,
+      "exit": 1,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-kmczp0jn\\Entrega Vértice.zip",
+      "fixture_outside_repository": true,
+      "exception": "AssertionError: Input read before output validation",
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 1,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-kmczp0jn\\Entrega Vértice.receipt.json",
+      "fixture_outside_repository": true,
+      "exception": "AssertionError: Input read before output validation",
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 1,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-kmczp0jn\\Entrega Vértice.sha256",
+      "fixture_outside_repository": true,
+      "exception": "AssertionError: Input read before output validation",
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 1,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-kmczp0jn\\wrong.txt",
+      "fixture_outside_repository": true,
+      "exception": "AssertionError: Input read before output validation",
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 1,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\never-created-release-output.json",
+      "fixture_outside_repository": true,
+      "exit": 2,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 0,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-kmczp0jn\\Nested directory\\..\\Entrega Vértice.receipt.json",
+      "fixture_outside_repository": true,
+      "exception": "AssertionError: Input read before output validation",
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": 1,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-qix05h3q\\Entrega Vértice.zip",
+      "fixture_outside_repository": true,
+      "exit": 1,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "2879b38737f36e11fc8c60e5f5486dff40bddf4df06e45481cdd8a76e4fe1db2",
+          "unchanged": false
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-qix05h3q\\Entrega Vértice.receipt.json",
+      "fixture_outside_repository": true,
+      "exit": 1,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "2c61a6a13d5e83dce7b9c18c73ed780ff6318cc9f1f1f85034d2c57ad7dc7731",
+          "unchanged": false
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-qix05h3q\\Entrega Vértice.sha256",
+      "fixture_outside_repository": true,
+      "exit": 1,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "01b07d7f311f275033a54e9215a25d8a2ef13bd9974168c2be332a4fa317ebbc",
+          "unchanged": false
+        }
+      ]
+    },
+    {
+      "output": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Verificación Vértice externa-qix05h3q\\Existing evidence.txt",
+      "fixture_outside_repository": true,
+      "exit": 1,
+      "fetch_calls": 0,
+      "urlopen_calls": 0,
+      "input_read_calls": null,
+      "inputs": [
+        {
+          "name": "Entrega Vértice.zip",
+          "before_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "after_sha256": "348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.receipt.json",
+          "before_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "after_sha256": "0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8",
+          "unchanged": true
+        },
+        {
+          "name": "Entrega Vértice.sha256",
+          "before_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "after_sha256": "2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "test_output": "test_existing_json_hardlink_to_receipt_preserves_receipt (__main__.ReleaseOutputGuardTests.test_existing_json_hardlink_to_receipt_preserves_receipt) ... FAIL\ntest_json_symlink_to_receipt_resolves_to_protected_input (__main__.ReleaseOutputGuardTests.test_json_symlink_to_receipt_resolves_to_protected_input) ... skipped \"Symbolic links unavailable: [WinError 1314] El cliente no dispone de un privilegio requerido: 'C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\Verificación Vértice externa-sktct9kv\\\\\\\\Entrega Vértice.receipt.json' -> 'C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\Verificación Vértice externa-sktct9kv\\\\\\\\Receipt symbolic alias.json'\"\ntest_separate_json_can_record_a_local_failure_without_network (__main__.ReleaseOutputGuardTests.test_separate_json_can_record_a_local_failure_without_network) ... ok\ntest_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) ... \n  test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.zip') ... FAIL\n  test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.receipt.json') ... FAIL\n  test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.sha256') ... FAIL\n  test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\wrong.txt') ... FAIL\n  test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Nested directory\\\\..\\\\Entrega Vértice.receipt.json') ... FAIL\ntest_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) ... \n  test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Entrega Vértice.zip') ... FAIL\n  test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Entrega Vértice.receipt.json') ... FAIL\n  test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Entrega Vértice.sha256') ... FAIL\n  test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Existing evidence.txt') ... FAIL\n\n======================================================================\nFAIL: test_existing_json_hardlink_to_receipt_preserves_receipt (__main__.ReleaseOutputGuardTests.test_existing_json_hardlink_to_receipt_preserves_receipt)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 136, in test_existing_json_hardlink_to_receipt_preserves_receipt\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: None != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-n9fupip9\\\\Receipt alias.json', 'fixture_outside_repository': True, 'exception': 'AssertionError: Input read before output validation', 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': 1, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.zip')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 126, in test_unsafe_output_is_rejected_before_input_reads_or_network\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: None != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.zip', 'fixture_outside_repository': True, 'exception': 'AssertionError: Input read before output validation', 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': 1, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.receipt.json')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 126, in test_unsafe_output_is_rejected_before_input_reads_or_network\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: None != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.receipt.json', 'fixture_outside_repository': True, 'exception': 'AssertionError: Input read before output validation', 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': 1, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.sha256')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 126, in test_unsafe_output_is_rejected_before_input_reads_or_network\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: None != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Entrega Vértice.sha256', 'fixture_outside_repository': True, 'exception': 'AssertionError: Input read before output validation', 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': 1, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\wrong.txt')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 126, in test_unsafe_output_is_rejected_before_input_reads_or_network\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: None != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\wrong.txt', 'fixture_outside_repository': True, 'exception': 'AssertionError: Input read before output validation', 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': 1, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_unsafe_output_is_rejected_before_input_reads_or_network (__main__.ReleaseOutputGuardTests.test_unsafe_output_is_rejected_before_input_reads_or_network) (output='C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Nested directory\\\\..\\\\Entrega Vértice.receipt.json')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 126, in test_unsafe_output_is_rejected_before_input_reads_or_network\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: None != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-kmczp0jn\\\\Nested directory\\\\..\\\\Entrega Vértice.receipt.json', 'fixture_outside_repository': True, 'exception': 'AssertionError: Input read before output validation', 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': 1, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Entrega Vértice.zip')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 114, in test_zip_receipt_checksum_and_other_extension_preserve_bytes\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: 1 != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-qix05h3q\\\\Entrega Vértice.zip', 'fixture_outside_repository': True, 'exit': 1, 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': None, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '2879b38737f36e11fc8c60e5f5486dff40bddf4df06e45481cdd8a76e4fe1db2', 'unchanged': False}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Entrega Vértice.receipt.json')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 114, in test_zip_receipt_checksum_and_other_extension_preserve_bytes\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: 1 != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-qix05h3q\\\\Entrega Vértice.receipt.json', 'fixture_outside_repository': True, 'exit': 1, 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': None, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '2c61a6a13d5e83dce7b9c18c73ed780ff6318cc9f1f1f85034d2c57ad7dc7731', 'unchanged': False}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n======================================================================\nFAIL: test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Entrega Vértice.sha256')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 114, in test_zip_receipt_checksum_and_other_extension_preserve_bytes\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: 1 != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-qix05h3q\\\\Entrega Vértice.sha256', 'fixture_outside_repository': True, 'exit': 1, 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': None, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '01b07d7f311f275033a54e9215a25d8a2ef13bd9974168c2be332a4fa317ebbc', 'unchanged': False}]}\n\n======================================================================\nFAIL: test_zip_receipt_checksum_and_other_extension_preserve_bytes (__main__.ReleaseOutputGuardTests.test_zip_receipt_checksum_and_other_extension_preserve_bytes) (output='Existing evidence.txt')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 114, in test_zip_receipt_checksum_and_other_extension_preserve_bytes\n    self.assert_rejected_and_preserved(result)\n  File \"C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV\\tests\\test_release_output_guard.py\", line 100, in assert_rejected_and_preserved\n    self.assertEqual(observed.get(\"exit\"), 2, observed)\nAssertionError: 1 != 2 : {'output': 'C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\Verificación Vértice externa-qix05h3q\\\\Existing evidence.txt', 'fixture_outside_repository': True, 'exit': 1, 'fetch_calls': 0, 'urlopen_calls': 0, 'input_read_calls': None, 'inputs': [{'name': 'Entrega Vértice.zip', 'before_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'after_sha256': '348a54ad81488b337dcaa5a4c42babf635482ec5266a1178924014de792f38c2', 'unchanged': True}, {'name': 'Entrega Vértice.receipt.json', 'before_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'after_sha256': '0f68d295720b01ae5c4b5ac8972fc014a665c1c1a016af631cfdb47d661a83e8', 'unchanged': True}, {'name': 'Entrega Vértice.sha256', 'before_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'after_sha256': '2e6955ca2edbd2baf763f83b0b8c5851cd4ddb3fce0ddf2033bac7803a1a7046', 'unchanged': True}]}\n\n----------------------------------------------------------------------\nRan 5 tests in 0.196s\n\nFAILED (failures=10, skipped=1)\n"
+}

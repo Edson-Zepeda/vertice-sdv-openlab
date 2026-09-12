@@ -1956,7 +1956,7 @@
       "page": 8,
       "text": "Contexto decimal externo",
       "x": 52,
-      "y": 270,
+      "y": 265,
       "width": 144,
       "height": 13.332
     },
@@ -1964,7 +1964,7 @@
       "page": 8,
       "text": "Podía cambiar la aritmética.",
       "x": 216,
-      "y": 270,
+      "y": 265,
       "width": 155,
       "height": 13.332
     },
@@ -1972,7 +1972,7 @@
       "page": 8,
       "text": "Todos los atributos explícitos.",
       "x": 391,
-      "y": 270,
+      "y": 265,
       "width": 152,
       "height": 13.332
     },
@@ -1980,7 +1980,7 @@
       "page": 8,
       "text": "JSON convertido antes de validar",
       "x": 52,
-      "y": 319,
+      "y": 309,
       "width": 144,
       "height": 26.664
     },
@@ -1988,7 +1988,7 @@
       "page": 8,
       "text": "Pérdida silenciosa de cifras o claves.",
       "x": 216,
-      "y": 319,
+      "y": 309,
       "width": 155,
       "height": 26.664
     },
@@ -1996,7 +1996,7 @@
       "page": 8,
       "text": "Validar el texto original en Python.",
       "x": 391,
-      "y": 319,
+      "y": 309,
       "width": 152,
       "height": 26.664
     },
@@ -2004,7 +2004,7 @@
       "page": 8,
       "text": "JSON amplio inválido",
       "x": 52,
-      "y": 368,
+      "y": 353,
       "width": 144,
       "height": 13.332
     },
@@ -2012,7 +2012,7 @@
       "page": 8,
       "text": "Memoria elevada antes del rechazo.",
       "x": 216,
-      "y": 368,
+      "y": 353,
       "width": 155,
       "height": 26.664
     },
@@ -2020,7 +2020,7 @@
       "page": 8,
       "text": "Límites de estructura previos.",
       "x": 391,
-      "y": 368,
+      "y": 353,
       "width": 152,
       "height": 13.332
     },
@@ -2028,7 +2028,7 @@
       "page": 8,
       "text": "Cancelación compartida",
       "x": 52,
-      "y": 417,
+      "y": 397,
       "width": 144,
       "height": 13.332
     },
@@ -2036,7 +2036,7 @@
       "page": 8,
       "text": "Interrumpía solicitudes ajenas.",
       "x": 216,
-      "y": 417,
+      "y": 397,
       "width": 155,
       "height": 13.332
     },
@@ -2044,7 +2044,7 @@
       "page": 8,
       "text": "FIFO y cancelación independiente.",
       "x": 391,
-      "y": 417,
+      "y": 397,
       "width": 152,
       "height": 26.664
     },
@@ -2052,7 +2052,7 @@
       "page": 8,
       "text": "Etiquetas y límite del archivo",
       "x": 52,
-      "y": 466,
+      "y": 441,
       "width": 144,
       "height": 13.332
     },
@@ -2060,7 +2060,7 @@
       "page": 8,
       "text": "Espacios perdidos y emoji cortados.",
       "x": 216,
-      "y": 466,
+      "y": 441,
       "width": 155,
       "height": 26.664
     },
@@ -2068,7 +2068,7 @@
       "page": 8,
       "text": "Datos intactos y límite de 2 MiB.",
       "x": 391,
-      "y": 466,
+      "y": 441,
       "width": 152,
       "height": 13.332
     },
@@ -2076,7 +2076,7 @@
       "page": 8,
       "text": "Salida del empaquetador",
       "x": 52,
-      "y": 515,
+      "y": 485,
       "width": 144,
       "height": 13.332
     },
@@ -2084,7 +2084,7 @@
       "page": 8,
       "text": "Podía sobrescribir un archivo fuente.",
       "x": 216,
-      "y": 515,
+      "y": 485,
       "width": 155,
       "height": 26.664
     },
@@ -2092,7 +2092,7 @@
       "page": 8,
       "text": "Salida externa y escritura temporal.",
       "x": 391,
-      "y": 515,
+      "y": 485,
       "width": 152,
       "height": 26.664
     },
@@ -2100,7 +2100,7 @@
       "page": 8,
       "text": "Cabeceras y rangos HTTP",
       "x": 52,
-      "y": 564,
+      "y": 529,
       "width": 144,
       "height": 13.332
     },
@@ -2108,7 +2108,7 @@
       "page": 8,
       "text": "Ambigüedad y semántica incorrecta.",
       "x": 216,
-      "y": 564,
+      "y": 529,
       "width": 155,
       "height": 26.664
     },
@@ -2116,9 +2116,33 @@
       "page": 8,
       "text": "Validación estricta y regresiones.",
       "x": 391,
-      "y": 564,
+      "y": 529,
       "width": 152,
       "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Zoom sobre grafos densos",
+      "x": 52,
+      "y": 573,
+      "width": 144,
+      "height": 13.332
+    },
+    {
+      "page": 8,
+      "text": "Los nodos tapaban los controles.",
+      "x": 216,
+      "y": 573,
+      "width": 155,
+      "height": 26.664
+    },
+    {
+      "page": 8,
+      "text": "Recorte al viewport del SVG.",
+      "x": 391,
+      "y": 573,
+      "width": 152,
+      "height": 13.332
     },
     {
       "page": 8,
@@ -2290,7 +2314,7 @@
     },
     {
       "page": 9,
-      "text": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "text": "29 controles reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
       "x": 282,
       "y": 367,
       "width": 261,
@@ -2298,7 +2322,7 @@
     },
     {
       "page": 9,
-      "text": "Editor y accesibilidad",
+      "text": "Editor y estabilidad",
       "x": 52,
       "y": 439,
       "width": 119,
@@ -2306,7 +2330,7 @@
     },
     {
       "page": 9,
-      "text": "Pendiente",
+      "text": "Verificado",
       "x": 191,
       "y": 439,
       "width": 71,
@@ -2314,7 +2338,7 @@
     },
     {
       "page": 9,
-      "text": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
+      "text": "54 controles funcionales, 22 adversos y 192 de zoom. Ensayo completo: 12,16 min, 408 acciones; sin fallos.",
       "x": 282,
       "y": 439,
       "width": 261,
@@ -2322,7 +2346,7 @@
     },
     {
       "page": 9,
-      "text": "Publicación y entrega",
+      "text": "Sitio y video",
       "x": 52,
       "y": 511,
       "width": 119,
@@ -2330,7 +2354,7 @@
     },
     {
       "page": 9,
-      "text": "Pendiente",
+      "text": "Verificado",
       "x": 191,
       "y": 511,
       "width": 71,
@@ -2338,11 +2362,11 @@
     },
     {
       "page": 9,
-      "text": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
+      "text": "Primera publicación: 31 controles anónimos. Video: 20 controles. El ZIP final lleva comprobantes separados en Releases.",
       "x": 282,
       "y": 511,
       "width": 261,
-      "height": 26.664
+      "height": 39.996
     },
     {
       "page": 9,

@@ -3,20 +3,20 @@
     {
       "name": "Python en navegador",
       "status": "pass",
-      "detail": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
-      "evidence": "evidence/publication/static-prefix/worker.json"
+      "detail": "29 controles reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "evidence": "evidence/publication/public-initial/worker.json"
     },
     {
-      "name": "Editor y accesibilidad",
-      "status": "pending",
-      "detail": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
-      "evidence": "evidence/ui/qa.json"
+      "name": "Editor y estabilidad",
+      "status": "pass",
+      "detail": "54 controles funcionales, 22 adversos y 192 de zoom. Ensayo completo: 12,16 min, 408 acciones; sin fallos.",
+      "evidence": "evidence/ui/soak-complete/closure.json"
     },
     {
-      "name": "Publicación y entrega",
-      "status": "pending",
-      "detail": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
-      "evidence": "evidence/publication/static-prefix/qa.json"
+      "name": "Sitio y video",
+      "status": "pass",
+      "detail": "Primera publicación: 31 controles anónimos. Video: 20 controles. El ZIP final lleva comprobantes separados en Releases.",
+      "evidence": "evidence/publication/public-initial/qa.json"
     }
   ]
 }

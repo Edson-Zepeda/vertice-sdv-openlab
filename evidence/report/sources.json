@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-12T02:23:03.174512+00:00",
+  "generated_at": "2026-09-12T05:07:15.437687+00:00",
   "pages": 10,
   "pdf": "docs/VerticeSDV_Informe.pdf",
-  "pdf_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
-  "web_copy_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
+  "pdf_sha256": "e632c9438922adef0465cd29d3464d85822dea88451f8747404ff155c2005bf9",
+  "web_copy_sha256": "e632c9438922adef0465cd29d3464d85822dea88451f8747404ff155c2005bf9",
   "web_copy_identical": true,
   "independent_current": true,
   "benchmark_current": true,
@@ -14,13 +14,13 @@
     "docs/API.md": "34596cda0c3519f8e9889fb7c3a6ed1f82b811fd94ce325fb63fec41b057add9",
     "docs/ALGORITMO.md": "7810d74e6b5ac212a57829e7726a20be6e62493aefbc0bf0bb8171411d9f5e40",
     "docs/ARQUITECTURA.md": "8774d6383c234c71849149f0483c8288e98dfc2dcd8508f696a1dd0f0746ba3f",
-    "docs/AUDITORIA.md": "ede7ace62f508871b9abca017418f8c2cce95b6e3fe12705c58677526bb41f07",
+    "docs/AUDITORIA.md": "4e2a031af22ae1f310a1d9e8450404d7f101180cd0a3c763bd076781916430f1",
     "evidence/verification/independent.json": "f18bedb5505a6410e7f5fab7008189c1fd44d51c559e6e5ab94b62633476edc7",
     "evidence/verification/benchmark.json": "5d8be32a9e60c24efd51a99201d6a089a81e0dad2182c9ef2849b462515539c7",
     "evidence/verification/http.json": "9159db905a1d826f2fd4e9f0bfb0b861ec06f9ef46694f3fb45f90055d63382f",
     "evidence/verification/mutations.json": "e02de29130451fc85dda30ef68a674c3a545891a3fdb188f75609369e96b643d",
     "evidence/verification/cli_python311.json": "564c5df0d2a8e3dceaceba1781354e2a08888ab5c9372c56efa1fe925c2ba7a2",
-    "evidence/report_integration.json": "aa900a4f5c258049e25890a8b87d630467b21c6f7eff45c98568cc8ca012ccbc",
+    "evidence/report_integration.json": "4c377d55a078247cdd7273281c8a137bb0081252ec499cd62973ea49f7b1a66b",
     "evidence/verification/cli_python310.json": "8e2ae56d30a9c1ff4f6f7366f2f9c879db1bb38dfe9b769714e9c19646263dc0",
     "evidence/verification/cli_python310_before_final_guard.json": "6d04305613e1de7c49277141cc0218892c0d6c67faad4d990f0c00048c45e54d",
     "evidence/verification/cli_python311_before_final_guard.json": "5ed7e370de4d92131892f59ab56e8bb3ed605758553345c2366ba38d76c42fd0",
@@ -454,20 +454,20 @@
     {
       "name": "Python en navegador",
       "status": "pass",
-      "detail": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
-      "evidence": "evidence/publication/static-prefix/worker.json"
+      "detail": "29 controles reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "evidence": "evidence/publication/public-initial/worker.json"
     },
     {
-      "name": "Editor y accesibilidad",
-      "status": "pending",
-      "detail": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
-      "evidence": "evidence/ui/qa.json"
+      "name": "Editor y estabilidad",
+      "status": "pass",
+      "detail": "54 controles funcionales, 22 adversos y 192 de zoom. Ensayo completo: 12,16 min, 408 acciones; sin fallos.",
+      "evidence": "evidence/ui/soak-complete/closure.json"
     },
     {
-      "name": "Publicación y entrega",
-      "status": "pending",
-      "detail": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
-      "evidence": "evidence/publication/static-prefix/qa.json"
+      "name": "Sitio y video",
+      "status": "pass",
+      "detail": "Primera publicación: 31 controles anónimos. Video: 20 controles. El ZIP final lleva comprobantes separados en Releases.",
+      "evidence": "evidence/publication/public-initial/qa.json"
     }
   ]
 }

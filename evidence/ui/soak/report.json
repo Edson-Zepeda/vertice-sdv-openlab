@@ -117,12 +117,29 @@
       "event_listeners": 89,
       "solve_last_50_median_ms": 49,
       "solve_last_50_max_ms": 3938
+    },
+    {
+      "at": "2026-09-12T02:24:49.309Z",
+      "elapsed_minutes": 25.6912,
+      "phase": "browser-real-traces",
+      "actions": 894,
+      "cycles": 110,
+      "solves": 110,
+      "javascript_heap_bytes_after_gc": 2504408,
+      "dom_nodes": 2271,
+      "live_elements": 915,
+      "graph_nodes": 30,
+      "graph_edges": 49,
+      "documents": 1,
+      "event_listeners": 231,
+      "solve_last_50_median_ms": 43,
+      "solve_last_50_max_ms": 3938
     }
   ],
   "failures": [],
-  "actions": 733,
-  "cycles": 87,
-  "solves": 87,
+  "actions": 894,
+  "cycles": 110,
+  "solves": 110,
   "engine_modes": [
     "local",
     "browser"

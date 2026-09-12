@@ -1,6 +1,6 @@
 # Auditoría de entrega y reproducción
 
-Se revisaron instrucciones, dependencias de construcción, empaquetado y configuración de CI. No se creó ni publicó el ZIP final. Las pruebas del empaquetador usan archivos de prueba aislados y respuestas Git controladas; la ejecución de la aplicación usa una copia real del proyecto en una ruta con espacios y acentos.
+Esta auditoría inicial revisó instrucciones, dependencias de construcción, empaquetado y configuración de CI antes de publicar el ZIP final. Las pruebas del empaquetador usan archivos aislados y respuestas Git controladas; la ejecución de la aplicación usa una copia real del proyecto en una ruta con espacios y acentos. La verificación del ZIP de la versión se registra por separado.
 
 ## Problemas reproducidos y cambios
 
@@ -25,6 +25,25 @@ La creación y comprobación se realizan en archivos temporales del directorio d
 - Se creó un entorno Python 3.11 aislado y se instalaron las cinco versiones directas de `requirements-build.txt` y sus dependencias resueltas: 18 paquetes. `pip check` no encontró conflictos. Se regeneraron el PDF de diez páginas y las nueve previsualizaciones del video usando las voces incluidas; no se volvió a sintetizar voz ni a renderizar otro MP4. Datos: `build_reproduction.json`.
 
 **Versión observada:** el snapshot y la construcción anteriores se realizaron antes del cambio posterior en el preanálisis JSON y en el servidor HTTP. Sus hashes se conservan como evidencia de esa versión; no acreditan automáticamente el núcleo o servidor posteriores. Las pruebas del empaquetador acreditan sus propios archivos registrados. El paquete final, una vez construido, necesita su comprobación de extracción e integridad.
+
+## Comprobación del commit publicado
+
+La [auditoría del snapshot actual](../evidence/delivery/current_snapshot.json) comprobó el commit público `407cc98f4fded8b00daa7e16c50ebc52dc9b7a5e`, que ya incluye las correcciones del importador y del servidor. Sus **37 controles aprobaron**: 392 archivos íntegros, dos ZIP idénticos de 42,382,838 bytes, extracción en una ruta con espacios y acentos, arranque sin paquetes Python externos, consulta de costo 11, PDF exacto y respuesta HTTP 206 correcta para el MP4. El servidor de la prueba usó un puerto propio y se cerró al terminar.
+
+SHA-256 de ambos ZIP de revisión: `1c58e24b071b519e15a1724ee0175ad77e2237b51798d6fe799da08c7e67f32a`. Esos archivos identifican ese commit, no anticipan el ZIP final de la versión.
+
+La primera ejecución del comprobador esperaba un campo `ok` inexistente en la respuesta de salud. Se corrigió la aserción para comprobar `project`, `engine` y los cuatro hashes definidos por la API. El [resultado inicial](../evidence/delivery/current_snapshot_before_health_assertion.json) se conserva; la aplicación no necesitó cambios.
+
+## Verificar el ZIP de la versión
+
+El [verificador de extracción](../scripts/verify_extracted_release.py) lee el ZIP real y obtiene los hashes del manifiesto incluido. Comprueba todos los archivos, ejecuta la terminal sin paquetes externos y arranca el servidor extraído en un puerto propio. Contrasta una consulta conocida, el PDF y un rango del video; finalmente cierra su proceso y elimina únicamente su carpeta temporal. Su [revisión independiente](../evidence/delivery/release_independent_review.json) conserva una ejecución sobre el paquete anterior y ocho comprobaciones negativas. Esa ejecución anterior no acredita por anticipado el ZIP final.
+
+```sh
+python -S -B scripts/verify_extracted_release.py ../VerticeSDV_Proyecto.zip --output ../VerticeSDV_EntregaExtraida.json
+python scripts/verify_release.py ../VerticeSDV_Proyecto.zip --output ../VerticeSDV_Verificacion.json
+```
+
+El segundo comprobador verifica, sin autenticación, que la etiqueta corresponde al commit del ZIP y que la descarga es idéntica. Los registros finales se guardan fuera del repositorio para conservar limpia la revisión contenida en la entrega. Los archivos auxiliares publicados también deben compararse con el checksum y el recibo locales.
 
 ## Versiones y CI
 

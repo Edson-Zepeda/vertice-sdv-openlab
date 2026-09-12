@@ -2,10 +2,17 @@
   "name": "VÉRTICE / SDV",
   "version": "1.0.0",
   "challenge": "SDV Software: Dijkstra y programación orientada a objetos",
-  "source": {"file":"Bootcamp SDV.pdf", "page":3, "sha256":"af12c207356864b7718b448fee1d279579fbc4813270ea627f85896a3b6b63df"},
-  "started_at":"2026-09-12T00:55:02Z",
-  "minimum_work_seconds":7201,
-  "python_minimum":"3.10",
-  "pyodide_version":"314.0.6",
-  "status":"in_development"
+  "source": {
+    "file": "Bootcamp SDV.pdf",
+    "page": 3,
+    "sha256": "af12c207356864b7718b448fee1d279579fbc4813270ea627f85896a3b6b63df"
+  },
+  "started_at": "2026-09-12T00:55:02Z",
+  "minimum_work_seconds": 7201,
+  "python_minimum": "3.10",
+  "pyodide_version": "314.0.6",
+  "status": "software_complete",
+  "local_validation_completed_at": "2026-09-12T05:07:09.152081+00:00",
+  "final_endurance_minutes": 12.159633333333334,
+  "delivery_evidence": "Release assets identify the exact final ZIP, tag and public bytes."
 }

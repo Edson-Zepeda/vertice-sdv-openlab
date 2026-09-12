@@ -1,0 +1,512 @@
+{
+  "scope": "Local Markdown link targets in README and docs only; no public or anchor assertion.",
+  "checks": [
+    {
+      "document": "README.md",
+      "target": "docs/VerticeSDV_Informe.pdf",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/DEFENSA.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "web/media/VerticeSDV_Demo.mp4",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "vertice/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "web/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "examples/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/REQUISITOS.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/API.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/ARQUITECTURA.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/ALGORITMO.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/AUDITORIA.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "tests/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/verification/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/PUBLICACION.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/verification/combined.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/COMPATIBILIDAD.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/EVALUACION_FINAL.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ALGORITMO.md",
+      "target": "PERFILADO_IMPORTACION.md",
+      "exists": true
+    },
+    {
+      "document": "docs/API.md",
+      "target": "ALGORITMO.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARQUITECTURA.md",
+      "target": "API.md",
+      "exists": true
+    },
+    {
+      "document": "docs/ARQUITECTURA.md",
+      "target": "ALGORITMO.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "REQUISITOS.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/verification/hostile_before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/verification/hostile_after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "AUDITORIA_ALGORITMICA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../tests/test_core.py",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../tests/test_independent.py",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "AUDITORIA_HTTP.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/browser/worker.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../tests/engine_queue.mjs",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/dependencies/fonts.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/verification/http_before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "AUDITORIA_HTTP.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/zoom-viewport/before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/zoom-viewport/after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../tests/test_server.py",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/profiling/json_memory.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/verification/json_guard.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/label-contract/before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/label-contract/after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/polish-before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/polish-after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/polish-after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/delivery/package_before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/delivery/package_after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "AUDITORIA_ENTREGA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/delivery/clean_snapshot_video_before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/delivery/clean_snapshot_video.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "AUDITORIA_VIDEO.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/video_audit/plan_before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/video_audit/plan_final.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/video_audit/focus_timing_after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "../evidence/ui/soak-baseline/INTERRUPCION.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "ALGORITMO.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "API.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "ARQUITECTURA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA.md",
+      "target": "AUDITORIA_MUTACIONES.md",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA_ENTREGA.md",
+      "target": "../evidence/delivery/current_snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA_ENTREGA.md",
+      "target": "../evidence/delivery/current_snapshot_before_health_assertion.json",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA_ENTREGA.md",
+      "target": "../scripts/verify_extracted_release.py",
+      "exists": true
+    },
+    {
+      "document": "docs/AUDITORIA_ENTREGA.md",
+      "target": "../evidence/delivery/release_independent_review.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../vertice/dijkstra.py",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/verification/independent.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "AUDITORIA_MUTACIONES.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../vertice/graph.py",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../tests/test_core.py",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../web/index.html",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../vertice/cli.py",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/ui/qa.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/ui/adversarial.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "API.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "ARQUITECTURA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/documentation/consistency.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "VerticeSDV_Informe.pdf",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/report/qa.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../examples/",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../tests/test_independent.py",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "ALGORITMO.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "DEFENSA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "AUDITORIA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/ui/zoom-viewport/after.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/ui/zoom-viewport/before.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/verification/combined.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "COMPATIBILIDAD.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/ui/soak-complete/closure.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/report/qa.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/video_audit/verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../evidence/publication/public-initial/qa.json",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "AUDITORIA_ENTREGA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/EVALUACION_FINAL.md",
+      "target": "PUBLICACION.md",
+      "exists": true
+    },
+    {
+      "document": "docs/METODOLOGIA_PRUEBAS.md",
+      "target": "../evidence/verification/independent.json",
+      "exists": true
+    },
+    {
+      "document": "docs/METODOLOGIA_PRUEBAS.md",
+      "target": "AUDITORIA_JSON.md",
+      "exists": true
+    },
+    {
+      "document": "docs/METODOLOGIA_PRUEBAS.md",
+      "target": "AUDITORIA_MUTACIONES.md",
+      "exists": true
+    },
+    {
+      "document": "docs/METODOLOGIA_PRUEBAS.md",
+      "target": "AUDITORIA_ENTREGA.md",
+      "exists": true
+    },
+    {
+      "document": "docs/METODOLOGIA_PRUEBAS.md",
+      "target": "AUDITORIA_VIDEO.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PUBLICACION.md",
+      "target": "../evidence/publication/public-initial/qa.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PUBLICACION.md",
+      "target": "../evidence/publication/ci-initial.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PUBLICACION.md",
+      "target": "COMPATIBILIDAD.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PUBLICACION.md",
+      "target": "../evidence/publication/pages-created.json",
+      "exists": true
+    }
+  ],
+  "passed": 101,
+  "failed": 0
+}

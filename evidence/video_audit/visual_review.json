@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-09-12T01:37:13.600901+00:00",
+  "generated_at": "2026-09-12T02:25:26.159799+00:00",
   "status": "reviewed_samples_no_blocking_findings",
-  "video_sha256": "530f352a435eda2e056ff72b982da5534d046c457d4157942b3dad20537a3eaf",
+  "video_sha256": "93a64bf31516a2b1027ab91555b459de0afb0ef9aa230d957c0efbf4e38c17eb",
+  "verification_sha256": "8299fe6041e74677b209d00ddc6e9e6005b2808c49a0bd91d31e5124a4b44c13",
   "contact_sheet": {
     "path": "evidence\\video_audit\\contact-sheet.jpg",
-    "sha256": "fb2d6331ae7da36b9b730d69d5020c70c08caa9c588241fc3c61b890160ec47c",
+    "sha256": "7fae5983ccd7a17a6d2bf7f92d38afcc461773945a0af428d72816f58f2cd58d",
     "source": "Frames decoded from the final MP4; not renderer previews"
   },
   "full_size_images_reviewed": [
@@ -35,18 +36,38 @@
       "seek_seconds": 176.79999,
       "frame_number": 5304,
       "path": "evidence\\video_audit\\decoded_frames\\scene_08.png",
-      "sha256": "bc9ea369787d6fd6efb91dd23d35f518707cb5cdacc572e3807668da76d208ce",
-      "mean_rgb_absolute_error": 1.4265356545781893,
+      "sha256": "398b11187952e94de8631475448d368ffbf0b6a87de256b886a3a727cb425a94",
+      "mean_rgb_absolute_error": 1.4260614390432098,
       "region_mean_rgb_errors": {
-        "title": 1.4382852919438285,
-        "captions": 1.8321266851909026,
-        "explanation": 1.5321677137225918
+        "title": 1.4384296739373312,
+        "captions": 1.8124652670577337,
+        "explanation": 1.530192165558019
       },
       "size": [
         1920,
         1080
       ],
-      "scene_title": "Medir también exige separar los costos."
+      "scene_title": "Medir tambi\u00e9n exige separar los costos."
+    },
+    {
+      "id": "scene_09",
+      "requested_seconds": 200.3066666666667,
+      "frame_seconds": 200.33333333333334,
+      "seek_seconds": 200.33332333333334,
+      "frame_number": 6010,
+      "path": "evidence\\video_audit\\decoded_frames\\scene_09.png",
+      "sha256": "8ca595952f9be0fcf8b8f7af27138fd3cddbd7cce54d05aaf823fe1e37d02172",
+      "mean_rgb_absolute_error": 1.4100724987139917,
+      "region_mean_rgb_errors": {
+        "title": 1.2828615136045654,
+        "captions": 1.7248353401255532,
+        "explanation": 1.5597443951712247
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Edita. Calcula. Comprueba."
     },
     {
       "id": "directed_reverse",
@@ -66,7 +87,27 @@
         1920,
         1080
       ],
-      "scene_title": "Los casos difíciles también tienen respuesta."
+      "scene_title": "Los casos dif\u00edciles tambi\u00e9n tienen respuesta."
+    },
+    {
+      "id": "last_frame",
+      "requested_seconds": 209.93333333333337,
+      "frame_seconds": 209.93333333333334,
+      "seek_seconds": 209.93332333333333,
+      "frame_number": 6298,
+      "path": "evidence\\video_audit\\decoded_frames\\last_frame.png",
+      "sha256": "ea7469970e5fa99c9f6aacd7e95852028ab2d9498ecb7413355e782ca23622a4",
+      "mean_rgb_absolute_error": 1.4229467271090535,
+      "region_mean_rgb_errors": {
+        "title": 1.2839615668883961,
+        "captions": 1.008130081300813,
+        "explanation": 1.655258376447401
+      },
+      "size": [
+        1920,
+        1080
+      ],
+      "scene_title": "Edita. Calcula. Comprueba."
     },
     {
       "id": "focus_solver",
@@ -89,12 +130,24 @@
       "scene_title": "Cuatro clases. Una responsabilidad clara."
     }
   ],
+  "poster_reviewed": {
+    "path": "web/media/VerticeSDV_Poster.jpg",
+    "sha256": "7b134e9a27c9fe9c8ad9391542e94fdcc729da0a1f2d90a8b9223a1f61c51135",
+    "size": [
+      1920,
+      1080
+    ],
+    "source": "Separate website poster, not claimed as an extracted video frame"
+  },
   "observations": [
-    "The 16-frame contact sheet displays all nine scenes and the four corrected focus samples.",
-    "Trace distances are labeled tentative; D is settled at6 and E remains tentative at10 in the inspected frame.",
-    "Directed reverse case visibly shows arrows and D-to-A with no route.",
-    "Benchmark labels distinguish node and edge counts; 139.8ms corresponds to stored JSON median139.7735ms.",
-    "Solver focus and label are simultaneously legible; moving markers do not erase node letters in the inspected direction frame."
+    "The 16-frame contact sheet shows all nine scenes and the four corrected focus samples.",
+    "Trace distances remain labeled tentative: D is settled at 6 and E remains tentative at 10 in the inspected trace frame.",
+    "The directed reverse frame visibly shows arrowheads and the D-to-A query without a route.",
+    "All seven benchmark JSON labels match the current stored trace-enabled medians rounded to one decimal; the directed 500-node / 4000-edge row is 124.4 ms, from 124.3811 ms.",
+    "The updated study screenshot visibly shows cost 11, path S-B-D-E-T, 8 settled nodes and 9 cost improvements. The last frame pans down to show the 43/43 step control; its graph-top crop is intentional.",
+    "Solver focus and node/weight labels are simultaneously legible in the inspected samples.",
+    "The separate 1920x1080 poster shows S-to-T cost 11 and the same highlighted route.",
+    "Exported metadata preserves accented title and artist after explicit UTF-8 decoding; this has separate before/after evidence."
   ],
-  "scope": "Visual review of the specified decoded samples, not every frame; no full human audio listening claimed."
+  "scope": "Visual review of the specified decoded samples and separate poster, not every frame; no full human audio listening or universal device compatibility claimed."
 }

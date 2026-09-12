@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-09-12T05:07:09.143027+00:00",
+  "passed": true,
+  "scope": "Complete twelve-minute five-phase UI run; prior 45/75-minute attempts remain failed or interrupted and are not counted as complete.",
+  "duration_minutes": 12.159633333333334,
+  "actions": 408,
+  "cycles": 54,
+  "solves": 67,
+  "all_five_phases": true,
+  "journal_actions_match": true,
+  "source_hashes_unchanged": true,
+  "report_sha256": "540ce8ad46881a1f4a1d935fa65d461aa1f46b8061cfb38a8f98833c2d54bc73",
+  "activity_sha256": "b422b9c53018cddf8d97b773a5ceb5fe44904b64448f8f890625904c5ff69196"
+}

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T02:24:13.864180+00:00",
+  "generated_at": "2026-09-12T05:08:20.646652+00:00",
   "status": "pass",
-  "pdf_sha256": "94484e9649de1fe9ec3bfa2800081045639e606ef01028878cbfea7647a30d25",
+  "pdf_sha256": "e632c9438922adef0465cd29d3464d85822dea88451f8747404ff155c2005bf9",
   "page_count": 10,
   "reviewed_pages": [
     1,
@@ -60,11 +60,11 @@
     },
     {
       "path": "evidence/report/pages/page-08.png",
-      "sha256": "61043e44420bdcfe5dbcce8ab9a6600c6296feaa25a6e4a83d8baded15648aa7"
+      "sha256": "19ae014a53d98acda07db43dee11ecb745d3c7414ec3f2cbd92ff0c3266707ae"
     },
     {
       "path": "evidence/report/pages/page-09.png",
-      "sha256": "88bcd54e1451607f9e730a41076160d617ddbd933276750c613e436af2ea04c9"
+      "sha256": "e8645904ef00f54a7c59bb8b22f5854327e06c219ed9d965bfb2b0f5f7c0a719"
     },
     {
       "path": "evidence/report/pages/page-10.png",
@@ -85,20 +85,20 @@
     {
       "name": "Python en navegador",
       "status": "pass",
-      "detail": "29 comprobaciones reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
-      "evidence": "evidence/publication/static-prefix/worker.json"
+      "detail": "29 controles reales: resultados y trazas de 18 casos coinciden con Python nativo. Importación y cola verificadas.",
+      "evidence": "evidence/publication/public-initial/worker.json"
     },
     {
-      "name": "Editor y accesibilidad",
-      "status": "pending",
-      "detail": "54 pruebas funcionales y 22 adversas aprobadas. Sin violaciones en tres paneles. Ensayo de 75 min en curso.",
-      "evidence": "evidence/ui/qa.json"
+      "name": "Editor y estabilidad",
+      "status": "pass",
+      "detail": "54 controles funcionales, 22 adversos y 192 de zoom. Ensayo completo: 12,16 min, 408 acciones; sin fallos.",
+      "evidence": "evidence/ui/soak-complete/closure.json"
     },
     {
-      "name": "Publicación y entrega",
-      "status": "pending",
-      "detail": "31 controles sobre una copia estática aprobados. Publicación, video y paquete en verificación final.",
-      "evidence": "evidence/publication/static-prefix/qa.json"
+      "name": "Sitio y video",
+      "status": "pass",
+      "detail": "Primera publicación: 31 controles anónimos. Video: 20 controles. El ZIP final lleva comprobantes separados en Releases.",
+      "evidence": "evidence/publication/public-initial/qa.json"
     }
   ]
 }

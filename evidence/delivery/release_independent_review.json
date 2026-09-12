@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-09-12T03:47:29.512841+00:00",
+  "scope": "Independent bounded SDV delivery review. Production sources read only; a separate final-ZIP verifier was added at root request and exercised with a preserved snapshot plus isolated negative fixtures. This is not final-release certification.",
+  "blocking_code_defects": [],
+  "closure_requirements": [
+    {
+      "id": "FINAL-EXTRACT",
+      "detail": "verify_current_package.py retains the old PDF hash, writes current_snapshot.json and describes a pre-final snapshot even when --commit changes. Preserve its 37-pass evidence. Use the new actual-ZIP verifier with evidence outside checkout after packaging the final commit.",
+      "references": [
+        "scripts/verify_current_package.py:23",
+        "scripts/verify_current_package.py:42",
+        "scripts/verify_current_package.py:50"
+      ]
+    },
+    {
+      "id": "PUBLIC-SIDECARS",
+      "detail": "verify_release.py proves the anonymous ZIP, local receipt, manifest and tag. It does not download the published receipt/checksum sidecar assets. If those assets are supplied as part of handoff, compare their anonymously downloaded bytes separately.",
+      "references": [
+        "scripts/verify_release.py:43",
+        "scripts/verify_release.py:72"
+      ]
+    },
+    {
+      "id": "FINAL-SITE",
+      "detail": "Publish the page that enables release links only after the exact tagged ZIP exists and anonymous download passes; then verify final Pages assets and visible links against the same checkout.",
+      "references": [
+        "docs/PUBLICACION.md",
+        "scripts/verify_static_site.cjs:77"
+      ]
+    }
+  ],
+  "existing_evidence_scope": {
+    "combined": "123 discovered; 122 passed; 1 real symlink privilege skip; no Linux or CI proof. Packager and release-output-guard source hashes match this run.",
+    "snapshot": "37/37 only for 407cc98f4fded8b00daa7e16c50ebc52dc9b7a5e; not final release.",
+    "output_guard": "Four executed methods with 12 scenarios per Python3.10/3.11/3.14; symlink method skipped; no network."
+  },
+  "new_verifier": {
+    "actual_snapshot_passed": true,
+    "actual_snapshot_checks": 22,
+    "source_revision": "407cc98f4fded8b00daa7e16c50ebc52dc9b7a5e",
+    "package_sha256": "1c58e24b071b519e15a1724ee0175ad77e2237b51798d6fe799da08c7e67f32a",
+    "owned_process_stopped": true,
+    "owned_fixture_removed": true,
+    "outside_checkout_evidence": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-04\\real\\outputs\\VerticeSDV_ExtractionVerifierSnapshot.json",
+    "isolated_negative_checks": [
+      {
+        "name": "unsafe_output_rejected:Isolated fixture.zip",
+        "passed": true,
+        "exit_code": 2,
+        "input_reads": 0,
+        "process_starts": 0,
+        "fixture_creations": 0,
+        "inputs_unchanged": true
+      },
+      {
+        "name": "unsafe_output_rejected:Isolated fixture.receipt.json",
+        "passed": true,
+        "exit_code": 2,
+        "input_reads": 0,
+        "process_starts": 0,
+        "fixture_creations": 0,
+        "inputs_unchanged": true
+      },
+      {
+        "name": "unsafe_output_rejected:Isolated fixture.sha256",
+        "passed": true,
+        "exit_code": 2,
+        "input_reads": 0,
+        "process_starts": 0,
+        "fixture_creations": 0,
+        "inputs_unchanged": true
+      },
+      {
+        "name": "unsafe_output_rejected:receipt alias.json",
+        "passed": true,
+        "exit_code": 2,
+        "input_reads": 0,
+        "process_starts": 0,
+        "fixture_creations": 0,
+        "inputs_unchanged": true
+      },
+      {
+        "name": "unsafe_output_rejected:should-never-exist-audit.json",
+        "passed": true,
+        "exit_code": 2,
+        "input_reads": 0,
+        "process_starts": 0,
+        "fixture_creations": 0,
+        "inputs_unchanged": true
+      },
+      {
+        "name": "unsafe_output_rejected:wrong.txt",
+        "passed": true,
+        "exit_code": 2,
+        "input_reads": 0,
+        "process_starts": 0,
+        "fixture_creations": 0,
+        "inputs_unchanged": true
+      },
+      {
+        "name": "invalid_zip_records_failure_without_fixture_or_input_changes",
+        "passed": true,
+        "errors": [
+          "BadZipFile: File is not a zip file"
+        ]
+      },
+      {
+        "name": "actual_server_and_fixture_cleaned_after_injected_request_failure",
+        "passed": true,
+        "server": {
+          "pid": 41276,
+          "port": 60516,
+          "site_packages_disabled": true,
+          "owned_process_stopped": true
+        },
+        "owned_fixture_removed": true,
+        "errors": [
+          "OSError: Intentional post-start request failure"
+        ]
+      }
+    ],
+    "fixture_note": "Initial malformed-ZIP fixture wrote CRLF checksum through text I/O and correctly failed checksum before reaching ZIP parsing. Fixture was corrected to the packager LF byte format; production verifier unchanged."
+  },
+  "source_hashes": {
+    "scripts/package_release.py": "af86af6cff82caa9aff63ce5e9f6252abd71ae1cc0389d230b6b1814e2b7b3ed",
+    "scripts/verify_release.py": "201dfcc177b2074611f5baa21879886fce8bae57b144bf5653d1e5ec87197b84",
+    "scripts/verify_current_package.py": "0b0c3a2918a71d48fef9887dac045951f7356414a0c617007f408f7f37b756d3",
+    "scripts/verify_extracted_release.py": "19d401193200eeabcbf68b0d19608724589174e23c0702065107c1202cb2beb6",
+    "docs/PUBLICACION.md": "4626942d608102fd7f0e306a4ccd64897e8ec585e82504ece2179ef032c783ab",
+    "tests/test_package_release.py": "38a145deec6c16c30842c6475d2a9b56eb54c8d24a1301c8d4a0ae51e841d4ba",
+    "tests/test_release_output_guard.py": "5e343d9fd6bbe84c229d74454d509780239fab7f6ba7162245949d2267ee9dbe",
+    "evidence/verification/combined.json": "c0268816667eb68ede9a536f51eace1d6e79d02682b95ecc54febb4d2b938897",
+    "evidence/delivery/current_snapshot.json": "38653a039c5c91aa8bdf4fe7e206e446472a1b67ac904ede696dcafd0e3e413d"
+  }
+}

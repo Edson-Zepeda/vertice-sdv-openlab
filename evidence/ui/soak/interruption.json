@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-09-12T03:09:02.080761+00:00",
+  "status": "interrupted_without_final_report",
+  "started_at": "2026-09-12T01:59:07.837Z",
+  "last_recorded_action_at": "2026-09-12T02:28:55.858Z",
+  "recorded_actions": 1026,
+  "completed": false,
+  "cause": "No completion report; service usage interruption preceded the absent process at inspection. No successful completion or final source hashes inferred.",
+  "report_sha256": "2def912f96de6f19f112cab229e7d59e95bf37d5851d088dbfcf01f755d130ac",
+  "activity_sha256": "8c2bf4b7e17204a5c4f33982de9d9aff241de1545c6b03c67ef42cb43d351c84"
+}

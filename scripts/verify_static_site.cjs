@@ -7,7 +7,7 @@ const {spawn}=require('node:child_process');
 const ROOT=path.resolve(__dirname,'..');
 const name=process.argv[2]||'static-prefix';
 if(!/^[a-z0-9_-]+$/i.test(name))throw Error('Use a plain evidence name');
-const OUT=path.join(ROOT,'evidence','publication',name);
+const OUT=path.resolve(process.env.VERTICE_EVIDENCE_ROOT||path.join(ROOT,'evidence','publication'),name);
 fs.mkdirSync(OUT,{recursive:true});
 const digest=data=>crypto.createHash('sha256').update(data).digest('hex');
 const report={started_at:new Date().toISOString(),checks:[],errors:[],scope:'Fresh, unauthenticated browser context and HTTP requests. Public only when VERTICE_URL names a public origin.'};
@@ -44,9 +44,11 @@ async function startLocal(){
     check('Static deployment calculates through actual browser Python',await page.locator('#result-cost').textContent()==='11');
     await page.locator('#explore-trace').click();await page.locator('#next-step').click();
     check('Actual trace can be inspected',await page.locator('#timeline-count').textContent()==='2 / 43');
+    await page.evaluate(()=>window.scrollTo(0,0));
     await page.screenshot({path:path.join(OUT,'studio-desktop.png'),fullPage:true});
     await page.setViewportSize({width:390,height:844});
     check('Mobile static studio has no page overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    await page.evaluate(()=>window.scrollTo(0,0));
     await page.screenshot({path:path.join(OUT,'studio-mobile.png'),fullPage:true});
     await page.goto(new URL('qa.html?engine=browser',base).href);
     await page.locator('#qa-run').click();await page.waitForFunction(()=>!document.querySelector('#qa-download').disabled);
@@ -70,6 +72,7 @@ async function startLocal(){
     check('The delivered video plays after chapter seeking',await page.locator('#film').evaluate(video=>!video.error));
     await page.locator('#film').evaluate(video=>video.pause());
     check('Mobile deliverables heading preserves word separation',await page.locator('.deliverables h2').innerText()==='La evidencia está incluida.');
+    await page.evaluate(()=>window.scrollTo(0,0));
     await page.screenshot({path:path.join(OUT,'project-mobile.png'),fullPage:true});
     const release=JSON.parse(fs.readFileSync(path.join(ROOT,'web/data/release.json'),'utf8'));
     if(release.published){

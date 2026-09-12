@@ -2,6 +2,8 @@
 
 Edita un grafo y explora cómo Dijkstra encuentra la ruta de menor costo.
 
+[Abrir estudio](https://edson-zepeda.github.io/vertice-sdv-openlab/) · [Ver el proyecto](https://edson-zepeda.github.io/vertice-sdv-openlab/proyecto.html)
+
 Implementación propia en Python, con clases `Node`, `Edge`, `Graph` y `DijkstraSolver`. La interfaz reproduce las decisiones del mismo núcleo que se ejecuta en terminal. Corresponde al perfil **Software**, página 3 de **Bootcamp SDV.pdf**.
 
 [Informe](docs/VerticeSDV_Informe.pdf) · [Guía de defensa](docs/DEFENSA.md) · [Video](web/media/VerticeSDV_Demo.mp4). La página **Proyecto** del estudio reúne los entregables.
@@ -10,7 +12,7 @@ Implementación propia en Python, con clases `Node`, `Edge`, `Graph` y `Dijkstra
 
 En Windows, abre **Iniciar.cmd**. Requiere Python 3.10 o posterior y no instala paquetes.
 
-En cualquier sistema, abre una terminal en la carpeta extraída del proyecto y ejecuta:
+También puedes abrir una terminal en la carpeta extraída del proyecto y ejecutar:
 
 ```sh
 python server.py --open
@@ -34,16 +36,17 @@ El resultado suma los costos de las conexiones. Mover un nodo cambia su posició
 
 | Entregable | Archivo o carpeta |
 |---|---|
-| Algoritmo, clases y formato JSON | `vertice/` |
-| Editor y visualización de la ejecución | `web/` |
-| Seis grafos didácticos | `examples/` |
-| Contrato de requisitos | `docs/REQUISITOS.md` |
-| Clases, métodos e invariantes | `docs/API.md`, `docs/ARQUITECTURA.md` |
-| Argumento de corrección y complejidad | `docs/ALGORITMO.md` |
-| Revisión crítica y correcciones | `docs/AUDITORIA.md` |
-| Pruebas independientes y mediciones | `tests/`, `evidence/verification/` |
+| Algoritmo, clases y formato JSON | [vertice/](vertice/) |
+| Editor y visualización de la ejecución | [web/](web/) |
+| Seis grafos didácticos | [examples/](examples/) |
+| Contrato de requisitos | [Requisitos](docs/REQUISITOS.md) |
+| Clases, métodos e invariantes | [API](docs/API.md), [arquitectura](docs/ARQUITECTURA.md) |
+| Argumento de corrección y complejidad | [Algoritmo](docs/ALGORITMO.md) |
+| Revisión crítica y correcciones | [Auditoría](docs/AUDITORIA.md) |
+| Pruebas independientes y mediciones | [Pruebas](tests/), [resultados](evidence/verification/) |
 | Informe, video y presentación del proyecto | `docs/VerticeSDV_Informe.pdf`, `web/proyecto.html`, `web/media/` |
 | Guía para explicar y demostrar el trabajo | `docs/DEFENSA.md` |
+| Publicación y estado de CI | [Entrega pública](docs/PUBLICACION.md) |
 
 ## Formato de un grafo
 
@@ -72,6 +75,8 @@ python scripts/benchmark.py --help
 ```
 
 Las pruebas del algoritmo utilizan un oráculo Bellman-Ford independiente con costos enteros. Las mediciones distinguen tiempo del solucionador y procesamiento completo de JSON; no deben confundirse con tiempos de un navegador o vehículo.
+
+Consulta el [resultado de la batería conjunta](evidence/verification/combined.json), la [compatibilidad comprobada](docs/COMPATIBILIDAD.md) y la [evaluación frente a los requisitos](docs/EVALUACION_FINAL.md).
 
 También puedes usar el núcleo desde terminal:
 

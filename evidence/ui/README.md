@@ -2,6 +2,12 @@
 
 La aplicación ejecuta el núcleo Python real. La interfaz JavaScript edita el grafo y reproduce sus eventos; no contiene un algoritmo alternativo de Dijkstra.
 
+## Cierre de estabilidad
+
+El [ensayo completo](soak-complete/report.json) terminó sin fallos: **12,16 minutos, 408 acciones, 54 ciclos y 67 cálculos**, en cinco bloques con Python local y Pyodide real. Se comprobaron los hashes antes y después y cada acción del registro.
+
+Los intentos de 45 y 75 minutos no se presentan como completos: `soak-baseline` se detuvo para corregir la interfaz, `soak` y `soak-release` perdieron continuidad durante interrupciones de sesión, y `soak-final` encontró el fallo de zoom posteriormente corregido. El ensayo final de doce minutos cubre los cinco bloques con su duración real; no equivale a una prueba ininterrumpida de 45 minutos.
+
 ## Comprobaciones reproducibles
 
 - `qa.json`: 54 comprobaciones aprobadas. Incluyen edición por formulario y arrastre, teclado, costos exactos, reproducción, historial, importación cruda validada por Python, recuperación de sesión, anuncio accesible del resultado y vistas de 320/390 px.
@@ -9,7 +15,9 @@ La aplicación ejecuta el núcleo Python real. La interfaz JavaScript edita el g
 - `qa.json > accessibility`: axe-core 4.11.1, reglas WCAG 2 A/AA y 2.1 AA, sin violaciones detectadas en los paneles Editar, Ruta y Pasos. Un escaneo automático no reemplaza todas las pruebas humanas de accesibilidad.
 - `polish-after.json`: 17 comprobaciones aprobadas; límite exacto de 2 MiB, conservación de etiquetas, rechazo de controles y Unicode inválido, foco del editor y franja del lienzo para metadatos. `polish-before.json` conserva los seis fallos reproducidos antes del ajuste.
 - `label-contract/after.json`: 8 comprobaciones aprobadas sobre los motores local y Pyodide. Se conserva vacío, espacios, 80 emoji y texto HTML literal al importar, exportar y calcular costo 0.3; la abreviatura SVG no parte caracteres Unicode. `label-contract/before.json` conserva los seis fallos originales.
-- `soak/report.json` y `soak/activity.jsonl`: ensayo prolongado de interacción; consultar `completed`, duración real y fallos antes de atribuirle un resultado.
+- `zoom-viewport/after.json`: 192 comprobaciones aprobadas en seis escenarios de 390, 768 y 1440 px, con 90 y 150 nodos. El zoom, centrado y controles siguen accesibles con clicks ordinarios; `before.json` conserva seis escenarios fallidos por desbordamiento del SVG.
+- `soak/report.json` y `soak/activity.jsonl`: intento interrumpido sin cierre; `soak/interruption.json` registra 1026 acciones y el último evento, sin inferir finalización.
+- `soak-final/report.json`: intento de 45 minutos que detectó un fallo a los 27,77 minutos. Al ampliar un grafo de 90 nodos, el SVG invadía la barra de herramientas e impedía pulsar el zoom. Se conserva como evidencia fallida; no acredita un ensayo completo.
 - `soak-baseline`: ensayo previo interrumpido deliberadamente tras 25,83 minutos para aplicar los hallazgos nuevos; no se presenta como un ensayo completo. `soak-stop-check` verifica la nueva parada ordenada por archivo, con `completed=false`, `interrupted=true` y sin fallos.
 
 Los retrasos de red, HTTP 500, respuesta JSON incompleta y cuota de almacenamiento son fallos inyectados explícitamente por las pruebas. Las respuestas exitosas se obtienen del servidor Python. Los archivos `exported-graph.json` y `quota-recovery-graph.json` son descargas reales del navegador durante esos ensayos.
