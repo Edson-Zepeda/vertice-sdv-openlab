@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#153d37"><meta name="description" content="VÉRTICE: Dijkstra en Python, un editor de grafos y cada decisión a la vista.">
+  <title>VÉRTICE · El proyecto</title><link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="project.css"><script type="module" src="project.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="project-header"><a class="brand" href="./"><img src="favicon.svg" width="36" height="36" alt=""><span>VÉRTICE<small>SDV / SOFTWARE</small></span></a><a class="button outline" href="./">Abrir estudio <span aria-hidden="true">↗</span></a></header>
+  <main id="contenido">
+    <section class="hero"><div><p class="eyebrow">DIJKSTRA EN PYTHON</p><h1>Cada decisión,<br><em>a la vista.</em></h1><p class="intro">Crea un grafo. Encuentra su ruta mínima.</p><a class="button primary" href="./">Explorar el grafo <span aria-hidden="true">↗</span></a></div><div class="hero-note"><strong>Del código<br>al recorrido.</strong><a href="#demo">Ver cómo funciona <span aria-hidden="true">↓</span></a></div></section>
+    <section class="film-section" id="demo" aria-label="Video del proyecto">
+      <div class="film-frame"><video id="film" controls playsinline preload="metadata" poster="media/VerticeSDV_Poster.jpg" aria-label="Demostración de Vértice y explicación de Dijkstra"><source src="media/VerticeSDV_Demo.mp4" type="video/mp4"><track kind="captions" src="media/VerticeSDV.vtt" srclang="es" label="Español"><p>Tu navegador no puede reproducir este video. <a href="media/VerticeSDV_Demo.mp4">Descárgalo aquí.</a></p></video></div>
+      <div class="film-bottom"><span>Elige un capítulo</span><nav id="chapters" aria-label="Capítulos del video"></nav></div><p class="film-status" id="film-status" role="status" hidden></p>
+    </section>
+    <section class="deliverables" aria-label="Entregables"><div><p class="eyebrow">EXPLORA EL PROYECTO</p><h2>La evidencia <br>está incluida.</h2></div><div class="downloads"><a href="docs/VerticeSDV_Informe.pdf"><span><strong>Informe</strong><small>Clases, método y resultados</small></span><span aria-hidden="true">↗</span></a><a href="media/VerticeSDV_Demo.mp4" download><span><strong>Video</strong><small>Demostración narrada</small></span><span aria-hidden="true">↓</span></a><a id="code-link" hidden><span><strong>Código</strong><small>Implementación y pruebas</small></span><span aria-hidden="true">↗</span></a><a id="package-link" hidden><span><strong>Proyecto completo</strong><small>Paquete para descargar</small></span><span aria-hidden="true">↓</span></a></div></section>
+    <section class="method" aria-label="Método y alcance"><details><summary>Cómo encuentra la ruta</summary><p>Dijkstra asienta el menor costo conocido y actualiza sus vecinos cuando descubre una mejora. Los pesos son no negativos. Al asentar el destino, reconstruye la ruta con sus predecesores.</p></details><details><summary>Cómo se comprueba</summary><p>Un oráculo Bellman-Ford independiente contrasta los costos. Las pruebas cubren decimales, ciclos cero, empates y destinos inalcanzables. El navegador y la terminal ejecutan el mismo núcleo Python.</p><a href="docs/VerticeSDV_Informe.pdf">Consultar resultados ↗</a></details><details><summary>Qué representa</summary><p>Un estudio de grafos para el reto SDV de software. Los ejemplos son didácticos; las posiciones visuales no cambian el costo de las conexiones.</p></details></section>
+  </main>
+  <footer><span>VÉRTICE / SDV</span><a href="./">Volver al estudio ↗</a></footer>
+</body></html>

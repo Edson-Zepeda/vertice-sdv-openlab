@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#113e3a" />
+    <meta
+      name="description"
+      content="Un estudio interactivo de rutas mínimas. Edita un grafo y explora cada decisión de Dijkstra, ejecutado en Python."
+    />
+    <title>VÉRTICE · Estudio de rutas</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#graph">Ir al grafo</a>
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="Vértice, estudio de rutas"
+        ><svg viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M5 7 20 33 35 7M12 20h16" />
+          <circle cx="5" cy="7" r="3" />
+          <circle cx="20" cy="33" r="3" />
+          <circle cx="35" cy="7" r="3" /></svg
+        ><span>VÉRTICE<small>SDV / ESTUDIO DE RUTAS</small></span></a
+      >
+      <div class="engine-status" id="engine-status" role="status">
+        <i></i><span>Preparando Python</span>
+      </div>
+      <div class="header-actions">
+        <button
+          id="undo"
+          class="icon-button"
+          aria-label="Deshacer"
+          title="Deshacer · Ctrl+Z"
+          disabled
+        >
+          ↶
+        </button>
+        <button
+          id="redo"
+          class="icon-button"
+          aria-label="Rehacer"
+          title="Rehacer · Ctrl+Mayús+Z"
+          disabled
+        >
+          ↷
+        </button>
+        <button
+          id="file-menu-button"
+          class="button quiet"
+          aria-expanded="false"
+          aria-controls="file-menu"
+        >
+          Archivo <span aria-hidden="true">⌄</span>
+        </button>
+        <button
+          id="help-button"
+          class="icon-button help-button"
+          aria-label="Ayuda"
+        >
+          ?
+        </button>
+        <div id="file-menu" class="file-menu" hidden>
+          <button id="import-button">Importar JSON</button
+          ><button id="export-button">Exportar JSON</button
+          ><button id="new-button">Grafo vacío</button
+          ><button id="menu-help">Guía rápida</button>
+        </div>
+        <input
+          id="import-file"
+          type="file"
+          accept=".json,application/json"
+          hidden
+        />
+      </div>
+    </header>
+    <main>
+      <section
+        class="workspace-heading"
+        aria-label="Configuración de la búsqueda"
+      >
+        <div class="workspace-title">
+          <h1>El camino de menor costo<span>.</span></h1>
+        </div>
+        <div class="scenario-picker">
+          <label for="example">Explorar ejemplo</label
+          ><select id="example">
+            <option value="">Tu grafo</option>
+          </select>
+        </div>
+      </section>
+      <div class="notice" id="notice" role="status" aria-live="polite" hidden>
+        <span id="notice-text"></span
+        ><button id="notice-dismiss" aria-label="Cerrar aviso">×</button>
+      </div>
+      <p
+        id="route-announcement"
+        class="visually-hidden"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+      <div class="recovery" id="recovery" hidden>
+        <p id="recovery-text"></p>
+        <button id="recover-button" class="button">Restaurar copia</button
+        ><button id="download-recovery" class="button quiet">
+          Descargar original</button
+        ><button id="dismiss-recovery" class="button quiet">Cerrar</button>
+      </div>
+      <section class="route-bar" aria-label="Elegir recorrido">
+        <label class="route-field"
+          ><span><i class="endpoint-dot start-dot"></i>Inicio</span
+          ><select id="source" aria-label="Nodo de inicio"></select
+        ></label>
+        <button
+          class="swap-button"
+          id="swap"
+          aria-label="Intercambiar inicio y destino"
+          title="Intercambiar inicio y destino"
+        >
+          ⇄
+        </button>
+        <label class="route-field"
+          ><span><i class="endpoint-dot target-dot"></i>Destino</span
+          ><select id="target" aria-label="Nodo de destino"></select
+        ></label>
+        <label class="direction-control"
+          ><input type="checkbox" id="directed" /><span>Dirigido</span
+          ><span class="switch" aria-hidden="true"></span
+        ></label>
+        <button id="solve" class="button primary">
+          <span>Calcular ruta</span><span aria-hidden="true">↗</span>
+        </button>
+      </section>
+      <div class="studio">
+        <section class="canvas-card" aria-label="Editor de grafo">
+          <div class="canvas-toolbar">
+            <div
+              class="tool-group"
+              role="group"
+              aria-label="Herramienta del lienzo"
+            >
+              <button
+                id="tool-select"
+                aria-label="Seleccionar y mover"
+                aria-pressed="true"
+                title="Seleccionar y mover"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m5 3 14 9-7 1-3 7z" /></svg
+                ><span>Seleccionar</span>
+              </button>
+              <button
+                id="tool-connect"
+                aria-label="Conectar nodos"
+                aria-pressed="false"
+                title="Elige dos nodos para conectarlos"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="5" cy="18" r="3" />
+                  <circle cx="19" cy="6" r="3" />
+                  <path d="m7 16 10-8" /></svg
+                ><span>Conectar</span>
+              </button>
+              <button
+                id="tool-add"
+                aria-label="Añadir nodo al lienzo"
+                aria-pressed="false"
+                title="Añadir un nodo al lienzo"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 12h8m-4-4v8" /></svg
+                ><span>Nodo</span>
+              </button>
+            </div>
+            <div class="canvas-zoom" role="group" aria-label="Vista del grafo">
+              <button
+                id="zoom-out"
+                class="icon-button"
+                aria-label="Alejar grafo"
+                title="Alejar"
+              >
+                −</button
+              ><button
+                id="zoom-in"
+                class="icon-button"
+                aria-label="Acercar grafo"
+                title="Acercar"
+              >
+                +</button
+              ><button
+                id="fit"
+                class="icon-button"
+                aria-label="Centrar grafo"
+                title="Centrar grafo"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 4H4v5m11-5h5v5M4 15v5h5m6 0h5v-5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="graph-wrap" id="graph-wrap">
+            <svg
+              id="graph"
+              viewBox="0 0 1000 600"
+              role="group"
+              aria-label="Grafo editable. Tab para recorrer nodos y conexiones; Enter para seleccionar."
+              tabindex="0"
+            >
+              <defs>
+                <pattern
+                  id="grid"
+                  width="28"
+                  height="28"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="1" cy="1" r="1" fill="#a9beb3" opacity=".38" />
+                </pattern>
+                <marker
+                  id="arrow"
+                  viewBox="0 0 10 10"
+                  refX="8"
+                  refY="5"
+                  markerWidth="6"
+                  markerHeight="6"
+                  orient="auto-start-reverse"
+                >
+                  <path d="M0 0 10 5 0 10z" fill="context-stroke" />
+                </marker>
+              </defs>
+              <rect
+                id="grid-rect"
+                width="100%"
+                height="100%"
+                fill="url(#grid)"
+              />
+              <g id="edges"></g>
+              <g id="nodes"></g>
+            </svg>
+            <div class="empty-canvas" id="empty-canvas" hidden>
+              <span aria-hidden="true">＋</span>
+              <h2>Tu primera conexión.</h2>
+              <p>Añade un nodo o abre un ejemplo.</p>
+              <button class="button primary" id="empty-add">Añadir nodo</button>
+            </div>
+            <div class="canvas-meta">
+              <span id="graph-count">0 nodos · 0 conexiones</span
+              ><span id="save-status">Guardado en este equipo</span>
+            </div>
+          </div>
+          <div class="canvas-footer">
+            <span id="canvas-hint"
+              >Selecciona un nodo o una conexión para editar.</span
+            >
+            <div class="legend">
+              <span><i class="legend-settled"></i>Asentado</span
+              ><span><i class="legend-route"></i>Ruta</span>
+            </div>
+          </div>
+        </section>
+        <aside class="inspector" aria-label="Detalles del grafo">
+          <div class="tabs" role="tablist" aria-label="Panel de detalles">
+            <button
+              id="tab-edit"
+              role="tab"
+              aria-controls="panel-edit"
+              aria-selected="true"
+            >
+              Editar</button
+            ><button
+              id="tab-result"
+              role="tab"
+              aria-controls="panel-result"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Ruta</button
+            ><button
+              id="tab-trace"
+              role="tab"
+              aria-controls="panel-trace"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Pasos
+            </button>
+          </div>
+          <section
+            id="panel-edit"
+            role="tabpanel"
+            aria-labelledby="tab-edit"
+            class="panel"
+          >
+            <div class="panel-title">
+              <div>
+                <p class="eyebrow" id="selection-type">EDITOR</p>
+                <h2 id="selection-title">Añadir nodo</h2>
+              </div>
+              <button
+                id="clear-selection"
+                class="icon-button"
+                aria-label="Dejar de editar selección"
+                hidden
+              >
+                ×
+              </button>
+            </div>
+            <form id="node-form" class="editor-form">
+              <label for="node-label">Nombre del nodo</label
+              ><input
+                id="node-label"
+                placeholder="Ej. Punto A"
+                title="Hasta 80 caracteres"
+                autocomplete="off"
+              />
+              <div class="two-fields">
+                <label
+                  >Posición X<input
+                    id="node-x"
+                    type="number"
+                    min="-10000"
+                    max="10000"
+                    step="any"
+                    value="500"
+                    required /></label
+                ><label
+                  >Posición Y<input
+                    id="node-y"
+                    type="number"
+                    min="-10000"
+                    max="10000"
+                    step="any"
+                    value="300"
+                    required
+                /></label>
+              </div>
+              <div class="form-actions">
+                <button id="node-submit" class="button" type="submit">
+                  Añadir nodo <span aria-hidden="true">＋</span></button
+                ><button
+                  id="node-delete"
+                  class="button danger"
+                  type="button"
+                  hidden
+                >
+                  Eliminar
+                </button>
+              </div>
+            </form>
+            <div class="section-rule"><span>Conexión</span></div>
+            <form id="edge-form" class="editor-form">
+              <div class="two-fields">
+                <label>Desde<select id="edge-source" required></select></label
+                ><label>Hasta<select id="edge-target" required></select></label>
+              </div>
+              <label for="edge-weight">Costo</label
+              ><input
+                id="edge-weight"
+                inputmode="decimal"
+                value="1"
+                required
+                aria-describedby="weight-hint"
+              />
+              <p id="weight-hint" class="field-hint">
+                Desde 0 · hasta 6 decimales
+              </p>
+              <div class="form-actions">
+                <button id="edge-submit" class="button" type="submit">
+                  Conectar <span aria-hidden="true">↗</span></button
+                ><button
+                  id="edge-delete"
+                  class="button danger"
+                  type="button"
+                  hidden
+                >
+                  Eliminar
+                </button>
+              </div>
+            </form>
+            <details class="graph-list">
+              <summary>Nodos y conexiones</summary>
+              <div id="element-list"></div>
+            </details>
+          </section>
+          <section
+            id="panel-result"
+            role="tabpanel"
+            aria-labelledby="tab-result"
+            class="panel"
+            hidden
+          >
+            <div id="result-empty" class="panel-empty">
+              <span class="route-symbol" aria-hidden="true">↗</span>
+              <h2>¿Por dónde ir?</h2>
+              <p>
+                Elige inicio y destino.<br />Calcula la ruta para descubrirlo.
+              </p>
+            </div>
+            <div id="result-content" hidden>
+              <p class="eyebrow" id="result-label">RUTA MÍNIMA</p>
+              <div class="cost-value" id="result-cost"></div>
+              <p class="cost-caption" id="cost-caption">costo total</p>
+              <div
+                class="path-list"
+                id="result-path"
+                aria-label="Recorrido de la ruta"
+              ></div>
+              <div class="result-metrics">
+                <div>
+                  <strong id="result-settled">0</strong
+                  ><span>nodos asentados</span>
+                </div>
+                <div>
+                  <strong id="result-relaxations">0</strong
+                  ><span>mejoras de costo</span>
+                </div>
+              </div>
+              <button id="explore-trace" class="button wide">
+                Ver cómo se encontró <span aria-hidden="true">→</span>
+              </button>
+              <p class="field-hint" id="result-note"></p>
+            </div>
+          </section>
+          <section
+            id="panel-trace"
+            role="tabpanel"
+            aria-labelledby="tab-trace"
+            class="panel"
+            hidden
+          >
+            <div id="trace-empty" class="panel-empty">
+              <span class="route-symbol" aria-hidden="true">⇢</span>
+              <h2>Una decisión a la vez.</h2>
+              <p>Calcula una ruta para explorar<br />la ejecución de Python.</p>
+            </div>
+            <div id="trace-content" hidden>
+              <div class="trace-heading">
+                <span class="eyebrow">DIJKSTRA / PYTHON</span
+                ><span id="step-count"></span>
+              </div>
+              <h2 id="event-title"></h2>
+              <p id="event-description" class="event-description"></p>
+              <div
+                class="table-scroll"
+                tabindex="0"
+                role="region"
+                aria-label="Tabla de costos desplazable"
+              >
+                <table class="distance-table">
+                  <caption>
+                    Costos conocidos en este paso
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Nodo</th>
+                      <th scope="col">Costo</th>
+                      <th scope="col">Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="distance-rows"></tbody>
+                </table>
+              </div>
+              <p class="field-hint">
+                La frontera contiene costos tentativos; pueden mejorar.
+              </p>
+            </div>
+          </section>
+        </aside>
+      </div>
+      <section class="playback" aria-label="Reproducir pasos de Dijkstra">
+        <button
+          id="play"
+          class="play-button"
+          aria-label="Reproducir algoritmo"
+          disabled
+        >
+          <span aria-hidden="true">▶</span>
+        </button>
+        <button
+          id="previous-step"
+          class="icon-button"
+          aria-label="Paso anterior"
+          disabled
+        >
+          ‹
+        </button>
+        <button
+          id="next-step"
+          class="icon-button"
+          aria-label="Paso siguiente"
+          disabled
+        >
+          ›
+        </button>
+        <div class="timeline">
+          <div>
+            <label for="step-slider">Ejecución paso a paso</label
+            ><output id="timeline-count" for="step-slider"
+              >Calcula una ruta</output
+            >
+          </div>
+          <input
+            id="step-slider"
+            type="range"
+            min="0"
+            max="0"
+            value="0"
+            disabled
+          />
+        </div>
+        <label class="speed-label"
+          ><span>Velocidad</span
+          ><select id="speed" aria-label="Velocidad de reproducción">
+            <option value="1200">Lenta</option>
+            <option value="600" selected>Normal</option>
+            <option value="250">Rápida</option>
+          </select></label
+        >
+      </section>
+      <footer class="page-footer">
+        <span>Dijkstra desde cero. Un mismo núcleo Python.</span>
+        <div class="footer-links">
+          <a href="proyecto.html">Proyecto <span aria-hidden="true">↗</span></a
+          ><a href="docs/VerticeSDV_Informe.pdf" id="report-link"
+            >Informe <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </footer>
+    </main>
+    <dialog id="help-dialog" aria-labelledby="help-title">
+      <button
+        id="help-close"
+        class="icon-button dialog-close"
+        aria-label="Cerrar ayuda"
+      >
+        ×
+      </button>
+      <p class="eyebrow">GUÍA RÁPIDA</p>
+      <h2 id="help-title">Dale forma a una ruta.</h2>
+      <ol>
+        <li>
+          <strong>Edita.</strong> Selecciona un nodo o conexión. También puedes
+          usar los formularios.
+        </li>
+        <li>
+          <strong>Calcula.</strong> Elige inicio y destino. El costo es la suma
+          de las conexiones.
+        </li>
+        <li>
+          <strong>Explora.</strong> Reproduce las decisiones reales del
+          algoritmo.
+        </li>
+      </ol>
+      <p>
+        Tab recorre controles. Enter selecciona. Las flechas mueven el nodo
+        seleccionado; Mayús + flecha mueve más. Escape cancela la conexión.
+      </p>
+      <p>
+        Amplía con +, aleja con −. Arrastra el fondo para recorrer el grafo. Con
+        el lienzo enfocado, las flechas desplazan la vista.
+      </p>
+      <p>
+        Ctrl + Z deshace. Ctrl + Mayús + Z rehace. Exporta JSON para conservar
+        una copia.
+      </p>
+      <details>
+        <summary>Qué significa cada estado</summary>
+        <p>
+          <strong>Asentado:</strong> costo mínimo definitivo.
+          <strong>Frontera:</strong> costo tentativo.
+          <strong>Sin ruta:</strong> no existe un recorrido al destino. El
+          algoritmo se detiene al asentar el destino.
+        </p>
+        <p>
+          Los ejemplos son grafos didácticos. Un empate admite varias rutas
+          óptimas; se muestra una de forma reproducible.
+        </p>
+        <p>
+          Hasta 500 nodos y 4 000 conexiones. En grafos densos, amplía la vista
+          o usa la lista de nodos y conexiones para editar.
+        </p>
+      </details>
+      <p id="engine-help" class="field-hint"></p>
+    </dialog>
+  </body>
+</html>

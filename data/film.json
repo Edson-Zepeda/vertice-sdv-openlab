@@ -1,0 +1,50 @@
+{
+  "duration": 209.9666666666667,
+  "chapters": [
+    {
+      "label": "Idea",
+      "title": "El costo decide la ruta.",
+      "start": 0
+    },
+    {
+      "label": "Clases",
+      "title": "Cuatro clases. Una responsabilidad clara.",
+      "start": 17.066666666666666
+    },
+    {
+      "label": "Recorrido",
+      "title": "La frontera avanza.",
+      "start": 40.5
+    },
+    {
+      "label": "Relajación",
+      "title": "Mejorar una distancia cambia la decisión.",
+      "start": 67.5
+    },
+    {
+      "label": "Decimales",
+      "title": "Los decimales conservan su valor.",
+      "start": 91.43333333333334
+    },
+    {
+      "label": "Casos",
+      "title": "Los casos difíciles también tienen respuesta.",
+      "start": 113.33333333333334
+    },
+    {
+      "label": "Pruebas",
+      "title": "Comprobar desde otro algoritmo.",
+      "start": 136.33333333333334
+    },
+    {
+      "label": "Rendimiento",
+      "title": "Medir también exige separar los costos.",
+      "start": 162.70000000000002
+    },
+    {
+      "label": "Estudio",
+      "title": "Edita. Calcula. Comprueba.",
+      "start": 186.9666666666667
+    }
+  ]
+}
